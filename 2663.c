@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void leEntrada(int *n, int *k) {
+void readInput(int *n, int *k) {
     do {
         scanf("%d", n);
     } while (!(*n >= 1 && *n <= 1000));
@@ -9,34 +9,34 @@ void leEntrada(int *n, int *k) {
         scanf("%d", k);
     } while(!(*k >= 1 && *k <= *n));
 }
-void ordenaVet(int *v, int n) {
-    int p_maior, aux;
+void sortArray(int *v, int n) {
+    int p_bigger, aux;
     for (int i = 0; i < n-1; i++) {
-        p_maior = i;
+        p_bigger = i;
         for (int j = i+1; j < n; j++)
-            if (v[j] > v[p_maior])
-                p_maior = j;
-        //troca vet[p_maior] com vet[i]
-        if (i != p_maior) {
-            aux = v[p_maior];
-            v[p_maior] = v[i];
+            if (v[j] > v[p_bigger])
+                p_bigger = j;
+        //swap vet[p_bigger] with vet[i]
+        if (i != p_bigger) {
+            aux = v[p_bigger];
+            v[p_bigger] = v[i];
             v[i] = aux;
         }
     }
 }
 int main() {
-    int n, k, *pont;
-    leEntrada(&n, &k);
-    pont = malloc(n * sizeof(int));
+    int n, k, *scores;
+    readInput(&n, &k);
+    scores = malloc(n * sizeof(int));
     for (int i = 0; i < n; i++) {
         do {
-            scanf("%d", &pont[i]);
-        } while (!(pont[i] >= 1 && pont[i] <= 1000));
+            scanf("%d", &scores[i]);
+        } while (!(scores[i] >= 1 && scores[i] <= 1000));
     }
-    ordenaVet(pont, n);
+    sortArray(scores, n);
 
-    int numComp = k; //numero minimo de competidores
-    while (pont[numComp-1] == pont[numComp] && numComp < n)
+    int numComp = k; //minimum number of competitors
+    while (scores[numComp-1] == scores[numComp] && numComp < n)
         numComp++;
     printf("%d\n", numComp);
 }
