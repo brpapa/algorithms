@@ -24,6 +24,7 @@ void sortArray(int *v, int n) {
         }
     }
 }
+
 int main() {
     int n, k, *scores;
     readInput(&n, &k);
