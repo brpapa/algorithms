@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int n, numPortaComCarro, vezesGanhou = 0;
     cin >> n;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> numPortaComCarro;
         if (numPortaComCarro == 2 || numPortaComCarro == 3)
             vezesGanhou++;

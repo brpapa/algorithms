@@ -2,13 +2,16 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
     int n, pos;
     string cifra;
     cin >> n;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> cifra >> pos;
-        for (int j = 0; j < cifra.size(); j++) {
+        for (int j = 0; j < cifra.size(); j++)
+        {
             //A = 65, Z = 90
             cifra[j] -= pos;
             if (cifra[j] < 65)
