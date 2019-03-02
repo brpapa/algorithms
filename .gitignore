@@ -1,7 +1,7 @@
 /src/.DS_Store
-/src/prog
-/src/dados.in
-/src/dados.out
+/src/.prog
+/src/.dados.in
+/src/.dados.out
 /learncpp-pt.cpp
 /notas.txt
 /.vscode
