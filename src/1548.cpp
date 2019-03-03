@@ -3,7 +3,8 @@
 #include <algorithm>
 using namespace std;
 
-int main() {
+int main()
+{
     int n, m, p, quant;
     vector<int> vet, ord;
 

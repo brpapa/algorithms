@@ -23,7 +23,8 @@ int conta(int l, int c)
         soma += conta(l, c-1);
     return soma;
 }
-int main() {
+int main()
+{
     cin >> nLin >> nCol;
     for (int l = 0; l < nLin; l++)
         for (int c = 0; c < nCol; c++)
