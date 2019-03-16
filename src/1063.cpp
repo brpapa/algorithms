@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n, t, e, s;
-    bool ok;
+    int n, t, s;
     char entrada[MAX], saida[MAX], pilha[MAX];
     while (true)
     {
