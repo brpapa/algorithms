@@ -1,5 +1,6 @@
 # uri-resolutions
-problems solved from the Uri Online Judge platform for self-training and help to community that study for the programming marathon
+my intention in to share these resolutions is help to community that study for the programming marathons
 
-## Link of questions:
-> https://www.urionlinejudge.com.br/judge/pt
+## Used platforms:
+- https://www.urionlinejudge.com.br/judge/pt
+- https://vjudge.net
