@@ -38,11 +38,22 @@ void distMeioTons(int vet[], int &tam)
             vet[i] += 12; //pois é ciclico
     }
 }
+void calculaPrefix(int aux[], int subVet[], int tamSubVet)
+{
+    int i = 0, j = -1;
+    aux[0] = -1;
+    while (i < tamSubVet)
+    {
+        while (j >= 0 && subVet[i] != subVet[j])
+            j = aux[j];
+        aux[++i] = ++j;
+    }
+}
 //aplica técnica de busca em string KMP para verificar se subVet está contido em vet
 bool kmp(int vet[], int tamVet, int subVet[], int tamSubVet)
 {
     int aux[100000], j = 0;
-    aux[0] = -1;
+    calculaPrefix(aux, subVet, tamSubVet);
     for (int i = 0; i < tamVet; i++)
     {
         while (j >= 0 && vet[i] != subVet[j])
@@ -76,13 +87,6 @@ int main()
         }
         distMeioTons(notas, m);
         distMeioTons(trechoSuspeito, t);
-        // for (int i = 0; i < m; i++)
-        //     cout << notas[i] << " ";
-        // cout << endl;
-        // for (int i = 0; i < t; i++)
-        //     cout << trechoSuspeito[i] << " ";
-        // cout << endl;
-
         printf("%s\n", kmp(notas, m, trechoSuspeito, t)? "S":"N");
     }
     return 0;
