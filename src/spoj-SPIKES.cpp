@@ -10,7 +10,7 @@ bool posValida(int l, int c)
     return (l >= 0 && l < n && c >=0 && c < m && mapa[l][c] != '#');
 }
 //considerando o tesouro ('x') como posição inicial, percorre até a saída ('@')
-void backtracking(int l, int c, int espinhos)
+void anda(int l, int c, int espinhos)
 {
     if (mapa[l][c] == '@')
     {
@@ -28,25 +28,25 @@ void backtracking(int l, int c, int espinhos)
     if (!ok && posValida(l-1, c) && !posVerificada[l-1][c])
     {
         posVerificada[l-1][c] = true;
-        backtracking(l-1, c, espinhos);
+        anda(l-1, c, espinhos);
         posVerificada[l-1][c] = false;
     }
     if (!ok && posValida(l, c+1) && !posVerificada[l][c+1])
     {
         posVerificada[l][c+1] = true;
-        backtracking(l, c+1, espinhos);
+        anda(l, c+1, espinhos);
         posVerificada[l][c+1] = false;
     }
     if (!ok && posValida(l+1, c) && !posVerificada[l+1][c])
     {
         posVerificada[l+1][c] = true;
-        backtracking(l+1, c, espinhos);
+        anda(l+1, c, espinhos);
         posVerificada[l+1][c] = false;
     }
     if (!ok && posValida(l, c-1) && !posVerificada[l][c-1])
     {
         posVerificada[l][c-1] = true;
-        backtracking(l, c-1, espinhos);
+        anda(l, c-1, espinhos);
         posVerificada[l][c-1] = false;
     }
 }
@@ -69,7 +69,7 @@ int main()
             posVerificada[i][j] = false;
         }
     }
-    backtracking(l, c, 0); //numero de espinhos evitados inicia com 0
+    anda(l, c, 0); //numero de espinhos evitados inicia com 0
     printf("%s\n", ok? "SUCCESS" : "IMPOSSIBLE");
     return 0;
 }
