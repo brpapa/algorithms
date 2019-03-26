@@ -1,14 +1,12 @@
 #include <iostream>
 #include <string>
+#include <stack>
 using namespace std;
 #define MAX 300
-//ed
 
 string in2pos(string in)
 {
-    char pilha[MAX];
-    int t = -1; //índice do topo da pilha
-
+    stack<char> pilha;
     string str;
     for (int i = 0; i < in.size(); i++)
     {
@@ -18,33 +16,49 @@ string in2pos(string in)
         }
         else if (in[i] == '(')
         {
-            pilha[++t] = in[i];
+            pilha.push(in[i]);
         }
         else if (in[i] == ')')
         {
-            while (t >= 0 && pilha[t] != '(')
-                str += pilha[t--];
-            t--; //remove '('
+            while (!pilha.empty() && pilha.top() != '(')
+            {
+                str += pilha.top();
+                pilha.pop();
+            }
+            pilha.pop(); //remove '('
         }
         else
         { 
             if (in[i] == '^')
-                while (t >= 0 && pilha[t] != '(' && pilha[t] != '+' && pilha[t] != '-' && pilha[t] != '*' && pilha[t] != '/')
-                    str += pilha[t--];
+                while (!pilha.empty() && pilha.top() != '(' && pilha.top() != '+' && pilha.top() != '-' && pilha.top() != '*' && pilha.top() != '/')
+                {
+                    str += pilha.top();
+                    pilha.pop();
+                }
 
             else if (in[i] == '*' || in[i] == '/')
-                while (t >= 0 && pilha[t] != '(' && pilha[t] != '+' && pilha[t] != '-')
-                    str += pilha[t--];
+                while (!pilha.empty() && pilha.top() != '(' && pilha.top() != '+' && pilha.top() != '-')
+                {
+                    str += pilha.top();
+                    pilha.pop();
+                }
 
             else if (in[i] == '+' || in[i] == '-')
-                while (t >= 0 && pilha[t] != '(')
-                    str += pilha[t--];
+                while (!pilha.empty() && pilha.top() != '(')
+                {
+                    str += pilha.top();
+                    pilha.pop();
+                }
 
-            pilha[++t] = in[i];
+            pilha.push(in[i]);
         }
     }
-    while (t >= 0)
-        str += pilha[t--];
+    while (!pilha.empty())
+    {
+        str += pilha.top();
+        pilha.pop();
+
+    }
     return str;
 }
 
@@ -53,7 +67,7 @@ int main()
     int n;
     string in;
     cin >> n;
-    for (int i = 0; i < n; i++)
+    while (n--)
     {
         cin >> in;
         cout << in2pos(in) << endl;
