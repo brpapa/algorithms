@@ -1,12 +1,12 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 #define MAX 26
-//ed
 
 int main()
 {
     int n, t, s;
-    char entrada[MAX], saida[MAX], pilha[MAX];
+    char entrada[MAX], saida[MAX];
     while (true)
     {
         cin >> n;
@@ -17,21 +17,20 @@ int main()
         for (int i = 0; i < n; i++)
             cin >> saida[i];
 
-        //topo da pilha, indice da saida
-        t = -1; s = 0; 
+        stack<char> pilha; //cria pilha vazia
+        s = 0; //indice da saida
         for (int i = 0; i < n; i++)
         {
             cout << "I";
-            pilha[++t] = entrada[i];
-            
-            while (t > -1 && pilha[t] == saida[s])
+            pilha.push(entrada[i]);
+
+            while (!pilha.empty() && pilha.top() == saida[s])
             {
                 cout << "R";
-                t--;
+                pilha.pop();
                 s++;
             }
         }
-        //se t == -1, a pilha está vazia
-        printf("%s", (t == -1) ? "\n" : " Impossible\n");
+        printf("%s", (pilha.empty())? "\n" : " Impossible\n");
     }
 }
