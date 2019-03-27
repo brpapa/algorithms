@@ -1,32 +1,30 @@
 #include <iostream>
+#include <queue>
 using namespace std;
-//ed
 
 int main()
 {
-    int n, descartes[51], fila[51];
+    int n, descartes[51];
     while (true)
     {
         cin >> n;
         if (n == 0) 
             return 0;
         
-        int t = -1; //topo da fila
-        //cria fila
-        for (int i = n; i >= 1; i--) 
-            fila[++t] = i;
+        queue<int> fila; //cria fila
+        for (int i = 1; i <= n; i++) 
+            fila.push(i);
 
-        //enquanto tem 2 cartas ou mais na fila
-        for (int i = 0; t >= 1; i++)
+        //enquanto tem 2 cartas ou mais na fila (n-1 descartes)
+        for (int i = 0; i < n-1; i++)
         {
             //descarta o topo
-            descartes[i] = fila[t--];
+            descartes[i] = fila.front();
+            fila.pop();
 
             //move o novo topo para a base
-            int aux = fila[t];
-            for (int i = t-1; i >= 0; i--)
-                fila[i+1] = fila[i];
-            fila[0] = aux;
+            fila.push(fila.front());
+            fila.pop();
         }
 
         cout << "Discarded cards:";
@@ -36,6 +34,6 @@ int main()
             cout << " " << descartes[n-2];
         cout << endl;
 
-        cout << "Remaining card: " << fila[0] << endl;
+        cout << "Remaining card: " << fila.front() << endl;
     }
 }
