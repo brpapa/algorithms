@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
+#define max 101
 
-int pilhaA[100], pilhaB[100], pilhaC[100];
-bool toposVrf[101][101][101], ok;
+int pilhaA[max], pilhaB[max], pilhaC[max];
+bool toposVrf[max][max][max], ok;
 
 void testaTopos(int topoA, int topoB, int topoC)
 {
-    //verifica se a combinação atual de topos já foi testada, com +1 pois pode ser -1
+    //verifica se a combinação atual de topos já foi testada
     if (!toposVrf[topoA + 1][topoB + 1][topoC + 1])
         toposVrf[topoA + 1][topoB + 1][topoC + 1] = true;
     else
@@ -69,13 +70,12 @@ int main()
         for (int i = n - 1; i >= 0; i--)
             scanf("%d %d %d", &pilhaA[i], &pilhaB[i], &pilhaC[i]);
 
-        int topoA = n - 1, topoB = n - 1, topoC = n - 1;
         ok = false;
-        for (int i = 0; i < 101; i++)
-            for (int j = 0; j < 101; j++)
-                for (int k = 0; k < 101; k++)
+        for (int i = 0; i < n+1; i++)
+            for (int j = 0; j < n+1; j++)
+                for (int k = 0; k < n+1; k++)
                     toposVrf[i][j][k] = false;
-        testaTopos(topoA, topoB, topoC); //passagem por valor por causa da recursividade
+        testaTopos(n-1, n-1, n-1);
         printf("%d\n", ok ? 1 : 0);
     }
     return 0;
