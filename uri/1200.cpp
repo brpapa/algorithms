@@ -53,13 +53,15 @@ void posfix(node arv)
 bool busca(node arv, char info)
 {
    if (arv == NULL)
-      return false;
-   if (info == arv->info)
-      return true;
-   if (info < arv->info)
-      return busca(arv->esq, info);
-   if (info > arv->info)
-      return busca(arv->dir, info);
+   {
+      if (info == arv->info)
+         return true;
+      if (info < arv->info)
+         return busca(arv->esq, info);
+      if (info > arv->info)
+         return busca(arv->dir, info);
+   }
+   return false;
 }
 int main()
 {
