@@ -52,7 +52,7 @@ void posfix(node arv)
 }
 bool busca(node arv, char info)
 {
-   if (arv == NULL)
+   if (arv != NULL)
    {
       if (info == arv->info)
          return true;
