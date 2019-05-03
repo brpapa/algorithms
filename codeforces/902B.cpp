@@ -14,7 +14,7 @@ int pinta(int no, int cor) {
       cor = corDesejada[no];
       qte = 1;
    }
-   //para cada filho do nó
+   //a cor propaga para cada filho do nó 
    for (int i = 0; i < arv[no].size(); i++)
       qte += pinta(arv[no][i], cor);
 
