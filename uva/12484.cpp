@@ -1,3 +1,4 @@
+// dynamic programming: minimax
 #include <iostream>
 #include <vector>
 #define ALBERTO 0
