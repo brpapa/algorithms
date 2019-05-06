@@ -1,5 +1,11 @@
 // organiza problemas por theme(cont) e topic(what), 
 // inspirado em: https://github.com/juanplopes/icpc/blob/master/README.md
+
+// as 4 linhas iniciais de todo .cpp precisam estar padronizadas da seguinte forma:
+/*
+   theme | topic
+   problem: name
+*/
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -29,9 +35,10 @@ int main() {
       "https://vjudge.net/problem/uva-"
    };
 
+
    vector<Tex> exerc;
    Tex ex; 
-   //guarda todos os exercicios no vector exerc
+   //guarda todos os exercicios do diretório no vector exerc
    for (int i = 0; i < 4; i++) {
       system(("ls " + judge[i] + " > temp.bat").c_str());
       ex.judge = judge[i];
@@ -51,17 +58,10 @@ int main() {
    system("rm -f temp.bat");
 
 
-
-
-
    Tex p;
    map<string, Treg> cont;
-   //4 linhas iniciais de todo .cpp
-   /*
-      keyCont | keyWhat
-      problem name: name
-   */
    string keyCont, keyWhat, path;
+   //separa as strings
    for (int k, i = 0; i < exerc.size(); i++) {
       path = exerc[i].judge + "/" + exerc[i].arq + ".cpp";
 
@@ -71,29 +71,25 @@ int main() {
          continue;
 
       getline(arq, aux);
-      k = aux.find('|'); //retorna posicao do separador
+      k = aux.find('|'); //retorna posicão do separador
       keyCont = aux.substr(3, k-4);
       keyWhat = aux.substr(k+2);
 
       getline(arq, aux);
-      exerc[i].name = aux.substr(17);
+      exerc[i].name = aux.substr(12);
 
       cont[keyCont].what[keyWhat].push_back(exerc[i]);     
       arq.close();
    }
 
 
-
-   //sobrescreve README.md
    ofstream arq("README.md");
-
-   map<string, Treg>::iterator itC;
-   map<string, vector<Tex> >::iterator itW;
-   //itera map cont
+   map<string, Treg>::iterator itC; //map cont
+   map<string, vector<Tex> >::iterator itW; //map what
+   //sobrescreve README.md
    for (itC = cont.begin(); itC != cont.end(); itC++) {
       arq << "\n# " << itC->key << endl;
 
-      //itera map what
       for (itW = itC->value.what.begin(); itW != itC->value.what.end(); itW++) {
          arq << "- " << itW->key << endl;
          vector<Tex> aux = itC->value.what[itW->key];
@@ -106,21 +102,6 @@ int main() {
       }
    }
    arq.close();
-
    system("git add README.md");
    return 0;
 }
-
-/*
-# dynamic programming
-<!-- os subproblemas se repetem e não os calculo novamente -->
-<!-- solucao global -->
-
-# greedy
-
-# backtracking 
-
-# graphs
-- depth first search (DFS) <!-- busca em profundidade -->
-- breadth first seach (BFS) <!-- busca em largura -->
-*/
