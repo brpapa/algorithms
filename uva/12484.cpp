@@ -1,4 +1,7 @@
-// dynamic programming: minimax
+/*
+   dynamic programming | minimax
+   problem: cards
+*/
 #include <iostream>
 #include <vector>
 #define ALBERTO 0
@@ -18,13 +21,13 @@ long long int pts(int e, int d, int jogador)
    {
       if (jogador == ALBERTO)
          memo[d][e] = max(
-            (long long int)seq[e] + pts(e + 1, d, WANDERLEY), //ALBERTO remove esq
-            (long long int)seq[d] + pts(e, d - 1, WANDERLEY)  //ALBERTO remode dir
+             (long long int)seq[e] + pts(e + 1, d, WANDERLEY), //ALBERTO remove esq
+             (long long int)seq[d] + pts(e, d - 1, WANDERLEY)  //ALBERTO remode dir
          );
       else
          memo[d][e] = min(
-               pts(e + 1, d, ALBERTO), //WAND remove esq
-               pts(e, d - 1, ALBERTO)  //WAND remode dir
+             pts(e + 1, d, ALBERTO), //WAND remove esq
+             pts(e, d - 1, ALBERTO)  //WAND remode dir
          );
    }
    return memo[d][e];

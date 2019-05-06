@@ -1,4 +1,7 @@
-// backtracking: path
+/*
+   backtracking | path
+   problem: spiky mazes
+*/
 #include <iostream>
 using namespace std;
 

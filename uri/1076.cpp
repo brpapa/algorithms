@@ -1,4 +1,7 @@
-//graphs: basic
+/*
+   graphs | basic
+   problem: design labirints
+*/
 #include <iostream>
 #include <vector>
 #define MAX 100
@@ -7,7 +10,7 @@ using namespace std;
 vector<int> adj[MAX]; //vector de vértices adjacentes ao vértice i
 
 //verifica se b é adjacente à a
-bool ehAdjacente(int a, int b) 
+bool ehAdjacente(int a, int b)
 {
    for (int i = 0; i < adj[a].size(); i++)
       if (b == adj[a][i])
@@ -29,11 +32,11 @@ int main()
       scanf("%d", &n); //nó inicial e final
       scanf("%d %d", &qteV, &qteA);
 
-      for (int i = 0; i < qteV; i++) 
+      for (int i = 0; i < qteV; i++)
          adj[i].clear();
 
       int qtePassosIda = 0;
-      for (int i = 0; i < qteA; i++) 
+      for (int i = 0; i < qteA; i++)
       {
          scanf("%d %d", &v, &a);
          if (ehAdjacente(v, a))
@@ -43,7 +46,7 @@ int main()
          addAresta(v, a);
          qtePassosIda++;
       }
-      printf("%d\n", qtePassosIda*2);
+      printf("%d\n", qtePassosIda * 2);
    }
    return 0;
 }

@@ -88,7 +88,9 @@ int main() {
    map<string, vector<Tex> >::iterator itW; //map what
    //sobrescreve README.md
    for (itC = cont.begin(); itC != cont.end(); itC++) {
-      arq << "\n# " << itC->key << endl;
+      if (itC->key == "theme") //não categorizado
+         continue;
+      arq << "# " << itC->key << endl;
 
       for (itW = itC->value.what.begin(); itW != itC->value.what.end(); itW++) {
          arq << "- " << itW->key << endl;
