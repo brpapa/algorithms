@@ -1,8 +1,11 @@
+/*
+   graph | binary search tree (BST)
+   problem: pre, in and post
+*/
 #include <iostream>
 using namespace std;
 
-string pos(string pre, string in)
-{
+string pos(string pre, string in){
    if (pre.size() == 0)
       return "";
 
@@ -26,8 +29,7 @@ int main() {
    int c, n;
    string pre, in;
    scanf("%d", &c);
-   while (c--)
-   {
+   while (c--) {
       scanf("%d", &n);
       cin >> pre >> in;
       cout << pos(pre, in) << endl;

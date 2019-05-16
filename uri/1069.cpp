@@ -1,31 +1,32 @@
+/*
+   stack | basic
+   problem: diamonds and sand
+*/
 #include <iostream>
 #include <stack>
 using namespace std;
 
-int main()
-{
-    string exp;
-    stack<char> p;
-    int n, quant;
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        quant = 0;
-        cin >> exp;
-        for (int i = 0; i < exp.size(); i++)
-        {
-            if (exp.at(i) == '<')
-                p.push(exp.at(i));
-            if (exp.at(i) == '>' && p.top() == '<')
-                if (!p.empty())
-                {
-                    p.pop();
-                    quant++;
-                }
-        }
-        cout << quant << endl;
+int main() {
+   string str;
+   stack<char> p;
+   int n, quant;
+   cin >> n;
+   for (int i = 0; i < n; i++) {
+      quant = 0;
+      cin >> str;
+      for (int i = 0; i < str.size(); i++) {
+         if (str.at(i) == '<')
+            p.push(str.at(i));
+         if (str.at(i) == '>' && p.top() == '<')
+            if (!p.empty()) {
+               p.pop();
+               quant++;
+            }
+      }
+      cout << quant << endl;
 
-        while (!p.empty())
-            p.pop();
-    }
+      while (!p.empty())
+         p.pop();
+   }
+   return 0;
 }

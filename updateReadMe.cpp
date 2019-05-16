@@ -67,7 +67,7 @@ int main() {
 
       ifstream arq(path, ios::in);
       getline(arq, aux);
-      if (aux[0] != '/' || aux[1] != '*')
+      if (aux != "/*")
          continue;
 
       getline(arq, aux);
@@ -99,7 +99,7 @@ int main() {
          //para cada exercício
          for (int i = 0; i < aux.size(); i++) {
             ex = aux[i];
-            arq << "\t- [" << ex.judge << "/" << ex.arq << ": " << ex.name << "](" << ex.url << ")\n";
+            arq << "\t- " << ex.judge << "/" << ex.arq << ": [" << ex.name << "](" << ex.url << ")\n";
          }
       }
    }

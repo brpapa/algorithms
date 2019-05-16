@@ -1,3 +1,7 @@
+/*
+   graph | depth first search (DFS)
+   problem: coloring a tree
+*/
 #include <iostream>
 #include <vector>
 #define MAX 10001
@@ -14,19 +18,17 @@ int pinta(int no, int cor) {
       cor = corDesejada[no];
       qte = 1;
    }
-   //a cor propaga para cada filho do nó 
+   //a cor propaga para cada filho do nó
    for (int i = 0; i < arv[no].size(); i++)
       qte += pinta(arv[no][i], cor);
 
    return qte;
 }
 
-int main()
-{
+int main() {
    int n, p;
    scanf("%d", &n);
-   for (int f = 2; f <= n; f++)
-   {
+   for (int f = 2; f <= n; f++) {
       scanf("%d", &p);
       arv[p].push_back(f);
    }
@@ -34,5 +36,5 @@ int main()
       scanf("%d", &corDesejada[i]);
 
    printf("%d\n", pinta(1, 0));
-   return 0;   
+   return 0;
 }

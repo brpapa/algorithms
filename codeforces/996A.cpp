@@ -1,15 +1,17 @@
+/*
+   greedy | coins
+   problem: hit the lottery
+*/
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
    long long int n;
-   scanf("%lld", &n);
-
    int moedas[5] = {100, 20, 10, 5, 1}, qte = 0;
+
+   scanf("%lld", &n);
    for (int i = 0; n > 0; i++)
-      while (n >= moedas[i])
-      {
+      while (n >= moedas[i]) {
          n -= moedas[i];
          qte++;
       }

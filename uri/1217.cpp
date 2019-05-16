@@ -1,12 +1,14 @@
+/*
+   ad-hoc | basic
+   problem: getline two-fruits
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
 
-int main()
-{
+int main() {
    int n, d, aluno;
-   while (true)
-   {
+   while (true) {
       cin >> n >> d;
       if (n == 0 && d == 0)
          return 0;
@@ -14,8 +16,7 @@ int main()
       vector<bool> participou(true, n);
 
       for (int j = 0; j < d; j++)
-         for (int i = 0; i < n; i++)
-         {
+         for (int i = 0; i < n; i++) {
             cin >> aluno;
             if (aluno == 0)
                participou[i] = false;

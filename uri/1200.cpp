@@ -1,96 +1,85 @@
+/*
+   graph | binary search tree (BST)
+   problem: bst operations I
+*/
 #include <iostream>
 using namespace std;
-typedef struct llde
-{
+typedef struct llde {
    char info;
    struct llde *esq, *dir;
-} * node;
+} *Tnode;
 
 int qteTotal, qte;
 
-void insere(node &arv, char info)
-{
-   if (arv == NULL)
-   {
-      node p = (node)malloc(sizeof(struct llde));
+void insere(Tnode &arv, char info) {
+   if (arv == NULL) {
+      Tnode p = (Tnode)malloc(sizeof(struct llde));
       p->info = info;
       p->esq = p->dir = NULL;
       arv = p;
       qteTotal++;
    }
-   else
-   {
+   else {
       if (info < arv->info)
          insere(arv->esq, info);
       if (info > arv->info)
          insere(arv->dir, info);
    }
 }
-void prefix(node arv)
-{
+void prefix(Tnode arv) {
    if (arv == NULL)
       return;
-   printf("%c%c", arv->info, ((qte++) == qteTotal-1)?'\n': ' ');
+   printf("%c%c", arv->info, ((qte++) == qteTotal - 1) ? '\n' : ' ');
    prefix(arv->esq);
    prefix(arv->dir);
 }
-void infix(node arv)
-{
+void infix(Tnode arv) {
    if (arv == NULL)
       return;
    infix(arv->esq);
-   printf("%c%c", arv->info, ((qte++) == qteTotal-1)?'\n': ' ');
+   printf("%c%c", arv->info, ((qte++) == qteTotal - 1) ? '\n' : ' ');
    infix(arv->dir);
 }
-void posfix(node arv)
-{
+void posfix(Tnode arv) {
    if (arv == NULL)
       return;
    posfix(arv->esq);
    posfix(arv->dir);
-   printf("%c%c", arv->info, ((qte++) == qteTotal-1)?'\n': ' ');
+   printf("%c%c", arv->info, ((qte++) == qteTotal - 1) ? '\n' : ' ');
 }
-bool busca(node arv, char info)
-{
-   if (arv != NULL)
-   {
+bool bst(Tnode arv, char info) {
+   if (arv != NULL) {
       if (info == arv->info)
          return true;
       if (info < arv->info)
-         return busca(arv->esq, info);
+         return bst(arv->esq, info);
       if (info > arv->info)
-         return busca(arv->dir, info);
+         return bst(arv->dir, info);
    }
    return false;
 }
-int main()
-{
+
+int main() {
    string str;
-   node arv = NULL;
+   Tnode arv = NULL;
    qteTotal = 0;
-   while (getline(cin, str))
-   {
-      if (str.size() == 3)
-      {
+   while (getline(cin, str)) {
+      if (str.size() == 3) {
          if (str[0] == 'I')
             insere(arv, str[2]);
          if (str[0] == 'P')
-            printf("%c%sexiste\n", str[2], busca(arv, str[2])? " ": " nao ");
+            printf("%c%sexiste\n", str[2], bst(arv, str[2]) ? " " : " nao ");
       }
-      else
-      {
-         if (str == "INFIXA")
-         {
+      else {
+         if (str == "INFIXA") {
             qte = 0;
             infix(arv);
          }
-         if (str == "PREFIXA")
-         {
+         if (str == "PREFIXA") {
             qte = 0;
             prefix(arv);
          }
-         if (str == "POSFIXA")
-         {
+         if (str == "POSFIXA") {
             qte = 0;
             posfix(arv);
          }

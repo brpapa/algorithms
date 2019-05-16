@@ -1,21 +1,20 @@
+/*
+   mathematics | basic
+   problem: rectangles
+*/
 #include <iostream>
 #include <queue>
-#include <math.h>
+#include <cmath>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin >> n;
+int main() {
+   int n, qte = 0;
+   cin >> n;
 
-    int quant = 0;
-    for (int k = 1; k <= sqrt(n); k++)
-    {
-        for (int i = k; i * k <= n; i++)
-        {
-            quant++;
-        }
-    }
-    cout << quant << endl;
-    return 0;
+   for (int k = 1; k <= sqrt(n); k++)
+      for (int i = k; i * k <= n; i++)
+         qte++;
+
+   cout << qte << endl;
+   return 0;
 }

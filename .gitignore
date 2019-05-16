@@ -1,6 +1,7 @@
-/.DS_Store
-/.vscode
-/prog
-/up
-*.in
-*.out
+.DS_Store
+.vscode
+e
+md
+input
+output
+template.h

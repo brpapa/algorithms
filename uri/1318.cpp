@@ -1,19 +1,20 @@
+/*
+   ad-hoc | basic
+   problem: fake tickets
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
 
-int main()
-{
+int main() {
    int qteBilhetes, qtePessoas, aux;
-   while (true)
-   {
+   while (true) {
       cin >> qteBilhetes >> qtePessoas;
       if (qteBilhetes == 0 && qtePessoas == 0)
          return 0;
 
       vector<int> bilhetes(qteBilhetes + 1, 0);
-      for (int i = 0; i < qtePessoas; i++)
-      {
+      for (int i = 0; i < qtePessoas; i++) {
          cin >> aux;
          bilhetes[aux]++;
       }
