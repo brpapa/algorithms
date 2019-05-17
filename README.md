@@ -20,9 +20,6 @@
 	- uri/1026: [to carry or not to carry](https://www.urionlinejudge.com.br/judge/problems/view/1026)
 - linear seach
 	- spoj/MBINGO: [bingo!](https://vjudge.net/problem/spoj-MBINGO)
-- path
-	- uri/2246: [tiles](https://www.urionlinejudge.com.br/judge/problems/view/2246)
-	- uri/2465: [pass the ball](https://www.urionlinejudge.com.br/judge/problems/view/2465)
 - set
 	- uri/1901: [butterflies](https://www.urionlinejudge.com.br/judge/problems/view/1901)
 - sort
@@ -36,6 +33,9 @@
 # division and conquest
 - binary search
 	- uri/2448: [postman](https://www.urionlinejudge.com.br/judge/problems/view/2448)
+- path
+	- uri/2246: [tiles](https://www.urionlinejudge.com.br/judge/problems/view/2246)
+	- uri/2465: [pass the ball](https://www.urionlinejudge.com.br/judge/problems/view/2465)
 # dynamic programming
 - basic
 	- spoj/MCOINS: [name](https://vjudge.net/problem/spoj-MCOINS)
@@ -45,6 +45,8 @@
 	- codeforces/313B: [ilya and queries](https://vjudge.net/problem/codeforces-313B)
 - minimax
 	- uva/12484: [cards](https://vjudge.net/problem/uva-12484)
+- mininum path
+	- uva/116: [unidirectional TSP](https://vjudge.net/problem/uva-116)
 # graph
 - basic
 	- uri/1076: [design labirints](https://www.urionlinejudge.com.br/judge/problems/view/1076)
@@ -69,10 +71,6 @@
 	- codeforces/702A: [maximum increase](https://vjudge.net/problem/codeforces-702A)
 - stack and queue
 	- spoj/STPAR: [street parade](https://vjudge.net/problem/spoj-STPAR)
-- topic
-	- codeforces/1111C: [name](https://vjudge.net/problem/codeforces-1111C)
-	- codeforces/1141F2: [name](https://vjudge.net/problem/codeforces-1141F2)
-	- codeforces/559B: [name](https://vjudge.net/problem/codeforces-559B)
 # mathematics
 - basic
 	- codeforces/624A: [save luke](https://vjudge.net/problem/codeforces-624A)

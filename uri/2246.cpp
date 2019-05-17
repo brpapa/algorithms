@@ -1,5 +1,5 @@
 /*
-   ad-hoc | path
+   division and conquest | path
    problem: tiles
 */
 #include <iostream>
