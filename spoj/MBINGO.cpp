@@ -1,5 +1,5 @@
 /*
-   ad-hoc | linear seach
+   ad-hoc | linear search
    problem: bingo!
 */
 #include <iostream>

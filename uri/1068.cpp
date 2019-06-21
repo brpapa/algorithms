@@ -1,5 +1,5 @@
 /*
-   stack | basic
+   ad-hoc | stack
    problem: parenthesis balance I
 */
 #include <iostream>

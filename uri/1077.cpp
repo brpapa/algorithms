@@ -1,5 +1,5 @@
 /*
-   stack | basic
+   ad-hoc | stack
    problem: infix to posfix
 */
 #include <iostream>

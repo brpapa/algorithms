@@ -1,15 +1,15 @@
 /*
-   dynamic programming | mininum path
+   dynamic programming | minimum path
    problem: unidirectional TSP
 */
 #include <iostream>
 #include <queue>
 #include <cstring>
 #define INF 2147483647
-#define min(a, b) ((a) < (b) ? (a) : (b))
-#define min3(a, b, c) ((a) < (b) ? min(a, c) : min(b, c))
+#define min(a, b) ((a)<(b) ? (a):(b))
+#define min3(a, b, c) ((a)<(b) ? min(a, c):min(b, c))
 //reescreve n, caso tenha extrapolado os limites 0 e sup-1
-#define adj(n, sup) ((n) < (0)? (sup-1):((n) > (sup-1)? (0):(n)))
+#define adj(n, sup) ((n)<(0)? (sup-1):((n)%(sup)))
 #define maxLIN 10
 #define maxCOL 100
 using namespace std;

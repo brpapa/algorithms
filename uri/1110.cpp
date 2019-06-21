@@ -1,5 +1,5 @@
 /*
-   queue | basic
+   ad-hoc | queue
    problem: throwing cards away
 */
 #include <iostream>

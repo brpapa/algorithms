@@ -1,5 +1,5 @@
 /*
-   stack | basic
+   ad-hoc | stack
    problem: diamonds and sand
 */
 #include <iostream>

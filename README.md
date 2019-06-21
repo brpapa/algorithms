@@ -1,11 +1,14 @@
 # ad-hoc
 - basic
+	- codeforces/1033A: [king escape](https://vjudge.net/problem/codeforces-1033A)
+	- codeforces/686A: [free ice cream](https://vjudge.net/problem/codeforces-686A)
 	- uri/1091: [division of nlogonia](https://www.urionlinejudge.com.br/judge/problems/view/1091)
 	- uri/1217: [getline two-fruits](https://www.urionlinejudge.com.br/judge/problems/view/1217)
 	- uri/1253: [caesar cipher](https://www.urionlinejudge.com.br/judge/problems/view/1253)
 	- uri/1285: [different digits](https://www.urionlinejudge.com.br/judge/problems/view/1285)
 	- uri/1300: [hours and minutes](https://www.urionlinejudge.com.br/judge/problems/view/1300)
 	- uri/1318: [fake tickets](https://www.urionlinejudge.com.br/judge/problems/view/1318)
+	- uri/1340: [i can guess the data structure!](https://www.urionlinejudge.com.br/judge/problems/view/1340)
 	- uri/1342: [dice](https://www.urionlinejudge.com.br/judge/problems/view/1342)
 	- uri/1438: [unloading boxes](https://www.urionlinejudge.com.br/judge/problems/view/1438)
 	- uri/1548: [canteen queue](https://www.urionlinejudge.com.br/judge/problems/view/1548)
@@ -18,12 +21,23 @@
 	- uri/2884: [interrupter](https://www.urionlinejudge.com.br/judge/problems/view/2884)
 - bitwise operator
 	- uri/1026: [to carry or not to carry](https://www.urionlinejudge.com.br/judge/problems/view/1026)
-- linear seach
+- linear search
 	- spoj/MBINGO: [bingo!](https://vjudge.net/problem/spoj-MBINGO)
+- priority queue (minimum value on front)
+	- uva/10954: [add all](https://vjudge.net/problem/uva-10954)
+- queue
+	- uri/1110: [throwing cards away](https://www.urionlinejudge.com.br/judge/problems/view/1110)
+	- uri/2065: [supermarket line](https://www.urionlinejudge.com.br/judge/problems/view/2065)
 - set
 	- uri/1901: [butterflies](https://www.urionlinejudge.com.br/judge/problems/view/1901)
 - sort
 	- uri/1766: [the dark elf](https://www.urionlinejudge.com.br/judge/problems/view/1766)
+- stack
+	- spoj/STACKEZ: [easy stack](https://vjudge.net/problem/spoj-STACKEZ)
+	- uri/1063: [rails again... tracing movements](https://www.urionlinejudge.com.br/judge/problems/view/1063)
+	- uri/1068: [parenthesis balance I](https://www.urionlinejudge.com.br/judge/problems/view/1068)
+	- uri/1069: [diamonds and sand](https://www.urionlinejudge.com.br/judge/problems/view/1069)
+	- uri/1077: [infix to posfix](https://www.urionlinejudge.com.br/judge/problems/view/1077)
 # backtracking
 - all permutations
 	- spoj/BTCK: [a problem of backtracking](https://vjudge.net/problem/spoj-BTCK)
@@ -45,8 +59,12 @@
 	- codeforces/313B: [ilya and queries](https://vjudge.net/problem/codeforces-313B)
 - minimax
 	- uva/12484: [cards](https://vjudge.net/problem/uva-12484)
-- mininum path
+- minimum path
 	- uva/116: [unidirectional TSP](https://vjudge.net/problem/uva-116)
+# geometry
+- basic
+	- codeforces/157B: [trace](https://vjudge.net/problem/codeforces-157B)
+	- uva/10310: [dog and gopher](https://vjudge.net/problem/uva-10310)
 # graph
 - basic
 	- uri/1076: [design labirints](https://www.urionlinejudge.com.br/judge/problems/view/1076)
@@ -60,6 +78,10 @@
 - depth first search (DFS)
 	- codeforces/902B: [coloring a tree](https://vjudge.net/problem/codeforces-902B)
 	- uri/1322: [kids' wishes](https://www.urionlinejudge.com.br/judge/problems/view/1322)
+- minimum path (dijkstra)
+	- uri/1123: [route change](https://www.urionlinejudge.com.br/judge/problems/view/1123)
+	- uri/1148: [countries at war](https://www.urionlinejudge.com.br/judge/problems/view/1148)
+	- uri/2566: [trip to bh](https://www.urionlinejudge.com.br/judge/problems/view/2566)
 # greedy
 - basic
 	- spoj/BUSYMAN: [i am very busy](https://vjudge.net/problem/spoj-BUSYMAN)
@@ -72,24 +94,17 @@
 - stack and queue
 	- spoj/STPAR: [street parade](https://vjudge.net/problem/spoj-STPAR)
 # mathematics
+- all divisors
+	- uri/2291: [divine numbers](https://www.urionlinejudge.com.br/judge/problems/view/2291)
 - basic
 	- codeforces/624A: [save luke](https://vjudge.net/problem/codeforces-624A)
 	- spoj/AE00: [rectangles](https://vjudge.net/problem/spoj-AE00)
 	- spoj/PRIONPRI: [prime or not prime!](https://vjudge.net/problem/spoj-PRIONPRI)
 	- uri/1323: [feynman](https://www.urionlinejudge.com.br/judge/problems/view/1323)
-# queue
-- basic
-	- uri/1110: [throwing cards away](https://www.urionlinejudge.com.br/judge/problems/view/1110)
-	- uri/2065: [supermarket line](https://www.urionlinejudge.com.br/judge/problems/view/2065)
-- priority queue (minimum value on front)
-	- uva/10954: [add all](https://vjudge.net/problem/uva-10954)
-# stack
-- basic
-	- spoj/STACKEZ: [easy stack](https://vjudge.net/problem/spoj-STACKEZ)
-	- uri/1063: [rails again... tracing movements](https://www.urionlinejudge.com.br/judge/problems/view/1063)
-	- uri/1068: [parenthesis balance I](https://www.urionlinejudge.com.br/judge/problems/view/1068)
-	- uri/1069: [diamonds and sand](https://www.urionlinejudge.com.br/judge/problems/view/1069)
-	- uri/1077: [infix to posfix](https://www.urionlinejudge.com.br/judge/problems/view/1077)
+- common maximum divisor
+	- uri/1028: [collectable cards](https://www.urionlinejudge.com.br/judge/problems/view/1028)
+- simple combination
+	- uri/1694: [lottery](https://www.urionlinejudge.com.br/judge/problems/view/1694)
 # substring search
 - basic
 	- spoj/TESSER: [finding the tesserect](https://vjudge.net/problem/spoj-TESSER)

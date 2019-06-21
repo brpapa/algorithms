@@ -6,11 +6,6 @@
 #include <vector>
 using namespace std;
 
-int prox(int i, int max) {
-   if (i == max - 1)
-      return 0;
-   return ++i;
-}
 int main() {
    int qteJogadores, n, tamTrilha, arm[3], d1, d2, ans;
    bool ngmJogou;
@@ -42,7 +37,7 @@ int main() {
                   ans = j+1; //vencedor
                ngmJogou = false;
             }
-            j = prox(j, qteJogadores);
+            j = (++j)%qteJogadores;
          }
       }
       cout << ans << endl;

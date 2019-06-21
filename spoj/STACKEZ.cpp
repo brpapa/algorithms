@@ -1,5 +1,5 @@
 /*
-   stack | basic
+   ad-hoc | stack
    problem: easy stack
 */
 #include <iostream>

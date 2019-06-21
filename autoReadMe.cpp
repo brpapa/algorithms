@@ -15,12 +15,12 @@
 #define value second
 using namespace std;
 
-typedef struct {
+struct Tex {
    string name, judge, arq, url;
-} Tex;
-typedef struct {
+};
+struct Treg {
    map<string, vector<Tex> > what;
-} Treg;
+};
 
 int main() {
    string aux, judge[4] = {
@@ -84,17 +84,15 @@ int main() {
 
 
    ofstream arq("README.md");
-   map<string, Treg>::iterator itC; //map cont
-   map<string, vector<Tex> >::iterator itW; //map what
    //sobrescreve README.md
-   for (itC = cont.begin(); itC != cont.end(); itC++) {
-      if (itC->key == "theme") //não categorizado
+   for (auto c: cont) {
+      if (c.key == "theme") //não categorizado
          continue;
-      arq << "# " << itC->key << endl;
+      arq << "# " << c.key << endl;
 
-      for (itW = itC->value.what.begin(); itW != itC->value.what.end(); itW++) {
-         arq << "- " << itW->key << endl;
-         vector<Tex> aux = itC->value.what[itW->key];
+      for (auto w: c.value.what) {
+         arq << "- " << w.key << endl;
+         vector<Tex> aux = c.value.what[w.key];
 
          //para cada exercício
          for (int i = 0; i < aux.size(); i++) {
