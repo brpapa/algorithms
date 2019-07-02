@@ -1,5 +1,5 @@
 /*
-   ad-hoc | basic
+   ad-hoc
    problem: canteen queue
 */
 #include <iostream>

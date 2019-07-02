@@ -1,5 +1,5 @@
 /*
-   backtracking | path
+   backtracking | all paths
    problem: spiky mazes
 */
 #include <iostream>

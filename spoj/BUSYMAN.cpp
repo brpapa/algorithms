@@ -1,5 +1,5 @@
 /*
-   greedy | basic
+   greedy
    problem: i am very busy
 */
 #include <iostream>

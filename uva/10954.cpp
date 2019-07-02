@@ -1,5 +1,5 @@
 /*
-   ad-hoc | priority queue (minimum value on front)
+   ad-hoc | minimum priority queue
    problem: add all
 */
 #include <iostream>

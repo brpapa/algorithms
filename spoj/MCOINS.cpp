@@ -1,5 +1,5 @@
 /*
-   dynamic programming | basic
+   dynamic programming
    problem: name
 */
 #include <iostream>

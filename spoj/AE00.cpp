@@ -1,5 +1,5 @@
 /*
-   mathematics | basic
+   mathematics
    problem: rectangles
 */
 #include <iostream>

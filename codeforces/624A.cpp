@@ -1,5 +1,5 @@
 /*
-   mathematics | basic
+   mathematics
    problem: save luke
 */
 #include <iostream>

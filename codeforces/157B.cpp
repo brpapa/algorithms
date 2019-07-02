@@ -1,5 +1,5 @@
 /*
-   geometry | basic
+   geometry
    problem: trace
 */
 #include <iostream>

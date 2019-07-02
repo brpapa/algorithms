@@ -1,5 +1,5 @@
 /*
-   ad-hoc | basic
+   ad-hoc
    problem: i can guess the data structure!
 */
 #include <iostream>

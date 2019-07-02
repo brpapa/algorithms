@@ -1,5 +1,5 @@
 /*
-   substring search | basic
+   substring search
    problem: finding the tesserect
 */
 #include <iostream>

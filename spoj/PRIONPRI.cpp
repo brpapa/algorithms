@@ -1,5 +1,5 @@
 /*
-   mathematics | basic
+   mathematics | prime
    problem: prime or not prime!
 */
 #include <iostream>

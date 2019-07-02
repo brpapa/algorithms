@@ -1,5 +1,5 @@
 /*
-   mathematics | basic
+   mathematics
    problem: feynman
 */
 #include <iostream>

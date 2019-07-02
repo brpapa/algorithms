@@ -1,5 +1,5 @@
 /*
-   ad-hoc | basic
+   ad-hoc
    problem: unraveling monty hall
 */
 #include <iostream>

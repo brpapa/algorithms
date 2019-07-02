@@ -1,5 +1,5 @@
 /*
-   geometry | basic
+   geometry
    problem: dog and gopher
 */
 #include <iostream>

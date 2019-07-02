@@ -1,5 +1,5 @@
 /*
-   greedy | basic
+   greedy
    problem: the club ballroom
 */
 #include <iostream>

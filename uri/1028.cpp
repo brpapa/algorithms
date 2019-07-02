@@ -1,15 +1,15 @@
 /*
-   mathematics | common maximum divisor
+   mathematics | greatest common divisor
    problem: collectable cards
 */
 #include <iostream>
 using namespace std;
 
 //algoritmo de euclides
-int mdc(int a, int b) {
+int gcd(int a, int b) {
    if (a == 0)
       return b;
-   return mdc(b%a, a);
+   return gcd(b%a, a);
 }
 
 int main() {
@@ -17,7 +17,7 @@ int main() {
    scanf("%d", &n);
    while (n--) {
       scanf("%d %d", &a, &b);
-      printf("%d\n", mdc(a, b));
+      printf("%d\n", gcd(a, b));
    }
    return 0;
 }

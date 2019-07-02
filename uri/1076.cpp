@@ -1,5 +1,5 @@
 /*
-   graph | basic
+   graph
    problem: design labirints
 */
 #include <iostream>

@@ -1,5 +1,5 @@
 /*
-   greedy | basic
+   greedy
    problem: palindrome lover
 */
 #include <iostream>
