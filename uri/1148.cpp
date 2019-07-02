@@ -1,5 +1,5 @@
 /*
-   graph | minimum path (dijkstra)
+   graph | minimum path | dijkstra
    problem: countries at war
 */
 #include <iostream>

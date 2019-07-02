@@ -62,7 +62,7 @@
 	- [codeforces/702A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702A.cpp): [maximum increase](https://vjudge.net/problem/codeforces-702A)
 - **minimax**
 	- [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): [cards](https://vjudge.net/problem/uva-12484)
-- **minimum path**
+- **minimum sum**
 	- [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp): [unidirectional TSP](https://vjudge.net/problem/uva-116)
 # geometry
 - [codeforces/157B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157B.cpp): [trace](https://vjudge.net/problem/codeforces-157B)
@@ -75,16 +75,15 @@
 	- [uri/1200](https://github.com/brnpapa/judge-solutions/blob/master/uri/1200.cpp): [bst operations I](https://www.urionlinejudge.com.br/judge/problems/view/1200)
 	- [uri/1215](https://github.com/brnpapa/judge-solutions/blob/master/uri/1215.cpp): [andy's first dictionary](https://www.urionlinejudge.com.br/judge/problems/view/1215)
 - **breadth first search (BFS)**
-	- **test**
-		- **uhu**
-			- [uri/1799](https://github.com/brnpapa/judge-solutions/blob/master/uri/1799.cpp): [the rat in a maze](https://www.urionlinejudge.com.br/judge/problems/view/1799)
+	- [uri/1799](https://github.com/brnpapa/judge-solutions/blob/master/uri/1799.cpp): [the rat in a maze](https://www.urionlinejudge.com.br/judge/problems/view/1799)
 - **depth first search (DFS)**
 	- [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp): [coloring a tree](https://vjudge.net/problem/codeforces-902B)
 	- [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp): [kids' wishes](https://www.urionlinejudge.com.br/judge/problems/view/1322)
-- **minimum path (dijkstra)**
-	- [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): [route change](https://www.urionlinejudge.com.br/judge/problems/view/1123)
-	- [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): [countries at war](https://www.urionlinejudge.com.br/judge/problems/view/1148)
-	- [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp): [trip to bh](https://www.urionlinejudge.com.br/judge/problems/view/2566)
+- **minimum path**
+	- **dijkstra**
+		- [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): [route change](https://www.urionlinejudge.com.br/judge/problems/view/1123)
+		- [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): [countries at war](https://www.urionlinejudge.com.br/judge/problems/view/1148)
+		- [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp): [trip to bh](https://www.urionlinejudge.com.br/judge/problems/view/2566)
 # greedy
 - [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): [i am very busy](https://spoj.com/problems/BUSYMAN)
 - [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): [palindrome lover](https://spoj.com/problems/PL)

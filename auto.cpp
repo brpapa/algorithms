@@ -1,3 +1,4 @@
+// exercício resolvido: git add judge/ex.cpp && ./auto
 // header padrão de todo .cpp, sem subtópicos idênticos:
 /*
    theme | topic1 | topic2
@@ -69,7 +70,7 @@ void readAllCppFilesTrackedOnGit() {
    ifstream in("tmp.bat");
    while (!in.eof()) {
       getline(in, line);
-      if (line.find(".cpp") == string::npos || line == "autoReadMe.cpp")
+      if (line.find(".cpp") == string::npos || line == "auto.cpp")
          continue; //line não contém ".cpp"
 
       int b = line.find("/"), p = line.find(".");

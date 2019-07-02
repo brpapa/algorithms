@@ -1,5 +1,5 @@
 /*
-   dynamic programming | minimum path
+   dynamic programming | minimum sum
    problem: unidirectional TSP
 */
 #include <iostream>
