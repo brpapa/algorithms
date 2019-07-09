@@ -1,6 +1,7 @@
 /*
-   mathematics
+   number teory
    problem: save luke
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

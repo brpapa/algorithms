@@ -1,6 +1,7 @@
 /*
-   ad-hoc | stack
+   data structures | stack
    problem: easy stack
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

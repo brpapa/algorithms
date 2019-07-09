@@ -1,5 +1,5 @@
 /*
-   mathematics | greatest common divisor
+   number teory | greatest common divisor (GCD)
    problem: collectable cards
 */
 #include <iostream>

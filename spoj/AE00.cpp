@@ -1,6 +1,7 @@
 /*
-   mathematics
+   number teory
    problem: rectangles
+   author: @brnpapa
 */
 #include <iostream>
 #include <queue>

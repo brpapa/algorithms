@@ -1,5 +1,5 @@
 /*
-   mathematics | all divisors
+   number teory | all divisors
    problem: divine numbers
 */
 #include <iostream>

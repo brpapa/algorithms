@@ -1,5 +1,5 @@
 /*
-   mathematics | simple combination
+   combinatorics | simple combination
    problem: lottery
 */
 #include <iostream>

@@ -1,5 +1,5 @@
 /*
-   mathematics
+   number teory
    problem: feynman
 */
 #include <iostream>

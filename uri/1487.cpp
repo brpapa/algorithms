@@ -1,5 +1,5 @@
 /*
-   dynamic programming | knapsack 
+   dynamic programming | knapsack
    problem: six flags
 */
 #include <iostream>

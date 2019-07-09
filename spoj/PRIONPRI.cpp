@@ -1,12 +1,13 @@
 /*
-   mathematics | prime
+   number teory | prime numbers
    problem: prime or not prime!
+   author: @brnpapa
 */
 #include <iostream>
 #include <math.h>
 using namespace std;
 
-bool ehPrimo(int n) {
+bool isPrime(int n) {
    for (int i = 2; i <= sqrt(n); i++)
       if (n % i == 0)
          return false;
@@ -18,7 +19,7 @@ int main() {
    cin >> t;
    for (int i = 0; i < t; i++) {
       cin >> tmp;
-      printf("%s\n", ehPrimo(tmp) ? "YES" : "NO");
+      printf("%s\n", isPrime(tmp) ? "YES" : "NO");
    }
    return 0;
 }

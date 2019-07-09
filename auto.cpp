@@ -27,6 +27,7 @@ void initJudgeURLs() {
    url["uri"] = "https://www.urionlinejudge.com.br/judge/problems/view/";
    url["uva"] = "https://vjudge.net/problem/uva-";
    url["leetcode"] = "https://leetcode.com/problems/";
+   url["hacker-rank"] = "https://www.hackerrank.com/challenges/";
 }
 
 void separateTopics(string line, vector<string> &topics) {

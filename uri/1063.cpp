@@ -1,5 +1,5 @@
 /*
-   ad-hoc | stack
+   data structures | stack
    problem: rails again... tracing movements
 */
 #include <iostream>

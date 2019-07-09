@@ -1,5 +1,5 @@
 /*
-   ad-hoc | set
+   data structures | set
    problem: butterflies
 */
 #include <iostream>
