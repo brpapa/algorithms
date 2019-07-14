@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: dice
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

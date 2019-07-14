@@ -1,6 +1,7 @@
 /*
    graph | minimum path | dijkstra
    problem: countries at war
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    substring search
    problem: finding the tesserect
+   author: @brnpapa
 */
 #include <iostream>
 #include <string>

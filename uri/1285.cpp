@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: different digits
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: division of nlogonia
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

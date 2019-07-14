@@ -1,6 +1,7 @@
 /*
    greedy | coins
    problem: hit the lottery
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

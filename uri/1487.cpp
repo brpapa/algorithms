@@ -1,6 +1,7 @@
 /*
    dynamic programming | knapsack
    problem: six flags
+   author: @brnpapa
 */
 #include <iostream>
 #include <cstring> //memset

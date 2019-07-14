@@ -1,6 +1,7 @@
 /*
    backtracking | all permutations
    problem: a problem of backtracking
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

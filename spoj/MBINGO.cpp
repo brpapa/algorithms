@@ -1,6 +1,7 @@
 /*
    ad-hoc | linear search
    problem: bingo!
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    greedy
    problem: the club ballroom
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

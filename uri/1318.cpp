@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: fake tickets
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

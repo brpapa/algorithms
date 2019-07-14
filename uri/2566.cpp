@@ -1,6 +1,7 @@
 /*
    graph | minimum path | dijkstra
    problem: trip to bh
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

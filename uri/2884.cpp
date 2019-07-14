@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: interrupter
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    graph | breadth first search (BFS)
    problem: the rat in a maze
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

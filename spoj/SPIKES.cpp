@@ -1,6 +1,7 @@
 /*
    backtracking | all paths
    problem: spiky mazes
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

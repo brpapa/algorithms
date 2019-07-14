@@ -1,6 +1,7 @@
 /*
-   number teory | all divisors
+   number theory | all divisors
    problem: divine numbers
+   author: @brnpapa
 */
 #include <iostream>
 #include <cstring>
@@ -9,6 +10,7 @@ using namespace std;
 
 long long somaTodosDiv[MAX];
 
+//semelhante ao crivo de erastótenes, mas sem fatores primos
 void preprocess() {
    memset(somaTodosDiv, 0, sizeof(somaTodosDiv));
 

@@ -1,6 +1,7 @@
 /*
    dynamic programming | maximum non-adjacent sum
    problem: house-robber
+   author: @brnpapa
 */
 #include <vector>
 #include <cstring>

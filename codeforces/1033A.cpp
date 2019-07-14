@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: king escape
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

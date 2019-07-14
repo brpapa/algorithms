@@ -1,6 +1,7 @@
 /*
    dynamic programming | maximum subsequence
    problem: ilya and queries
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

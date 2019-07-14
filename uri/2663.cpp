@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: phase
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

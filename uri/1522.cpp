@@ -1,6 +1,7 @@
 /*
    backtracking | all permutations
    problem: stack game
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

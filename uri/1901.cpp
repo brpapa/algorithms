@@ -1,6 +1,7 @@
 /*
    data structures | set
    problem: butterflies
+   author: @brnpapa
 */
 #include <iostream>
 #include <set>

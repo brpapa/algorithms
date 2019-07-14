@@ -3,6 +3,7 @@
 /*
    theme | topic1 | topic2
    problem: name
+   author: @brnpapa
 */
 #include <iostream>
 #include <fstream>

@@ -1,5 +1,5 @@
 /*
-   number teory | prime numbers | sieve of eratosthenes
+   number theory | prime numbers | sieve of eratosthenes
    problem: distinct primes
    author: @brnpapa
 */

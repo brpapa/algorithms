@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: free ice cream
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

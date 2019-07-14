@@ -1,6 +1,7 @@
 /*
-   number teory | greatest common divisor (GCD)
+   number theory | greatest common divisor (GCD)
    problem: collectable cards
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

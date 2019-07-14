@@ -1,6 +1,7 @@
 /*
    greedy
    problem: i am very busy
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: i can guess the data structure!
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

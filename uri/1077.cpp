@@ -1,6 +1,7 @@
 /*
    data structures | stack
    problem: infix to posfix
+   author: @brnpapa
 */
 #include <iostream>
 #include <string>

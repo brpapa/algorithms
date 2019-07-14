@@ -1,6 +1,7 @@
 /*
    graph | binary search tree (BST)
    problem: andy's first dictionary
+   author: @brnpapa
 */
 #include <iostream>
 #include <ctype.h>

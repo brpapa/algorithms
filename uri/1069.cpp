@@ -1,6 +1,7 @@
 /*
    data structures | stack
    problem: diamonds and sand
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

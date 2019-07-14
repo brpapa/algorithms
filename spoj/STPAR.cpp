@@ -1,6 +1,7 @@
 /*
    greedy | stack and queue
    problem: street parade
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

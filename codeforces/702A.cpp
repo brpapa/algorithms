@@ -1,6 +1,7 @@
 /*
    greedy | maximum subsequence
    problem: maximum increase
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

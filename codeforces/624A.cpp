@@ -1,5 +1,5 @@
 /*
-   number teory
+   number theory
    problem: save luke
    author: @brnpapa
 */

@@ -1,6 +1,7 @@
 /*
    graph | depth first search (DFS)
    problem: kids' wishes
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

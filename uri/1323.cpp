@@ -1,6 +1,7 @@
 /*
-   number teory
+   number theory
    problem: feynman
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

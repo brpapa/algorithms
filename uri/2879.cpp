@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: unraveling monty hall
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

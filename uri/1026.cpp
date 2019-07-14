@@ -1,6 +1,7 @@
 /*
    ad-hoc | bitwise operator
    problem: to carry or not to carry
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

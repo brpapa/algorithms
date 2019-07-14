@@ -1,6 +1,7 @@
 /*
    data structures | stack
    problem: rails again... tracing movements
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

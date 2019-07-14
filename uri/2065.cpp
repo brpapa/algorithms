@@ -1,6 +1,7 @@
 /*
    data structures | queue
    problem: supermarket line
+   author: @brnpapa
 */
 #include <iostream>
 #include <queue>

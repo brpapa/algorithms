@@ -1,6 +1,7 @@
 /*
    greedy
    problem: palindrome lover
+   author: @brnpapa
 */
 #include <iostream>
 #include <string>

@@ -1,6 +1,7 @@
 /*
    ad-hoc | hard
    problem: colorful cubes
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

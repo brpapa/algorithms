@@ -1,6 +1,7 @@
 /*
    division and conquest | path
    problem: tiles
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

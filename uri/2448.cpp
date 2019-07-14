@@ -1,6 +1,7 @@
 /*
    division and conquest | binary search
    problem: postman
+   author: @brnpapa
 */
 #include <iostream>
 #include <queue>

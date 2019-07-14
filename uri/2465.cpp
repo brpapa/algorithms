@@ -1,6 +1,7 @@
 /*
    division and conquest | path
    problem: pass the ball
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

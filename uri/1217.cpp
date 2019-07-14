@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: getline two-fruits
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

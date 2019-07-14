@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: huaauhahhuahau
+   author: @brnpapa
 */
 #include <iostream>
 #include <string>

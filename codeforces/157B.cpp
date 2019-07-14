@@ -1,6 +1,7 @@
 /*
    geometry
    problem: trace
+   author: @brnpapa
 */
 #include <iostream>
 #include <cmath>

@@ -1,6 +1,7 @@
 /*
    substring search | knuth-morris-pratt (KMP)
    problem: musical plagiarism
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

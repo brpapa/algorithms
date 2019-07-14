@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: unloading boxes
+   author: @brnpapa
 */
 #include <iostream>
 #define MAX 1000

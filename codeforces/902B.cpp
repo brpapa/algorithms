@@ -1,6 +1,7 @@
 /*
    graph | depth first search (DFS)
    problem: coloring a tree
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

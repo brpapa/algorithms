@@ -1,6 +1,7 @@
 /*
    data structures | stack
    problem: parenthesis balance I
+   author: @brnpapa
 */
 #include <iostream>
 #include <stack>

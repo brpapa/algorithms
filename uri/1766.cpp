@@ -1,6 +1,7 @@
 /*
    ad-hoc | sort
    problem: the dark elf
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: canteen queue
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

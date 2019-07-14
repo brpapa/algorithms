@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: hours and minutes
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;

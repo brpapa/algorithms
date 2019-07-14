@@ -1,6 +1,7 @@
 /*
    graph
    problem: design labirints
+   author: @brnpapa
 */
 #include <iostream>
 #include <vector>

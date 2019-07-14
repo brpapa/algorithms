@@ -1,6 +1,7 @@
 /*
    ad-hoc
    problem: caesar cipher
+   author: @brnpapa
 */
 #include <iostream>
 #include <string>

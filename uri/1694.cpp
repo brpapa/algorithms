@@ -1,17 +1,19 @@
 /*
-   combinatorics | simple combination
+   combinatorics | combination
    problem: lottery
+   author: @brnpapa
 */
 #include <iostream>
 #include <cstring>
 using namespace std;
 
-long long int coefBinomial[64][16]; //coefBinomial[i][j] = qte de possibilidades de escolher j elementos de um conjunto de i elementos (ordem não importa e j <= i)
+//coefBinomial[i][j] = qte de possibilidades de escolher j elementos de um conjunto de i elementos (ordem não importa e j <= i)
+long long int coefBinomial[64][16]; 
 bool ehPrimo[2501];
 
 int qteNaoPrimosLinha[50], qteNaoPrimosColuna[50];
 
-//gera todos coeficientes binomiais
+//gera todos coeficientes binomiais (comb. simples)
 void trianguloPascal(int n) {
    for (int i = 0; i <= n; i++)
       for (int j = 0; j <= min(i, 10); j++) { //pois 1 <= k <= 10
@@ -22,7 +24,7 @@ void trianguloPascal(int n) {
       }
 }
 //gera todos primos
-void crivoErastotenes(int lim) {
+void sieve(int lim) {
    memset(ehPrimo, true, sizeof(ehPrimo));
    ehPrimo[0] = ehPrimo[1] = false;
 
@@ -35,7 +37,7 @@ void crivoErastotenes(int lim) {
 int main() {
    int qteLin, qteCol, k;
    trianguloPascal(50);
-   crivoErastotenes(2500);
+   sieve(2500);
 
    while (true) {
       scanf("%d %d %d", &qteLin, &qteCol, &k);

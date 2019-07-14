@@ -1,6 +1,7 @@
 /*
    graph | binary search tree (BST)
    problem: bst operations I
+   author: @brnpapa
 */
 #include <iostream>
 using namespace std;
