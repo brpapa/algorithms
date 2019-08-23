@@ -1,6 +1,7 @@
 /*
    dynamic programming | minimum sum
    problem: unidirectional TSP
+   author: @brnpapa
 */
 #include <iostream>
 #include <queue>
@@ -15,7 +16,8 @@
 using namespace std;
 
 int m[maxLIN][maxCOL], memo[maxLIN][maxCOL];
-int ans[maxCOL];
+int ans[maxCOL]; //ans[i] = linha do melhor caminho na coluna i
+int qteLIN, qteCOL;
 
 //implementação bottom-up, pois com top-down precisaria chamar a função para todas 
 //as linhas da coluna 0 para que memo seja preenchido completamente, antes de preencher ans
@@ -32,10 +34,11 @@ void dp(int qteLIN, int qteCOL) {
             memo[i][j+1],
             memo[adj(i+1, qteLIN)][j+1]
          );
+}
 
-
-   //preenche ans com a linha do caminho mínimo, onde o índice representa a coluna
+void recover() {
    int minAux = INF;
+
    //coluna 0
    for (int i = 0; i < qteLIN; i++)
       if (memo[i][0] < minAux) {
@@ -63,7 +66,6 @@ void dp(int qteLIN, int qteCOL) {
 }
 
 int main() {
-   int qteLIN, qteCOL;
    while (scanf("%d %d", &qteLIN, &qteCOL) != EOF) {
       memset(memo, -1, sizeof(memo));
       for (int i = 0; i < qteLIN; i++)
@@ -71,6 +73,8 @@ int main() {
             scanf("%d", &m[i][j]);
 
       dp(qteLIN, qteCOL);
+      recover(); //gera ans
+
       for (int j = 0; j < qteCOL-1; j++)
          printf("%d ", ans[j]+1);
       printf("%d\n%d\n", ans[qteCOL-1]+1, memo[ans[0]][0]);

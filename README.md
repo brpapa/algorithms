@@ -57,6 +57,7 @@
 	- [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): [pass the ball](https://www.urionlinejudge.com.br/judge/problems/view/2465)
 # dynamic programming
 - **knapsack**
+	- [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp): [the knapsack problem](https://spoj.com/problems/KNAPSACK)
 	- [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp): [six flags](https://www.urionlinejudge.com.br/judge/problems/view/1487)
 - **maximum non-adjacent sum**
 	- [leetcode/house-robber](https://github.com/brnpapa/judge-solutions/blob/master/leetcode/house-robber.cpp): [house-robber](https://leetcode.com/problems/house-robber)
