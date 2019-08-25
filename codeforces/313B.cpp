@@ -1,5 +1,5 @@
 /*
-   dynamic programming | maximum subsequence
+   greedy | maximum subsequence
    problem: ilya and queries
    author: @brnpapa
 */

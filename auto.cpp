@@ -91,7 +91,7 @@ void processNode(string node, int level) {
       return;
 
    if (level == 1)
-      out << "# " << node << endl;
+      out << "## " << node << endl;
    else {
       for (int i = 0; i < level-2; i++)
          out << "\t";
@@ -122,9 +122,15 @@ void dfs(string init) {
    }
 }
 
+void writeHeader() {
+   out << "# Themes" << endl;
+}
+
 int main() {
    initJudgeURLs();
    readAllCppFilesTrackedOnGit();
+
+   writeHeader();
    dfs("root");
 
    out.close();
