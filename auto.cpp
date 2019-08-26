@@ -1,3 +1,5 @@
+// script para gerar automaticamente README.md
+
 // nunca definir subtópicos idênticos de temas diferentes!
 // header padrão de todo .cpp:
 /*
@@ -19,9 +21,21 @@ map<string, set<string, greater<string> > > graph;
 //por default um set armazena em ordem crescente
 //template: set<key, compare = less<key>, allocator = allocator<key>>
 
-map<string, string> url; //const
-ofstream out("README.md");
+map<string, string> url;
+ofstream out("README.md"); //overwrite README.md
 
+string insertBefore(string a, char b, char c) {
+   //insere c antes de b em a
+
+   string r;
+   for (int i = 0; i < a.size(); i++) {
+      if (a[i] == b)
+         r.push_back(c);
+
+      r.push_back(a[i]);
+   }
+   return r;
+}
 void initJudgeURLs() {
    url["codeforces"] = "https://vjudge.net/problem/codeforces-";
    url["spoj"] = "https://spoj.com/problems/";
@@ -85,7 +99,6 @@ void readAllCppFilesTrackedOnGit() {
    system("rm -f tmp.bat");
 }
 
-//overwrite README.md
 void processNode(string node, int level) {
    if (node == "root")
       return;
@@ -130,7 +143,9 @@ void writeHeader() {
       themes.push(u);
 
    while (!themes.empty()) {
-      out << "[" + themes.top() + "](#" + themes.top() + ")" << endl;
+      string link = insertBefore(themes.top(), ' ', '\\');
+
+      out << "- [" + themes.top() + "](#" + link + ")\t" << endl;
       themes.pop();
    }
 }
