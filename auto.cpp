@@ -24,15 +24,14 @@ map<string, set<string, greater<string> > > graph;
 map<string, string> url;
 ofstream out("README.md"); //overwrite README.md
 
-string insertBefore(string a, char b, char c) {
-   //insere c antes de b em a
+string replaceCh(string a, char b, char c) {
+   //substitui b por c em a
 
    string r;
    for (int i = 0; i < a.size(); i++) {
       if (a[i] == b)
          r.push_back(c);
-
-      r.push_back(a[i]);
+      else r.push_back(a[i]);
    }
    return r;
 }
@@ -143,7 +142,7 @@ void writeHeader() {
       themes.push(u);
 
    while (!themes.empty()) {
-      string link = insertBefore(themes.top(), ' ', '\\');
+      string link = replaceCh(themes.top(), ' ', '-');
 
       out << "- [" + themes.top() + "](#" + link + ")\t" << endl;
       themes.pop();
