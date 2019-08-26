@@ -11,19 +11,21 @@ int weight[101], value[101]; //tempo e pontos
 int memo[601][101];
 
 //obs: pode colocar o mesmo valor mais de uma vez
-int ksTD(int w, int n) {
-   if (memo[w][n] != -1)
-      return memo[w][n];
-   
-   if (w == 0 || n == 0) //capacidade ou qte de itens nula
-      return memo[w][n] = 0;
+int ksTD(int i, int w) {
+   //estado: item i, capacidade disponível w
 
-   if (weight[n-1] > w) //peso do item já é maior que o limite
-      return memo[w][n] = ksTD(w, n-1);
+   if (i == -1)
+      return 0;
 
-   return memo[w][n] = max(
-      ksTD(w, n-1),                         //não adiciona item e o retira
-      value[n-1] + ksTD(w - weight[n-1], n) //adiciona item e não o retira
+   int &m = memo[w][i];
+   if (m != -1) return m;
+
+   if (weight[i] > w) //peso do item já é maior que o limite
+      return m = ksTD(i-1, w);
+
+   return m = max(
+      ksTD(i-1, w),                     //não adiciona item e o retira
+      value[i] + ksTD(i, w - weight[i]) //adiciona item e não o retira
    );
 }
 
@@ -40,7 +42,7 @@ int main() {
          scanf("%d %d", &weight[i], &value[i]);
 
       printf("Instancia %d\n", h);
-      printf("%d\n\n", ksTD(tempoMax, qteAtracoes));
+      printf("%d\n\n", ksTD(qteAtracoes-1, tempoMax));
    }
    return 0;
 }

@@ -1,7 +1,7 @@
-// exercício resolvido: git add judge/ex.cpp && ./auto
-// header padrão de todo .cpp, sem subtópicos idênticos:
+// nunca definir subtópicos idênticos de temas diferentes!
+// header padrão de todo .cpp:
 /*
-   theme | topic1 | topic2
+   theme | subtopic1 | subtopic2
    problem: name
    author: @brnpapa
 */
@@ -123,7 +123,16 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "# Themes" << endl;
+   out << "# Solutions by theme" << endl;
+
+   stack<string> themes;
+   for (string u : graph["root"])
+      themes.push(u);
+
+   while (!themes.empty()) {
+      out << "[" + themes.top() + "](#" + themes.top() + ")" << endl;
+      themes.pop();
+   }
 }
 
 int main() {

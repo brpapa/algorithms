@@ -1,8 +1,13 @@
 .DS_Store
 .vscode
+
 e
-md
-input
-output
+auto
+
+data.in
+data.out
+
+-pc
 template.h
-programação\ competitiva\ I\ \[pc\]
+guide.md
+notes.md

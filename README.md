@@ -1,4 +1,15 @@
-# Themes
+# Solutions by theme
+[ad-hoc](#ad-hoc)
+[backtracking](#backtracking)
+[combinatorics](#combinatorics)
+[data structures](#data structures)
+[division and conquest](#division and conquest)
+[dynamic programming](#dynamic programming)
+[geometry](#geometry)
+[graph](#graph)
+[greedy](#greedy)
+[number theory](#number theory)
+[substring search](#substring search)
 ## ad-hoc
 - [codeforces/1033A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033A.cpp): [king escape](https://vjudge.net/problem/codeforces-1033A)
 - [codeforces/686A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686A.cpp): [free ice cream](https://vjudge.net/problem/codeforces-686A)
@@ -59,6 +70,8 @@
 ## dynamic programming
 - **coin change**
 	- [uva/674](https://github.com/brnpapa/judge-solutions/blob/master/uva/674.cpp): [coin change](https://vjudge.net/problem/uva-674)
+- **edit distance**
+	- [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp): [edit distante](https://spoj.com/problems/EDIST)
 - **knapsack**
 	- [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp): [the knapsack problem](https://spoj.com/problems/KNAPSACK)
 	- [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp): [six flags](https://www.urionlinejudge.com.br/judge/problems/view/1487)
