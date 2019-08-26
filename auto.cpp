@@ -144,7 +144,7 @@ void writeHeader() {
    while (!themes.empty()) {
       string link = replaceCh(themes.top(), ' ', '-');
 
-      out << "- [" + themes.top() + "](#" + link + ")\t" << endl;
+      out << "- **[" + themes.top() + "](#" + link + ")**" << endl;
       themes.pop();
    }
 }
