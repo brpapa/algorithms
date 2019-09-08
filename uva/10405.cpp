@@ -28,6 +28,7 @@ int lcsTD(int i, int j) {
    );
 }
 
+//preenche tab de baixo para cima, da direita para a esquerda
 int lcsBU() {
    int tab[1010][1010]; //tabulation
 

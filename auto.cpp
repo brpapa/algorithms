@@ -135,7 +135,7 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "# Solutions by theme" << endl;
+   out << "# solutions by theme" << endl;
 
    stack<string> themes;
    for (string u : graph["root"])

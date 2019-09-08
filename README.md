@@ -1,4 +1,4 @@
-# Solutions by theme
+# solutions by theme
 - **[ad-hoc](#ad-hoc)**
 - **[backtracking](#backtracking)**
 - **[combinatorics](#combinatorics)**
@@ -16,6 +16,7 @@
 - [uri/1091](https://github.com/brnpapa/judge-solutions/blob/master/uri/1091.cpp): [division of nlogonia](https://www.urionlinejudge.com.br/judge/problems/view/1091)
 - [uri/1217](https://github.com/brnpapa/judge-solutions/blob/master/uri/1217.cpp): [getline two-fruits](https://www.urionlinejudge.com.br/judge/problems/view/1217)
 - [uri/1253](https://github.com/brnpapa/judge-solutions/blob/master/uri/1253.cpp): [caesar cipher](https://www.urionlinejudge.com.br/judge/problems/view/1253)
+- [uri/1271](https://github.com/brnpapa/judge-solutions/blob/master/uri/1271.cpp): [where are my genes](https://www.urionlinejudge.com.br/judge/problems/view/1271)
 - [uri/1285](https://github.com/brnpapa/judge-solutions/blob/master/uri/1285.cpp): [different digits](https://www.urionlinejudge.com.br/judge/problems/view/1285)
 - [uri/1300](https://github.com/brnpapa/judge-solutions/blob/master/uri/1300.cpp): [hours and minutes](https://www.urionlinejudge.com.br/judge/problems/view/1300)
 - [uri/1318](https://github.com/brnpapa/judge-solutions/blob/master/uri/1318.cpp): [fake tickets](https://www.urionlinejudge.com.br/judge/problems/view/1318)
@@ -70,6 +71,8 @@
 ## dynamic programming
 - **coin change**
 	- [uva/674](https://github.com/brnpapa/judge-solutions/blob/master/uva/674.cpp): [coin change](https://vjudge.net/problem/uva-674)
+- **digits**
+	- [uri/1707](https://github.com/brnpapa/judge-solutions/blob/master/uri/1707.cpp): [numbers game](https://www.urionlinejudge.com.br/judge/problems/view/1707)
 - **edit distance**
 	- [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp): [edit distante](https://spoj.com/problems/EDIST)
 - **knapsack**

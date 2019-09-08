@@ -16,7 +16,7 @@ int m[10][100], tab[10][100];
 int ans[100]; //ans[i] = linha do melhor caminho na coluna i
 int qteLIN, qteCOL;
 
-void dpTD(int qteLIN, int qteCOL) {
+void dpBU(int qteLIN, int qteCOL) {
    //caso base
    for (int i = 0; i < qteLIN; i++)
       tab[i][qteCOL-1] = m[i][qteCOL-1];
@@ -66,7 +66,7 @@ int main() {
          for (int j = 0; j < qteCOL; j++)
             scanf("%d", &m[i][j]);
 
-      dpTD(qteLIN, qteCOL);
+      dpBU(qteLIN, qteCOL);
       recover(); //gera ans
 
       for (int j = 0; j < qteCOL-1; j++)
