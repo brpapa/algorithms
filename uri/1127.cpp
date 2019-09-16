@@ -56,8 +56,8 @@ bool kmp(int vet[], int tamVet, int subVet[], int tamSubVet) {
    for (int i = 0; i < tamVet; i++) {
       while (j >= 0 && vet[i] != subVet[j])
          j = aux[j];
-      j++;
-      if (j == tamSubVet)
+         
+      if (++j == tamSubVet)
          return true;
    }
    return false;

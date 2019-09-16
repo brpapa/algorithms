@@ -69,7 +69,7 @@
 	- [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): [tiles](https://www.urionlinejudge.com.br/judge/problems/view/2246)
 	- [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): [pass the ball](https://www.urionlinejudge.com.br/judge/problems/view/2465)
 ## dynamic programming
-- **coin change**
+- **coins ways**
 	- [uva/674](https://github.com/brnpapa/judge-solutions/blob/master/uva/674.cpp): [coin change](https://vjudge.net/problem/uva-674)
 - **digits**
 	- [uri/1707](https://github.com/brnpapa/judge-solutions/blob/master/uri/1707.cpp): [numbers game](https://www.urionlinejudge.com.br/judge/problems/view/1707)
@@ -78,6 +78,7 @@
 - **knapsack**
 	- [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp): [the knapsack problem](https://spoj.com/problems/KNAPSACK)
 	- [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp): [six flags](https://www.urionlinejudge.com.br/judge/problems/view/1487)
+	- [uri/2498](https://github.com/brnpapa/judge-solutions/blob/master/uri/2498.cpp): [help vânia](https://www.urionlinejudge.com.br/judge/problems/view/2498)
 - **longest common subsequence (LCS)**
 	- [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): [longest common subsequence](https://vjudge.net/problem/uva-10405)
 - **maximum non-adjacent sum**

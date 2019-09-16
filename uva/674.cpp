@@ -1,5 +1,5 @@
 /*
-   dynamic programming | coin change
+   dynamic programming | coins ways
    problem: coin change
    author: @brnpapa
 */

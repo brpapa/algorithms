@@ -8,8 +8,9 @@
 using namespace std;
 
 int memo[2020][2020];
+
 int s, n; //capacidade, qte de itens
-int wgt[2020], val[2020]; //tamanho do item i, valor do item i
+int wgt[2020], val[2020]; //peso do item i, valor do item i
 
 int ksTD(int i, int w) {
    //estado: item i, mochila com capacidade disponível w
