@@ -39,6 +39,7 @@
 	- [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): [bingo!](https://spoj.com/problems/MBINGO)
 - **sort**
 	- [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp): [the dark elf](https://www.urionlinejudge.com.br/judge/problems/view/1766)
+	- [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): [jar of water game](https://www.urionlinejudge.com.br/judge/problems/view/2971)
 ## backtracking
 - **all paths**
 	- [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): [spiky mazes](https://spoj.com/problems/SPIKES)
@@ -81,7 +82,7 @@
 	- [uri/2498](https://github.com/brnpapa/judge-solutions/blob/master/uri/2498.cpp): [help vânia](https://www.urionlinejudge.com.br/judge/problems/view/2498)
 - **longest common subsequence (LCS)**
 	- [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): [longest common subsequence](https://vjudge.net/problem/uva-10405)
-- **maximum non-adjacent sum**
+- **maximum non-adjacent subsequence sum**
 	- [leetcode/house-robber](https://github.com/brnpapa/judge-solutions/blob/master/leetcode/house-robber.cpp): [house-robber](https://leetcode.com/problems/house-robber)
 - **minimax**
 	- [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): [cards](https://vjudge.net/problem/uva-12484)
@@ -99,6 +100,7 @@
 	- [uri/1215](https://github.com/brnpapa/judge-solutions/blob/master/uri/1215.cpp): [andy's first dictionary](https://www.urionlinejudge.com.br/judge/problems/view/1215)
 - **breadth first search (BFS)**
 	- [uri/1799](https://github.com/brnpapa/judge-solutions/blob/master/uri/1799.cpp): [the rat in a maze](https://www.urionlinejudge.com.br/judge/problems/view/1799)
+	- [uri/2294](https://github.com/brnpapa/judge-solutions/blob/master/uri/2294.cpp): [lost elf](https://www.urionlinejudge.com.br/judge/problems/view/2294)
 - **depth first search (DFS)**
 	- [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp): [coloring a tree](https://vjudge.net/problem/codeforces-902B)
 	- [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp): [kids' wishes](https://www.urionlinejudge.com.br/judge/problems/view/1322)

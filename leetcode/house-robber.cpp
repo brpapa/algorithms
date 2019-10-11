@@ -1,5 +1,5 @@
 /*
-   dynamic programming | maximum non-adjacent sum
+   dynamic programming | maximum non-adjacent subsequence sum
    problem: house-robber
    author: @brnpapa
 */
