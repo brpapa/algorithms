@@ -1,5 +1,6 @@
 /*
-   ad-hoc | hard
+   ad-hoc
+   level: hard
    problem: colorful cubes
    author: @brnpapa
 */

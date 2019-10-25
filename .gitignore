@@ -4,10 +4,5 @@
 e
 auto
 
-data.in
-data.out
-
--pc
-template.h
-guide.md
-notes.md
+input
+output

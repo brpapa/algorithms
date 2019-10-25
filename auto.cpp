@@ -1,11 +1,11 @@
 // script para gerar automaticamente README.md
 
 // nunca definir subtópicos idênticos de temas diferentes!
-// header padrão de todo .cpp:
+// header necessário em todo .cpp:
 /*
    theme | subtopic1 | subtopic2
-   problem: name
-   author: @brnpapa
+   level: easy/medium/hard
+   ...
 */
 #include <iostream>
 #include <fstream>
@@ -35,14 +35,6 @@ string replaceCh(string a, char b, char c) {
    }
    return r;
 }
-void initJudgeURLs() {
-   url["codeforces"] = "https://vjudge.net/problem/codeforces-";
-   url["spoj"] = "https://spoj.com/problems/";
-   url["uri"] = "https://www.urionlinejudge.com.br/judge/problems/view/";
-   url["uva"] = "https://vjudge.net/problem/uva-";
-   url["leetcode"] = "https://leetcode.com/problems/";
-   url["hacker-rank"] = "https://www.hackerrank.com/challenges/";
-}
 
 void separateTopics(string line, vector<string> &topics) {
    int b;
@@ -69,15 +61,13 @@ void readCppFile(string folder, string file) {
    for (int i = 0; i < topics.size()-1; i++)
       graph[topics[i]].insert(topics[i+1]);
 
-   getline(in, line); // problem: name
-   line.erase(0, 12); 
-
    string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
-   string linkToProblemURL = "[" + line + "](" + url[folder] + file + ")";
+   // string linkToProblemURL = "[link](" + url[folder] + file + ")";
 
-   graph[topics.back()].insert(linkToMySolution + ": " + linkToProblemURL);
+   graph[topics.back()].insert(linkToMySolution);
    in.close();
 }
+
 void readAllCppFilesTrackedOnGit() {
    string line;
    system("git ls-files > tmp.bat"); 
@@ -150,7 +140,6 @@ void writeHeader() {
 }
 
 int main() {
-   initJudgeURLs();
    readAllCppFilesTrackedOnGit();
 
    writeHeader();

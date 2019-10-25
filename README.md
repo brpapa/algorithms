@@ -11,133 +11,132 @@
 - **[number theory](#number-theory)**
 - **[substring search](#substring-search)**
 ## ad-hoc
-- [codeforces/1033A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033A.cpp): [king escape](https://vjudge.net/problem/codeforces-1033A)
-- [codeforces/686A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686A.cpp): [free ice cream](https://vjudge.net/problem/codeforces-686A)
-- [uri/1091](https://github.com/brnpapa/judge-solutions/blob/master/uri/1091.cpp): [division of nlogonia](https://www.urionlinejudge.com.br/judge/problems/view/1091)
-- [uri/1217](https://github.com/brnpapa/judge-solutions/blob/master/uri/1217.cpp): [getline two-fruits](https://www.urionlinejudge.com.br/judge/problems/view/1217)
-- [uri/1253](https://github.com/brnpapa/judge-solutions/blob/master/uri/1253.cpp): [caesar cipher](https://www.urionlinejudge.com.br/judge/problems/view/1253)
-- [uri/1271](https://github.com/brnpapa/judge-solutions/blob/master/uri/1271.cpp): [where are my genes](https://www.urionlinejudge.com.br/judge/problems/view/1271)
-- [uri/1285](https://github.com/brnpapa/judge-solutions/blob/master/uri/1285.cpp): [different digits](https://www.urionlinejudge.com.br/judge/problems/view/1285)
-- [uri/1300](https://github.com/brnpapa/judge-solutions/blob/master/uri/1300.cpp): [hours and minutes](https://www.urionlinejudge.com.br/judge/problems/view/1300)
-- [uri/1318](https://github.com/brnpapa/judge-solutions/blob/master/uri/1318.cpp): [fake tickets](https://www.urionlinejudge.com.br/judge/problems/view/1318)
-- [uri/1340](https://github.com/brnpapa/judge-solutions/blob/master/uri/1340.cpp): [i can guess the data structure!](https://www.urionlinejudge.com.br/judge/problems/view/1340)
-- [uri/1342](https://github.com/brnpapa/judge-solutions/blob/master/uri/1342.cpp): [dice](https://www.urionlinejudge.com.br/judge/problems/view/1342)
-- [uri/1438](https://github.com/brnpapa/judge-solutions/blob/master/uri/1438.cpp): [unloading boxes](https://www.urionlinejudge.com.br/judge/problems/view/1438)
-- [uri/1548](https://github.com/brnpapa/judge-solutions/blob/master/uri/1548.cpp): [canteen queue](https://www.urionlinejudge.com.br/judge/problems/view/1548)
-- [uri/1715](https://github.com/brnpapa/judge-solutions/blob/master/uri/1715.cpp): [handball](https://www.urionlinejudge.com.br/judge/problems/view/1715)
-- [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): [huaauhahhuahau](https://www.urionlinejudge.com.br/judge/problems/view/2242)
-- [uri/2345](https://github.com/brnpapa/judge-solutions/blob/master/uri/2345.cpp): [assigning teams](https://www.urionlinejudge.com.br/judge/problems/view/2345)
-- [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): [phase](https://www.urionlinejudge.com.br/judge/problems/view/2663)
-- [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): [unraveling monty hall](https://www.urionlinejudge.com.br/judge/problems/view/2879)
-- [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): [enigma](https://www.urionlinejudge.com.br/judge/problems/view/2880)
-- [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): [interrupter](https://www.urionlinejudge.com.br/judge/problems/view/2884)
+- [codeforces/1033A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033A.cpp)
+- [codeforces/686A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686A.cpp)
+- [uri/1091](https://github.com/brnpapa/judge-solutions/blob/master/uri/1091.cpp)
+- [uri/1217](https://github.com/brnpapa/judge-solutions/blob/master/uri/1217.cpp)
+- [uri/1253](https://github.com/brnpapa/judge-solutions/blob/master/uri/1253.cpp)
+- [uri/1271](https://github.com/brnpapa/judge-solutions/blob/master/uri/1271.cpp)
+- [uri/1285](https://github.com/brnpapa/judge-solutions/blob/master/uri/1285.cpp)
+- [uri/1300](https://github.com/brnpapa/judge-solutions/blob/master/uri/1300.cpp)
+- [uri/1318](https://github.com/brnpapa/judge-solutions/blob/master/uri/1318.cpp)
+- [uri/1340](https://github.com/brnpapa/judge-solutions/blob/master/uri/1340.cpp)
+- [uri/1342](https://github.com/brnpapa/judge-solutions/blob/master/uri/1342.cpp)
+- [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp)
+- [uri/1438](https://github.com/brnpapa/judge-solutions/blob/master/uri/1438.cpp)
+- [uri/1548](https://github.com/brnpapa/judge-solutions/blob/master/uri/1548.cpp)
+- [uri/1715](https://github.com/brnpapa/judge-solutions/blob/master/uri/1715.cpp)
+- [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp)
+- [uri/2345](https://github.com/brnpapa/judge-solutions/blob/master/uri/2345.cpp)
+- [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp)
+- [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp)
+- [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp)
+- [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp)
 - **bitwise operator**
-	- [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): [to carry or not to carry](https://www.urionlinejudge.com.br/judge/problems/view/1026)
-- **hard**
-	- [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp): [colorful cubes](https://www.urionlinejudge.com.br/judge/problems/view/1368)
+	- [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp)
 - **linear search**
-	- [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): [bingo!](https://spoj.com/problems/MBINGO)
+	- [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp)
 - **sort**
-	- [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp): [the dark elf](https://www.urionlinejudge.com.br/judge/problems/view/1766)
-	- [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): [jar of water game](https://www.urionlinejudge.com.br/judge/problems/view/2971)
+	- [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp)
+	- [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp)
 ## backtracking
 - **all paths**
-	- [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): [spiky mazes](https://spoj.com/problems/SPIKES)
+	- [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp)
 - **all permutations**
-	- [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): [a problem of backtracking](https://spoj.com/problems/BTCK)
-	- [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): [stack game](https://www.urionlinejudge.com.br/judge/problems/view/1522)
+	- [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp)
+	- [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp)
 ## combinatorics
 - **combination**
-	- [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): [lottery](https://www.urionlinejudge.com.br/judge/problems/view/1694)
+	- [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp)
 ## data structures
 - **minimum priority queue**
-	- [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp): [add all](https://vjudge.net/problem/uva-10954)
+	- [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp)
 - **queue**
-	- [uri/1110](https://github.com/brnpapa/judge-solutions/blob/master/uri/1110.cpp): [throwing cards away](https://www.urionlinejudge.com.br/judge/problems/view/1110)
-	- [uri/2065](https://github.com/brnpapa/judge-solutions/blob/master/uri/2065.cpp): [supermarket line](https://www.urionlinejudge.com.br/judge/problems/view/2065)
+	- [uri/1110](https://github.com/brnpapa/judge-solutions/blob/master/uri/1110.cpp)
+	- [uri/2065](https://github.com/brnpapa/judge-solutions/blob/master/uri/2065.cpp)
 - **set**
-	- [uri/1901](https://github.com/brnpapa/judge-solutions/blob/master/uri/1901.cpp): [butterflies](https://www.urionlinejudge.com.br/judge/problems/view/1901)
+	- [uri/1901](https://github.com/brnpapa/judge-solutions/blob/master/uri/1901.cpp)
 - **stack**
-	- [spoj/STACKEZ](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STACKEZ.cpp): [easy stack](https://spoj.com/problems/STACKEZ)
-	- [uri/1063](https://github.com/brnpapa/judge-solutions/blob/master/uri/1063.cpp): [rails again... tracing movements](https://www.urionlinejudge.com.br/judge/problems/view/1063)
-	- [uri/1068](https://github.com/brnpapa/judge-solutions/blob/master/uri/1068.cpp): [parenthesis balance I](https://www.urionlinejudge.com.br/judge/problems/view/1068)
-	- [uri/1069](https://github.com/brnpapa/judge-solutions/blob/master/uri/1069.cpp): [diamonds and sand](https://www.urionlinejudge.com.br/judge/problems/view/1069)
-	- [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp): [infix to posfix](https://www.urionlinejudge.com.br/judge/problems/view/1077)
+	- [spoj/STACKEZ](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STACKEZ.cpp)
+	- [uri/1063](https://github.com/brnpapa/judge-solutions/blob/master/uri/1063.cpp)
+	- [uri/1068](https://github.com/brnpapa/judge-solutions/blob/master/uri/1068.cpp)
+	- [uri/1069](https://github.com/brnpapa/judge-solutions/blob/master/uri/1069.cpp)
+	- [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp)
 ## division and conquest
 - **binary search**
-	- [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): [postman](https://www.urionlinejudge.com.br/judge/problems/view/2448)
+	- [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp)
 - **path**
-	- [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): [tiles](https://www.urionlinejudge.com.br/judge/problems/view/2246)
-	- [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): [pass the ball](https://www.urionlinejudge.com.br/judge/problems/view/2465)
+	- [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp)
+	- [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp)
 ## dynamic programming
 - **coins ways**
-	- [uva/674](https://github.com/brnpapa/judge-solutions/blob/master/uva/674.cpp): [coin change](https://vjudge.net/problem/uva-674)
+	- [uva/674](https://github.com/brnpapa/judge-solutions/blob/master/uva/674.cpp)
 - **digits**
-	- [uri/1707](https://github.com/brnpapa/judge-solutions/blob/master/uri/1707.cpp): [numbers game](https://www.urionlinejudge.com.br/judge/problems/view/1707)
+	- [uri/1707](https://github.com/brnpapa/judge-solutions/blob/master/uri/1707.cpp)
 - **edit distance**
-	- [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp): [edit distante](https://spoj.com/problems/EDIST)
+	- [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp)
 - **knapsack**
-	- [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp): [the knapsack problem](https://spoj.com/problems/KNAPSACK)
-	- [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp): [six flags](https://www.urionlinejudge.com.br/judge/problems/view/1487)
-	- [uri/2498](https://github.com/brnpapa/judge-solutions/blob/master/uri/2498.cpp): [help vânia](https://www.urionlinejudge.com.br/judge/problems/view/2498)
+	- [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp)
+	- [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp)
+	- [uri/2498](https://github.com/brnpapa/judge-solutions/blob/master/uri/2498.cpp)
 - **longest common subsequence (LCS)**
-	- [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): [longest common subsequence](https://vjudge.net/problem/uva-10405)
-- **maximum non-adjacent subsequence sum**
-	- [leetcode/house-robber](https://github.com/brnpapa/judge-solutions/blob/master/leetcode/house-robber.cpp): [house-robber](https://leetcode.com/problems/house-robber)
+	- [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp)
 - **minimax**
-	- [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): [cards](https://vjudge.net/problem/uva-12484)
+	- [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp)
 - **minimum sum**
-	- [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp): [unidirectional TSP](https://vjudge.net/problem/uva-116)
+	- [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp)
 ## geometry
-- [codeforces/157B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157B.cpp): [trace](https://vjudge.net/problem/codeforces-157B)
-- [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): [dog and gopher](https://vjudge.net/problem/uva-10310)
+- [codeforces/157B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157B.cpp)
+- [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp)
 ## graph
-- [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp): [design labirints](https://www.urionlinejudge.com.br/judge/problems/view/1076)
+- [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp)
 - **binary search tree (BST)**
-	- [uri/1194](https://github.com/brnpapa/judge-solutions/blob/master/uri/1194.cpp): [pre, in and post](https://www.urionlinejudge.com.br/judge/problems/view/1194)
-	- [uri/1195](https://github.com/brnpapa/judge-solutions/blob/master/uri/1195.cpp): [binary search tree](https://www.urionlinejudge.com.br/judge/problems/view/1195)
-	- [uri/1200](https://github.com/brnpapa/judge-solutions/blob/master/uri/1200.cpp): [bst operations I](https://www.urionlinejudge.com.br/judge/problems/view/1200)
-	- [uri/1215](https://github.com/brnpapa/judge-solutions/blob/master/uri/1215.cpp): [andy's first dictionary](https://www.urionlinejudge.com.br/judge/problems/view/1215)
+	- [uri/1194](https://github.com/brnpapa/judge-solutions/blob/master/uri/1194.cpp)
+	- [uri/1195](https://github.com/brnpapa/judge-solutions/blob/master/uri/1195.cpp)
+	- [uri/1200](https://github.com/brnpapa/judge-solutions/blob/master/uri/1200.cpp)
+	- [uri/1215](https://github.com/brnpapa/judge-solutions/blob/master/uri/1215.cpp)
 - **breadth first search (BFS)**
-	- [uri/1799](https://github.com/brnpapa/judge-solutions/blob/master/uri/1799.cpp): [the rat in a maze](https://www.urionlinejudge.com.br/judge/problems/view/1799)
-	- [uri/2294](https://github.com/brnpapa/judge-solutions/blob/master/uri/2294.cpp): [lost elf](https://www.urionlinejudge.com.br/judge/problems/view/2294)
+	- [uri/1799](https://github.com/brnpapa/judge-solutions/blob/master/uri/1799.cpp)
+	- [uri/2294](https://github.com/brnpapa/judge-solutions/blob/master/uri/2294.cpp)
 - **depth first search (DFS)**
-	- [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp): [coloring a tree](https://vjudge.net/problem/codeforces-902B)
-	- [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp): [kids' wishes](https://www.urionlinejudge.com.br/judge/problems/view/1322)
+	- [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp)
+	- [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp)
 - **minimum path**
 	- **dijkstra**
-		- [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): [route change](https://www.urionlinejudge.com.br/judge/problems/view/1123)
-		- [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): [countries at war](https://www.urionlinejudge.com.br/judge/problems/view/1148)
-		- [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp): [trip to bh](https://www.urionlinejudge.com.br/judge/problems/view/2566)
+		- [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp)
+		- [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp)
+		- [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp)
+	- **floyd-warshall**
+		- [uri/2372](https://github.com/brnpapa/judge-solutions/blob/master/uri/2372.cpp)
 ## greedy
-- [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): [i am very busy](https://spoj.com/problems/BUSYMAN)
-- [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): [palindrome lover](https://spoj.com/problems/PL)
-- [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): [the club ballroom](https://www.urionlinejudge.com.br/judge/problems/view/1086)
+- [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp)
+- [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp)
+- [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp)
 - **coins**
-	- [codeforces/996A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996A.cpp): [hit the lottery](https://vjudge.net/problem/codeforces-996A)
+	- [codeforces/996A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996A.cpp)
 - **maximum subsequence**
-	- [codeforces/313B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313B.cpp): [ilya and queries](https://vjudge.net/problem/codeforces-313B)
-	- [codeforces/702A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702A.cpp): [maximum increase](https://vjudge.net/problem/codeforces-702A)
+	- [codeforces/313B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313B.cpp)
+	- [codeforces/702A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702A.cpp)
 - **stack and queue**
-	- [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): [street parade](https://spoj.com/problems/STPAR)
+	- [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp)
 ## number theory
-- [codeforces/624A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624A.cpp): [save luke](https://vjudge.net/problem/codeforces-624A)
-- [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): [rectangles](https://spoj.com/problems/AE00)
-- [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): [feynman](https://www.urionlinejudge.com.br/judge/problems/view/1323)
+- [codeforces/624A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624A.cpp)
+- [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp)
+- [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp)
 - **all divisors**
-	- [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): [divine numbers](https://www.urionlinejudge.com.br/judge/problems/view/2291)
+	- [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp)
 - **greatest common divisor (GCD)**
-	- [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): [collectable cards](https://www.urionlinejudge.com.br/judge/problems/view/1028)
+	- [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp)
 - **prime numbers**
-	- [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): [prime or not prime!](https://spoj.com/problems/PRIONPRI)
+	- [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp)
 	- **factorization**
-		- [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp): [despojados](https://www.urionlinejudge.com.br/judge/problems/view/2661)
+		- [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp)
 	- **sieve of eratosthenes**
-		- [codeforces/17A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17A.cpp): [noldbach problem](https://vjudge.net/problem/codeforces-17A)
-		- [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): [distinct primes](https://spoj.com/problems/AMR11E)
+		- [codeforces/17A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17A.cpp)
+		- [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp)
 ## substring search
-- [spoj/TESSER](https://github.com/brnpapa/judge-solutions/blob/master/spoj/TESSER.cpp): [finding the tesserect](https://spoj.com/problems/TESSER)
+- [spoj/TESSER](https://github.com/brnpapa/judge-solutions/blob/master/spoj/TESSER.cpp)
 - **knuth-morris-pratt (KMP)**
-	- [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): [musical plagiarism](https://www.urionlinejudge.com.br/judge/problems/view/1127)
+	- [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp)
 - **palindrome**
-	- [spoj/AMR12D](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR12D.cpp): [the mirror of galadriel](https://spoj.com/problems/AMR12D)
+	- [spoj/AMR12D](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR12D.cpp)
