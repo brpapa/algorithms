@@ -1,5 +1,5 @@
 /*
-   graph | depth first search (DFS)
+   graphs | depth first search (DFS)
    problem: coloring a tree
    author: @brnpapa
 */
@@ -12,7 +12,7 @@ vector<int> arv[MAX];
 int corDesejada[MAX], qte;
 
 //recebe o nó e a sua cor
-int pinta(int no, int cor) {
+int dfs(int no, int cor) {
    int qte = 0;
 
    if (cor != corDesejada[no]) {
@@ -21,7 +21,7 @@ int pinta(int no, int cor) {
    }
    //a cor propaga para cada filho do nó
    for (int i = 0; i < arv[no].size(); i++)
-      qte += pinta(arv[no][i], cor);
+      qte += dfs(arv[no][i], cor);
 
    return qte;
 }
@@ -36,6 +36,6 @@ int main() {
    for (int i = 1; i <= n; i++)
       scanf("%d", &corDesejada[i]);
 
-   printf("%d\n", pinta(1, 0));
+   printf("%d\n", dfs(1, 0));
    return 0;
 }

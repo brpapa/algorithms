@@ -1,5 +1,5 @@
 /*
-   graph | breadth first search (BFS)
+   graphs | breadth first search (BFS)
    problem: the rat in a maze
    author: @brnpapa
 */

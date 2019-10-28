@@ -1,5 +1,5 @@
 /*
-   graph | minimum path | floyd-warshall
+   graphs | shortest path | floyd-warshall
    level: easy
 
    problem: meeting

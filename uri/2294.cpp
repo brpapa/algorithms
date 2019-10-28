@@ -1,5 +1,5 @@
 /*
-   graph | breadth first search (BFS)
+   graphs | breadth first search (BFS)
    problem: lost elf
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   graph
+   graphs
    problem: design labirints
    author: @brnpapa
 */

@@ -6,7 +6,7 @@
 - **[division and conquest](#division-and-conquest)**
 - **[dynamic programming](#dynamic-programming)**
 - **[geometry](#geometry)**
-- **[graph](#graph)**
+- **[graphs](#graphs)**
 - **[greedy](#greedy)**
 - **[number theory](#number-theory)**
 - **[substring search](#substring-search)**
@@ -88,7 +88,7 @@
 ## geometry
 - [codeforces/157B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157B.cpp)
 - [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp)
-## graph
+## graphs
 - [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp)
 - **binary search tree (BST)**
 	- [uri/1194](https://github.com/brnpapa/judge-solutions/blob/master/uri/1194.cpp)
@@ -101,7 +101,8 @@
 - **depth first search (DFS)**
 	- [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp)
 	- [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp)
-- **minimum path**
+	- [uri/2965](https://github.com/brnpapa/judge-solutions/blob/master/uri/2965.cpp)
+- **shortest path**
 	- **dijkstra**
 		- [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp)
 		- [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp)

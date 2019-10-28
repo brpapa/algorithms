@@ -1,6 +1,14 @@
 /*
-   graph | minimum path | dijkstra
+   graphs | shortest path | dijkstra
    problem: route change
+   author: @brnpapa
+*/
+/*
+   theme | topic
+   level: easy
+
+   problem: name
+   date: 26/Oct/2019
    author: @brnpapa
 */
 #include <iostream>
