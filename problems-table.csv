@@ -1,7 +1,7 @@
-name,problem,difficulty,date,theme,sub1,sub2,sub3
-route change,uri/1123,medium,22/May/2019,graphs,shortest path,dijkstra
-colorful cubes,uri/1368,hard,22/Jun/2019,ad-hoc
-meeting,uri/2372,easy,25/Oct/2019,graphs,shortest path,floyd-warshall
-denouncing mafia,uri/2965,medium,28/Oct/2019,graphs,depth first search (DFS)
-jar of water game,uri/2971,medium,19/Sep/2019,ad-hoc
-freckles,uva/10034,easy,10/Nov/2019,graphs,minimum spanning tree (MST),kruskal
+judge,problem,name,difficulty,theme,date,url
+uri,1123,route change,medium,graphs > shortest path > dijkstra,22/May/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1123.cpp
+uri,1368,colorful cubes,hard,ad-hoc,22/Jun/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1368.cpp
+uri,2372,meeting,easy,graphs > shortest path > floyd-warshall,25/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2372.cpp
+uri,2965,denouncing mafia,medium,graphs > depth first search (DFS),28/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2965.cpp
+uri,2971,jar of water game,medium,ad-hoc,19/Sep/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2971.cpp
+uva,10034,freckles,easy,graphs > minimum spanning tree (MST) > kruskal,10/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/uva/10034.cpp

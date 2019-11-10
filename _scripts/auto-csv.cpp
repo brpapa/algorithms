@@ -10,9 +10,12 @@ void readCppFile(string folder, string file) {
 
    getline(in, line); // theme | topic1 | topic2
    separateTopics(line, topics);
+   string theme = topics[0];
+   for (int i = 1; i < topics.size(); i++)
+      theme += " > " + topics[i];
+
 
    getline(in, line);
-
    if (line.find("difficulty") != string::npos) {
 
       string difficulty = line.substr(15);
@@ -22,12 +25,11 @@ void readCppFile(string folder, string file) {
       getline(in, line);
       string date = line.substr(9);
 
-      string path = folder + "/" + file;
+      string judge = folder;
+      string problem = file;
+      string url = "file:///Users/papa/Google%20Drive/dev/icpc/" + folder + "/" + file + ".cpp";
 
-      out << name << "," << path << "," << difficulty << "," << date;
-      for (int i = 0; i < topics.size(); i++)
-         out << "," << topics[i];
-      out << endl;
+      out << judge << "," << problem << "," << name << "," << difficulty << "," << theme << "," << date << "," << url << endl;
    }
 
    in.close();
@@ -53,7 +55,7 @@ void readAllCppFilesTrackedOnGit() {
 }
 
 int main() {
-   out << "name,problem,difficulty,date,theme,sub1,sub2,sub3" << endl; 
+   out << "judge,problem,name,difficulty,theme,date,url" << endl; 
    readAllCppFilesTrackedOnGit();
 
    out.close();
