@@ -1,45 +1,42 @@
 /*
    graphs
    problem: design labirints
+   date: 05/May/2019
    author: @brnpapa
 */
 #include <iostream>
 #include <vector>
-#define MAX 100
+#define MAX_V 100
 using namespace std;
 
-vector<int> adj[MAX]; //vector de vértices adjacentes ao vértice i
+vector<int> adj[MAX_V];
 
-//verifica se b é adjacente à a
-bool ehAdjacente(int a, int b) {
-   for (int i = 0; i < adj[a].size(); i++)
-      if (b == adj[a][i])
+// verifica se existe aresta (v, u)
+bool isAdj(int v, int u) {
+   for (int i = 0; i < adj[v].size(); i++)
+      if (u == adj[v][i])
          return true;
    return false;
 }
-void aresta(int a, int b) {
-   adj[a].push_back(b);
-   adj[b].push_back(a);
-}
 
 int main() {
-   int t, n, qteV, qteA, v, a;
-   scanf("%d", &t);
-   while (t--) {
+   int T, V, E, n, v, a;
+   scanf("%d", &T);
+   while (T--) {
       scanf("%d", &n); //nó inicial e final
-      scanf("%d %d", &qteV, &qteA);
+      scanf("%d %d", &V, &E);
 
-      for (int i = 0; i < qteV; i++)
+      for (int i = 0; i < V; i++)
          adj[i].clear();
 
       int qtePassosIda = 0;
-      for (int i = 0; i < qteA; i++) {
+      for (int e = 0; e < E; e++) {
          scanf("%d %d", &v, &a);
-         if (ehAdjacente(v, a))
+         if (isAdj(v, a))
             continue;
 
-         //adiciona aresta ao grafo não direcionado
-         aresta(v, a);
+         adj[v].push_back(a);
+         adj[a].push_back(v);
          qtePassosIda++;
       }
       printf("%d\n", qtePassosIda * 2);

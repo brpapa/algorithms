@@ -1,7 +1,8 @@
 /*
    ad-hoc
-   level: hard
+   difficulty: hard
    problem: colorful cubes
+   date: 22/Jun/2019
    author: @brnpapa
 */
 #include <iostream>

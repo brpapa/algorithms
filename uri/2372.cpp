@@ -1,7 +1,6 @@
 /*
    graphs | shortest path | floyd-warshall
-   level: easy
-
+   difficulty: easy
    problem: meeting
    date: 25/Oct/2019
    author: @brnpapa
@@ -12,20 +11,14 @@
 #define MAX_V 110
 using namespace std;
 
-struct T {
-   int v, w;
-};
-
-vector<T> adj[MAX_V];
-
 int V, E;
-int d[MAX_V][MAX_V]; // d[i][j] = custo da aresta i -> j
+int c[MAX_V][MAX_V]; // custo da aresta (i, j)
 
 void init() {
    for (int i = 0; i < V; i++) {
       for (int j = 0; j < V; j++)
-         d[i][j] = INF;
-      d[i][i] = 0;
+         c[i][j] = INF;
+      c[i][i] = 0;
    }
 }
 
@@ -33,7 +26,7 @@ void floyd() {
    for (int k = 0; k < V; k++)
       for (int i = 0; i < V; i++)
          for (int j = 0; j < V; j++)
-            d[i][j] = min(d[i][j], d[i][k] + d[k][j]);
+            c[i][j] = min(c[i][j], c[i][k] + c[k][j]);
 }
 
 int main() {
@@ -43,8 +36,8 @@ int main() {
    int v1, v2, w;
    for (int e = 0; e < E; e++) {
       cin >> v1 >> v2 >> w;
-      d[v1][v2] = w;
-      d[v2][v1] = w;
+      c[v1][v2] = w;
+      c[v2][v1] = w;
    }
    floyd();
    
@@ -52,7 +45,7 @@ int main() {
    for (int i = 0; i < V; i++) {
       int maxx = -INF;
       for (int j = 0; j < V; j++)
-         maxx = max(maxx, d[i][j]);
+         maxx = max(maxx, c[i][j]);
       minn = min(minn, maxx);
    }
    cout << minn << endl;

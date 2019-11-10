@@ -1,6 +1,8 @@
 /*
-   ad-hoc | sort
+   ad-hoc
+   difficulty: medium
    problem: jar of water game
+   date: 19/Sep/2019
    author: @brnpapa
 */
 #include <iostream>
@@ -18,27 +20,27 @@ vector<int> cardsFromPlayer[15]; //cartas atuais do jogador i
 bool canPassWildcard[15];
 int winningPlayer;
 
-struct card {
+struct Tcard {
    int id, pos, rep;
    
-   card(int v, int p, int r) {
+   Tcard(int v, int p, int r) {
       this->id = v;
       this->pos = p; //posicao no vector original
       this->rep = r; //qte de ocorrências
    }
+   // carta mais propensa a sair
+   bool operator<(const Tcard &p) const {
+      if (this->rep == p.rep)
+         return this->id < p.id;
+
+      return this->rep < p.rep;
+   }
 };
 
-//ordena por carta mais propensa a sair
-bool cmp(const struct card &a, const struct card &b) {
-   if (a.rep == b.rep)
-      return a.id < b.id;
-
-   return a.rep < b.rep;
-}
 
 //retorna a posição em v da carta escolhida do jogador p
 int choiceCard(int p, vector<int> v) {
-   vector<card> tmp;
+   vector<Tcard> tmp;
    for (int i = 0; i < v.size(); i++) {
       //coringa
       if (v[i] == 0) {
@@ -52,14 +54,14 @@ int choiceCard(int p, vector<int> v) {
          }
       }
 
-      card c(v[i], i, 1); //id, pos, rep
+      Tcard c(v[i], i, 1); //id, pos, rep
       for (int j = 0; j < v.size(); j++)
          if (j != i && v[j] == v[i])
             c.rep++;
 
       tmp.push_back(c);
    }
-   sort(tmp.begin(), tmp.end(), cmp);
+   sort(tmp.begin(), tmp.end());
 
    return tmp[0].pos;
 }

@@ -13,7 +13,7 @@ using namespace std;
 struct T {
    int id, peso;
 };
-int c[MAX_V]; //c[i]: custo mínimo para ir até o vértice i
+int c[MAX_V];
 
 void initGrafo(vector<T> adj[]) {
    for (int i = 0; i < MAX_V; i++)

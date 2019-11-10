@@ -1,14 +1,8 @@
 /*
    graphs | shortest path | dijkstra
+   difficulty: medium
    problem: route change
-   author: @brnpapa
-*/
-/*
-   theme | topic
-   level: easy
-
-   problem: name
-   date: 26/Oct/2019
+   date: 22/May/2019
    author: @brnpapa
 */
 #include <iostream>
@@ -18,88 +12,95 @@
 #define INF 2147483647
 using namespace std;
 
-struct T {
-   int id, peso;
+struct Tadj {
+   int id, w;
 };
-vector<T> adj[MAX_V]; //adj[i].size(): grau de i
+struct Theap {
+   int id, c;
+
+   Theap(int id, int c) {
+      this->id = id;
+      this->c = c;
+   }
+   bool operator<(const Theap &p) const {
+      return this->c < p.c;
+   }
+};
+
+vector<Tadj> adj[MAX_V];
 int c[MAX_V];
-int qteRota; //0 a qteRota-1: cidades da rota
+int R; // cidades da rota: 0 a R-1
 
 void init() {
-   for (int i = 0; i < MAX_V; i++) {
-      adj[i].clear();
-      c[i] = INF;
+   for (int v = 0; v < MAX_V; v++) {
+      adj[v].clear();
+      c[v] = INF;
    }
 }
-bool ehAdj(int v, int u) {
-   for (int i = 0; i < adj[v].size(); i++)
-      if (u == adj[v][i].id)
-         return true; //u é adjacente ao v
-   return false;
-}
-void aresta(int a, int b, int w) {
-   T v, u;
+
+void insertEdge(int a, int b, int w) {
+   Tadj v, u;
    v.id = a;
    u.id = b;
-   v.peso = u.peso = w;
+   v.w = u.w = w;
    
    //a é da rota
-   if (a < qteRota) {
-      if (b == a+1 && b < qteRota) //b é o seguinte imediato e da rota
+   if (a < R) {
+      if (b == a+1 && b < R) //b é o seguinte imediato e da rota
          adj[a].push_back(u); 
-      else if (b == a-1 || b >= qteRota) //b é o anterior imediato da rota ou não é da rota
+      else if (b == a-1 || b >= R) //b é o anterior imediato da rota ou não é da rota
          adj[b].push_back(v);
    }
    //a não é da rota e b é da rota
-   else if (a >= qteRota && b < qteRota)
+   else if (a >= R && b < R)
       adj[a].push_back(u);
    //ambos não pertencem à rota
-   else if (a >= qteRota && b >= qteRota) {
+   else if (a >= R && b >= R) {
       adj[a].push_back(u);
       adj[b].push_back(v);
    }
 }
 
-void dijkstra(int inicio) {
-   priority_queue<pair<int, int> > heap; //-c[id], id
+void dijkstra(int vInit) {
+   priority_queue<Theap> heap;
 
-   c[inicio] = 0;
-   heap.push(make_pair(c[inicio], inicio));
+   c[vInit] = 0;
+   heap.push(Theap(vInit, c[vInit]));
 
-   int v, u, w, c_aux;
    while (!heap.empty()) {
-      v = heap.top().second; //vértice de custo mínimo
-      heap.pop();            //fecha o vértice v
+      int v = heap.top().id; // vértice de menor custo
+      heap.pop();            // fecha vértice v
 
       for (int i = 0; i < adj[v].size(); i++) {
-         u = adj[v][i].id;
-         w = adj[v][i].peso;
+         int u = adj[v][i].id;
+         int w = adj[v][i].w;
 
-         c_aux = c[v] + w;
-         if (c_aux < c[u]) {
-            c[u] = c_aux;
-            heap.push(make_pair(-c[u], u));            
+         int c_new = c[v] + w;
+         if (c_new < c[u]) {
+            c[u] = c_new;
+            heap.push(Theap(u, c[u]));            
          }
       }
    }
 }
 
 int main() {
-   int qteV, qteA; //qte de cidades, qte de estradas
-   int x, c1, c2, w; //x: cidade onde veiculo foi consertado
+   int V, E; // cidades, estradas
+   int v1, v2, w;
+   int x; // cidade onde veiculo foi consertado
 
-   while(true) {
-      scanf("%d %d %d %d", &qteV, &qteA, &qteRota, &x);
-      if (qteV == 0 && qteA == 0 && qteRota == 0 && x == 0)
+   while (true) {
+      scanf("%d %d %d %d", &V, &E, &R, &x);
+      if (V == 0 && E == 0 && R == 0 && x == 0)
          break;
 
       init();
-      for (int i = 0; i < qteA; i++) {
-         scanf("%d %d %d", &c1, &c2, &w);
-         aresta(c1, c2, w); //grafo orientado
+      for (int e = 0; e < E; e++) {
+         scanf("%d %d %d", &v1, &v2, &w);
+         insertEdge(v1, v2, w); //grafo orientado
       }
       dijkstra(x);
-      printf("%d\n", c[qteRota-1]);
+      printf("%d\n", c[R-1]);
    }
    return 0;
 }

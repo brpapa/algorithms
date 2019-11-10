@@ -1,15 +1,6 @@
-# solutions by theme
-- **[ad-hoc](#ad-hoc)**
-- **[backtracking](#backtracking)**
-- **[combinatorics](#combinatorics)**
-- **[data structures](#data-structures)**
-- **[division and conquest](#division-and-conquest)**
-- **[dynamic programming](#dynamic-programming)**
-- **[geometry](#geometry)**
-- **[graphs](#graphs)**
-- **[greedy](#greedy)**
-- **[number theory](#number-theory)**
-- **[substring search](#substring-search)**
+Acess my personal notebook for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).
+
+Solutions by theme:
 ## ad-hoc
 - [codeforces/1033A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033A.cpp)
 - [codeforces/686A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686A.cpp)
@@ -32,13 +23,13 @@
 - [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp)
 - [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp)
 - [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp)
+- [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp)
 - **bitwise operator**
 	- [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp)
 - **linear search**
 	- [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp)
 - **sort**
 	- [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp)
-	- [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp)
 ## backtracking
 - **all paths**
 	- [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp)
