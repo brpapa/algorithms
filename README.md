@@ -94,6 +94,9 @@ Solutions by theme:
 	- 📘 [codeforces/902B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/902B.cpp): coloring a tree
 	- 📘 [uri/1322](https://github.com/brnpapa/judge-solutions/blob/master/uri/1322.cpp): kids' wishes
 	- 📙 [uri/2965](https://github.com/brnpapa/judge-solutions/blob/master/uri/2965.cpp): denouncing mafia
+- **minimum spanning tree (MST)**
+	- **kruskal**
+		- 📗 [uva/10034](https://github.com/brnpapa/judge-solutions/blob/master/uva/10034.cpp): freckles
 - **shortest path**
 	- **dijkstra**
 		- 📘 [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): countries at war
