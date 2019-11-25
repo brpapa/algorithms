@@ -105,6 +105,8 @@ Solutions by theme:
 		- 📙 [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): route change
 - 📓 [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp): design labirints
 ## greedy
+- **coin change**
+	- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
 - **coins**
 	- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
 - **maximum subsequence**
