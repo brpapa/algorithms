@@ -1,5 +1,5 @@
 /*
-   graphs | shortest path | dijkstra
+   graphs | single-source shortest paths | dijkstra
    problem: countries at war
    author: @brnpapa
 */

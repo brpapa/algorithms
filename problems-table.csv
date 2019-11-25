@@ -1,7 +1,8 @@
 judge,problem,name,difficulty,theme,date,url
-uri,1123,route change,medium,graphs > shortest path > dijkstra,22/May/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1123.cpp
+codeforces,1254-A,feeding chicken,medium,greedy,25/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/1254-A.cpp
+uri,1123,route change,medium,graphs > single-source shortest paths > dijkstra,22/May/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1123.cpp
 uri,1368,colorful cubes,hard,ad-hoc,22/Jun/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1368.cpp
-uri,2372,meeting,easy,graphs > shortest path > floyd-warshall,25/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2372.cpp
+uri,2372,meeting,easy,graphs > all-pairs shortest paths > floyd-warshall,25/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2372.cpp
 uri,2965,denouncing mafia,medium,graphs > depth first search (DFS),28/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2965.cpp
 uri,2971,jar of water game,medium,ad-hoc,19/Sep/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2971.cpp
 uva,10034,freckles,easy,graphs > minimum spanning tree (MST) > kruskal,10/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/uva/10034.cpp

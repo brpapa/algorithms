@@ -1,0 +1,57 @@
+{
+   "tasks": [
+      {
+         "label": "compile and run",
+         "type": "shell",
+         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < input.in > output.out",
+         "group": "build",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true
+         },
+         "problemMatcher": []
+      },
+      {
+         "label": "mark as solved and push",
+         "type": "shell",
+         "command": "git add ${relativeFile} && ./_scripts/auto-csv && ./_scripts/auto-md && git add --update && git commit -m \"solved ${fileBasenameNoExtension} from ${relativeFileDirname}\" && git push origin master",
+         "group": "build",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "presentation": {
+            "reveal": "always",
+            "clear": true
+         },
+         "problemMatcher": []
+      },
+      {
+         "label": "open problem url",
+         "type": "shell",
+         "command": "FILE=\"${fileBasenameNoExtension}\" && open \"$BASE_URL_${relativeFileDirname}\"\"${${FILE}/-//}\"", // substitui '-' por '/' de FILE
+         "group": "build",
+         "presentation": {
+            "reveal": "never",
+            "clear": true
+         },
+         "problemMatcher": []
+      },
+      {
+         "label": "run scripts to update changes",
+         "type": "shell",
+         "command": "./_scripts/auto-csv && ./_scripts/auto-md && git add --update",
+         "options": {
+            "cwd": "${workspaceFolder}"
+         },
+         "group": "build",
+         "presentation": {
+            "reveal": "silent",
+            "clear": true
+         },
+         "problemMatcher": []
+      },
+   ]
+}

@@ -44,7 +44,7 @@ void readCppFile(string folder, string file) {
    }
    else {
       name = line.substr(12);
-      string noDifficulty = "📘";
+      string noDifficulty = "📓";
       linkToMySolution = noDifficulty + " " + linkToMySolution;
    }
 
