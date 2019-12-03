@@ -15,7 +15,7 @@
          "problemMatcher": []
       },
       {
-         "label": "mark as solved and push",
+         "label": "mark as solved, run scripts and push",
          "type": "shell",
          "command": "git add ${relativeFile} && ./_scripts/auto-csv && ./_scripts/auto-md && git add --update && git commit -m \"solved ${fileBasenameNoExtension} from ${relativeFileDirname}\" && git push origin master",
          "group": "build",
@@ -40,7 +40,7 @@
          "problemMatcher": []
       },
       {
-         "label": "run scripts to update changes",
+         "label": "run scripts",
          "type": "shell",
          "command": "./_scripts/auto-csv && ./_scripts/auto-md && git add --update",
          "options": {
@@ -52,6 +52,6 @@
             "clear": true
          },
          "problemMatcher": []
-      },
+      }
    ]
 }

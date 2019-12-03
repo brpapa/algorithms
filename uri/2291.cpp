@@ -1,5 +1,5 @@
 /*
-   number theory | all divisors
+   mathematics | number theory | all divisors
    problem: divine numbers
    author: @brnpapa
 */

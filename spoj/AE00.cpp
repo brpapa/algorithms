@@ -1,5 +1,5 @@
 /*
-   number theory
+   mathematics | number theory
    problem: rectangles
    author: @brnpapa
 */

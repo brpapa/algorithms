@@ -1,5 +1,5 @@
 /*
-   greedy | coin change
+   greedy | coins change
    difficulty: easy
    problem: changing volume
    date: 25/Nov/2019

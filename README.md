@@ -1,4 +1,4 @@
-> Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).
+Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).
 
 
 
@@ -31,6 +31,7 @@ Solutions by theme:
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
 - 📓 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📕 [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp): colorful cubes
+- 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 ## backtracking
 - **all paths**
@@ -80,9 +81,6 @@ Solutions by theme:
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 ## graphs
-- **all-pairs shortest paths**
-	- **floyd-warshall**
-		- 📗 [uri/2372](https://github.com/brnpapa/judge-solutions/blob/master/uri/2372.cpp): meeting
 - **binary search tree (BST)**
 	- 📓 [uri/1194](https://github.com/brnpapa/judge-solutions/blob/master/uri/1194.cpp): pre, in and post
 	- 📓 [uri/1195](https://github.com/brnpapa/judge-solutions/blob/master/uri/1195.cpp): binary search tree
@@ -98,17 +96,20 @@ Solutions by theme:
 - **minimum spanning tree (MST)**
 	- **kruskal**
 		- 📗 [uva/10034](https://github.com/brnpapa/judge-solutions/blob/master/uva/10034.cpp): freckles
-- **single-source shortest paths**
-	- **dijkstra**
-		- 📓 [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): countries at war
-		- 📓 [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp): trip to bh
-		- 📙 [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): route change
+- **shortest paths**
+	- **all-pairs**
+		- **floyd-warshall**
+			- 📗 [uri/2372](https://github.com/brnpapa/judge-solutions/blob/master/uri/2372.cpp): meeting
+	- **single-source**
+		- **dijkstra**
+			- 📓 [uri/1148](https://github.com/brnpapa/judge-solutions/blob/master/uri/1148.cpp): countries at war
+			- 📓 [uri/2566](https://github.com/brnpapa/judge-solutions/blob/master/uri/2566.cpp): trip to bh
+			- 📙 [uri/1123](https://github.com/brnpapa/judge-solutions/blob/master/uri/1123.cpp): route change
 - 📓 [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp): design labirints
 ## greedy
-- **coin change**
-	- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
-- **coins**
+- **coins change**
 	- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
+	- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
 - **maximum subsequence**
 	- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
 	- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
@@ -118,11 +119,15 @@ Solutions by theme:
 - 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
-## number theory
-- **all divisors**
-	- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
-- **greatest common divisor (GCD)**
-	- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
+## mathematics
+- **number theory**
+	- **all divisors**
+		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
+	- **greatest common divisor (GCD)**
+		- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
+	- 📓 [codeforces/624-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624-A.cpp): save luke
+	- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles
+	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
 - **prime numbers**
 	- **factorization**
 		- 📓 [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp): despojados
@@ -130,9 +135,6 @@ Solutions by theme:
 		- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
 		- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
 	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
-- 📓 [codeforces/624-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624-A.cpp): save luke
-- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles
-- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
 ## substring search
 - **knuth-morris-pratt (KMP)**
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism

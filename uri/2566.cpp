@@ -1,5 +1,5 @@
 /*
-   graphs | single-source shortest paths | dijkstra
+   graphs | shortest paths | single-source | dijkstra
    problem: trip to bh
    author: @brnpapa
 */

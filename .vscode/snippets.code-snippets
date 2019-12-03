@@ -23,14 +23,12 @@
          "   author: @brnpapa",
          "*/",
       ],
-      "description": "Resolved? Insert metadata before to push"
+      "description": "Solved? Insert metadata before to push"
    },
    "default": {
       "prefix": "base",
       "body": [
          "#include <iostream>",
-         "#include <cstring>",
-         "#include <algorithm>",
          "using namespace std;",
          "",
          "int main() {",

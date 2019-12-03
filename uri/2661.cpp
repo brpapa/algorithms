@@ -1,5 +1,5 @@
 /*
-   number theory | prime numbers | factorization
+   mathematics | number theory | prime numbers | factorization
    problem: despojados
    author: @brnpapa
 */

@@ -24,7 +24,6 @@ void readCppFile(string folder, string file) {
    string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
 
 
-
    getline(in, line); // difficulty (modelo novo) ou name (modelo velho)
    if (line.find("difficulty") != string::npos) {
       string difficulty = line.substr(15);
@@ -109,7 +108,7 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "> Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
+   out << "Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
    
    out << "Solutions by theme:" << endl;
    
