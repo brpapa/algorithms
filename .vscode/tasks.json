@@ -23,7 +23,7 @@
             "cwd": "${workspaceFolder}"
          },
          "presentation": {
-            "reveal": "always",
+            "reveal": "silent",
             "clear": true
          },
          "problemMatcher": []
