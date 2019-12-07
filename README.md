@@ -138,6 +138,9 @@ Solutions by theme:
 		- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
 		- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
 	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
+## searching
+- **segment tree (ST)**
+	- 📗 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
 ## substring search
 - **knuth-morris-pratt (KMP)**
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism
