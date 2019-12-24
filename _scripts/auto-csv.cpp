@@ -3,16 +3,16 @@ ofstream out("./problems-table.csv");
 
 void readCppFile(string folder, string file) {
    string line;
-   vector<string> topics;
    ifstream in(folder+"/"+file+".cpp");
 
    getline(in, line); // /*
 
    getline(in, line); // theme | topic1 | topic2
-   separateTopics(line, topics);
-   string theme = topics[0];
-   for (int i = 1; i < topics.size(); i++)
-      theme += " > " + topics[i];
+   vector<string> subjects;
+   separateTopics(line, subjects);
+   string theme = subjects[0], topics = "";
+   for (int i = 1; i < subjects.size(); i++)
+      topics += " > " + subjects[i];
 
 
    getline(in, line);
@@ -29,7 +29,7 @@ void readCppFile(string folder, string file) {
       string problem = file;
       string url = "file:///Users/papa/Google%20Drive/dev/icpc/" + folder + "/" + file + ".cpp";
 
-      out << judge << "," << problem << "," << name << "," << difficulty << "," << theme << "," << date << "," << url << endl;
+      out << judge << "," << problem << "," << name << "," << difficulty << "," << theme << "," << topics << "," << date << "," << url << endl;
    }
 
    in.close();
@@ -55,7 +55,7 @@ void readAllCppFilesTrackedOnGit() {
 }
 
 int main() {
-   out << "judge,problem,name,difficulty,theme,date,url" << endl; 
+   out << "judge,problem,name,difficulty,theme,topics,date,url" << endl; 
    readAllCppFilesTrackedOnGit();
 
    out.close();

@@ -35,6 +35,7 @@ Solutions by theme:
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
+- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 ## backtracking
 - **all paths**
@@ -46,6 +47,8 @@ Solutions by theme:
 - **combination**
 	- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
 ## computational geometry
+- 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
+- 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 - 📗 [codeforces/659-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/659-D.cpp): bicycle race
 ## data structures
 - **minimum priority queue**
@@ -82,9 +85,6 @@ Solutions by theme:
 	- 📓 [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): cards
 - **minimum sum**
 	- 📓 [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp): unidirectional TSP
-## geometry
-- 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
-- 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 ## graphs
 - **binary search tree (BST)**
 	- 📓 [uri/1194](https://github.com/brnpapa/judge-solutions/blob/master/uri/1194.cpp): pre, in and post

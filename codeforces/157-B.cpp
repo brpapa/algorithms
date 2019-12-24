@@ -1,5 +1,5 @@
 /*
-   geometry
+   computational geometry
    problem: trace
    author: @brnpapa
 */
