@@ -27,13 +27,13 @@ Solutions by theme:
 - 📓 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
 - 📓 [uri/2345](https://github.com/brnpapa/judge-solutions/blob/master/uri/2345.cpp): assigning teams
 - 📓 [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): phase
-- 📓 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
-- 📓 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📕 [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp): colorful cubes
 - 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
 - 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
+- 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
+- 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 ## backtracking
@@ -45,6 +45,8 @@ Solutions by theme:
 ## combinatorics
 - **combination**
 	- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
+## computational geometry
+- 📗 [codeforces/659-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/659-D.cpp): bicycle race
 ## data structures
 - **minimum priority queue**
 	- 📓 [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp): add all

@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: easy
    problem: interrupter
+   date: 28/Feb/2019
    author: @brnpapa
 */
 #include <iostream>

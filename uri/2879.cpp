@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: easy
    problem: unraveling monty hall
+   date: 23/Feb/2019
    author: @brnpapa
 */
 #include <iostream>

@@ -31,7 +31,7 @@
       {
          "label": "open problem url",
          "type": "shell",
-         "command": "FILE=\"${fileBasenameNoExtension}\" && open \"$BASE_URL_${relativeFileDirname}\"\"${${FILE}/-//}\"", // substitui '-' por '/' de FILE
+         "command": "FILE=\"${fileBasenameNoExtension}\" && open \"$BASE_URL_${relativeFileDirname}\"\"${${FILE}/-//}\"",
          "group": "build",
          "presentation": {
             "reveal": "never",
