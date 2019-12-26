@@ -1,0 +1,17 @@
+# ignore all
+*
+# unignore any file with extension
+!*.*
+# unignore any folder
+!*/
+
+# my configuration
+**/*.txt
+.DS_Store
+input.in
+output.out
+
+_*/
+!_diagrams/
+!_scripts/
+!.vscode/

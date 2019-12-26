@@ -125,11 +125,12 @@ Solutions by theme:
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 ## mathematics
+- **greatest common divisor (GCD)**
+	- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
+	- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
 - **number theory**
 	- **all divisors**
 		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
-	- **greatest common divisor (GCD)**
-		- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
 	- 📓 [codeforces/624-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624-A.cpp): save luke
 	- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman

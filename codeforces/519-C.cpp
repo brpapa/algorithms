@@ -21,10 +21,10 @@ int main() {
       int leftNB = NB - 2 * i;
 
       if (leftNB >= 0) {
-         // += leftNB, se leftEXP > 2*leftNB     (times com 1 exp e 2 nbs cada)
-         // += leftEXP/2, se leftEXP < 2*leftNB  (times com 2 exp e 1 nbs cada)
-         qtyTeams += min(leftEXP / 2, leftNB); 
-         
+         // += leftNB, se leftEXP >= 2*leftNB
+         // += leftEXP/2, se leftEXP <= 2*leftNB
+         qtyTeams += min(leftEXP / 2, leftNB); // times com 2 exp e 1 nb cada
+
          ans = max(ans, qtyTeams);
       }
    }
