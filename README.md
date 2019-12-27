@@ -32,6 +32,7 @@ Solutions by theme:
 - 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
 - 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
+- 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
@@ -125,12 +126,12 @@ Solutions by theme:
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 ## mathematics
-- **greatest common divisor (GCD)**
-	- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
-	- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
 - **number theory**
 	- **all divisors**
 		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
+	- **greatest common divisor (GCD)**
+		- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
+		- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
 	- 📓 [codeforces/624-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624-A.cpp): save luke
 	- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
