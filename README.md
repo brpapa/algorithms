@@ -45,9 +45,6 @@ Solutions by theme:
 - **all permutations**
 	- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 	- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
-## combinatorics
-- **combination**
-	- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
 ## computational geometry
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
@@ -127,6 +124,10 @@ Solutions by theme:
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 ## mathematics
+- **combinatorics**
+	- **combinations**
+		- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
+		- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
 - **number theory**
 	- **all divisors**
 		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers

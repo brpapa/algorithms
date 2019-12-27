@@ -1,5 +1,5 @@
 /*
-   combinatorics | combination
+   mathematics | combinatorics | combinations
    problem: lottery
    author: @brnpapa
 */
