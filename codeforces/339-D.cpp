@@ -1,6 +1,6 @@
 /*
    searching | segment tree (ST)
-   difficulty: easy
+   difficulty: medium
    problem: xenia and bit operations
    date: 07/Dec/2019
    author: @brnpapa

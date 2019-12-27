@@ -1,6 +1,6 @@
 /*
    mathematics | number theory | prime numbers | sieve of eratosthenes
-   difficulty: easy
+   difficulty: medium
    problem: vasya and petya's game
    date: 26/Dec/2019
    author: @brnpapa

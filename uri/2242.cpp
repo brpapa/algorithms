@@ -1,25 +1,27 @@
 /*
    ad-hoc
+   difficulty: easy
    problem: huaauhahhuahau
+   date: 16/Mar/2019
    author: @brnpapa
 */
 #include <iostream>
 #include <string>
 using namespace std;
 
-bool ehVogal(char c) {
+bool isVowel(char c) {
    return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
-bool ehEngracada(string str) {
+bool isFunny(string str) {
    int j = 0;
    char aux[50];
    for (int i = 0; i < str.size(); i++)
-      if (ehVogal(str[i]))
+      if (isVowel(str[i]))
          aux[j++] = str[i];
 
    j = 0;
    for (int i = str.size() - 1; i >= 0; i--)
-      if (ehVogal(str[i]))
+      if (isVowel(str[i]))
          if (str[i] != aux[j++])
             return false;
 
@@ -27,8 +29,8 @@ bool ehEngracada(string str) {
 }
 
 int main() {
-   string risada;
-   cin >> risada;
-   printf("%s\n", ehEngracada(risada) ? "S" : "N");
+   string str;
+   cin >> str;
+   printf("%s\n", isFunny(str) ? "S" : "N");
    return 0;
 }

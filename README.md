@@ -24,7 +24,6 @@ Solutions by theme:
 - 📓 [uri/1438](https://github.com/brnpapa/judge-solutions/blob/master/uri/1438.cpp): unloading boxes
 - 📓 [uri/1548](https://github.com/brnpapa/judge-solutions/blob/master/uri/1548.cpp): canteen queue
 - 📓 [uri/1715](https://github.com/brnpapa/judge-solutions/blob/master/uri/1715.cpp): handball
-- 📓 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
 - 📓 [uri/2345](https://github.com/brnpapa/judge-solutions/blob/master/uri/2345.cpp): assigning teams
 - 📓 [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): phase
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
@@ -32,7 +31,9 @@ Solutions by theme:
 - 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
 - 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
+- 📗 [codeforces/373-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/373-A.cpp): collecting beats is fun
 - 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
+- 📗 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
@@ -141,11 +142,11 @@ Solutions by theme:
 	- **sieve of eratosthenes**
 		- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
 		- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
-		- 📗 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
+		- 📙 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
 	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
 ## searching
 - **segment tree (ST)**
-	- 📗 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
+	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
 ## substring search
 - **knuth-morris-pratt (KMP)**
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism
