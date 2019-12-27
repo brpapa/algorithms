@@ -141,6 +141,7 @@ Solutions by theme:
 	- **sieve of eratosthenes**
 		- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
 		- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
+		- 📗 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
 	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
 ## searching
 - **segment tree (ST)**
