@@ -1,3 +1,10 @@
+/*
+   ad-hoc
+   difficulty: easy
+   problem: vanya and lanterns
+   date: 29/Dec/2019
+   author: @brnpapa
+*/
 #include <algorithm>
 #include <iostream>
 #include <vector>

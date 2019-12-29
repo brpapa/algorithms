@@ -32,6 +32,7 @@ Solutions by theme:
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
 - 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
 - 📗 [codeforces/373-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/373-A.cpp): collecting beats is fun
+- 📗 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): vanya and lanterns
 - 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
 - 📗 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
@@ -45,8 +46,6 @@ Solutions by theme:
 - **all permutations**
 	- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 	- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
-## clude <iostream>
-- 📓 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): ctor>
 ## computational geometry
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
@@ -67,6 +66,8 @@ Solutions by theme:
 	- 📓 [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp): infix to posfix
 ## division and conquest
 - **binary search**
+	- **on answer**
+		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
 	- 📓 [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): postman
 - **path**
 	- 📓 [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): tiles
