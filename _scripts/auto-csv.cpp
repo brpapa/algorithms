@@ -8,8 +8,7 @@ void readCppFile(string folder, string file) {
    getline(in, line); // /*
 
    getline(in, line); // theme | topic1 | topic2
-   vector<string> subjects;
-   separateTopics(line, subjects);
+   vector<string> subjects = separateTopics(line);
    string theme = subjects[0], topics = "";
    for (int i = 1; i < subjects.size(); i++)
       topics += " > " + subjects[i];

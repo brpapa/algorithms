@@ -9,17 +9,16 @@ map<string, set<string, greater<string> > > graph;
 
 void readCppFile(string folder, string file) {
    string line, name;
-   vector<string> topics;
    ifstream in(folder+"/"+file+".cpp");
 
    getline(in, line); // /*
 
    getline(in, line); // theme | topic1 | topic2
-   separateTopics(line, topics);
+   vector<string> subjects = separateTopics(line);
 
-   graph["root"].insert(topics.front());
-   for (int i = 0; i < topics.size()-1; i++)
-      graph[topics[i]].insert(topics[i+1]);
+   graph["root"].insert(subjects.front());
+   for (int i = 0; i < subjects.size()-1; i++)
+      graph[subjects[i]].insert(subjects[i+1]);
    
    string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
 
@@ -47,7 +46,7 @@ void readCppFile(string folder, string file) {
       linkToMySolution = noDifficulty + " " + linkToMySolution;
    }
 
-   graph[topics.back()].insert(linkToMySolution + ": " + name);
+   graph[subjects.back()].insert(linkToMySolution + ": " + name);
    in.close();
 }
 

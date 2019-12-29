@@ -19,9 +19,10 @@ string replaceCh(string a, char b, char c) {
    return r;
 }
 
-void separateTopics(string line, vector<string> &topics) {
+vector<string> separateTopics(string line) {
+   vector<string> topics;
+   
    int b;
-   topics.clear();
    line.erase(0, 3); //remove tab
 
    while ((b = line.find("|")) != string::npos) {
@@ -29,4 +30,5 @@ void separateTopics(string line, vector<string> &topics) {
       line.erase(0, b+2);
    }
    topics.push_back(line);
+   return topics;
 }

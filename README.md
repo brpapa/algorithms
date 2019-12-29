@@ -45,6 +45,8 @@ Solutions by theme:
 - **all permutations**
 	- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 	- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
+## clude <iostream>
+- 📓 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): ctor>
 ## computational geometry
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher

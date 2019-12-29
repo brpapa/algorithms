@@ -3,7 +3,7 @@
       "string": "cpp",
       "iostream": "cpp"
    },
-   // adiciona variáveis de ambiente ao terminal integrado do workspace
+   /* adiciona variáveis de ambiente ao terminal integrado do workspace */
    "terminal.integrated.env.osx": {
       "BASE_URL_codeforces": "https://codeforces.com/problemset/problem/",
       "BASE_URL_spoj": "https://spoj.com/problems/",
