@@ -1,5 +1,5 @@
 /*
-   division and conquest | binary search
+   searching | binary search
    problem: postman
    author: @brnpapa
 */

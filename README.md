@@ -65,10 +65,6 @@ Solutions by theme:
 	- 📓 [uri/1069](https://github.com/brnpapa/judge-solutions/blob/master/uri/1069.cpp): diamonds and sand
 	- 📓 [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp): infix to posfix
 ## division and conquest
-- **binary search**
-	- **on answer**
-		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
-	- 📓 [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): postman
 - **path**
 	- 📓 [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): tiles
 	- 📓 [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): pass the ball
@@ -149,8 +145,14 @@ Solutions by theme:
 		- 📙 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
 	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
 ## searching
+- **binary search**
+	- **on answer**
+		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
+	- 📓 [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): postman
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
+- **two pointers**
+	- 📗 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
 ## substring search
 - **knuth-morris-pratt (KMP)**
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism
