@@ -12,7 +12,7 @@ codeforces,519-C,A and B and team training,medium,ad-hoc,,24/Dec/2019,file:///Us
 codeforces,576-A,vasya and petya's game,medium,mathematics, > number theory > prime numbers > sieve of eratosthenes,26/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/576-A.cpp
 codeforces,659-D,bicycle race,easy,computational geometry,,23/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/659-D.cpp
 codeforces,811-B,vladik and complicated book,easy,ad-hoc,,26/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/811-B.cpp
-codeforces,844-B,rectangles,easy,mathematics, > combinatorics > combinations,27/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/844-B.cpp
+codeforces,844-B,rectangles,easy,mathematics, > combinatorics > combinations > binomial coefficient,27/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/844-B.cpp
 codeforces,854-A,fraction,easy,mathematics, > number theory > greatest common divisor (GCD),26/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/854-A.cpp
 uri,1123,route change,medium,graphs, > shortest paths > single-source > dijkstra,22/May/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1123.cpp
 uri,1368,colorful cubes,hard,ad-hoc,,22/Jun/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/1368.cpp
@@ -24,6 +24,7 @@ uri,2963,buffoon,easy,ad-hoc,,14/Sep/2019,file:///Users/papa/Google%20Drive/dev/
 uri,2965,denouncing mafia,medium,graphs, > depth first search (DFS),28/Oct/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2965.cpp
 uri,2968,hour for a run,easy,ad-hoc,,14/Sep/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2968.cpp
 uri,2971,jar of water game,medium,ad-hoc,,19/Sep/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/2971.cpp
+uri,2972,less coin tosses,medium,mathematics, > combinatorics > combinations > binomial coefficient,02/Jan/2020,file:///Users/papa/Google%20Drive/dev/icpc/uri/2972.cpp
 uri,3024,mountain ranges,easy,ad-hoc,,09/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/uri/3024.cpp
 uva,10034,freckles,easy,graphs, > minimum spanning tree (MST) > kruskal,10/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/uva/10034.cpp
 uva,12097,pie,medium,searching, > binary search > on answer,29/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/uva/12097.cpp

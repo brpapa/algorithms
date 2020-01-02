@@ -19,18 +19,18 @@ Solutions by theme:
 	- **on answer**
 		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
 ## mathematics
-- **prime numbers**
-	- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
-	- **sieve of eratosthenes**
-		- 📙 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
-		- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
-		- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
-	- **factorization**
-		- 📓 [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp): despojados
 - **number theory**
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
 	- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles
 	- 📓 [codeforces/624-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/624-A.cpp): save luke
+	- **prime numbers**
+		- 📓 [spoj/PRIONPRI](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PRIONPRI.cpp): prime or not prime!
+		- **sieve of eratosthenes**
+			- 📙 [codeforces/576-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/576-A.cpp): vasya and petya's game
+			- 📓 [spoj/AMR11E](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR11E.cpp): distinct primes
+			- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
+		- **factorization**
+			- 📓 [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp): despojados
 	- **greatest common divisor (GCD)**
 		- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
 		- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
@@ -38,8 +38,10 @@ Solutions by theme:
 		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
 - **combinatorics**
 	- **combinations**
-		- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
-		- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
+		- **binomial coefficient**
+			- 📙 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
+			- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
+			- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
 ## greedy
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom

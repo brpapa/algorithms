@@ -1,5 +1,5 @@
 /*
-   mathematics | combinatorics | combinations
+   mathematics | combinatorics | combinations | binomial coefficient
    problem: lottery
    author: @brnpapa
 */
@@ -7,8 +7,8 @@
 #include <cstring>
 using namespace std;
 
-//coefBinomial[i][j] = qte de possibilidades de escolher j elementos de um conjunto de i elementos (ordem não importa e j <= i)
-long long int coefBinomial[64][16]; 
+// C[i][j] = qte de possibilidades de escolher j elementos de um conjunto de i elementos (ordem não importa e j <= i)
+long long int C[64][16]; 
 bool ehPrimo[2501];
 
 int qteNaoPrimosLinha[50], qteNaoPrimosColuna[50];
@@ -18,9 +18,9 @@ void trianguloPascal(int n) {
    for (int i = 0; i <= n; i++)
       for (int j = 0; j <= min(i, 10); j++) { //pois 1 <= k <= 10
          if (j == 0 || j == i)
-            coefBinomial[i][j] = 1;
+            C[i][j] = 1;
          else
-            coefBinomial[i][j] = coefBinomial[i - 1][j - 1] + coefBinomial[i - 1][j];
+            C[i][j] = C[i - 1][j - 1] + C[i - 1][j];
       }
 }
 //gera todos primos
@@ -57,10 +57,10 @@ int main() {
       long long int qteApostas = 0, qte;
       for (int i = 0; i < qteLin; i++)
          if ((qte = qteNaoPrimosLinha[i]) >= k)
-            qteApostas += coefBinomial[qte][k];
+            qteApostas += C[qte][k];
       for (int j = 0; j < qteCol; j++)
          if ((qte = qteNaoPrimosColuna[j]) >= k)
-            qteApostas += coefBinomial[qte][k];
+            qteApostas += C[qte][k];
       printf("%lld\n", qteApostas);
    }
    return 0;

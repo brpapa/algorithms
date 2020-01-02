@@ -1,5 +1,5 @@
 /*
-   mathematics | prime numbers | sieve of eratosthenes
+   mathematics | number theory | prime numbers | sieve of eratosthenes
    problem: noldbach problem
    author: @brnpapa
 */

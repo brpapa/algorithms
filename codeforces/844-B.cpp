@@ -1,5 +1,5 @@
 /*
-   mathematics | combinatorics | combinations
+   mathematics | combinatorics | combinations | binomial coefficient
    difficulty: easy
    problem: rectangles
    date: 27/Dec/2019
