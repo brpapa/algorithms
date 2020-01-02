@@ -1,6 +1,6 @@
 /*
    searching | two pointers
-   difficulty: easy
+   difficulty: medium
    problem: books
    date: 29/Dec/2019
    author: @brnpapa
