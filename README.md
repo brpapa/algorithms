@@ -126,6 +126,7 @@ Solutions by theme:
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 - 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
+- 📗 [uri/2968](https://github.com/brnpapa/judge-solutions/blob/master/uri/2968.cpp): hour for a run
 - 📗 [uri/2963](https://github.com/brnpapa/judge-solutions/blob/master/uri/2963.cpp): buffoon
 - 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
