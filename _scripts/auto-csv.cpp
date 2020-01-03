@@ -1,5 +1,7 @@
+// executar na raiz do projeto
+
 #include "./header.h"
-ofstream out("./problems-table.csv");
+ofstream out("./problems.csv");
 
 void readCppFile(string folder, string file) {
    string line;

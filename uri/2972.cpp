@@ -1,6 +1,6 @@
 /*
    mathematics | combinatorics | combinations | binomial coefficient
-   difficulty: medium
+   difficulty: hard
    problem: less coin tosses
    date: 02/Jan/2020
    author: @brnpapa
@@ -14,7 +14,7 @@ int main() {
    ll N;
    cin >> N;
 
-   // somatório de C(N, k)%2, para 0 <= k <= N, pois só sobra quando há qte ímpar de combinações de k caras, dentre N moedas
+   // somatório de C(N, k)%2, para 0 <= k <= N, pois só sobra quando há ímpar combinações de k caras, dentre N moedas
    cout << (ll)pow(2, __builtin_popcountll(N)) << endl;
    return 0;
 }

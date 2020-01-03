@@ -40,8 +40,8 @@ Solutions by theme:
 - **combinatorics**
 	- **combinations**
 		- **binomial coefficient**
-			- 📙 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
 			- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
+			- 📕 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
 			- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
 ## greedy
 - 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken

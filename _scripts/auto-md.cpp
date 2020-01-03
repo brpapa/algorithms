@@ -1,3 +1,4 @@
+// executar na raiz do projeto
 //! erro ao definir subtópicos idênticos de temas diferentes
 
 #include "./header.h"

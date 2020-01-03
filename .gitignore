@@ -10,8 +10,8 @@
 .DS_Store
 input.in
 output.out
+tmp.cpp
 
-_*/
-!_diagrams/
+_*
 !_scripts/
 !.vscode/
