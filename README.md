@@ -18,6 +18,7 @@ Solutions by theme:
 	- 📓 [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): postman
 	- **on answer**
 		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
+		- 📙 [uri/2973](https://github.com/brnpapa/judge-solutions/blob/master/uri/2973.cpp): maratona brasileira de popcorn
 ## mathematics
 - **number theory**
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman

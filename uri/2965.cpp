@@ -22,7 +22,7 @@ struct Theap {
       this->id = id;
       this->qty = qty;
    }
-   bool operator<(const T &p) const {
+   bool operator<(const Theap &p) const {
       return this->qty < p.qty;
    }
 };
