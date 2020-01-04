@@ -26,7 +26,7 @@
       "description": "Solved? Insert metadata before to push"
    },
    "default": {
-      "prefix": "base",
+      "prefix": "init",
       "body": [
          "#include <iostream>",
          "#include <vector>",

@@ -162,5 +162,7 @@ Solutions by theme:
 	- 📓 [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp): the dark elf
 - **linear search**
 	- 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
+- **implementation**
+	- 📗 [codeforces/1284-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-A.cpp): new year and naming
 - **bitwise operator**
 	- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
