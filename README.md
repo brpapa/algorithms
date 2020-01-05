@@ -45,12 +45,11 @@ Solutions by theme:
 			- 📕 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
 			- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
 ## greedy
-- 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
+- 📙 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
 - 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
+- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
 - 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
 - 📓 [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): i am very busy
-- **stack and queue**
-	- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
 - **maximum subsequence**
 	- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
 	- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
@@ -159,6 +158,7 @@ Solutions by theme:
 	- 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
 - **implementation**
 	- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
+	- 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 	- 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
 	- 📗 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): vanya and lanterns
 	- 📗 [codeforces/373-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/373-A.cpp): collecting beats is fun

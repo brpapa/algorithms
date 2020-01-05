@@ -1,5 +1,5 @@
 /*
-   greedy
+   ad-hoc > implementation
    difficulty: medium
    problem: feeding chicken
    date: 25/Nov/2019

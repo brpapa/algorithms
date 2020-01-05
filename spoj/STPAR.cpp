@@ -1,5 +1,5 @@
 /*
-   greedy > stack and queue
+   greedy
    problem: street parade
    author: @brnpapa
 */
