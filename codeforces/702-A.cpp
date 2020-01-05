@@ -1,5 +1,5 @@
 /*
-   greedy | maximum subsequence
+   greedy > maximum subsequence
    problem: maximum increase
    author: @brnpapa
 */

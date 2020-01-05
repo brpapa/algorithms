@@ -1,5 +1,5 @@
 /*
-   dynamic programming | minimum sum
+   dynamic programming > minimum sum
    problem: unidirectional TSP
    author: @brnpapa
 */

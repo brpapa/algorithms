@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: easy
    problem: vladik and complicated book
    date: 26/Dec/2019
@@ -22,11 +22,11 @@ int main() {
       cin >> l >> r >> x;
 
       int qtyLess = 0;
-      for (int i = l-1; i < r; i++)
-         if (p[i] < p[x-1])
+      for (int i = l - 1; i < r; i++)
+         if (p[i] < p[x - 1])
             qtyLess++;
 
-      cout << (l-1 + qtyLess == x-1 ? "Yes" : "No") << endl;
+      cout << (l - 1 + qtyLess == x - 1 ? "Yes" : "No") << endl;
    }
    return 0;
 }

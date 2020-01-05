@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: easy
    problem: stones on the table
    date: 03/Dec/2019
@@ -12,7 +12,7 @@ int main() {
    int N;
    cin >> N;
 
-   int  count = 0;
+   int count = 0;
    char curr, prev;
 
    cin >> prev;

@@ -1,5 +1,5 @@
 /*
-   dynamic programming | minimax
+   dynamic programming > minimax
    problem: cards
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   data structures | stack
+   data structures > stack
    problem: parenthesis balance I
    author: @brnpapa
 */

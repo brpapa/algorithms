@@ -1,5 +1,5 @@
 /*
-   backtracking | all permutations
+   backtracking > all permutations
    problem: stack game
    author: @brnpapa
 */

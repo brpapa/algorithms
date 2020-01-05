@@ -1,5 +1,5 @@
 /*
-   backtracking | all permutations
+   backtracking > all permutations
    problem: a problem of backtracking
    author: @brnpapa
 */

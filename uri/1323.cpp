@@ -1,5 +1,5 @@
 /*
-   mathematics | number theory
+   mathematics > number theory
    problem: feynman
    author: @brnpapa
 */

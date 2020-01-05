@@ -1,5 +1,5 @@
 /*
-   graphs | binary search tree (BST)
+   graphs > binary search tree (BST)
    problem: bst operations I
    author: @brnpapa
 */

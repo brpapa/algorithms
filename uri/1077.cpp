@@ -1,5 +1,5 @@
 /*
-   data structures | stack
+   data structures > stack
    problem: infix to posfix
    author: @brnpapa
 */

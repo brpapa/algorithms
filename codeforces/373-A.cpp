@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: easy
    problem: collecting beats is fun
    date: 27/Dec/2019

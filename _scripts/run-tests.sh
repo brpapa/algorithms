@@ -1,7 +1,7 @@
 # executar na raiz do projeto
 # chmod u+x THIS_FILE_PATH, se não tiver permissão
 
-#! compile o .cpp e mude path antes de executar
+#! compile o .cpp e set path antes de executar
 path="_tests/regional-2019/M"
 
 mkdir $path/my-output

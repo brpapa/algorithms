@@ -1,5 +1,5 @@
 /*
-   dynamic programming | longest common subsequence (LCS)
+   dynamic programming > longest common subsequence (LCS)
    problem: longest common subsequence
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   data structures | set
+   data structures > set
    problem: butterflies
    author: @brnpapa
 */

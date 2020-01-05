@@ -1,5 +1,5 @@
 /*
-   data structures | stack
+   data structures > stack
    problem: easy stack
    author: @brnpapa
 */

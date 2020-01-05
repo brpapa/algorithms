@@ -1,5 +1,5 @@
 /*
-   searching | segment tree (ST)
+   searching > segment tree (ST)
    difficulty: medium
    problem: xenia and bit operations
    date: 07/Dec/2019
@@ -55,12 +55,12 @@ int main() {
       cin >> arr[i];
 
    bt.assign(2 * N, 0);
-   buildBT(0, 0, N-1, opRootIsExclusive);
+   buildBT(0, 0, N - 1, opRootIsExclusive);
 
    int p, b;
    while (M--) {
       cin >> p >> b;
-      updateBT(0, 0, N-1, opRootIsExclusive, p-1, b);
+      updateBT(0, 0, N - 1, opRootIsExclusive, p - 1, b);
       cout << bt[0] << endl;
    }
 

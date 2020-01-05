@@ -15,6 +15,7 @@ Solutions by theme:
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
 - **binary search**
+	- 📙 [codeforces/1284-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-B.cpp): new year and ascent sequence
 	- 📓 [uri/2448](https://github.com/brnpapa/judge-solutions/blob/master/uri/2448.cpp): postman
 	- **on answer**
 		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
@@ -127,19 +128,13 @@ Solutions by theme:
 	- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
 ## ad-hoc
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
-- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
 - 📗 [uri/2968](https://github.com/brnpapa/judge-solutions/blob/master/uri/2968.cpp): hour for a run
 - 📗 [uri/2963](https://github.com/brnpapa/judge-solutions/blob/master/uri/2963.cpp): buffoon
 - 📗 [uri/2884](https://github.com/brnpapa/judge-solutions/blob/master/uri/2884.cpp): interrupter
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📗 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
-- 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
-- 📗 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): vanya and lanterns
-- 📗 [codeforces/373-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/373-A.cpp): collecting beats is fun
-- 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
-- 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - 📕 [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp): colorful cubes
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
 - 📓 [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): phase
@@ -163,6 +158,12 @@ Solutions by theme:
 - **linear search**
 	- 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
 - **implementation**
+	- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
+	- 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
+	- 📗 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): vanya and lanterns
+	- 📗 [codeforces/373-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/373-A.cpp): collecting beats is fun
+	- 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-A.cpp): new year and naming
+	- 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - **bitwise operator**
 	- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry

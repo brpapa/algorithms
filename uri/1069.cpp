@@ -1,5 +1,5 @@
 /*
-   data structures | stack
+   data structures > stack
    problem: diamonds and sand
    author: @brnpapa
 */

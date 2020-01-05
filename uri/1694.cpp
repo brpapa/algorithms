@@ -1,5 +1,5 @@
 /*
-   mathematics | combinatorics | combinations | binomial coefficient
+   mathematics > combinatorics > combinations > binomial coefficient
    problem: lottery
    author: @brnpapa
 */

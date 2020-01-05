@@ -1,5 +1,5 @@
 /*
-   data structures | minimum priority queue
+   data structures > minimum priority queue
    problem: add all
 */
 #include <iostream>

@@ -1,5 +1,5 @@
 /*
-   graphs | depth first search (DFS)
+   graphs > depth first search (DFS)
    problem: coloring a tree
    author: @brnpapa
 */

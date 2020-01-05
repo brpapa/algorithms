@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: easy
    problem: vanya and lanterns
    date: 29/Dec/2019

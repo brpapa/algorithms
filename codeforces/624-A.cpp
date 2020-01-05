@@ -1,5 +1,5 @@
 /*
-   mathematics | number theory
+   mathematics > number theory
    problem: save luke
    author: @brnpapa
 */

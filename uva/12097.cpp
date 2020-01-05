@@ -1,5 +1,5 @@
 /*
-   searching | binary search | on answer
+   searching > binary search > on answer
    difficulty: medium
    problem: pie
    date: 29/Dec/2019

@@ -1,5 +1,5 @@
 /*
-   data structures | stack
+   data structures > stack
    problem: rails again... tracing movements
    author: @brnpapa
 */

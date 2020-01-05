@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: easy
    problem: nearly lucky number
    date: 03/Dec/2019

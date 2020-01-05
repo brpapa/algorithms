@@ -1,5 +1,5 @@
 /*
-   graphs | shortest paths | all-pairs | floyd-warshall
+   graphs > shortest paths > all-pairs > floyd-warshall
    difficulty: easy
    problem: meeting
    date: 25/Oct/2019
@@ -40,7 +40,7 @@ int main() {
       c[v2][v1] = w;
    }
    floyd();
-   
+
    int minn = INF;
    for (int i = 0; i < V; i++) {
       int maxx = -INF;

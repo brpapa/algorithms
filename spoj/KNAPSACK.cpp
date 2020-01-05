@@ -1,5 +1,5 @@
 /*
-   dynamic programming | knapsack
+   dynamic programming > knapsack
    problem: the knapsack problem
    author: @brnpapa
 */

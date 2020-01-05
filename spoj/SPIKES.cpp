@@ -1,5 +1,5 @@
 /*
-   backtracking | all paths
+   backtracking > all paths
    problem: spiky mazes
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   dynamic programming | digits
+   dynamic programming > digits
    problem: numbers game
    author: @brnpapa
 */

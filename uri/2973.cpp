@@ -1,5 +1,5 @@
 /*
-   searching | binary search | on answer
+   searching > binary search > on answer
    difficulty: medium
    problem: maratona brasileira de popcorn
    date: 03/Jan/2020

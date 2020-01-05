@@ -1,13 +1,13 @@
 /*
-   graphs | shortest paths | single-source | dijkstra
+   graphs > shortest paths > single-source > dijkstra
    difficulty: medium
    problem: route change
    date: 22/May/2019
    author: @brnpapa
 */
 #include <iostream>
-#include <vector>
 #include <queue>
+#include <vector>
 #define MAX_V 250
 #define INF 2147483647
 using namespace std;
@@ -31,12 +31,12 @@ int R; // cidades da rota: 0 a R-1
 
 void insertEdge(int a, int b, int w) {
    Tadj v(a, w), u(b, w);
-   
+
    //a é da rota
    if (a < R) {
-      if (b == a+1 && b < R) //b é o seguinte imediato e da rota
-         adjList[a].push_back(u); 
-      else if (b == a-1 || b >= R) //b é o anterior imediato da rota ou não é da rota
+      if (b == a + 1 && b < R) //b é o seguinte imediato e da rota
+         adjList[a].push_back(u);
+      else if (b == a - 1 || b >= R) //b é o anterior imediato da rota ou não é da rota
          adjList[b].push_back(v);
    }
    //a não é da rota e b é da rota
@@ -64,15 +64,15 @@ void dijkstra(int init_v) {
 
          if (c_new < c[u.id]) {
             c[u.id] = c_new;
-            heap.push(Theap(u.id, c[u.id]));            
+            heap.push(Theap(u.id, c[u.id]));
          }
       }
    }
 }
 
 int main() {
-   int V, E;  // cidades, estradas
-   int x;     // cidade onde veiculo foi consertado
+   int V, E; // cidades, estradas
+   int x;    // cidade onde veiculo foi consertado
 
    while (true) {
       scanf("%d %d %d %d", &V, &E, &R, &x);
@@ -91,7 +91,7 @@ int main() {
          insertEdge(v1, v2, w); //grafo orientado
       }
       dijkstra(x);
-      printf("%d\n", c[R-1]);
+      printf("%d\n", c[R - 1]);
    }
    return 0;
 }

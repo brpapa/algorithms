@@ -1,17 +1,16 @@
-# ignore all
+# ignore any file without extension
 *
-# unignore any file with extension
 !*.*
-# unignore any folder
-!*/
+!*/ 
 
-# my configuration
-**/*.txt
+# cache files
+*.lock
 .DS_Store
+
+# my files/folders
 input.in
 output.out
 tmp.cpp
-
-_*
-!_scripts/
-!.vscode/
+_diagrams/
+_support-material/
+_tests/

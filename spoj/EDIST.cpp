@@ -1,5 +1,5 @@
 /*
-   dynamic programming | edit distance
+   dynamic programming > edit distance
    problem: edit distante
    author: @brnpapa
 */

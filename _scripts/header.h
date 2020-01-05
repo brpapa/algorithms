@@ -7,6 +7,8 @@
 #include <string>
 using namespace std;
 
+const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
+
 string replaceCh(string a, char b, char c) {
    //substitui b por c em a
 
@@ -25,7 +27,7 @@ vector<string> separateTopics(string line) {
    int b;
    line.erase(0, 3); //remove tab
 
-   while ((b = line.find("|")) != string::npos) {
+   while ((b = line.find(">")) != string::npos) {
       topics.push_back(line.substr(0, b-1));
       line.erase(0, b+2);
    }

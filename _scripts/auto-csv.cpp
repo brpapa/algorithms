@@ -5,16 +5,15 @@ ofstream out("./problems.csv");
 
 void readCppFile(string folder, string file) {
    string line;
-   ifstream in(folder+"/"+file+".cpp");
+   ifstream in(folder + "/" + file + ".cpp");
 
    getline(in, line); // /*
 
-   getline(in, line); // theme | topic1 | topic2
+   getline(in, line); // theme > topic1 > topic2
    vector<string> subjects = separateTopics(line);
    string theme = subjects[0], topics = "";
    for (int i = 1; i < subjects.size(); i++)
       topics += " > " + subjects[i];
-
 
    getline(in, line);
    if (line.find("difficulty") != string::npos) {
@@ -37,10 +36,10 @@ void readCppFile(string folder, string file) {
 }
 
 void readAllCppFilesTrackedOnGit() {
-   string line;
-   system("git ls-files > _scripts/filesTrackedOnGit.txt");
+   system(("git ls-files > " + CACHE_PATH).c_str());
+   ifstream in(CACHE_PATH);
 
-   ifstream in ("_scripts/filesTrackedOnGit.txt");
+   string line;
    while (!in.eof()) {
       getline(in, line);
       if (line.find(".cpp") == string::npos || line.find("_scripts") != string::npos)
@@ -48,15 +47,15 @@ void readAllCppFilesTrackedOnGit() {
 
       int b = line.find("/"), p = line.find(".");
       readCppFile(
-         line.substr(0, b), //folder
-         line.substr(b+1, p-b-1) //file without .cpp
+          line.substr(0, b),            //folder
+          line.substr(b + 1, p - b - 1) //file without .cpp
       );
    }
    in.close();
 }
 
 int main() {
-   out << "judge,problem,name,difficulty,theme,topics,date,url" << endl; 
+   out << "judge,problem,name,difficulty,theme,topics,date,url" << endl;
    readAllCppFilesTrackedOnGit();
 
    out.close();

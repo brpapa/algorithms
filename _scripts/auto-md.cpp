@@ -11,19 +11,18 @@ map<string, set<string, less<string> > > graph;
 
 void readCppFile(string folder, string file) {
    string line, name;
-   ifstream in(folder+"/"+file+".cpp");
+   ifstream in(folder + "/" + file + ".cpp");
 
    getline(in, line); // /*
 
-   getline(in, line); // theme | topic1 | topic2
+   getline(in, line); // theme > topic1 > topic2
    vector<string> subjects = separateTopics(line);
 
    graph["root"].insert(subjects.front());
-   for (int i = 0; i < subjects.size()-1; i++)
-      graph[subjects[i]].insert(subjects[i+1]);
-   
-   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
+   for (int i = 0; i < subjects.size() - 1; i++)
+      graph[subjects[i]].insert(subjects[i + 1]);
 
+   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
 
    getline(in, line); // difficulty (modelo novo) ou name (modelo velho)
    if (line.find("difficulty") != string::npos) {
@@ -41,8 +40,7 @@ void readCppFile(string folder, string file) {
       // string date = line.substr(9);
 
       linkToMySolution = emoji[difficulty] + " " + linkToMySolution;
-   }
-   else {
+   } else {
       name = line.substr(12);
       string noDifficulty = "📓";
       linkToMySolution = noDifficulty + " " + linkToMySolution;
@@ -53,10 +51,10 @@ void readCppFile(string folder, string file) {
 }
 
 void readAllCppFilesTrackedOnGit() {
+   system(("git ls-files > " + CACHE_PATH).c_str());
+   ifstream in(CACHE_PATH);
+
    string line;
-   system("git ls-files > _scripts/filesTrackedOnGit.txt");
-   
-   ifstream in("_scripts/filesTrackedOnGit.txt");
    while (!in.eof()) {
       getline(in, line);
       if (line.find(".cpp") == string::npos || line.find("_scripts") != string::npos)
@@ -64,8 +62,8 @@ void readAllCppFilesTrackedOnGit() {
 
       int b = line.find("/"), p = line.find(".");
       readCppFile(
-         line.substr(0, b), //folder
-         line.substr(b+1, p-b-1) //file without .cpp
+          line.substr(0, b),            //folder
+          line.substr(b + 1, p - b - 1) //file without .cpp
       );
    }
    in.close();
@@ -78,12 +76,13 @@ void processNode(string node, int level) {
    if (level == 1)
       out << "## " << node << endl;
    else {
-      for (int i = 0; i < level-2; i++)
+      for (int i = 0; i < level - 2; i++)
          out << "\t";
 
       if (graph[node].empty()) //nó folha
          out << "- " << node << endl;
-      else out << "- **" << node << "**" << endl;
+      else
+         out << "- **" << node << "**" << endl;
    }
 }
 
@@ -99,10 +98,10 @@ void dfs(string init) {
       v = s.top();
       s.pop();
       processNode(v, level[v]);
-      
-      for (string u: graph[v]) 
+
+      for (string u : graph[v])
          if (!level.count(u)) { //para cada nó não visitado
-            level[u] = level[v]+1;
+            level[u] = level[v] + 1;
             s.push(u);
          }
    }
@@ -110,9 +109,9 @@ void dfs(string init) {
 
 void writeHeader() {
    out << "Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
-   
+
    out << "Solutions by theme:" << endl;
-   
+
    // stack<string> themes;
    // for (string u : graph["root"])
    //    themes.push(u);

@@ -1,5 +1,5 @@
 /*
-   ad-hoc
+   ad-hoc > implementation
    difficulty: medium
    problem: A and B and team training
    date: 24/Dec/2019
