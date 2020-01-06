@@ -25,7 +25,7 @@
 		],
 		"description": "Solved? Insert metadata before to push"
 	},
-	"default": {
+	"init": {
 		"prefix": "init",
 		"body": [
 			"#include <iostream>",
@@ -37,5 +37,13 @@
 			"   return 0;",
 			"}"
 		]
+	},
+	"debug1": {
+		"prefix": "db1",
+		"body": "cout << $1 << endl;$2"
+	},
+	"debug2": {
+		"prefix": "db2",
+		"body": "cout << $1 << \" \" << $2 << endl;$3"
 	}
 }

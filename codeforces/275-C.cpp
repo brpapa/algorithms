@@ -1,6 +1,6 @@
 /*
    ad-hoc > greedy
-   difficulty: medium
+   difficulty: easy
    problem: k-multiple free set
    date: 05/Jan/2020
    author: @brnpapa

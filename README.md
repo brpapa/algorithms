@@ -20,6 +20,7 @@ Solutions by theme:
 	- **on answer**
 		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
 		- 📙 [uri/2973](https://github.com/brnpapa/judge-solutions/blob/master/uri/2973.cpp): maratona brasileira de popcorn
+		- 📕 [codeforces/460-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/460-C.cpp): present
 ## mathematics
 - **number theory**
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
@@ -130,7 +131,7 @@ Solutions by theme:
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-A.cpp): new year and naming
 	- 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
 - **greedy**
-	- 📙 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
+	- 📗 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
 	- 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
 	- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
 	- 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
