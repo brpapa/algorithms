@@ -1,5 +1,5 @@
 /*
-   greedy > maximum subsequence
+   ad-hoc > greedy > maximum subsequence
    problem: ilya and queries
    author: @brnpapa
 */

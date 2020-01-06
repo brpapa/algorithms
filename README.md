@@ -3,7 +3,7 @@ Acess my personal **notebook** for this repository [here](https://www.notion.so/
 
 
 Solutions by theme:
-## substring search
+## string processing
 - 📓 [spoj/TESSER](https://github.com/brnpapa/judge-solutions/blob/master/spoj/TESSER.cpp): finding the tesserect
 - **palindrome**
 	- 📓 [spoj/AMR12D](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AMR12D.cpp): the mirror of galadriel
@@ -44,18 +44,6 @@ Solutions by theme:
 			- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
 			- 📕 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
 			- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
-## greedy
-- 📙 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
-- 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
-- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
-- 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
-- 📓 [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): i am very busy
-- **maximum subsequence**
-	- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
-	- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
-- **coins change**
-	- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
-	- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
 ## graphs
 - 📓 [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp): design labirints
 - **shortest paths**
@@ -97,34 +85,12 @@ Solutions by theme:
 	- 📓 [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp): edit distante
 - **digits**
 	- 📓 [uri/1707](https://github.com/brnpapa/judge-solutions/blob/master/uri/1707.cpp): numbers game
-## division and conquest
-- **path**
-	- 📓 [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): pass the ball
-	- 📓 [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): tiles
-## data structures
-- **stack**
-	- 📓 [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp): infix to posfix
-	- 📓 [uri/1069](https://github.com/brnpapa/judge-solutions/blob/master/uri/1069.cpp): diamonds and sand
-	- 📓 [uri/1068](https://github.com/brnpapa/judge-solutions/blob/master/uri/1068.cpp): parenthesis balance I
-	- 📓 [uri/1063](https://github.com/brnpapa/judge-solutions/blob/master/uri/1063.cpp): rails again... tracing movements
-	- 📓 [spoj/STACKEZ](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STACKEZ.cpp): easy stack
-- **set**
-	- 📓 [uri/1901](https://github.com/brnpapa/judge-solutions/blob/master/uri/1901.cpp): butterflies
-- **queue**
-	- 📓 [uri/2065](https://github.com/brnpapa/judge-solutions/blob/master/uri/2065.cpp): supermarket line
-	- 📓 [uri/1110](https://github.com/brnpapa/judge-solutions/blob/master/uri/1110.cpp): throwing cards away
-- **minimum priority queue**
-	- 📓 [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp): add all
 ## computational geometry
 - 📗 [codeforces/659-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/659-D.cpp): bicycle race
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
-## backtracking
-- **all permutations**
-	- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
-	- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
-- **all paths**
-	- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
+## bitmasks
+- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
 ## ad-hoc
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
@@ -138,6 +104,7 @@ Solutions by theme:
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
 - 📓 [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): phase
 - 📓 [uri/2345](https://github.com/brnpapa/judge-solutions/blob/master/uri/2345.cpp): assigning teams
+- 📓 [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp): the dark elf
 - 📓 [uri/1715](https://github.com/brnpapa/judge-solutions/blob/master/uri/1715.cpp): handball
 - 📓 [uri/1548](https://github.com/brnpapa/judge-solutions/blob/master/uri/1548.cpp): canteen queue
 - 📓 [uri/1438](https://github.com/brnpapa/judge-solutions/blob/master/uri/1438.cpp): unloading boxes
@@ -150,12 +117,9 @@ Solutions by theme:
 - 📓 [uri/1253](https://github.com/brnpapa/judge-solutions/blob/master/uri/1253.cpp): caesar cipher
 - 📓 [uri/1217](https://github.com/brnpapa/judge-solutions/blob/master/uri/1217.cpp): getline two-fruits
 - 📓 [uri/1091](https://github.com/brnpapa/judge-solutions/blob/master/uri/1091.cpp): division of nlogonia
+- 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
 - 📓 [codeforces/686-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686-A.cpp): free ice cream
 - 📓 [codeforces/1033-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033-A.cpp): king escape
-- **sort**
-	- 📓 [uri/1766](https://github.com/brnpapa/judge-solutions/blob/master/uri/1766.cpp): the dark elf
-- **linear search**
-	- 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
 - **implementation**
 	- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
 	- 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
@@ -165,5 +129,39 @@ Solutions by theme:
 	- 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-A.cpp): new year and naming
 	- 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
-- **bitwise operator**
-	- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
+- **greedy**
+	- 📙 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
+	- 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
+	- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
+	- 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
+	- 📓 [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): i am very busy
+	- **maximum subsequence**
+		- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
+		- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
+	- **coins change**
+		- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
+		- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
+- **division and conquest**
+	- **path**
+		- 📓 [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): pass the ball
+		- 📓 [uri/2246](https://github.com/brnpapa/judge-solutions/blob/master/uri/2246.cpp): tiles
+- **data structures**
+	- **stack**
+		- 📓 [uri/1077](https://github.com/brnpapa/judge-solutions/blob/master/uri/1077.cpp): infix to posfix
+		- 📓 [uri/1069](https://github.com/brnpapa/judge-solutions/blob/master/uri/1069.cpp): diamonds and sand
+		- 📓 [uri/1068](https://github.com/brnpapa/judge-solutions/blob/master/uri/1068.cpp): parenthesis balance I
+		- 📓 [uri/1063](https://github.com/brnpapa/judge-solutions/blob/master/uri/1063.cpp): rails again... tracing movements
+		- 📓 [spoj/STACKEZ](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STACKEZ.cpp): easy stack
+	- **set**
+		- 📓 [uri/1901](https://github.com/brnpapa/judge-solutions/blob/master/uri/1901.cpp): butterflies
+	- **queue**
+		- 📓 [uri/2065](https://github.com/brnpapa/judge-solutions/blob/master/uri/2065.cpp): supermarket line
+		- 📓 [uri/1110](https://github.com/brnpapa/judge-solutions/blob/master/uri/1110.cpp): throwing cards away
+	- **minimum priority queue**
+		- 📓 [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp): add all
+- **backtracking**
+	- **all permutations**
+		- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
+		- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
+	- **all paths**
+		- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes

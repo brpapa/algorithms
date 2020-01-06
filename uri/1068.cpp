@@ -1,5 +1,5 @@
 /*
-   data structures > stack
+   ad-hoc > data structures > stack
    problem: parenthesis balance I
    author: @brnpapa
 */

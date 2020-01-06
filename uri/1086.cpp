@@ -1,11 +1,11 @@
 /*
-   greedy
+   ad-hoc > greedy
    problem: the club ballroom
    author: @brnpapa
 */
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 //retorna o menor número possível de tabuas ou -1 se for impossivel
@@ -21,8 +21,7 @@ int menorNumTabuas(vector<int> comp, float qteFilasTotal, int compFilas) {
       if (comp[i] == compFilas) {
          qteFilas++;
          qteTabuas++;
-      }
-      else if (comp[i] < compFilas) {
+      } else if (comp[i] < compFilas) {
          //procura a partir do menor comprimento
          while (j > i) {
             if (comp[i] + comp[j] == compFilas) {
@@ -30,8 +29,7 @@ int menorNumTabuas(vector<int> comp, float qteFilasTotal, int compFilas) {
                qteTabuas += 2;
                j--; //tábua já usada
                break;
-            }
-            else if (comp[i] + comp[j] > compFilas)
+            } else if (comp[i] + comp[j] > compFilas)
                break;
             j--; //comp[i]+comp[j] tem comprimento insuficiente
          }

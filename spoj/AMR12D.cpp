@@ -1,5 +1,5 @@
 /*
-   substring search > palindrome
+   string processing > palindrome
    problem: the mirror of galadriel
    author: @brnpapa
 */

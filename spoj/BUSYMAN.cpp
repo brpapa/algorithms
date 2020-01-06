@@ -1,5 +1,5 @@
 /*
-   greedy
+   ad-hoc > greedy
    problem: i am very busy
    author: @brnpapa
 */

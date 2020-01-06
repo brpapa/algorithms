@@ -1,5 +1,5 @@
 /*
-   substring search
+   string processing
    problem: finding the tesserect
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   data structures > queue
+   ad-hoc > data structures > queue
    problem: supermarket line
    author: @brnpapa
 */

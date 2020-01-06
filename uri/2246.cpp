@@ -1,5 +1,5 @@
 /*
-   division and conquest > path
+   ad-hoc > division and conquest > path
    problem: tiles
    author: @brnpapa
 */

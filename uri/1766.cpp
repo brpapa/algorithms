@@ -1,5 +1,5 @@
 /*
-   ad-hoc > sort
+   ad-hoc
    problem: the dark elf
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   greedy
+   ad-hoc > greedy
    problem: palindrome lover
    author: @brnpapa
 */

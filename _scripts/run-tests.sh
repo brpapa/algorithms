@@ -1,13 +1,15 @@
 # executar na raiz do projeto
 # chmod u+x THIS_FILE_PATH, se não tiver permissão
 
-#! compile o .cpp e set path antes de executar
-path="_tests/regional-2019/M"
+#! compile o .cpp antes
 
-mkdir $path/my-output
+#! exec: ./run-tests.sh TESTS_FOLDER (from _tests/)
+#  e.g.: ./run-tests.sh regional-2019/M
 
-for file in $path/input/*
+mkdir _tests/$1/my-output
+
+for file in _tests/$1/input/*
 do 
    file=$(basename $file)
-   ./e < $path/input/$file > $path/my-output/$file && ./$path/compare/cpp $path/output/$file $path/my-output/$file
+   ./e < _tests/$1/input/$file > _tests/$1/my-output/$file && ./_tests/$1/compare/cpp _tests/$1/output/$file _tests/$1/my-output/$file
 done

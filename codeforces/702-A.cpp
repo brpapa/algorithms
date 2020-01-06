@@ -1,5 +1,5 @@
 /*
-   greedy > maximum subsequence
+   ad-hoc > greedy > maximum subsequence
    problem: maximum increase
    author: @brnpapa
 */
@@ -16,8 +16,7 @@ int main() {
          maxAtual++;
          if (maxAtual > maxTotal)
             maxTotal = maxAtual;
-      }
-      else
+      } else
          maxAtual = 1;
 
       ant = atual;

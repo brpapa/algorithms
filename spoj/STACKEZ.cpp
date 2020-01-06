@@ -1,5 +1,5 @@
 /*
-   data structures > stack
+   ad-hoc > data structures > stack
    problem: easy stack
    author: @brnpapa
 */
@@ -18,11 +18,9 @@ int main() {
       if (op == 1) {
          scanf("%lli", &n);
          p.push(n);
-      }
-      else if (op == 2 && !p.empty()) {
+      } else if (op == 2 && !p.empty()) {
          p.pop();
-      }
-      else if (op == 3) {
+      } else if (op == 3) {
          if (!p.empty())
             printf("%lli\n", p.top());
          else

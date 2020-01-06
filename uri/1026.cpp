@@ -1,5 +1,5 @@
 /*
-   ad-hoc > bitwise operator
+   bitmasks
    problem: to carry or not to carry
    author: @brnpapa
 */

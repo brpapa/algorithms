@@ -1,5 +1,5 @@
 /*
-   substring search > knuth-morris-pratt (KMP)
+   string processing > knuth-morris-pratt (KMP)
    problem: musical plagiarism
    author: @brnpapa
 */

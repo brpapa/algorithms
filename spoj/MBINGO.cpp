@@ -1,5 +1,5 @@
 /*
-   ad-hoc > linear search
+   ad-hoc
    problem: bingo!
    author: @brnpapa
 */
