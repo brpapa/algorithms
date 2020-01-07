@@ -19,7 +19,8 @@ bool can(int ans) {
    int curr = 0;         // incremento à hgt[i], considerando as regadas anteriores que ainda atinge a flor i
 
    for (int i = 0; i < N; i++) {
-      curr -= i - W >= 0 ? wt[i - W] : 0; // decrementa regadas anteriores que não alcança a flor i
+      if (i - W >= 0) 
+         curr -= wt[i - W]; // decrementa regadas anteriores que não alcança a flor i
 
       if (hgt[i] + curr < ans) {
          wt[i] = ans - (hgt[i] + curr);

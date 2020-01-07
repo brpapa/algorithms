@@ -35,11 +35,12 @@ Solutions by theme:
 			- 📓 [codeforces/17-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/17-A.cpp): noldbach problem
 		- **factorization**
 			- 📓 [uri/2661](https://github.com/brnpapa/judge-solutions/blob/master/uri/2661.cpp): despojados
-	- **greatest common divisor (GCD)**
-		- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
-		- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
 	- **all divisors**
 		- 📓 [uri/2291](https://github.com/brnpapa/judge-solutions/blob/master/uri/2291.cpp): divine numbers
+- **greatest common divisor (GCD)**
+	- 📗 [codeforces/854-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/854-A.cpp): fraction
+	- 📗 [codeforces/822-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/822-A.cpp): i'm bored with life
+	- 📓 [uri/1028](https://github.com/brnpapa/judge-solutions/blob/master/uri/1028.cpp): collectable cards
 - **combinatorics**
 	- **combinations**
 		- **binomial coefficient**

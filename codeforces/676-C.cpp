@@ -15,14 +15,14 @@ vector<char> str;
 int tp(char letter) {
    int maxLength = 0;
    int l = 0, r = 0;
-   int k = 0; // mudanças gastas em [l .. r)
+   int k = 0; // atual qte de mudanças gastas em [l .. r)
 
    for (; l < N; l++) {
       if (l > 0)
          k -= str[l - 1] != letter;
 
-      for (; r < N && k <= K; r++)
-         if (str[r] != letter)
+      while (r < N && k <= K)
+         if (str[r++] != letter)
             k++;
       if (k > K) {
          r--;
