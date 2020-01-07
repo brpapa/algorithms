@@ -11,6 +11,7 @@ Solutions by theme:
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism
 ## searching
 - **two pointers**
+	- 📙 [codeforces/676-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/676-C.cpp): vasya and strings
 	- 📙 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
@@ -21,7 +22,7 @@ Solutions by theme:
 		- 📙 [uva/12097](https://github.com/brnpapa/judge-solutions/blob/master/uva/12097.cpp): pie
 		- 📙 [uri/2973](https://github.com/brnpapa/judge-solutions/blob/master/uri/2973.cpp): maratona brasileira de popcorn
 		- 📕 [codeforces/460-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/460-C.cpp): present
-## mathematics
+## math
 - **number theory**
 	- 📓 [uri/1323](https://github.com/brnpapa/judge-solutions/blob/master/uri/1323.cpp): feynman
 	- 📓 [spoj/AE00](https://github.com/brnpapa/judge-solutions/blob/master/spoj/AE00.cpp): rectangles

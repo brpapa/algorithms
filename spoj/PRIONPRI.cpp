@@ -1,5 +1,5 @@
 /*
-   mathematics > number theory > prime numbers
+   math > number theory > prime numbers
    problem: prime or not prime!
    author: @brnpapa
 */

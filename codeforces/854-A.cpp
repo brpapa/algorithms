@@ -1,5 +1,5 @@
 /*
-   mathematics > number theory > greatest common divisor (GCD)
+   math > number theory > greatest common divisor (GCD)
    difficulty: easy
    problem: fraction
    date: 26/Dec/2019

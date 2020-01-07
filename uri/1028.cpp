@@ -1,5 +1,5 @@
 /*
-   mathematics > number theory > greatest common divisor (GCD)
+   math > number theory > greatest common divisor (GCD)
    problem: collectable cards
    author: @brnpapa
 */
