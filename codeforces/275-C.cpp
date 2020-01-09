@@ -1,5 +1,5 @@
 /*
-   ad-hoc > greedy
+   greedy
    difficulty: easy
    problem: k-multiple free set
    date: 05/Jan/2020

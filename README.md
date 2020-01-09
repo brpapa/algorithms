@@ -10,11 +10,6 @@ Solutions by theme:
 - **knuth-morris-pratt (KMP)**
 	- 📓 [uri/1127](https://github.com/brnpapa/judge-solutions/blob/master/uri/1127.cpp): musical plagiarism
 ## searching
-- **two pointers**
-	- 📙 [codeforces/676-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/676-C.cpp): vasya and strings
-	- 📙 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
-	- 📗 [codeforces/6-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/6-C.cpp): alice, bob and chocolate
-	- 📕 [codeforces/1041-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1041-D.cpp): glinder
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
 - **binary search**
@@ -49,6 +44,24 @@ Solutions by theme:
 			- 📗 [codeforces/844-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/844-B.cpp): rectangles
 			- 📕 [uri/2972](https://github.com/brnpapa/judge-solutions/blob/master/uri/2972.cpp): less coin tosses
 			- 📓 [uri/1694](https://github.com/brnpapa/judge-solutions/blob/master/uri/1694.cpp): lottery
+## greedy
+- 📗 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
+- 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
+- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
+- 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
+- 📓 [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): i am very busy
+- **two pointers**
+	- 📙 [codeforces/676-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/676-C.cpp): vasya and strings
+	- 📙 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
+	- 📗 [codeforces/6-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/6-C.cpp): alice, bob and chocolate
+	- 📗 [codeforces/381-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/381-A.cpp): sereja and dima
+	- 📕 [codeforces/1041-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1041-D.cpp): glinder
+- **maximum subsequence**
+	- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
+	- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
+- **coins change**
+	- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
+	- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
 ## graphs
 - 📓 [uri/1076](https://github.com/brnpapa/judge-solutions/blob/master/uri/1076.cpp): design labirints
 - **shortest paths**
@@ -134,18 +147,6 @@ Solutions by theme:
 	- 📗 [codeforces/266-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/266-A.cpp): stones on the table
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1284-A.cpp): new year and naming
 	- 📗 [codeforces/110-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/110-A.cpp): nearly lucky number
-- **greedy**
-	- 📗 [codeforces/275-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/275-C.cpp): k-multiple free set
-	- 📓 [uri/1086](https://github.com/brnpapa/judge-solutions/blob/master/uri/1086.cpp): the club ballroom
-	- 📓 [spoj/STPAR](https://github.com/brnpapa/judge-solutions/blob/master/spoj/STPAR.cpp): street parade
-	- 📓 [spoj/PL](https://github.com/brnpapa/judge-solutions/blob/master/spoj/PL.cpp): palindrome lover
-	- 📓 [spoj/BUSYMAN](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BUSYMAN.cpp): i am very busy
-	- **maximum subsequence**
-		- 📓 [codeforces/702-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/702-A.cpp): maximum increase
-		- 📓 [codeforces/313-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/313-B.cpp): ilya and queries
-	- **coins change**
-		- 📗 [codeforces/1255-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1255-A.cpp): changing volume
-		- 📓 [codeforces/996-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/996-A.cpp): hit the lottery
 - **division and conquest**
 	- **path**
 		- 📓 [uri/2465](https://github.com/brnpapa/judge-solutions/blob/master/uri/2465.cpp): pass the ball

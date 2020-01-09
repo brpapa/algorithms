@@ -1,5 +1,5 @@
 /*
-   ad-hoc > greedy
+   greedy
    problem: the club ballroom
    author: @brnpapa
 */

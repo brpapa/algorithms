@@ -1,5 +1,5 @@
 /*
-   ad-hoc > greedy
+   greedy
    problem: street parade
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   searching > two pointers
+   greedy > two pointers
    difficulty: medium
    problem: vasya and strings
    date: 07/Jan/2020

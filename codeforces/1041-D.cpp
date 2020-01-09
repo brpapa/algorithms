@@ -1,5 +1,5 @@
 /*
-   searching > two pointers
+   greedy > two pointers
    difficulty: hard
    problem: glinder
    date: 09/Jan/2020
@@ -12,7 +12,9 @@
 using namespace std;
 
 int main() {
-   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+   ios_base::sync_with_stdio(0);
+   cin.tie(0);
+   cout.tie(0);
 
    ll N, H;
    cin >> N >> H;
@@ -36,7 +38,7 @@ int main() {
    ll maxLen = 0;
    for (l = 0; l < N + 1; l++) {
       // sumDif em [l .. r]: sumDif[r] - sumDif[l]
-      while (sumDif[r] - sumDif[l] < H && r+1 < N+1)
+      while (sumDif[r] - sumDif[l] < H && r + 1 < N + 1)
          r++;
 
       // sumLen em [l .. r): sumLen[r] - sumLen[l]
