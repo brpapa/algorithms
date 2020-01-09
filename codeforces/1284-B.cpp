@@ -8,8 +8,8 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-#define OVER_MAX 1000010
-#define UNDER_MIN -1
+#define MAX 1000010
+#define MIN -1
 #define ll long long
 using namespace std;
 
@@ -18,16 +18,16 @@ int main() {
    vector<int> mn(N), mx(N); // mn[i] e mx[i]: valores min e max da seq i
 
    for (int i = 0; i < N; i++) {
-      mn[i] = OVER_MAX;
-      mx[i] = UNDER_MIN;
+      mn[i] = MAX;
+      mx[i] = MIN;
 
       int li; cin >> li;
       while (li--) {
          int s; cin >> s;
 
          if (s > mn[i]) { // já tem pelo menos 1 ascent
-            mn[i] = UNDER_MIN;
-            mx[i] = OVER_MAX;
+            mn[i] = MIN;
+            mx[i] = MAX;
          }
          mn[i] = min(mn[i], s);
          mx[i] = max(mx[i], s);

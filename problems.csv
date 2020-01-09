@@ -1,4 +1,5 @@
 judge,problem,name,difficulty,theme,topics,date,url
+codeforces,1041-D,glinder,hard,searching, > two pointers,09/Jan/2020,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/1041-D.cpp
 codeforces,110-A,nearly lucky number,easy,ad-hoc, > implementation,03/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/110-A.cpp
 codeforces,1254-A,feeding chicken,medium,ad-hoc, > implementation,25/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/1254-A.cpp
 codeforces,1255-A,changing volume,easy,ad-hoc, > greedy > coins change,25/Nov/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/1255-A.cpp
@@ -12,7 +13,7 @@ codeforces,339-D,xenia and bit operations,medium,searching, > segment tree (ST),
 codeforces,373-A,collecting beats is fun,easy,ad-hoc, > implementation,27/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/373-A.cpp
 codeforces,460-C,present,hard,searching, > binary search > on answer,06/Jan/2020,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/460-C.cpp
 codeforces,492-B,vanya and lanterns,easy,ad-hoc, > implementation,29/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/492-B.cpp
-codeforces,519-C,A and B and team training,medium,ad-hoc, > implementation,24/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/519-C.cpp
+codeforces,519-C,a and b and team training,medium,ad-hoc, > implementation,24/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/519-C.cpp
 codeforces,576-A,vasya and petya's game,medium,math, > number theory > prime numbers > sieve of eratosthenes,26/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/576-A.cpp
 codeforces,659-D,bicycle race,easy,computational geometry,,23/Dec/2019,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/659-D.cpp
 codeforces,676-C,vasya and strings,medium,searching, > two pointers,07/Jan/2020,file:///Users/papa/Google%20Drive/dev/icpc/codeforces/676-C.cpp

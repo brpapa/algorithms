@@ -13,6 +13,7 @@ Solutions by theme:
 - **two pointers**
 	- 📙 [codeforces/676-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/676-C.cpp): vasya and strings
 	- 📙 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
+	- 📕 [codeforces/1041-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1041-D.cpp): glinder
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
 - **binary search**
@@ -124,7 +125,7 @@ Solutions by theme:
 - 📓 [codeforces/686-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686-A.cpp): free ice cream
 - 📓 [codeforces/1033-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033-A.cpp): king escape
 - **implementation**
-	- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): A and B and team training
+	- 📙 [codeforces/519-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/519-C.cpp): a and b and team training
 	- 📙 [codeforces/1254-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1254-A.cpp): feeding chicken
 	- 📗 [codeforces/811-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/811-B.cpp): vladik and complicated book
 	- 📗 [codeforces/492-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/492-B.cpp): vanya and lanterns
