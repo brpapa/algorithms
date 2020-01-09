@@ -6,10 +6,11 @@
 #! exec: ./run-tests.sh TESTS_FOLDER (from _tests/)
 #  e.g.: ./run-tests.sh regional-2019/M
 
-mkdir _tests/$1/my-output
+cd _tests
+mkdir $1/my-output
 
-for file in _tests/$1/input/*
+for file in $1/input/*
 do 
    file=$(basename $file)
-   ./e < _tests/$1/input/$file > _tests/$1/my-output/$file && ./_tests/$1/compare/cpp _tests/$1/output/$file _tests/$1/my-output/$file
+   ./../e < $1/input/$file > $1/my-output/$file && ./$1/compare/cpp $1/output/$file $1/my-output/$file
 done

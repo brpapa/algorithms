@@ -2,7 +2,11 @@
 //! erro ao definir subtópicos idênticos de temas diferentes
 
 #include "./header.h"
-ofstream out("README.md");
+const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
+const string WRITE_PATH = "README.md";
+
+
+ofstream out(WRITE_PATH);
 
 // árvore de strings, sendo "root" o nó raiz
 map<string, set<string, less<string> > > graph;
@@ -51,7 +55,6 @@ void readCppFile(string folder, string file) {
 }
 
 void readAllCppFilesTrackedOnGit() {
-   system(("git ls-files > " + CACHE_PATH).c_str());
    ifstream in(CACHE_PATH);
 
    string line;

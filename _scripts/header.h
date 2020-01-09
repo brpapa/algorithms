@@ -7,8 +7,6 @@
 #include <string>
 using namespace std;
 
-const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
-
 string replaceCh(string a, char b, char c) {
    //substitui b por c em a
 

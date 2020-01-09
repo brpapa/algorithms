@@ -1,7 +1,12 @@
 // executar na raiz do projeto
+//! erro ao nomear problema com ','
 
 #include "./header.h"
-ofstream out("./problems.csv");
+const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
+const string WRITE_PATH = "problems.csv";
+
+
+ofstream out(WRITE_PATH);
 
 void readCppFile(string folder, string file) {
    string line;
@@ -27,16 +32,14 @@ void readCppFile(string folder, string file) {
 
       string judge = folder;
       string problem = file;
-      string url = "file:///Users/papa/Google%20Drive/dev/icpc/" + folder + "/" + file + ".cpp";
 
-      out << judge << "," << problem << "," << name << "," << difficulty << "," << theme << "," << topics << "," << date << "," << url << endl;
+      out << "\"" << judge << "\",\"" << problem << "\",\"" << name << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << topics << "\",\"" << date << "\"" << endl;
    }
 
    in.close();
 }
 
 void readAllCppFilesTrackedOnGit() {
-   system(("git ls-files > " + CACHE_PATH).c_str());
    ifstream in(CACHE_PATH);
 
    string line;
@@ -55,7 +58,7 @@ void readAllCppFilesTrackedOnGit() {
 }
 
 int main() {
-   out << "judge,problem,name,difficulty,theme,topics,date,url" << endl;
+   out << "judge,problem,name,difficulty,theme,topics,date" << endl;
    readAllCppFilesTrackedOnGit();
 
    out.close();

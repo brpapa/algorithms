@@ -13,8 +13,8 @@ int main() {
    int N, T;
    cin >> N >> T;
 
-   vector<int> minNeeded(N);
-   for (int &min : minNeeded)
+   vector<int> mn(N); // min needed
+   for (int &min : mn)
       cin >> min;
 
    int ans = 0, r = 0;
@@ -22,13 +22,13 @@ int main() {
 
    for (int l = 0; r < N; l++) {
       if (l > 0)
-         t -= minNeeded[l - 1];
+         t -= mn[l - 1];
 
       while (t <= T && r < N) {
-         t += minNeeded[r++];
+         t += mn[r++];
       }
       if (t > T)
-         t -= minNeeded[--r];
+         t -= mn[--r];
 
       // cout << l << " " << r << " " << t << endl;
       ans = max(ans, r - l);

@@ -15,9 +15,9 @@
          "problemMatcher": []
       },
       {
-         "label": "mark as solved, run auto scripts and push",
+         "label": "mark as solved and push",
          "type": "shell",
-         "command": "git add ${relativeFile} && ./_scripts/auto-csv && ./_scripts/auto-md && git add --update && git commit -m \"solved: ${fileBasenameNoExtension} from ${relativeFileDirname}\" && git push origin master",
+         "command": "git add ${relativeFile} && ./_scripts/run-auto-scripts.sh && git add --update && git commit -m \"solved: ${fileBasenameNoExtension} from ${relativeFileDirname}\" && git push origin master",
          "group": "build",
          "options": {
             "cwd": "${workspaceFolder}"
@@ -48,19 +48,5 @@
          },
          "problemMatcher": []
       },
-      {
-         "label": "run auto scripts",
-         "type": "shell",
-         "command": "./_scripts/auto-csv && ./_scripts/auto-md && git add --update",
-         "options": {
-            "cwd": "${workspaceFolder}"
-         },
-         "group": "build",
-         "presentation": {
-            "reveal": "silent",
-            "clear": true
-         },
-         "problemMatcher": []
-      }
    ]
 }
