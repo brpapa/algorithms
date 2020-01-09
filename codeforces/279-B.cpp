@@ -20,11 +20,11 @@ int main() {
    int ans = 0, r = 0;
    int t = 0; // soma atual do intervalo [l .. r)
 
-   for (int l = 0; r < minNeeded.size(); l++) {
+   for (int l = 0; r < N; l++) {
       if (l > 0)
          t -= minNeeded[l - 1];
 
-      while (t <= T && r < minNeeded.size()) {
+      while (t <= T && r < N) {
          t += minNeeded[r++];
       }
       if (t > T)

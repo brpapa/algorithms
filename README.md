@@ -13,6 +13,7 @@ Solutions by theme:
 - **two pointers**
 	- 📙 [codeforces/676-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/676-C.cpp): vasya and strings
 	- 📙 [codeforces/279-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/279-B.cpp): books
+	- 📗 [codeforces/6-C](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/6-C.cpp): alice, bob and chocolate
 	- 📕 [codeforces/1041-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1041-D.cpp): glinder
 - **segment tree (ST)**
 	- 📙 [codeforces/339-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/339-D.cpp): xenia and bit operations
