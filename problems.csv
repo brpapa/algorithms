@@ -25,6 +25,7 @@ judge,problem,name,difficulty,theme,topics,date
 "codeforces","822-A","i'm bored with life","easy","math"," > greatest common divisor (GCD)","07/Jan/2020"
 "codeforces","844-B","rectangles","easy","math"," > combinatorics > combinations > binomial coefficient","27/Dec/2019"
 "codeforces","854-A","fraction","easy","math"," > number theory > greatest common divisor (GCD)","26/Dec/2019"
+"spoj","MAXSUMSU","maximum subset sum","easy","dynamic programming"," > maximum subarray sum > kadane","10/Jan/2020"
 "uri","1123","route change","medium","graphs"," > shortest paths > single-source > dijkstra","22/May/2019"
 "uri","1368","colorful cubes","hard","ad-hoc","","22/Jun/2019"
 "uri","2242","huaauhahhuahau","easy","ad-hoc","","16/Mar/2019"

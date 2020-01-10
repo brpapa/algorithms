@@ -95,6 +95,7 @@ Solutions by theme:
 	- 📓 [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): cards
 - **maximum subarray sum**
 	- **kadane**
+		- 📗 [spoj/MAXSUMSU](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MAXSUMSU.cpp): maximum subset sum
 		- 📗 [codeforces/1285-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1285-B.cpp): just eat it!
 - **longest common subsequence (LCS)**
 	- 📓 [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): longest common subsequence

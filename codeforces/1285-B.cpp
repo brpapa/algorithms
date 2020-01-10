@@ -8,7 +8,7 @@
 #include <iostream>
 #include <vector>
 #define ll long long
-#define INF 0x3f3f3f3f
+#define INF 0x3f3f3f3f3f3f3f3f
 using namespace std;
 
 int N;
@@ -19,9 +19,8 @@ ll kadane(int l, int r) {
    ll maxSoFar = -INF, maxEndingHere = 0;
 
    for (int i = l; i < r; i++) {
-      maxEndingHere = maxEndingHere + a[i];
+      maxEndingHere = max(maxEndingHere + a[i], 0ll);
       maxSoFar = max(maxSoFar, maxEndingHere);
-      maxEndingHere = max(maxEndingHere, 0ll);
    }
    return maxSoFar;
 }
@@ -42,7 +41,7 @@ int main() {
       }
 
       ll totalAdel = max(kadane(0, N-1), kadane(1, N));
-      cout << ((totalYasser > totalAdel)? "YES": "NO" ) << endl;
+      cout << ((totalYasser > totalAdel)? "YES": "NO") << endl;
    }
 
    return 0;
