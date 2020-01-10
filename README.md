@@ -118,6 +118,7 @@ Solutions by theme:
 - 📗 [uri/2879](https://github.com/brnpapa/judge-solutions/blob/master/uri/2879.cpp): unraveling monty hall
 - 📗 [uri/2242](https://github.com/brnpapa/judge-solutions/blob/master/uri/2242.cpp): huaauhahhuahau
 - 📗 [codeforces/151-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/151-A.cpp): soft drinking
+- 📗 [codeforces/1285-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1285-A.cpp): mezo playing zoma
 - 📕 [uri/1368](https://github.com/brnpapa/judge-solutions/blob/master/uri/1368.cpp): colorful cubes
 - 📓 [uri/2880](https://github.com/brnpapa/judge-solutions/blob/master/uri/2880.cpp): enigma
 - 📓 [uri/2663](https://github.com/brnpapa/judge-solutions/blob/master/uri/2663.cpp): phase
