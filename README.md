@@ -93,6 +93,9 @@ Solutions by theme:
 	- 📓 [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp): unidirectional TSP
 - **minimax**
 	- 📓 [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): cards
+- **maximum subarray sum**
+	- **kadane**
+		- 📗 [codeforces/1285-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1285-B.cpp): just eat it!
 - **longest common subsequence (LCS)**
 	- 📓 [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): longest common subsequence
 - **knapsack**
