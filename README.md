@@ -1,8 +1,20 @@
-Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).
+> Acess my **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).
 
 
 
 Solutions by theme:
+- **[string processing](#string-processing)**
+- **[searching](#searching)**
+- **[math](#math)**
+- **[greedy](#greedy)**
+- **[graphs](#graphs)**
+- **[dynamic programming](#dynamic-programming)**
+- **[computational geometry](#computational-geometry)**
+- **[brute force](#brute-force)**
+- **[bitmasks](#bitmasks)**
+- **[ad-hoc](#ad-hoc)**
+
+
 ## string processing
 - 📓 [spoj/TESSER](https://github.com/brnpapa/judge-solutions/blob/master/spoj/TESSER.cpp): finding the tesserect
 - **palindrome**
@@ -93,16 +105,15 @@ Solutions by theme:
 	- 📓 [uva/116](https://github.com/brnpapa/judge-solutions/blob/master/uva/116.cpp): unidirectional TSP
 - **minimax**
 	- 📓 [uva/12484](https://github.com/brnpapa/judge-solutions/blob/master/uva/12484.cpp): cards
-- **maximum subarray sum**
-	- **kadane**
-		- 📗 [spoj/MAXSUMSU](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MAXSUMSU.cpp): maximum subset sum
-		- 📗 [codeforces/1285-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1285-B.cpp): just eat it!
 - **longest common subsequence (LCS)**
 	- 📓 [uva/10405](https://github.com/brnpapa/judge-solutions/blob/master/uva/10405.cpp): longest common subsequence
 - **knapsack**
 	- 📓 [uri/2498](https://github.com/brnpapa/judge-solutions/blob/master/uri/2498.cpp): help vânia
 	- 📓 [uri/1487](https://github.com/brnpapa/judge-solutions/blob/master/uri/1487.cpp): six flags
 	- 📓 [spoj/KNAPSACK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/KNAPSACK.cpp): the knapsack problem
+- **kadane**
+	- 📗 [spoj/MAXSUMSU](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MAXSUMSU.cpp): maximum subset sum
+	- 📗 [codeforces/1285-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1285-B.cpp): just eat it!
 - **edit distance**
 	- 📓 [spoj/EDIST](https://github.com/brnpapa/judge-solutions/blob/master/spoj/EDIST.cpp): edit distante
 - **digits**
@@ -111,7 +122,15 @@ Solutions by theme:
 - 📗 [codeforces/659-D](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/659-D.cpp): bicycle race
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
+## brute force
+- **recursive**
+	- **backtracking**
+		- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
+		- **all permutations**
+			- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
+			- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 ## bitmasks
+- 📗 [uva/725](https://github.com/brnpapa/judge-solutions/blob/master/uva/725.cpp): name
 - 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
 ## ad-hoc
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
@@ -170,9 +189,3 @@ Solutions by theme:
 		- 📓 [uri/1110](https://github.com/brnpapa/judge-solutions/blob/master/uri/1110.cpp): throwing cards away
 	- **minimum priority queue**
 		- 📓 [uva/10954](https://github.com/brnpapa/judge-solutions/blob/master/uva/10954.cpp): add all
-- **backtracking**
-	- **all permutations**
-		- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
-		- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
-	- **all paths**
-		- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes

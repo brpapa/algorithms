@@ -111,20 +111,21 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "Acess my personal **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
+   out << "> Acess my **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
 
    out << "Solutions by theme:" << endl;
 
-   // stack<string> themes;
-   // for (string u : graph["root"])
-   //    themes.push(u);
+   stack<string> themes;
+   for (string u : graph["root"])
+      themes.push(u);
 
-   // while (!themes.empty()) {
-   //    string link = replaceCh(themes.top(), ' ', '-');
+   while (!themes.empty()) {
+      string link = replaceCh(themes.top(), ' ', '-');
 
-   //    out << "- **[" + themes.top() + "](#" + link + ")**" << endl;
-   //    themes.pop();
-   // }
+      out << "- **[" + themes.top() + "](#" + link + ")**" << endl;
+      themes.pop();
+   }
+   out << "\n\n";
 }
 
 int main() {

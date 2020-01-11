@@ -1,5 +1,5 @@
 /*
-   dynamic programming > maximum subarray sum > kadane
+   dynamic programming > kadane
    difficulty: easy
    problem: just eat it!
    date: 10/Jan/2020
