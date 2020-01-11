@@ -1,5 +1,5 @@
 /*
-   bitmasks
+   ad-hoc
    problem: to carry or not to carry
    author: @brnpapa
 */

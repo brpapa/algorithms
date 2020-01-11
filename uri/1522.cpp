@@ -5,10 +5,10 @@
 */
 #include <iostream>
 using namespace std;
-#define max 101
+#define MAX 101
 
-int pilhaA[max], pilhaB[max], pilhaC[max];
-bool toposVrf[max][max][max], ok;
+int pilhaA[MAX], pilhaB[MAX], pilhaC[MAX];
+bool toposVrf[MAX][MAX][MAX], ok;
 
 void testaTopos(int topoA, int topoB, int topoC) {
    //verifica se a combinação atual de topos já foi testada
@@ -21,45 +21,33 @@ void testaTopos(int topoA, int topoB, int topoC) {
       ok = true;
 
    if ((topoA > -1) && (topoB > -1) && (topoC > -1) && !ok)
-      if ((pilhaA[topoA] + pilhaB[topoB] + pilhaC[topoC]) % 3 == 0) {
-         testaTopos(--topoA, --topoB, --topoC);
-         topoA++;
-         topoB++;
-         topoC++; //backtracking
-      }
+      if ((pilhaA[topoA] + pilhaB[topoB] + pilhaC[topoC]) % 3 == 0)
+         testaTopos(topoA-1, topoB-1, topoC-1);
+
    if ((topoA > -1) && (topoB > -1) && !ok)
-      if ((pilhaA[topoA] + pilhaB[topoB]) % 3 == 0) {
-         testaTopos(--topoA, --topoB, topoC);
-         topoA++;
-         topoB++;
-      }
+      if ((pilhaA[topoA] + pilhaB[topoB]) % 3 == 0)
+         testaTopos(topoA-1, topoB-1, topoC);
+
    if ((topoA > -1) && (topoC > -1) && !ok)
-      if ((pilhaA[topoA] + pilhaC[topoC]) % 3 == 0) {
-         testaTopos(--topoA, topoB, --topoC);
-         topoA++;
-         topoC++;
-      }
+      if ((pilhaA[topoA] + pilhaC[topoC]) % 3 == 0)
+         testaTopos(topoA-1, topoB, topoC-1);
+
    if ((topoB > -1) && (topoC > -1) && !ok)
-      if ((pilhaB[topoB] + pilhaC[topoC]) % 3 == 0) {
-         testaTopos(topoA, --topoB, --topoC);
-         topoB++;
-         topoC++;
-      }
+      if ((pilhaB[topoB] + pilhaC[topoC]) % 3 == 0)
+         testaTopos(topoA, topoB-1, topoC-1);
+
    if ((topoA > -1) && !ok)
-      if (pilhaA[topoA] % 3 == 0) {
-         testaTopos(--topoA, topoB, topoC);
-         topoA++;
-      }
+      if (pilhaA[topoA] % 3 == 0)
+         testaTopos(topoA-1, topoB, topoC);
+
    if ((topoB > -1) && !ok)
-      if (pilhaB[topoB] % 3 == 0) {
-         testaTopos(topoA, --topoB, topoC);
-         topoB++;
-      }
+      if (pilhaB[topoB] % 3 == 0)
+         testaTopos(topoA, topoB-1, topoC);
+
    if ((topoC > -1) && !ok)
-      if (pilhaC[topoC] % 3 == 0) {
-         testaTopos(topoA, topoB, --topoC);
-         topoC++;
-      }
+      if (pilhaC[topoC] % 3 == 0)
+         testaTopos(topoA, topoB, topoC-1);
+
 }
 int main() {
    int n;

@@ -11,7 +11,6 @@ Solutions by theme:
 - **[dynamic programming](#dynamic-programming)**
 - **[computational geometry](#computational-geometry)**
 - **[brute force](#brute-force)**
-- **[bitmasks](#bitmasks)**
 - **[ad-hoc](#ad-hoc)**
 
 
@@ -129,9 +128,10 @@ Solutions by theme:
 		- **all permutations**
 			- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
 			- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
-## bitmasks
-- 📗 [uva/725](https://github.com/brnpapa/judge-solutions/blob/master/uva/725.cpp): name
-- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
+- **iterative**
+	- 📗 [uva/725](https://github.com/brnpapa/judge-solutions/blob/master/uva/725.cpp): division
+	- **subsets**
+		- 📗 [uva/12455](https://github.com/brnpapa/judge-solutions/blob/master/uva/12455.cpp): bars
 ## ad-hoc
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
@@ -159,6 +159,7 @@ Solutions by theme:
 - 📓 [uri/1253](https://github.com/brnpapa/judge-solutions/blob/master/uri/1253.cpp): caesar cipher
 - 📓 [uri/1217](https://github.com/brnpapa/judge-solutions/blob/master/uri/1217.cpp): getline two-fruits
 - 📓 [uri/1091](https://github.com/brnpapa/judge-solutions/blob/master/uri/1091.cpp): division of nlogonia
+- 📓 [uri/1026](https://github.com/brnpapa/judge-solutions/blob/master/uri/1026.cpp): to carry or not to carry
 - 📓 [spoj/MBINGO](https://github.com/brnpapa/judge-solutions/blob/master/spoj/MBINGO.cpp): bingo!
 - 📓 [codeforces/686-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/686-A.cpp): free ice cream
 - 📓 [codeforces/1033-A](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/1033-A.cpp): king escape

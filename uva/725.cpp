@@ -1,10 +1,10 @@
 /*
-   bitmasks
+   brute force > iterative
    difficulty: easy
-   problem: name
+   problem: division
    date: 11/Jan/2020
    author: @brnpapa
-   alt: brute force > iterative
+   alt: bitmasks
 */
 #include <cstdio>
 #define setBit(S, i) (S |= (1 << i))
