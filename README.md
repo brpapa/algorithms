@@ -126,6 +126,7 @@ Solutions by theme:
 	- **backtracking**
 		- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
 		- **all permutations**
+			- 📗 [uva/750](https://github.com/brnpapa/judge-solutions/blob/master/uva/750.cpp): 8 queens chess problem
 			- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
 			- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 - **iterative**

@@ -43,3 +43,4 @@ judge,problem,name,difficulty,theme,topics,date
 "uva","12097","pie","medium","searching"," > binary search > on answer","29/Dec/2019"
 "uva","12455","bars","easy","brute force"," > iterative > subsets","11/Jan/2020"
 "uva","725","division","easy","brute force"," > iterative","11/Jan/2020"
+"uva","750","8 queens chess problem","easy","brute force"," > iterative > all permutations","12/Jan/2020"

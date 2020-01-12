@@ -46,5 +46,9 @@
 	"debug2": {
 		"prefix": "db2",
 		"body": "cout << $1 << \" \" << $2 << endl;$3"
+	},
+   "debugv": {
+		"prefix": "dbv",
+		"body": "for (int i = 0; i < $1; i++) cout << $2 << \" \"; cout << endl;$3"
 	}
 }

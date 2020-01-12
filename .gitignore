@@ -1,11 +1,10 @@
 # ignore any file without extension
 *
 !*.*
-!*/ 
+!*/
 
 # cache files
 *.lock
-.DS_Store
 
 # my files/folders
 input.in
