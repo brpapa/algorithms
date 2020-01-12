@@ -1,5 +1,5 @@
 /*
-   brute force > recursive > backtracking > all permutations
+   brute force > recursive > backtracking
    problem: stack game
    author: @brnpapa
 */

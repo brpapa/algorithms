@@ -1,5 +1,5 @@
 /*
-   brute force > iterative
+   brute force
    difficulty: easy
    problem: division
    date: 11/Jan/2020

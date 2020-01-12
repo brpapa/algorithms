@@ -1,5 +1,5 @@
 /*
-   brute force > iterative > subsets
+   brute force > iterative > all subsets
    difficulty: easy
    problem: bars
    date: 11/Jan/2020

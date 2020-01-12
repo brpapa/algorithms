@@ -3,7 +3,7 @@
 
 #! exec: ./new-problem.sh JUDGE-NAME PROBLEM-NAME-WITHOUT-CPP
 
-if [[ -e "$1/$2" ]]
+if [[ -e "$1/$2.cpp" ]]
 then
    open $1/$2.cpp
 else

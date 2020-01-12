@@ -122,17 +122,19 @@ Solutions by theme:
 - 📓 [uva/10310](https://github.com/brnpapa/judge-solutions/blob/master/uva/10310.cpp): dog and gopher
 - 📓 [codeforces/157-B](https://github.com/brnpapa/judge-solutions/blob/master/codeforces/157-B.cpp): trace
 ## brute force
+- 📗 [uva/725](https://github.com/brnpapa/judge-solutions/blob/master/uva/725.cpp): division
 - **recursive**
-	- **backtracking**
-		- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
-		- **all permutations**
-			- 📗 [uva/750](https://github.com/brnpapa/judge-solutions/blob/master/uva/750.cpp): 8 queens chess problem
-			- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
-			- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
 - **iterative**
-	- 📗 [uva/725](https://github.com/brnpapa/judge-solutions/blob/master/uva/725.cpp): division
-	- **subsets**
+	- **all subsets**
 		- 📗 [uva/12455](https://github.com/brnpapa/judge-solutions/blob/master/uva/12455.cpp): bars
+	- **all permutations**
+		- 📗 [uva/750](https://github.com/brnpapa/judge-solutions/blob/master/uva/750.cpp): 8 queens chess problem
+- **backtracking**
+	- 📓 [uri/1522](https://github.com/brnpapa/judge-solutions/blob/master/uri/1522.cpp): stack game
+	- 📓 [spoj/SPIKES](https://github.com/brnpapa/judge-solutions/blob/master/spoj/SPIKES.cpp): spiky mazes
+	- 📓 [spoj/BTCK](https://github.com/brnpapa/judge-solutions/blob/master/spoj/BTCK.cpp): a problem of backtracking
+	- **n-queens**
+		- 📙 [uva/11195](https://github.com/brnpapa/judge-solutions/blob/master/uva/11195.cpp): another n-queen problem
 ## ad-hoc
 - 📙 [uri/2971](https://github.com/brnpapa/judge-solutions/blob/master/uri/2971.cpp): jar of water game
 - 📗 [uri/3024](https://github.com/brnpapa/judge-solutions/blob/master/uri/3024.cpp): mountain ranges
