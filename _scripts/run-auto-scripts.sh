@@ -1,7 +1,5 @@
 # auto-scripts são aqueles executados antes de todo push
 
-git ls-files > _scripts/files-tracked-on-git.lock
-
 if [[ ! -e "_scripts/auto-md" ]]
 then
    g++ -std=gnu++14 _scripts/auto-md.cpp -o _scripts/auto-md
@@ -14,3 +12,4 @@ fi
 
 ./_scripts/auto-csv
 ./_scripts/auto-md
+git add --update

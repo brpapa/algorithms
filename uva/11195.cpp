@@ -13,7 +13,7 @@
 #define bitIsOn(S, i) (S & (1 << (i)))
 using namespace std;
 
-int r = 0, ld = 0, rd = 0; // bitmasks
+int ur = 0, uld = 0, urd = 0; // bitmasksk
 
 char board[15][15];
 int ans, N;
@@ -24,10 +24,10 @@ void bt(int c) {
    }
 
    for (int r = 0; r < N; r++)
-      if (board[r][c] != '*' && !bitIsOn(r, r) && !bitIsOn(ld, r-c+N-1) && !bitIsOn(rd,r+c)) {
-         setBit(r, r); setBit(ld, r-c+N-1); setBit(rd, r+c);
+      if (board[r][c] != '*' && !bitIsOn(ur, r) && !bitIsOn(uld, r-c+N-1) && !bitIsOn(urd,r+c)) {
+         setBit(ur, r); setBit(uld, r-c+N-1); setBit(urd, r+c);
          bt(c + 1);
-         clearBit(r, r); clearBit(ld, r-c+N-1); clearBit(rd, r+c); // restaura
+         clearBit(ur, r); clearBit(uld, r-c+N-1); clearBit(urd, r+c); // restaura
       }
 }
 

@@ -12,12 +12,9 @@
 using namespace std;
 
 int main() {
-   ios_base::sync_with_stdio(0);
-   cin.tie(0);
-   cout.tie(0);
+   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
-   ll N, H;
-   cin >> N >> H;
+   ll N, H; cin >> N >> H;
 
    vector<ll> sl(N), sr(N); // segmentos de sl[i] à sr[i]
    for (int i = 0; i < N; i++)

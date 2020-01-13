@@ -17,7 +17,7 @@
       {
          "label": "mark as solved and push",
          "type": "shell",
-         "command": "git add ${relativeFile} && ./_scripts/run-auto-scripts.sh && git add --update && git commit -m \"solved: ${fileBasenameNoExtension} from ${relativeFileDirname}\" && git push origin master",
+         "command": "./_scripts/run-auto-scripts.sh && ./_scripts/problem-solved.sh \"${relativeFileDirname}\" \"${fileBasenameNoExtension}\"",
          "group": "build",
          "options": {
             "cwd": "${workspaceFolder}"

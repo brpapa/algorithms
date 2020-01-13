@@ -1,10 +1,7 @@
-# executar na raiz do projeto
-# chmod u+x THIS_FILE_PATH, se não tiver permissão
+# compile o .cpp antes
 
-#! compile o .cpp antes
-
-#! exec: ./run-tests.sh TESTS_FOLDER (from _tests/)
-#  e.g.: ./run-tests.sh regional-2019/M
+# exec: ./run-tests.sh TESTS_FOLDER (from _tests/)
+# e.g.: ./run-tests.sh regional-2019/M
 
 cd _tests
 mkdir $1/my-output
