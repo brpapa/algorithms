@@ -3,7 +3,7 @@
 
 #include "./header.h"
 const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
-const string WRITE_PATH = "README.md";
+const string WRITE_PATH = "problems.md";
 
 
 ofstream out(WRITE_PATH);
@@ -77,7 +77,7 @@ void processNode(string node, int level) {
       return;
 
    if (level == 1)
-      out << "## " << node << endl;
+      out << "# " << node << endl;
    else {
       for (int i = 0; i < level - 2; i++)
          out << "\t";
@@ -111,9 +111,7 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "> Acess my **notebook** for this repository [here](https://www.notion.so/papaicpc/icpc-notebook-0355e05508e9470fb065801e277f0c6c).\n\n\n\n";
-
-   out << "Solutions by theme:" << endl;
+   out << "Index:" << endl;
 
    stack<string> themes;
    for (string u : graph["root"])

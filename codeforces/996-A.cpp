@@ -1,5 +1,5 @@
 /*
-   greedy > coins change
+   greedy > coin change
    problem: hit the lottery
    author: @brnpapa
 */

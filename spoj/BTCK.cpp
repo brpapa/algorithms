@@ -1,5 +1,5 @@
 /*
-   brute force > recursive > backtracking
+   brute force > recursive backtracking
    problem: a problem of backtracking
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   dynamic programming > kadane
+   dynamic programming > max 1D range sum > kadane
    difficulty: easy
    problem: maximum subset sum
    date: 10/Jan/2020

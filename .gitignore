@@ -5,11 +5,12 @@
 
 # cache files
 *.lock
+**/.DS_Store
 
 # my files/folders
+main.cpp
 input.in
 output.out
-tmp.cpp
 _diagrams/
 _support-material/
 _tests/

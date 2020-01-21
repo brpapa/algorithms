@@ -1,5 +1,5 @@
 /*
-   brute force > recursive > backtracking
+   brute force > recursive backtracking
    problem: spiky mazes
    author: @brnpapa
 */

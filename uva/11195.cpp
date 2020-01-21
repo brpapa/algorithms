@@ -1,5 +1,5 @@
 /*
-   brute force > backtracking > n-queens
+   brute force > recursive backtracking > n-queens
    difficulty: medium
    problem: another n-queen problem
    date: 12/Jan/2020

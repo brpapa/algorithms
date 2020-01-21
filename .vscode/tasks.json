@@ -15,7 +15,7 @@
          "problemMatcher": []
       },
       {
-         "label": "mark as solved and push",
+         "label": "mark as solved",
          "type": "shell",
          "command": "./_scripts/run-auto-scripts.sh && ./_scripts/problem-solved.sh \"${relativeFileDirname}\" \"${fileBasenameNoExtension}\"",
          "group": "build",
