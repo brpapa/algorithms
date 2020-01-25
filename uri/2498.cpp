@@ -1,6 +1,8 @@
 /*
-   dynamic programming > knapsack
+   dynamic programming > 0-1 knapsack
+   difficulty: easy
    problem: help vânia
+   date: 09/Sep/2019
    author: @brnpapa
 */
 #include <iostream>

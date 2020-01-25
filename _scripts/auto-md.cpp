@@ -1,5 +1,5 @@
 // executar na raiz do projeto
-//! erro ao definir subtópicos idênticos de temas diferentes
+//! tratar erro ao lidar com subtópicos idênticos mas em temas diferentes
 
 #include "./header.h"
 const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
@@ -26,7 +26,7 @@ void readCppFile(string folder, string file) {
    for (int i = 0; i < subjects.size() - 1; i++)
       graph[subjects[i]].insert(subjects[i + 1]);
 
-   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/judge-solutions/blob/master/" + folder + "/" + file + ".cpp)";
+   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/icpc/blob/master/" + folder + "/" + file + ".cpp)";
 
    getline(in, line); // difficulty (modelo novo) ou name (modelo velho)
    if (line.find("difficulty") != string::npos) {
@@ -111,8 +111,6 @@ void dfs(string init) {
 }
 
 void writeHeader() {
-   out << "Index:" << endl;
-
    stack<string> themes;
    for (string u : graph["root"])
       themes.push(u);

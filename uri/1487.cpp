@@ -1,10 +1,12 @@
 /*
-   dynamic programming > knapsack
+   dynamic programming > 0-1 knapsack
+   difficulty: medium
    problem: six flags
+   date: 25/Aug/2019
    author: @brnpapa
 */
 #include <iostream>
-#include <cstring> //memset
+#include <cstring>
 using namespace std;
 
 int weight[101], value[101]; //tempo e pontos

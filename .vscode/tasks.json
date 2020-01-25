@@ -17,7 +17,7 @@
       {
          "label": "mark as solved",
          "type": "shell",
-         "command": "./_scripts/run-auto-scripts.sh && ./_scripts/problem-solved.sh \"${relativeFileDirname}\" \"${fileBasenameNoExtension}\"",
+         "command": "./_scripts/problem-solved.sh \"${relativeFileDirname}\" \"${fileBasenameNoExtension}\" && ./_scripts/run-auto-scripts.sh",
          "group": "build",
          "options": {
             "cwd": "${workspaceFolder}"

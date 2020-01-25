@@ -4,8 +4,8 @@
 !*/
 
 # cache files
-*.lock
 **/.DS_Store
+_scripts/files-tracked-on-git.lock
 
 # my files/folders
 main.cpp

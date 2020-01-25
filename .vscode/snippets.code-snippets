@@ -1,19 +1,8 @@
 {
 	// Place your judge-solutions workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope is left empty or omitted, the snippet gets applied to all languages. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are: $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the same ids are connected.
 
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-
 	"metadata": {
-		"prefix": "meta",
+		"prefix": "md",
 		"description": "Solved? Insert metadata before to push",
 		"body": [
 			"/*",
@@ -42,22 +31,22 @@
    // fast debugging
 	"debug1": {
 		"prefix": "d1",
-		"body": "cout << $1 << endl;"
+		"body": "printf(\"%2d\\n\", $1);",
 	},
 	"debug2": {
 		"prefix": "d2",
-		"body": "cout << $1 << \"\\t\" << $2 << endl;"
+		"body": "printf(\"%2d %2d\\n\", $1, $2);",
 	},
 	"debug3": {
 		"prefix": "d3",
-		"body": "cout << $1 << \"\\t\" << $2 << \"\\t\" << $3 << endl;"
+		"body": "printf(\"%2d %2d %2d\\n\", $1, $2, $3);",
 	},
 	"debug-1D-array": {
-		"prefix": "da",
+		"prefix": "dv",
 		"body": "for (int i = 0; i < $1; i++) cout << $2[i] << \" \"; cout << endl;"
 	},
 	"debug-2D-array": {
-		"prefix": "daa",
+		"prefix": "dvv",
 		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $1; j++) printf(\"%3d \", $2[i][j]); printf(\"\\n\");\n}"
 	}
 }
