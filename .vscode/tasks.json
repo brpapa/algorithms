@@ -1,52 +1,89 @@
 {
-	"tasks": [
+   "tasks": [
       {
-         "label": "compile and run",
+         "label": "open problem description",
          "type": "shell",
-         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < input.in > output.out",
-         "group": "build",
          "options": {
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+         },
+         "command": "./_scripts/open-problem-description.sh",
+         "args": [
+            "${relativeFileDirname}",
+            "${fileBasenameNoExtension}"
+         ],
+         "group": "build",
+         "presentation": {
+            "reveal": "never",
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "compine and run",
+         "group": "build",
+         "type": "shell",
+         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < e.in > e.out",
+         "options": {
+            "cwd": "${workspaceFolder}",
          },
          "presentation": {
             "reveal": "silent",
-            "clear": true
+            "clear": true,
+            "showReuseMessage": false,
          },
-         "problemMatcher": []
+         "problemMatcher": [],
       },
       {
-         "label": "mark as solved",
+         "label": "mark problem as solved",
          "type": "shell",
-         "command": "./_scripts/problem-solved.sh \"${relativeFileDirname}\" \"${fileBasenameNoExtension}\" && ./_scripts/run-auto-scripts.sh",
-         "group": "build",
-         "options": {
-            "cwd": "${workspaceFolder}"
-         },
-         "presentation": {
-            "reveal": "silent",
-            "clear": true
-         },
-         "problemMatcher": []
-      },
-      {
-         "label": "open problem url",
-         "type": "shell",
-         "command": "FILE=\"${fileBasenameNoExtension}\" && open \"$BASE_URL_${relativeFileDirname}\"\"${${FILE}/-//}\"",
+         "command": "./_scripts/mark-problem-as-solved.sh",
+         "args": [
+            "${relativeFileDirname}",
+            "${fileBasenameNoExtension}"
+         ],
          "group": "build",
          "options": {
             "cwd": "${workspaceFolder}",
-            "env": {
-               "BASE_URL_codeforces": "https://codeforces.com/problemset/problem/",
-               "BASE_URL_spoj": "https://spoj.com/problems/",
-               "BASE_URL_uri": "https://www.urionlinejudge.com.br/judge/problems/view/",
-               "BASE_URL_uva": "https://vjudge.net/problem/uva-"
-            }
          },
          "presentation": {
             "reveal": "silent",
-            "clear": true
+            "clear": true,
+            "showReuseMessage": false,
          },
-         "problemMatcher": []
+         "problemMatcher": [],
       },
+      {
+         "label": "create new problem",
+         "type": "shell",
+         "command": "./_scripts/create-new-problem.sh",
+         "args": [
+            "${input:judge-name}",
+            "${input:problem-id}",
+         ],
+         "group": "build",
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      }
+   ],
+   "inputs": [
+      {
+         "id": "judge-name",
+         "description": "Select the judge name",
+         "type": "pickString",
+         "options": [
+            "uva",
+            "codeforces",
+            "uri",
+            "spoj",
+         ],
+      },
+      {
+         "id": "problem-id",
+         "description": "Insert the judge id",
+         "type": "promptString",
+      }
    ]
 }

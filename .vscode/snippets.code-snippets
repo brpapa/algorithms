@@ -47,6 +47,6 @@
 	},
 	"debug-2D-array": {
 		"prefix": "dvv",
-		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $1; j++) printf(\"%3d \", $2[i][j]); printf(\"\\n\");\n}"
+		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $1; j++) printf(\"%2d \", $2[i][j]); printf(\"\\n\");\n}"
 	}
 }

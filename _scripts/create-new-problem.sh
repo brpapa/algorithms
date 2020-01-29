@@ -1,4 +1,4 @@
-# exec: ./new-problem.sh JUDGE-NAME PROBLEM-NAME-WITHOUT-CPP
+# exec: ./new-problem.sh JUDGE-NAME PROBLEM-ID-WITHOUT-CPP
 
 if [[ -e "$1/$2.cpp" ]]
 then

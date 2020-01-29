@@ -1,16 +1,9 @@
-# ignore any file without extension
-*
-!*.*
-!*/
-
 # cache files
 **/.DS_Store
 _scripts/files-tracked-on-git.lock
 
-# my files/folders
-main.cpp
-input.in
-output.out
+# files/folders
+e*
 _diagrams/
 _support-material/
 _tests/

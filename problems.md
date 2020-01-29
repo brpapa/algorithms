@@ -108,10 +108,14 @@
 	- 📓 [uri/1195](https://github.com/brnpapa/icpc/blob/master/uri/1195.cpp): binary search tree
 	- 📓 [uri/1194](https://github.com/brnpapa/icpc/blob/master/uri/1194.cpp): pre, in and post
 # dynamic programming
-- 📗 [uva/11450](https://github.com/brnpapa/icpc/blob/master/uva/11450.cpp): wedding shopping
-- 📗 [uva/10943](https://github.com/brnpapa/icpc/blob/master/uva/10943.cpp): how do you add?
 - **traveling salesman problem (TSP)**
 	- 📗 [uva/10496](https://github.com/brnpapa/icpc/blob/master/uva/10496.cpp): collecting beepers
+- **non-classicals**
+	- 📙 [uva/10721](https://github.com/brnpapa/icpc/blob/master/uva/10721.cpp): bar codes
+	- 📗 [uva/11450](https://github.com/brnpapa/icpc/blob/master/uva/11450.cpp): wedding shopping
+	- 📗 [uva/10943](https://github.com/brnpapa/icpc/blob/master/uva/10943.cpp): how do you add?
+	- 📗 [uva/10337](https://github.com/brnpapa/icpc/blob/master/uva/10337.cpp): flight planner
+	- 📗 [uva/10003](https://github.com/brnpapa/icpc/blob/master/uva/10003.cpp): cutting sticks
 - **minimum sum**
 	- 📓 [uva/116](https://github.com/brnpapa/icpc/blob/master/uva/116.cpp): unidirectional TSP
 - **minimax**

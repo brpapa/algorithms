@@ -1,5 +1,5 @@
 /*
-   dynamic programming
+   dynamic programming > non-classicals
    difficulty: easy
    problem: how do you add?
    date: 25/Jan/2020

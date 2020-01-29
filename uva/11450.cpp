@@ -1,5 +1,5 @@
 /*
-   dynamic programming
+   dynamic programming > non-classicals
    difficulty: easy
    problem: wedding shopping
    date: 16/Jan/2020
