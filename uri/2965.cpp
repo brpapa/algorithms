@@ -1,5 +1,5 @@
 /*
-   graphs > depth first search (DFS)
+   graphs > traversal > depth-first search (DFS)
    difficulty: medium
    problem: denouncing mafia
    date: 28/Oct/2019

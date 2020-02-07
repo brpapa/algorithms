@@ -83,6 +83,23 @@
 	- 📗 [uva/11292](https://github.com/brnpapa/icpc/blob/master/uva/11292.cpp): dragon of loowater
 # graphs
 - 📓 [uri/1076](https://github.com/brnpapa/icpc/blob/master/uri/1076.cpp): design labirints
+- **traversal**
+	- **topological sorting**
+		- 📗 [uva/11060](https://github.com/brnpapa/icpc/blob/master/uva/11060.cpp): beverages
+	- **flood fill**
+		- 📗 [uva/11094](https://github.com/brnpapa/icpc/blob/master/uva/11094.cpp): continents
+		- 📕 [uva/1103](https://github.com/brnpapa/icpc/blob/master/uva/1103.cpp): ancient messages
+	- **depth-first search (DFS)**
+		- 📙 [uri/2965](https://github.com/brnpapa/icpc/blob/master/uri/2965.cpp): denouncing mafia
+		- 📓 [uri/1322](https://github.com/brnpapa/icpc/blob/master/uri/1322.cpp): kids' wishes
+		- 📓 [codeforces/902-B](https://github.com/brnpapa/icpc/blob/master/codeforces/902-B.cpp): coloring a tree
+	- **breadth-first search (BFS)**
+		- 📓 [uri/2294](https://github.com/brnpapa/icpc/blob/master/uri/2294.cpp): lost elf
+		- 📓 [uri/1799](https://github.com/brnpapa/icpc/blob/master/uri/1799.cpp): the rat in a maze
+	- **bipartite checking**
+		- 📗 [uva/10004](https://github.com/brnpapa/icpc/blob/master/uva/10004.cpp): bicoloring
+- **strongly connected components (SCC)**
+	- 📙 [uva/11504](https://github.com/brnpapa/icpc/blob/master/uva/11504.cpp): dominos
 - **shortest paths**
 	- **single-source**
 		- **dijkstra**
@@ -95,13 +112,8 @@
 - **minimum spanning tree (MST)**
 	- **kruskal**
 		- 📗 [uva/10034](https://github.com/brnpapa/icpc/blob/master/uva/10034.cpp): freckles
-- **depth first search (DFS)**
-	- 📙 [uri/2965](https://github.com/brnpapa/icpc/blob/master/uri/2965.cpp): denouncing mafia
-	- 📓 [uri/1322](https://github.com/brnpapa/icpc/blob/master/uri/1322.cpp): kids' wishes
-	- 📓 [codeforces/902-B](https://github.com/brnpapa/icpc/blob/master/codeforces/902-B.cpp): coloring a tree
-- **breadth first search (BFS)**
-	- 📓 [uri/2294](https://github.com/brnpapa/icpc/blob/master/uri/2294.cpp): lost elf
-	- 📓 [uri/1799](https://github.com/brnpapa/icpc/blob/master/uri/1799.cpp): the rat in a maze
+- **bridges and articulation points**
+	- 📗 [uva/796](https://github.com/brnpapa/icpc/blob/master/uva/796.cpp): critical links
 - **binary search tree (BST)**
 	- 📓 [uri/1215](https://github.com/brnpapa/icpc/blob/master/uri/1215.cpp): andy's first dictionary
 	- 📓 [uri/1200](https://github.com/brnpapa/icpc/blob/master/uri/1200.cpp): bst operations I
@@ -109,15 +121,15 @@
 	- 📓 [uri/1194](https://github.com/brnpapa/icpc/blob/master/uri/1194.cpp): pre, in and post
 # dynamic programming
 - **traveling salesman problem (TSP)**
+	- 📙 [uva/116](https://github.com/brnpapa/icpc/blob/master/uva/116.cpp): unidirectional tsp
 	- 📗 [uva/10496](https://github.com/brnpapa/icpc/blob/master/uva/10496.cpp): collecting beepers
 - **non-classicals**
 	- 📙 [uva/10721](https://github.com/brnpapa/icpc/blob/master/uva/10721.cpp): bar codes
+	- 📙 [codeforces/166-E](https://github.com/brnpapa/icpc/blob/master/codeforces/166-E.cpp): tetrahedron
 	- 📗 [uva/11450](https://github.com/brnpapa/icpc/blob/master/uva/11450.cpp): wedding shopping
 	- 📗 [uva/10943](https://github.com/brnpapa/icpc/blob/master/uva/10943.cpp): how do you add?
 	- 📗 [uva/10337](https://github.com/brnpapa/icpc/blob/master/uva/10337.cpp): flight planner
 	- 📗 [uva/10003](https://github.com/brnpapa/icpc/blob/master/uva/10003.cpp): cutting sticks
-- **minimum sum**
-	- 📓 [uva/116](https://github.com/brnpapa/icpc/blob/master/uva/116.cpp): unidirectional TSP
 - **minimax**
 	- 📓 [uva/12484](https://github.com/brnpapa/icpc/blob/master/uva/12484.cpp): cards
 - **max 2D range sum**

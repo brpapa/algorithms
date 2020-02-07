@@ -1,6 +1,8 @@
 /*
-   dynamic programming > minimum sum
-   problem: unidirectional TSP
+   dynamic programming > traveling salesman problem (TSP)
+   difficulty: medium
+   problem: unidirectional tsp
+   date: 14/Nov/2019
    author: @brnpapa
 */
 #include <iostream>
@@ -31,6 +33,7 @@ void dpBU(int qteLIN, int qteCOL) {
          );
 }
 
+//! seria mais simples rodar dp de novo
 void recover() {
    int minAux = INF;
 

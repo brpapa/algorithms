@@ -1,5 +1,5 @@
 /*
-   graphs > depth first search (DFS)
+   graphs > traversal > depth-first search (DFS)
    problem: kids' wishes
    author: @brnpapa
 */

@@ -1,5 +1,5 @@
 /*
-   graphs > breadth first search (BFS)
+   graphs > traversal > breadth-first search (BFS)
    problem: the rat in a maze
    author: @brnpapa
 */
@@ -23,10 +23,8 @@ bool ehAdjacente(int v, int u) {
 }
 //insere aresta ao grafo não direcionado
 void aresta(int a, int b) {
-   if (!ehAdjacente(a, b))
-      gr[a].push_back(b);
-   if (!ehAdjacente(b, a))
-      gr[b].push_back(a);
+   if (!ehAdjacente(a, b)) gr[a].push_back(b);
+   if (!ehAdjacente(b, a)) gr[b].push_back(a);
 }
 //mapeia cada string como um número id e o retorna
 int str2id(string str, int &v) {

@@ -1,7 +1,7 @@
 {
    "tasks": [
       {
-         "label": "open problem description",
+         "label": "open description",
          "type": "shell",
          "options": {
             "cwd": "${workspaceFolder}",
@@ -33,7 +33,7 @@
          "problemMatcher": [],
       },
       {
-         "label": "mark problem as solved",
+         "label": "mark as solved",
          "type": "shell",
          "command": "./_scripts/mark-problem-as-solved.sh",
          "args": [
@@ -52,7 +52,7 @@
          "problemMatcher": [],
       },
       {
-         "label": "create new problem",
+         "label": "new problem",
          "type": "shell",
          "command": "./_scripts/create-new-problem.sh",
          "args": [

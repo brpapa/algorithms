@@ -22,7 +22,6 @@
 			"using namespace std;",
 			"",
 			"int main() {",
-			"   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);",
 			"   $0",
 			"   return 0;",
 			"}"
@@ -47,6 +46,6 @@
 	},
 	"debug-2D-array": {
 		"prefix": "dvv",
-		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $1; j++) printf(\"%2d \", $2[i][j]); printf(\"\\n\");\n}"
+		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $2; j++) printf(\"%2d \", $3[i][j]); printf(\"\\n\");\n}"
 	}
 }
