@@ -1,5 +1,5 @@
 /*
-   graphs > minimum spanning tree (MST) > kruskal
+   graphs > minimum spanning tree (MST)
    difficulty: easy
    problem: freckles
    date: 10/Nov/2019

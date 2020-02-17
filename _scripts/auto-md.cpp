@@ -9,7 +9,7 @@ const string WRITE_PATH = "problems.md";
 ofstream out(WRITE_PATH);
 
 // árvore de strings, sendo "root" o nó raiz
-map<string, set<string, less<string> > > graph;
+map<string, set<string, greater<string>>> graph;
 // por default um set armazena em ordem crescente
 // template: set<key, compare = less<key>, allocator = allocator<key>>
 

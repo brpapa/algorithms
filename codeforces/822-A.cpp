@@ -1,5 +1,5 @@
 /*
-   math > greatest common divisor (GCD)
+   math > number theory > greatest common divisor (GCD)
    difficulty: easy
    problem: i'm bored with life
    date: 07/Jan/2020

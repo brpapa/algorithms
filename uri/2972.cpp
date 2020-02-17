@@ -1,5 +1,5 @@
 /*
-   math > combinatorics > combinations > binomial coefficient
+   math > combinatorics > binomial coefficient
    difficulty: hard
    problem: less coin tosses
    date: 02/Jan/2020

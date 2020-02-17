@@ -1,5 +1,5 @@
 /*
-   graphs > bridges and articulation points
+   graphs > traversal > bridges and articulation points
    difficulty: easy
    problem: critical links
    date: 04/Feb/2020

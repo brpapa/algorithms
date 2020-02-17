@@ -3,7 +3,9 @@
 _scripts/files-tracked-on-git.lock
 
 # files/folders
-e*
+t*
 _diagrams/
 _support-material/
 _tests/
+_scripts/auto-csv
+_scripts/auto-md

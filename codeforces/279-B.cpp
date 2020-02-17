@@ -21,14 +21,12 @@ int main() {
    int t = 0; // soma atual do intervalo [l .. r)
 
    for (int l = 0; r < N; l++) {
-      if (l > 0)
-         t -= mn[l - 1];
+      if (l > 0) t -= mn[l - 1];
 
       while (t <= T && r < N) {
          t += mn[r++];
       }
-      if (t > T)
-         t -= mn[--r];
+      if (t > T) t -= mn[--r];
 
       // cout << l << " " << r << " " << t << endl;
       ans = max(ans, r - l);

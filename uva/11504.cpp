@@ -1,5 +1,5 @@
 /*
-   graphs > strongly connected components (SCC)
+   graphs > traversal > strongly connected components (SCC)
    difficulty: medium
    problem: dominos
    date: 07/Feb/2020

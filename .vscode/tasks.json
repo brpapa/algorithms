@@ -21,7 +21,7 @@
          "label": "compine and run",
          "group": "build",
          "type": "shell",
-         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < e.in > e.out",
+         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o t && ./t < t.in > t.out",
          "options": {
             "cwd": "${workspaceFolder}",
          },
@@ -52,7 +52,7 @@
          "problemMatcher": [],
       },
       {
-         "label": "new problem",
+         "label": "create new problem",
          "type": "shell",
          "command": "./_scripts/create-new-problem.sh",
          "args": [
