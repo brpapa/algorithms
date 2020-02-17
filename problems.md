@@ -63,6 +63,7 @@
 - 📓 [uri/2663](https://github.com/brnpapa/icpc/blob/master/uri/2663.cpp): phase
 - 📓 [uri/2880](https://github.com/brnpapa/icpc/blob/master/uri/2880.cpp): enigma
 - 📕 [uri/1368](https://github.com/brnpapa/icpc/blob/master/uri/1368.cpp): colorful cubes
+- 📗 [codeforces/1220-A](https://github.com/brnpapa/icpc/blob/master/codeforces/1220-A.cpp): cards
 - 📗 [codeforces/1285-A](https://github.com/brnpapa/icpc/blob/master/codeforces/1285-A.cpp): mezo playing zoma
 - 📗 [codeforces/151-A](https://github.com/brnpapa/icpc/blob/master/codeforces/151-A.cpp): soft drinking
 - 📗 [uri/2242](https://github.com/brnpapa/icpc/blob/master/uri/2242.cpp): huaauhahhuahau
@@ -71,9 +72,13 @@
 - 📗 [uri/2963](https://github.com/brnpapa/icpc/blob/master/uri/2963.cpp): buffoon
 - 📗 [uri/2968](https://github.com/brnpapa/icpc/blob/master/uri/2968.cpp): hour for a run
 - 📗 [uri/3024](https://github.com/brnpapa/icpc/blob/master/uri/3024.cpp): mountain ranges
+- 📗 [uva/10141](https://github.com/brnpapa/icpc/blob/master/uva/10141.cpp): request for proposal
 - 📗 [uva/10346](https://github.com/brnpapa/icpc/blob/master/uva/10346.cpp): peter's smokes
+- 📗 [uva/10812](https://github.com/brnpapa/icpc/blob/master/uva/10812.cpp): beat the spread!
 - 📗 [uva/11723](https://github.com/brnpapa/icpc/blob/master/uva/11723.cpp): numbering roads!
+- 📗 [uva/11799](https://github.com/brnpapa/icpc/blob/master/uva/11799.cpp): horror dash
 - 📗 [uva/11875](https://github.com/brnpapa/icpc/blob/master/uva/11875.cpp): brick game
+- 📗 [uva/12015](https://github.com/brnpapa/icpc/blob/master/uva/12015.cpp): google is feeling lucky
 - 📙 [uri/2971](https://github.com/brnpapa/icpc/blob/master/uri/2971.cpp): jar of water game
 # brute force
 - **iterative**
@@ -197,6 +202,7 @@
 - 📓 [spoj/PL](https://github.com/brnpapa/icpc/blob/master/spoj/PL.cpp): palindrome lover
 - 📓 [spoj/STPAR](https://github.com/brnpapa/icpc/blob/master/spoj/STPAR.cpp): street parade
 - 📓 [uri/1086](https://github.com/brnpapa/icpc/blob/master/uri/1086.cpp): the club ballroom
+- 📗 [codeforces/1092-B](https://github.com/brnpapa/icpc/blob/master/codeforces/1092-B.cpp): teams forming
 - 📗 [codeforces/275-C](https://github.com/brnpapa/icpc/blob/master/codeforces/275-C.cpp): k-multiple free set
 # math
 - **combinatorics**
