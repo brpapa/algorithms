@@ -1,5 +1,5 @@
 // executar na raiz do projeto
-//! tratar erro ao lidar com subtópicos idênticos mas em temas diferentes
+//! corrigir erro ao lidar com subtópicos idênticos de temas diferentes
 
 #include "./header.h"
 const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
@@ -13,9 +13,9 @@ map<string, set<string, greater<string>>> graph;
 // por default um set armazena em ordem crescente
 // template: set<key, compare = less<key>, allocator = allocator<key>>
 
-void readCppFile(string folder, string file) {
+void readFile(string ext, string folder, string file) {
    string line, name;
-   ifstream in(folder + "/" + file + ".cpp");
+   ifstream in(folder + "/" + file + ext);
 
    getline(in, line); // /*
 
@@ -26,7 +26,7 @@ void readCppFile(string folder, string file) {
    for (int i = 0; i < subjects.size() - 1; i++)
       graph[subjects[i]].insert(subjects[i + 1]);
 
-   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/icpc/blob/master/" + folder + "/" + file + ".cpp)";
+   string linkToMySolution = "[" + folder + "/" + file + "](https://github.com/brnpapa/icpc/blob/master/" + folder + "/" + file + ext+ ")";
 
    getline(in, line); // difficulty (modelo novo) ou name (modelo velho)
    if (line.find("difficulty") != string::npos) {
@@ -54,19 +54,24 @@ void readCppFile(string folder, string file) {
    in.close();
 }
 
-void readAllCppFilesTrackedOnGit() {
+void readAllFilesTrackedOnGit() {
    ifstream in(CACHE_PATH);
 
    string line;
    while (!in.eof()) {
       getline(in, line);
-      if (line.find(".cpp") == string::npos || line.find("_scripts") != string::npos)
-         continue; //line não contém ".cpp"
+
+      string ext = "";
+      if (line.find(".cpp") != string::npos) ext = ".cpp";
+      if (line.find(".py") != string::npos) ext = ".py";
+      if (ext == "" || line.find("_scripts") != string::npos)
+         continue; // line não é exercicio
 
       int b = line.find("/"), p = line.find(".");
-      readCppFile(
-          line.substr(0, b),            //folder
-          line.substr(b + 1, p - b - 1) //file without .cpp
+      readFile(
+         ext,
+         line.substr(0, b),      // folder
+         line.substr(b+1, p-b-1) // file without ext
       );
    }
    in.close();
@@ -125,7 +130,7 @@ void writeHeader() {
 }
 
 int main() {
-   readAllCppFilesTrackedOnGit();
+   readAllFilesTrackedOnGit();
 
    writeHeader();
    dfs("root");

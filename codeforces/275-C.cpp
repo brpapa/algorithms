@@ -18,8 +18,7 @@ int main() {
    cin >> N >> k;
 
    vector<int> s(N);
-   for (int &i : s)
-      cin >> i;
+   for (int &i : s) cin >> i;
 
    sort(s.begin(), s.end());
    for (int i = 0; i < N; i++) {

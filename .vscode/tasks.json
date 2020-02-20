@@ -38,7 +38,7 @@
          "command": "./_scripts/mark-problem-as-solved.sh",
          "args": [
             "${relativeFileDirname}",
-            "${fileBasenameNoExtension}"
+            "${fileBasename}"
          ],
          "group": "build",
          "options": {

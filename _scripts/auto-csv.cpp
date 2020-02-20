@@ -1,5 +1,5 @@
 // executar na raiz do projeto
-//! erro ao nomear problema com ','
+//! corrigir erro ao lidar com subtópicos idênticos de temas diferentes
 
 #include "./header.h"
 const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
@@ -8,9 +8,9 @@ const string WRITE_PATH = "problems.csv";
 
 ofstream out(WRITE_PATH);
 
-void readCppFile(string folder, string file) {
+void readFile(string ext, string folder, string file) {
    string line;
-   ifstream in(folder + "/" + file + ".cpp");
+   ifstream in(folder + "/" + file + ext);
 
    getline(in, line); // /*
 
@@ -39,19 +39,24 @@ void readCppFile(string folder, string file) {
    in.close();
 }
 
-void readAllCppFilesTrackedOnGit() {
+void readAllFilesTrackedOnGit() {
    ifstream in(CACHE_PATH);
 
    string line;
    while (!in.eof()) {
       getline(in, line);
-      if (line.find(".cpp") == string::npos || line.find("_scripts") != string::npos)
-         continue; //line não contém ".cpp"
+      
+      string ext = "";
+      if (line.find(".cpp") != string::npos) ext = ".cpp";
+      if (line.find(".py") != string::npos) ext = ".py";
+      if (ext == "" || line.find("_scripts") != string::npos)
+         continue; // line não é exercicio
 
       int b = line.find("/"), p = line.find(".");
-      readCppFile(
-          line.substr(0, b),            //folder
-          line.substr(b + 1, p - b - 1) //file without .cpp
+      readFile(
+         ext,
+         line.substr(0, b),      // folder
+         line.substr(b+1, p-b-1) // file without ext
       );
    }
    in.close();
@@ -59,7 +64,7 @@ void readAllCppFilesTrackedOnGit() {
 
 int main() {
    out << "judge,problem,name,difficulty,theme,topics,date" << endl;
-   readAllCppFilesTrackedOnGit();
+   readAllFilesTrackedOnGit();
 
    out.close();
    return 0;

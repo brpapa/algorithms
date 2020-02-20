@@ -33,6 +33,7 @@
 - **finding pattern**
 	- 📕 [uva/11718](https://github.com/brnpapa/icpc/blob/master/uva/11718.cpp): fantasy of a summation
 	- 📙 [uva/10161](https://github.com/brnpapa/icpc/blob/master/uva/10161.cpp): ant on a chessboard
+	- 📙 [uva/264](https://github.com/brnpapa/icpc/blob/master/uva/264.cpp): count on cantor
 - **implementation**
 	- 📗 [codeforces/110-A](https://github.com/brnpapa/icpc/blob/master/codeforces/110-A.cpp): nearly lucky number
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/icpc/blob/master/codeforces/1284-A.cpp): new year and naming
@@ -42,6 +43,8 @@
 	- 📗 [codeforces/811-B](https://github.com/brnpapa/icpc/blob/master/codeforces/811-B.cpp): vladik and complicated book
 	- 📙 [codeforces/1254-A](https://github.com/brnpapa/icpc/blob/master/codeforces/1254-A.cpp): feeding chicken
 	- 📙 [codeforces/519-C](https://github.com/brnpapa/icpc/blob/master/codeforces/519-C.cpp): a and b and team training
+- **sequences**
+	- 📙 [uva/443](https://github.com/brnpapa/icpc/blob/master/uva/443.cpp): humble numbers
 - 📓 [codeforces/1033-A](https://github.com/brnpapa/icpc/blob/master/codeforces/1033-A.cpp): king escape
 - 📓 [codeforces/686-A](https://github.com/brnpapa/icpc/blob/master/codeforces/686-A.cpp): free ice cream
 - 📓 [spoj/MBINGO](https://github.com/brnpapa/icpc/blob/master/spoj/MBINGO.cpp): bingo!
@@ -123,6 +126,8 @@
 	- 📙 [uri/1517](https://github.com/brnpapa/icpc/blob/master/uri/1517.cpp): apples
 	- 📙 [uva/10131](https://github.com/brnpapa/icpc/blob/master/uva/10131.cpp): is bigger smarter?
 	- 📙 [uva/481](https://github.com/brnpapa/icpc/blob/master/uva/481.cpp): what goes up
+- **max 1D range product**
+	- 📙 [uva/787](https://github.com/brnpapa/icpc/blob/master/uva/787.py): maximum sub-sequence product
 - **max 1D range sum**
 	- **kadane**
 		- 📗 [codeforces/1285-B](https://github.com/brnpapa/icpc/blob/master/codeforces/1285-B.cpp): just eat it!
@@ -210,6 +215,8 @@
 		- 📓 [uri/1694](https://github.com/brnpapa/icpc/blob/master/uri/1694.cpp): lottery
 		- 📕 [uri/2972](https://github.com/brnpapa/icpc/blob/master/uri/2972.cpp): less coin tosses
 		- 📗 [codeforces/844-B](https://github.com/brnpapa/icpc/blob/master/codeforces/844-B.cpp): rectangles
+	- **fibonacci numbers**
+		- 📙 [uva/10334](https://github.com/brnpapa/icpc/blob/master/uva/10334.py): ray through glasses
 - **number theory**
 	- **all divisors**
 		- 📓 [uri/2291](https://github.com/brnpapa/icpc/blob/master/uri/2291.cpp): divine numbers

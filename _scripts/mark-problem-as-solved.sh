@@ -1,6 +1,6 @@
-# exec: ./mark-problem-as-solved.sh JUDGE-NAME PROBLEM-NAME-WITHOUT-CPP
+# exec: ./mark-problem-as-solved.sh JUDGE-NAME PROBLEM-NAME-WITH-EXTENSION
 
-git add $1/$2.cpp
+git add $1/$2
 git ls-files > _scripts/files-tracked-on-git.lock
 
 # compile and run auto scripts
