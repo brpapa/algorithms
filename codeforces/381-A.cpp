@@ -1,5 +1,5 @@
 /*
-   greedy > two pointers
+   searching > two pointers
    difficulty: easy
    problem: sereja and dima
    date: 09/Jan/2020

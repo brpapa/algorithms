@@ -1,5 +1,5 @@
 /*
-   greedy > two pointers
+   searching > two pointers
    difficulty: medium
    problem: books
    date: 29/Dec/2019

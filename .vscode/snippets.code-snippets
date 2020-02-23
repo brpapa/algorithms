@@ -41,11 +41,15 @@
 		"body": "printf(\"%2d %2d %2d\\n\", $1, $2, $3);",
 	},
 	"debug-1D-array": {
-		"prefix": "dv",
+		"prefix": "da",
 		"body": "for (int i = 0; i < $1; i++) cout << $2[i] << \" \"; cout << endl;"
 	},
 	"debug-2D-array": {
-		"prefix": "dvv",
+		"prefix": "daa",
 		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $2; j++) printf(\"%2d \", $3[i][j]); printf(\"\\n\");\n}"
-	}
+	},
+	"debug-1D-vector": {
+		"prefix": "dv",
+		"body": "for (auto v : $1) cout << v << \" \"; cout << endl;"
+	},
 }

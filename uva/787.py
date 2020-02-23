@@ -1,5 +1,5 @@
 '''
-   dynamic programming > max 1D range product
+   dynamic programming > max 1D range sum > max 1D range product
    difficulty: medium
    problem: maximum sub-sequence product
    date: 20/Feb/2020
