@@ -19,7 +19,6 @@ string replaceCh(string a, char b, char c) {
    }
    return r;
 }
-
 vector<string> separateTopics(string line) {
    vector<string> topics;
 
@@ -36,7 +35,7 @@ vector<string> separateTopics(string line) {
 
 /* ----------- */
 
-const string CACHE_PATH = "_scripts/files-tracked-on-git.lock";
+const string CACHE_PATH = "files-tracked-on-git.lock";
 const string WRITE_PATH = "problems.csv";
 
 
@@ -99,7 +98,6 @@ void readAllFilesTrackedOnGit() {
 int main() {
    out << "judge,problem,name,difficulty,themes,date,ext" << endl;
    readAllFilesTrackedOnGit();
-
    out.close();
    return 0;
 }

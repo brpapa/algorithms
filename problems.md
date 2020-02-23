@@ -1,129 +1,97 @@
 - **[ad-hoc](#ad-hoc)**
-- **[brute force](#brute-force)**
-- **[math](#math)**
-- **[dynamic programming](#dynamic-programming)**
-- **[computational geometry](#computational-geometry)**
-- **[searching](#searching)**
 - **[graphs](#graphs)**
 - **[greedy](#greedy)**
+- **[brute force](#brute-force)**
+- **[dynamic programming](#dynamic-programming)**
+- **[math](#math)**
+- **[computational geometry](#computational-geometry)**
+- **[searching](#searching)**
 
-# greedy
-- 📗 [codeforces/1092-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1092-B.cpp): teams forming
-- 📗 [codeforces/275-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/275-C.cpp): k-multiple free set
+# searching
+- **two pointers:**
+	- 📙 [codeforces/279-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/279-B.cpp): books
+	- 📗 [codeforces/381-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/381-A.cpp): sereja and dima
+	- 📙 [codeforces/676-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/676-C.cpp): vasya and strings
+	- 📕 [codeforces/1041-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1041-D.cpp): glinder
+	- 📗 [codeforces/6-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/6-C.cpp): alice, bob and chocolate
+- **segment tree (ST):**
+	- 📙 [codeforces/339-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/339-D.cpp): xenia and bit operations
+- **binary search:**
+	- 📙 [codeforces/1284-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1284-B.cpp): new year and ascent sequence
+	- **on answer:**
+		- 📕 [codeforces/460-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/460-C.cpp): present
+		- 📙 [uva/12097](https://github.com/brnpapa/competitive-programming/blob/master/uva/12097.cpp): pie
+		- 📙 [uri/2973](https://github.com/brnpapa/competitive-programming/blob/master/uri/2973.cpp): maratona brasileira de popcorn
+# computational geometry
+- 📗 [codeforces/659-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/659-D.cpp): bicycle race
+# math
+- **combinatorics:**
+	- **binomial coefficient:**
+		- 📕 [uri/2972](https://github.com/brnpapa/competitive-programming/blob/master/uri/2972.cpp): less coin tosses
+		- 📗 [codeforces/844-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/844-B.cpp): rectangles
+	- **fibonacci numbers:**
+		- 📙 [uva/10334](https://github.com/brnpapa/competitive-programming/blob/master/uva/10334.py): ray through glasses
+- **number theory:**
+	- **greatest common divisor (GCD):**
+		- 📗 [codeforces/822-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/822-A.cpp): i'm bored with life
+		- 📗 [codeforces/854-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/854-A.cpp): fraction
+	- **prime numbers:**
+		- **factorization:**
+			- 📗 [uva/10042](https://github.com/brnpapa/competitive-programming/blob/master/uva/10042.cpp): smith numbers
+		- **sieve of eratosthenes:**
+			- 📙 [codeforces/576-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/576-A.cpp): vasya and petya's game
+- **ad-hoc:**
+	- 📗 [uva/10346](https://github.com/brnpapa/competitive-programming/blob/master/uva/10346.cpp): peter's smokes
+	- 📗 [uva/11875](https://github.com/brnpapa/competitive-programming/blob/master/uva/11875.cpp): brick game
+	- 📗 [uva/10812](https://github.com/brnpapa/competitive-programming/blob/master/uva/10812.cpp): beat the spread!
+	- 📗 [uva/11723](https://github.com/brnpapa/competitive-programming/blob/master/uva/11723.cpp): numbering roads!
+	- **arithmetic progression:**
+		- 📙 [uva/11254](https://github.com/brnpapa/competitive-programming/blob/master/uva/11254.cpp): consecutive integers
+	- **sequences:**
+		- 📙 [uva/443](https://github.com/brnpapa/competitive-programming/blob/master/uva/443.cpp): humble numbers
+	- **finding pattern:**
+		- 📙 [uva/10161](https://github.com/brnpapa/competitive-programming/blob/master/uva/10161.cpp): ant on a chessboard
+		- 📙 [uva/264](https://github.com/brnpapa/competitive-programming/blob/master/uva/264.cpp): count on cantor
+		- 📕 [uva/11718](https://github.com/brnpapa/competitive-programming/blob/master/uva/11718.cpp): fantasy of a summation
+		- 📗 [spoj/EIGHTS](https://github.com/brnpapa/competitive-programming/blob/master/spoj/EIGHTS.cpp): triple fat ladies
+# dynamic programming
+- **traveling salesman problem (TSP):**
+	- 📗 [uva/10496](https://github.com/brnpapa/competitive-programming/blob/master/uva/10496.cpp): collecting beepers
+	- 📙 [uva/116](https://github.com/brnpapa/competitive-programming/blob/master/uva/116.cpp): unidirectional tsp
+- **non-classicals:**
+	- 📗 [uva/10337](https://github.com/brnpapa/competitive-programming/blob/master/uva/10337.cpp): flight planner
+	- 📙 [uva/10651](https://github.com/brnpapa/competitive-programming/blob/master/uva/10651.cpp): pebble solitaire
+	- 📙 [codeforces/166-E](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/166-E.cpp): tetrahedron
+	- 📙 [uva/10721](https://github.com/brnpapa/competitive-programming/blob/master/uva/10721.cpp): bar codes
+	- 📗 [uva/11450](https://github.com/brnpapa/competitive-programming/blob/master/uva/11450.cpp): wedding shopping
+	- 📗 [uva/10003](https://github.com/brnpapa/competitive-programming/blob/master/uva/10003.cpp): cutting sticks
+	- 📗 [uva/10943](https://github.com/brnpapa/competitive-programming/blob/master/uva/10943.cpp): how do you add?
+- **max 1D range sum:**
+	- **kadane:**
+		- 📗 [uva/10684](https://github.com/brnpapa/competitive-programming/blob/master/uva/10684.cpp): the jackpot
+		- 📗 [codeforces/1285-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1285-B.cpp): just eat it!
+		- 📗 [spoj/MAXSUMSU](https://github.com/brnpapa/competitive-programming/blob/master/spoj/MAXSUMSU.cpp): maximum subset sum
+	- **max 1D range product:**
+		- 📙 [uva/787](https://github.com/brnpapa/competitive-programming/blob/master/uva/787.py): maximum sub-sequence product
 - **coin change (CC):**
 	- 📗 [codeforces/1255-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1255-A.cpp): changing volume
 	- **counting ways:**
 		- 📗 [uva/674](https://github.com/brnpapa/competitive-programming/blob/master/uva/674.cpp): coin change
-- **interval covering:**
-	- 📙 [uva/10382](https://github.com/brnpapa/competitive-programming/blob/master/uva/10382.cpp): watering grass
-- **loading balance:**
-	- 📗 [uva/11389](https://github.com/brnpapa/competitive-programming/blob/master/uva/11389.cpp): the bus driver problem
-	- 📙 [uri/1055](https://github.com/brnpapa/competitive-programming/blob/master/uri/1055.cpp): elegant permuted sum
-- **longest increasing subsequence (LIS):**
-	- 📙 [uva/10131](https://github.com/brnpapa/competitive-programming/blob/master/uva/10131.cpp): is bigger smarter?
-	- 📙 [uri/1517](https://github.com/brnpapa/competitive-programming/blob/master/uri/1517.cpp): apples
-	- 📙 [uva/481](https://github.com/brnpapa/competitive-programming/blob/master/uva/481.cpp): what goes up
-- **bipartite matching:**
-	- 📗 [uva/11292](https://github.com/brnpapa/competitive-programming/blob/master/uva/11292.cpp): dragon of loowater
-# graphs
-- **shortest path:**
-	- **single-source:**
-		- **dijkstra:**
-			- 📙 [uri/1123](https://github.com/brnpapa/competitive-programming/blob/master/uri/1123.cpp): route change
-	- **all-pairs:**
-		- **floyd-warshall:**
-			- 📗 [uri/2372](https://github.com/brnpapa/competitive-programming/blob/master/uri/2372.cpp): meeting
-- **minimum spanning tree (MST):**
-	- 📗 [uva/10034](https://github.com/brnpapa/competitive-programming/blob/master/uva/10034.cpp): freckles
-- **traversal:**
-	- **strongly connected components (SCC):**
-		- 📙 [uva/11504](https://github.com/brnpapa/competitive-programming/blob/master/uva/11504.cpp): dominos
-	- **topological sorting:**
-		- 📗 [uva/11060](https://github.com/brnpapa/competitive-programming/blob/master/uva/11060.cpp): beverages
-	- **bridges and articulation points:**
-		- 📗 [uva/796](https://github.com/brnpapa/competitive-programming/blob/master/uva/796.cpp): critical links
-	- **bipartite checking:**
-		- 📗 [uva/10004](https://github.com/brnpapa/competitive-programming/blob/master/uva/10004.cpp): bicoloring
-	- **flood fill:**
-		- 📗 [uva/11094](https://github.com/brnpapa/competitive-programming/blob/master/uva/11094.cpp): continents
-		- 📕 [uva/1103](https://github.com/brnpapa/competitive-programming/blob/master/uva/1103.cpp): ancient messages
-	- **depth-first search (DFS):**
-		- 📙 [uri/2965](https://github.com/brnpapa/competitive-programming/blob/master/uri/2965.cpp): denouncing mafia
-# searching
-- **binary search:**
-	- 📙 [codeforces/1284-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1284-B.cpp): new year and ascent sequence
-	- **on answer:**
-		- 📙 [uri/2973](https://github.com/brnpapa/competitive-programming/blob/master/uri/2973.cpp): maratona brasileira de popcorn
-		- 📙 [uva/12097](https://github.com/brnpapa/competitive-programming/blob/master/uva/12097.cpp): pie
-		- 📕 [codeforces/460-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/460-C.cpp): present
-- **segment tree (ST):**
-	- 📙 [codeforces/339-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/339-D.cpp): xenia and bit operations
-- **two pointers:**
-	- 📗 [codeforces/6-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/6-C.cpp): alice, bob and chocolate
-	- 📙 [codeforces/279-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/279-B.cpp): books
-	- 📕 [codeforces/1041-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1041-D.cpp): glinder
-	- 📗 [codeforces/381-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/381-A.cpp): sereja and dima
-	- 📙 [codeforces/676-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/676-C.cpp): vasya and strings
-# computational geometry
-- 📗 [codeforces/659-D](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/659-D.cpp): bicycle race
-# dynamic programming
-- **non-classicals:**
-	- 📗 [uva/10337](https://github.com/brnpapa/competitive-programming/blob/master/uva/10337.cpp): flight planner
-	- 📙 [uva/10651](https://github.com/brnpapa/competitive-programming/blob/master/uva/10651.cpp): pebble solitaire
-	- 📗 [uva/11450](https://github.com/brnpapa/competitive-programming/blob/master/uva/11450.cpp): wedding shopping
-	- 📙 [codeforces/166-E](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/166-E.cpp): tetrahedron
-	- 📗 [uva/10003](https://github.com/brnpapa/competitive-programming/blob/master/uva/10003.cpp): cutting sticks
-	- 📗 [uva/10943](https://github.com/brnpapa/competitive-programming/blob/master/uva/10943.cpp): how do you add?
-	- 📙 [uva/10721](https://github.com/brnpapa/competitive-programming/blob/master/uva/10721.cpp): bar codes
-- **traveling salesman problem (TSP):**
-	- 📗 [uva/10496](https://github.com/brnpapa/competitive-programming/blob/master/uva/10496.cpp): collecting beepers
-	- 📙 [uva/116](https://github.com/brnpapa/competitive-programming/blob/master/uva/116.cpp): unidirectional tsp
-- **max 2D range sum:**
-	- 📕 [uva/10755](https://github.com/brnpapa/competitive-programming/blob/master/uva/10755.cpp): garbage heap
-	- 📗 [uva/108](https://github.com/brnpapa/competitive-programming/blob/master/uva/108.cpp): maximum sum
+		- 📗 [uva/11137](https://github.com/brnpapa/competitive-programming/blob/master/uva/11137.cpp): ingenuous cubrency
 - **0-1 knapsack:**
-	- 📗 [spoj/KNAPSACK](https://github.com/brnpapa/competitive-programming/blob/master/spoj/KNAPSACK.cpp): the knapsack problem
-	- 📙 [uri/1487](https://github.com/brnpapa/competitive-programming/blob/master/uri/1487.cpp): six flags
 	- 📗 [uri/2498](https://github.com/brnpapa/competitive-programming/blob/master/uri/2498.cpp): help vânia
+	- 📙 [uri/1487](https://github.com/brnpapa/competitive-programming/blob/master/uri/1487.cpp): six flags
+	- 📗 [spoj/KNAPSACK](https://github.com/brnpapa/competitive-programming/blob/master/spoj/KNAPSACK.cpp): the knapsack problem
 	- **subset sum:**
 		- 📗 [uri/1203](https://github.com/brnpapa/competitive-programming/blob/master/uri/1203.cpp): st. petersburg bridges
 		- 📙 [uva/10616](https://github.com/brnpapa/competitive-programming/blob/master/uva/10616.cpp): divisible group sums
-- **max 1D range sum:**
-	- **kadane:**
-		- 📗 [uva/10684](https://github.com/brnpapa/competitive-programming/blob/master/uva/10684.cpp): the jackpot
-		- 📗 [spoj/MAXSUMSU](https://github.com/brnpapa/competitive-programming/blob/master/spoj/MAXSUMSU.cpp): maximum subset sum
-		- 📗 [codeforces/1285-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1285-B.cpp): just eat it!
-	- **max 1D range product:**
-		- 📙 [uva/787](https://github.com/brnpapa/competitive-programming/blob/master/uva/787.py): maximum sub-sequence product
-# math
-- **ad-hoc:**
-	- 📗 [uva/10812](https://github.com/brnpapa/competitive-programming/blob/master/uva/10812.cpp): beat the spread!
-	- 📗 [uva/11875](https://github.com/brnpapa/competitive-programming/blob/master/uva/11875.cpp): brick game
-	- 📗 [uva/11723](https://github.com/brnpapa/competitive-programming/blob/master/uva/11723.cpp): numbering roads!
-	- 📗 [uva/10346](https://github.com/brnpapa/competitive-programming/blob/master/uva/10346.cpp): peter's smokes
-	- **sequences:**
-		- 📙 [uva/443](https://github.com/brnpapa/competitive-programming/blob/master/uva/443.cpp): humble numbers
-	- **arithmetic progression:**
-		- 📙 [uva/11254](https://github.com/brnpapa/competitive-programming/blob/master/uva/11254.cpp): consecutive integers
-	- **finding pattern:**
-		- 📙 [uva/10161](https://github.com/brnpapa/competitive-programming/blob/master/uva/10161.cpp): ant on a chessboard
-		- 📕 [uva/11718](https://github.com/brnpapa/competitive-programming/blob/master/uva/11718.cpp): fantasy of a summation
-		- 📙 [uva/264](https://github.com/brnpapa/competitive-programming/blob/master/uva/264.cpp): count on cantor
-- **number theory:**
-	- **greatest common divisor (GCD):**
-		- 📗 [codeforces/854-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/854-A.cpp): fraction
-		- 📗 [codeforces/822-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/822-A.cpp): i'm bored with life
-	- **prime numbers:**
-		- **sieve of eratosthenes:**
-			- 📙 [codeforces/576-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/576-A.cpp): vasya and petya's game
-		- **factorization:**
-			- 📗 [uva/10042](https://github.com/brnpapa/competitive-programming/blob/master/uva/10042.cpp): smith numbers
-- **combinatorics:**
-	- **binomial coefficient:**
-		- 📗 [codeforces/844-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/844-B.cpp): rectangles
-		- 📕 [uri/2972](https://github.com/brnpapa/competitive-programming/blob/master/uri/2972.cpp): less coin tosses
-	- **fibonacci numbers:**
-		- 📙 [uva/10334](https://github.com/brnpapa/competitive-programming/blob/master/uva/10334.py): ray through glasses
+- **longest increasing subsequence (LIS):**
+	- 📙 [uva/10131](https://github.com/brnpapa/competitive-programming/blob/master/uva/10131.cpp): is bigger smarter?
+	- 📙 [uva/481](https://github.com/brnpapa/competitive-programming/blob/master/uva/481.cpp): what goes up
+	- 📙 [uri/1517](https://github.com/brnpapa/competitive-programming/blob/master/uri/1517.cpp): apples
+- **max 2D range sum:**
+	- 📗 [uva/108](https://github.com/brnpapa/competitive-programming/blob/master/uva/108.cpp): maximum sum
+	- 📕 [uva/10755](https://github.com/brnpapa/competitive-programming/blob/master/uva/10755.cpp): garbage heap
 # brute force
 - 📗 [uva/725](https://github.com/brnpapa/competitive-programming/blob/master/uva/725.cpp): division
 - **iterative:**
@@ -133,32 +101,70 @@
 	- **all subsets:**
 		- 📗 [uva/12455](https://github.com/brnpapa/competitive-programming/blob/master/uva/12455.cpp): bars
 - **recursive backtracking:**
-	- **pruned permutations:**
-		- 📙 [uva/524](https://github.com/brnpapa/competitive-programming/blob/master/uva/524.cpp): prime ring problem
 	- **n-queens:**
 		- 📙 [uva/11195](https://github.com/brnpapa/competitive-programming/blob/master/uva/11195.cpp): another n-queen problem
+	- **pruned permutations:**
+		- 📙 [uva/524](https://github.com/brnpapa/competitive-programming/blob/master/uva/524.cpp): prime ring problem
+# greedy
+- 📗 [spoj/CADYDIST](https://github.com/brnpapa/competitive-programming/blob/master/spoj/CADYDIST.cpp): candy distribution
+- 📗 [codeforces/275-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/275-C.cpp): k-multiple free set
+- 📗 [codeforces/1092-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1092-B.cpp): teams forming
+- **bipartite matching:**
+	- 📗 [uva/11292](https://github.com/brnpapa/competitive-programming/blob/master/uva/11292.cpp): dragon of loowater
+- **interval covering:**
+	- 📙 [uva/10382](https://github.com/brnpapa/competitive-programming/blob/master/uva/10382.cpp): watering grass
+- **loading balance:**
+	- 📗 [uva/11389](https://github.com/brnpapa/competitive-programming/blob/master/uva/11389.cpp): the bus driver problem
+	- 📙 [uri/1055](https://github.com/brnpapa/competitive-programming/blob/master/uri/1055.cpp): elegant permuted sum
+# graphs
+- **minimum spanning tree (MST):**
+	- 📗 [uva/10034](https://github.com/brnpapa/competitive-programming/blob/master/uva/10034.cpp): freckles
+- **shortest path:**
+	- **single-source:**
+		- **dijkstra:**
+			- 📙 [uva/10806](https://github.com/brnpapa/competitive-programming/blob/master/uva/10806.cpp): dijkstra, dijkstra
+			- 📙 [uri/1123](https://github.com/brnpapa/competitive-programming/blob/master/uri/1123.cpp): route change
+	- **all-pairs:**
+		- **floyd-warshall:**
+			- 📗 [uri/2372](https://github.com/brnpapa/competitive-programming/blob/master/uri/2372.cpp): meeting
+- **traversal:**
+	- **depth-first search (DFS):**
+		- 📙 [uri/2965](https://github.com/brnpapa/competitive-programming/blob/master/uri/2965.cpp): denouncing mafia
+	- **bipartite checking:**
+		- 📗 [uva/10004](https://github.com/brnpapa/competitive-programming/blob/master/uva/10004.cpp): bicoloring
+	- **flood fill:**
+		- 📗 [uva/11094](https://github.com/brnpapa/competitive-programming/blob/master/uva/11094.cpp): continents
+		- 📕 [uva/1103](https://github.com/brnpapa/competitive-programming/blob/master/uva/1103.cpp): ancient messages
+	- **topological sorting:**
+		- 📗 [uva/11060](https://github.com/brnpapa/competitive-programming/blob/master/uva/11060.cpp): beverages
+	- **bridges and articulation points:**
+		- 📗 [uva/796](https://github.com/brnpapa/competitive-programming/blob/master/uva/796.cpp): critical links
+	- **strongly connected components (SCC):**
+		- 📙 [uva/11504](https://github.com/brnpapa/competitive-programming/blob/master/uva/11504.cpp): dominos
 # ad-hoc
-- 📗 [uri/2884](https://github.com/brnpapa/competitive-programming/blob/master/uri/2884.cpp): interrupter
 - 📕 [uri/1368](https://github.com/brnpapa/competitive-programming/blob/master/uri/1368.cpp): colorful cubes
-- 📗 [uri/3024](https://github.com/brnpapa/competitive-programming/blob/master/uri/3024.cpp): mountain ranges
-- 📗 [uri/2968](https://github.com/brnpapa/competitive-programming/blob/master/uri/2968.cpp): hour for a run
 - 📗 [uri/2879](https://github.com/brnpapa/competitive-programming/blob/master/uri/2879.cpp): unraveling monty hall
+- 📗 [uri/2884](https://github.com/brnpapa/competitive-programming/blob/master/uri/2884.cpp): interrupter
+- 📗 [spoj/EC_CONB](https://github.com/brnpapa/competitive-programming/blob/master/spoj/EC_CONB.cpp): even numbers
 - 📗 [uva/11799](https://github.com/brnpapa/competitive-programming/blob/master/uva/11799.cpp): horror dash
-- 📗 [uri/2963](https://github.com/brnpapa/competitive-programming/blob/master/uri/2963.cpp): buffoon
-- 📗 [uva/10141](https://github.com/brnpapa/competitive-programming/blob/master/uva/10141.cpp): request for proposal
-- 📗 [codeforces/1220-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1220-A.cpp): cards
-- 📗 [uva/12015](https://github.com/brnpapa/competitive-programming/blob/master/uva/12015.cpp): google is feeling lucky
-- 📗 [codeforces/151-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/151-A.cpp): soft drinking
-- 📗 [codeforces/1285-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1285-A.cpp): mezo playing zoma
 - 📗 [uri/2242](https://github.com/brnpapa/competitive-programming/blob/master/uri/2242.cpp): huaauhahhuahau
+- 📗 [uva/12015](https://github.com/brnpapa/competitive-programming/blob/master/uva/12015.cpp): google is feeling lucky
+- 📗 [uri/3024](https://github.com/brnpapa/competitive-programming/blob/master/uri/3024.cpp): mountain ranges
+- 📗 [codeforces/1220-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1220-A.cpp): cards
+- 📗 [uva/10141](https://github.com/brnpapa/competitive-programming/blob/master/uva/10141.cpp): request for proposal
+- 📗 [codeforces/1285-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1285-A.cpp): mezo playing zoma
+- 📗 [uri/2968](https://github.com/brnpapa/competitive-programming/blob/master/uri/2968.cpp): hour for a run
+- 📗 [codeforces/151-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/151-A.cpp): soft drinking
+- 📗 [uri/2963](https://github.com/brnpapa/competitive-programming/blob/master/uri/2963.cpp): buffoon
 - **simulation:**
 	- 📙 [uri/2971](https://github.com/brnpapa/competitive-programming/blob/master/uri/2971.cpp): jar of water game
 - **implementation:**
 	- 📗 [codeforces/1284-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1284-A.cpp): new year and naming
-	- 📗 [codeforces/373-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/373-A.cpp): collecting beats is fun
-	- 📗 [codeforces/110-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/110-A.cpp): nearly lucky number
-	- 📙 [codeforces/1254-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1254-A.cpp): feeding chicken
-	- 📗 [codeforces/811-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/811-B.cpp): vladik and complicated book
 	- 📗 [codeforces/266-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/266-A.cpp): stones on the table
+	- 📗 [spoj/GNY07D](https://github.com/brnpapa/competitive-programming/blob/master/spoj/GNY07D.cpp): decoding
+	- 📗 [codeforces/811-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/811-B.cpp): vladik and complicated book
+	- 📗 [codeforces/110-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/110-A.cpp): nearly lucky number
 	- 📙 [codeforces/519-C](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/519-C.cpp): a and b and team training
+	- 📙 [codeforces/1254-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/1254-A.cpp): feeding chicken
 	- 📗 [codeforces/492-B](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/492-B.cpp): vanya and lanterns
+	- 📗 [codeforces/373-A](https://github.com/brnpapa/competitive-programming/blob/master/codeforces/373-A.cpp): collecting beats is fun

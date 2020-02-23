@@ -2,6 +2,6 @@ Access my [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e
 
 ---
 
-- Look for solutions by theme as [table](./problems.csv) or [list](./problems.md).
+- Look for solutions by theme as [list](./problems.md) or [table](./problems.csv).
 
-- See my online judge profiles in [uHunt](https://uhunt.onlinejudge.org/id/1094350), [CodeForces](https://codeforces.com/profile/brnpapa) and [URI](https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281).
+- See my online judge profiles in [uHunt](https://uhunt.onlinejudge.org/id/1094350), [CodeForces](https://codeforces.com/profile/brnpapa), [URI](https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281) and [Spoj](https://www.spoj.com/users/brnpapa).

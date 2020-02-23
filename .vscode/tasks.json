@@ -6,7 +6,7 @@
          "options": {
             "cwd": "${workspaceFolder}",
          },
-         "command": "./_scripts/open-problem-description.sh",
+         "command": "./_scripts/open-problem-statement.sh",
          "args": [
             "${relativeFileDirname}",
             "${fileBasenameNoExtension}"
