@@ -1,5 +1,5 @@
 /*
-   graphs > shortest path > all-pairs > floyd-warshall
+   graphs > shortest path > floyd-warshall
    difficulty: easy
    problem: meeting
    date: 25/Oct/2019

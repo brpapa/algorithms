@@ -1,5 +1,5 @@
 /*
-   graphs > shortest path > single-source > dijkstra
+   graphs > shortest path > dijkstra
    difficulty: medium
    problem: dijkstra, dijkstra
    date: 23/Feb/2020

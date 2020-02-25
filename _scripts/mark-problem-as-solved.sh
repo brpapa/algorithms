@@ -4,7 +4,7 @@ file1="_scripts/auto-csv.cpp"
 file2="_scripts/auto-md.py"
 
 git add $1/$2
-git ls-files > files-tracked-on-git.lock
+git ls-files > files-tracked-on-git.txt
 
 # create .csv
 if [[ ! -e "${file1%.cpp}" ]]

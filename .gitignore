@@ -1,6 +1,6 @@
 # cache files
 **/.DS_Store
-files-tracked-on-git.lock
+files-tracked-on-git.txt
 
 # files/folders
 t*

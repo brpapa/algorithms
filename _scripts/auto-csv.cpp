@@ -35,7 +35,7 @@ vector<string> separateTopics(string line) {
 
 /* ----------- */
 
-const string CACHE_PATH = "files-tracked-on-git.lock";
+const string CACHE_PATH = "files-tracked-on-git.txt";
 const string WRITE_PATH = "problems.csv";
 
 

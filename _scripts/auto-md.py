@@ -3,7 +3,7 @@ import csv
 from string import Template
 
 # settings
-path_output_file = './problems.md'
+path_output_file = './README.md'
 key_root = (0, 'root')
 emojis = {
    'easy': '📗',
@@ -11,6 +11,15 @@ emojis = {
    'hard': '📕',
    'undefined': '📓'
 }
+header = [
+   '# Hi, visitor!\n\n',
+   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general purpose algorithms.\n\n',
+   'Feel free to follow my progress on my online judge profiles: [uHunt](https://uhunt.onlinejudge.org/id/1094350), [CodeForces](https://codeforces.com/profile/brnpapa), [URI](https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281) and [Spoj](https://www.spoj.com/users/brnpapa).\n\n',
+   '### My preferred study materials:\n\n',
+   '- HALIM, Steven. HALIM, Felix. Competitive Programming 3: "The new lower bound of programming contests". 2013.\n\n',
+   '# Problems solved\n\n',
+   'The solutions are categorized into themes and can be viewed below or [here](./problems.csv).\n\n'
+]
 
 # graph representation (pair: set())
 adjList = { key_root: set() }
@@ -53,7 +62,7 @@ def vertex_process(v):
    level, theme = v
    with open(path_output_file, 'a') as file:
       if level == 1:
-         file.write('# '+theme+'\n')
+         file.write('## '+theme+'\n')
       else:
          file.write('\t'*(level-2)+'- **' + theme + ':**\n')
 
@@ -64,11 +73,12 @@ def vertex_process(v):
 # overwrite path_output_file
 def write_header():
    with open(path_output_file, 'w') as file:
+      file.writelines(header)
       for v in adjList[key_root]:
          theme = str(v[1])
          link = theme.replace(' ', '-')
          file.write(f'- **[{theme}](#{link})**\n')
-      file.write('\n')
+      file.write('\n\n')
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 /*
-   graphs > shortest path > single-source > dijkstra
+   graphs > shortest path > dijkstra
    difficulty: medium
    problem: route change
    date: 22/May/2019
