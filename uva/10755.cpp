@@ -3,8 +3,8 @@
    difficulty: hard
    problem: garbage heap
    date: 18/Jan/2020
+   solution: max 2D range sum in two of the three dimensions and max 1D range sum (kadane) on the third dimension
    author: @brnpapa
-   alt: kadane
 */
 #include <iostream>
 #define ll long long

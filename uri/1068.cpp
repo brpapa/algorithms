@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > stack
+   ad-hoc
+   difficulty: none
    problem: parenthesis balance I
+   date: none
    author: @brnpapa
 */
 #include <iostream>

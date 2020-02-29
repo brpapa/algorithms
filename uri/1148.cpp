@@ -1,6 +1,8 @@
 /*
    graphs > shortest path > dijkstra
+   difficulty: none
    problem: countries at war
+   date: none
    author: @brnpapa
 */
 #include <iostream>

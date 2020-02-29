@@ -1,6 +1,8 @@
 /*
    string processing > palindrome
+   difficulty: none
    problem: the mirror of galadriel
+   date: none
    author: @brnpapa
 */
 #include <iostream>

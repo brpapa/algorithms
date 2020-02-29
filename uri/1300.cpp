@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: hours and minutes
+   date: none
    author: @brnpapa
 */
 #include <iostream>

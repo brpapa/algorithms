@@ -1,4 +1,3 @@
-# executar na raiz do projeto
 import csv
 from string import Template
 
@@ -9,16 +8,15 @@ emojis = {
    'easy': '📗',
    'medium': '📙',
    'hard': '📕',
-   'undefined': '📓'
+   'none': '📓'
 }
-header = [
+static_output_lines = [
    '# Hi, visitor!\n\n',
-   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general purpose algorithms.\n\n',
+   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms.\n\n',
    'Feel free to follow my progress on my online judge profiles: [uHunt](https://uhunt.onlinejudge.org/id/1094350), [CodeForces](https://codeforces.com/profile/brnpapa), [URI](https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281) and [Spoj](https://www.spoj.com/users/brnpapa).\n\n',
    '### My preferred study materials:\n\n',
    '- HALIM, Steven. HALIM, Felix. Competitive Programming 3: "The new lower bound of programming contests". 2013.\n\n',
-   '# Problems solved\n\n',
-   'The solutions are categorized into themes and can be viewed below or [here](./problems.csv).\n\n'
+   '<br/>\n\n'
 ]
 
 # graph representation (pair: set())
@@ -29,14 +27,14 @@ leaf = {}
 # build adjacency list of graph and define leaf
 def build(dataset):
    for data in dataset:
-      themes = data['themes'].split(' > ')
+      theme = data['theme'].split(' > ')
 
-      for i in range(0, len(themes)):
-         key = key_root if i == 0 else (i, themes[i-1])
-         adjList[key].add((i+1, themes[i]))
-         adjList.setdefault((i+1, themes[i]), set())
+      for i in range(0, len(theme)):
+         key = key_root if i == 0 else (i, theme[i-1])
+         adjList[key].add((i+1, theme[i]))
+         adjList.setdefault((i+1, theme[i]), set())
 
-      key_leaf = (len(themes), themes[-1])
+      key_leaf = (len(theme), theme[-1])
       leaf.setdefault(key_leaf, set())
       ex_desc = Template('$emoji [$judge/$problem](https://github.com/brnpapa/competitive-programming/blob/master/$judge/$problem$ext): $name')
       leaf[key_leaf].add(ex_desc.substitute(data, emoji=emojis[data['difficulty']]))
@@ -73,12 +71,14 @@ def vertex_process(v):
 # overwrite path_output_file
 def write_header():
    with open(path_output_file, 'w') as file:
-      file.writelines(header)
+      file.writelines(static_output_lines)
+      
+      file.write('<h1 align="center">Solutions categorized into themes</h1>\n\n')
       for v in adjList[key_root]:
          theme = str(v[1])
          link = theme.replace(' ', '-')
          file.write(f'- **[{theme}](#{link})**\n')
-      file.write('\n\n')
+      file.write('\n')
 
 
 if __name__ == '__main__':

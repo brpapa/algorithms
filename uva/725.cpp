@@ -3,8 +3,8 @@
    difficulty: easy
    problem: division
    date: 11/Jan/2020
+   solution: bitmasks
    author: @brnpapa
-   alt: bitmasks
 */
 #include <cstdio>
 #define setBit(S, i) (S |= (1 << i))

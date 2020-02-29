@@ -1,6 +1,8 @@
 /*
    greedy > maximum subsequence
+   difficulty: none
    problem: ilya and queries
+   date: none
    author: @brnpapa
 */
 #include <iostream>

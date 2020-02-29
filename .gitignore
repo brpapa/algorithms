@@ -3,7 +3,7 @@
 files-tracked-on-git.txt
 
 # files/folders
-t*
+z*
 _diagrams/
 _material/
 _tests/

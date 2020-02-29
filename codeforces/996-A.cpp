@@ -1,6 +1,8 @@
 /*
    greedy > coin change (CC)
+   difficulty: none
    problem: hit the lottery
+   date: none
    author: @brnpapa
 */
 #include <iostream>

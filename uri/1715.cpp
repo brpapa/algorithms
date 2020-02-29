@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: handball
+   date: none
    author: @brnpapa
 */
 #include <iostream>

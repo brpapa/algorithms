@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: assigning teams
+   date: none
    author: @brnpapa
 */
 #include <iostream>

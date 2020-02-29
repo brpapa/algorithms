@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: division of nlogonia
+   date: none
    author: @brnpapa
 */
 #include <iostream>

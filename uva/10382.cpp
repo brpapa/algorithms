@@ -3,8 +3,8 @@
    difficulty: medium
    problem: watering grass
    date: 15/Jan/2020
+   solution: reduce the problem using pythagoras
    author: @brnpapa
-   alt: computational geometry
 */
 #include <cmath>
 #include <vector>

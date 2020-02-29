@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: canteen queue
+   date: none
    author: @brnpapa
 */
 #include <iostream>

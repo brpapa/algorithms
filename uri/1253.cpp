@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: caesar cipher
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -1,6 +1,8 @@
 /*
    graphs > binary search tree (BST)
+   difficulty: none
    problem: pre, in and post
+   date: none
    author: @brnpapa
 */
 #include <iostream>

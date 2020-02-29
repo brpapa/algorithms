@@ -3,8 +3,8 @@
    difficulty: hard
    problem: full tank?
    date: 25/Feb/2020
+   solution: dijkstra on space-state graph, where each vertex represent a city and a level of car fuel
    author: @brnpapa
-   alt: space-state graph
 */
 #include <iostream>
 #include <vector>
@@ -31,10 +31,8 @@ int dijk(int s, int e, int C) {
    vector<vector<int>> sd(V, vector<int>(C+1, INF));
    sd[s][0] = 0;
 
-   // cada vértice é identificado por: (id = cidade, c = nível de combustível do carro)
-   priority_queue<tuple<int, int, int>> pq; // d, id, c
+   priority_queue<tuple<int, int, int>> pq; // distance from (s,0), id, car fuel level c
    pq.push(make_tuple(-sd[s][0], s, 0));
-
 
    while (!pq.empty()) {
       int u_d = -get<0>(pq.top()), u_id = get<1>(pq.top()), u_c = get<2>(pq.top());

@@ -1,6 +1,8 @@
 /*
    greedy
+   difficulty: none
    problem: the club ballroom
+   date: none
    author: @brnpapa
 */
 #include <algorithm>

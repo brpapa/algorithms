@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: the dark elf
+   date: none
    author: @brnpapa
 */
 #include <iostream>

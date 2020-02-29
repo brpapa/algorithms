@@ -1,6 +1,8 @@
 /*
    graphs > traversal > breadth-first search (BFS)
+   difficulty: none
    problem: the rat in a maze
+   date: none
    author: @brnpapa
 */
 #include <iostream>

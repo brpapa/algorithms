@@ -3,8 +3,8 @@
    difficulty: medium
    problem: another n-queen problem
    date: 12/Jan/2020
+   solution: bitmasks
    author: @brnpapa
-   alt: bitmasks
 */
 #include <bitset>
 #include <iostream>

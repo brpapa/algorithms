@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: i can guess the data structure!
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -1,6 +1,8 @@
 /*
    searching > binary search
+   difficulty: none
    problem: postman
+   date: none
    author: @brnpapa
 */
 #include <iostream>

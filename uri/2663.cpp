@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: phase
+   date: none
    author: @brnpapa
 */
 #include <iostream>

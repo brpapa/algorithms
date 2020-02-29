@@ -1,7 +1,10 @@
 /*
    computational geometry
+   difficulty: none
    problem: dog and gopher
-*/
+   date: none
+   author: @brnpapa
+/*
 #include <iostream>
 #include <vector>
 #include <cmath>

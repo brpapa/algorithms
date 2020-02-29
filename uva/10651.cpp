@@ -3,8 +3,8 @@
    difficulty: medium
    problem: pebble solitaire
    date: 08/Feb/2020
+   solution: bitmasks
    author: @brnpapa
-   alt: bitmasks
 */
 #include <iostream>
 #include <cstring>

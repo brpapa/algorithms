@@ -1,6 +1,8 @@
 /*
-   ad-hoc > division and conquest > path
+   ad-hoc
+   difficulty: none
    problem: tiles
+   date: none
    author: @brnpapa
 */
 #include <iostream>

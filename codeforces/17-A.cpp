@@ -1,6 +1,8 @@
 /*
    math > number theory > prime numbers > sieve of eratosthenes
+   difficulty: none
    problem: noldbach problem
+   date: none
    author: @brnpapa
 */
 #include <cstring>

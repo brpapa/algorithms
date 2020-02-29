@@ -1,6 +1,8 @@
 /*
    brute force > recursive backtracking
+   difficulty: none
    problem: spiky mazes
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -1,6 +1,8 @@
 /*
    dynamic programming > minimax
+   difficulty: none
    problem: cards
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -1,6 +1,8 @@
 /*
    brute force > recursive backtracking
+   difficulty: none
    problem: stack game
+   date: none
    author: @brnpapa
 */
 #include <iostream>

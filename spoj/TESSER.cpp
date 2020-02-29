@@ -1,6 +1,8 @@
 /*
    string processing
+   difficulty: none
    problem: finding the tesserect
+   date: none
    author: @brnpapa
 */
 #include <iostream>

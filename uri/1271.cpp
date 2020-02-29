@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: where are my genes
+   date: none
    author: @brnpapa
 */
 #include <iostream>

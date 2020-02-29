@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > stack
+   ad-hoc
+   difficulty: none
    problem: diamonds and sand
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -3,6 +3,7 @@
    difficulty: medium
    problem: dominos
    date: 07/Feb/2020
+   solution: count number of SCCs without incoming edge from a vertex of another SCC
    author: @brnpapa
 */
 #include <iostream>
@@ -13,8 +14,8 @@ using namespace std;
 vector<vector<int>> adjList;
 
 #define UNVISITED -1
-#define VISITING 0 // visitado, mas ainda visitando seus adjacentes
-#define VISITED 1  // todos seus adjacentes visitados e já faz parte de um SCC
+#define VISITING 0  // visitado, mas ainda visitando seus adjacentes
+#define VISITED 1   // todos seus adjacentes visitados e já faz parte de um SCC
 vector<int> state;
 
 vector<int> order;
@@ -65,7 +66,6 @@ int main() {
          if (state[v] == UNVISITED)
             dfs(v);
       
-      // contando o número de SCCs que não recebem arestas vindas de outro SCC
       int ans = countSCC;
       vector<bool> x(countSCC, false);
 

@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > stack
+   ad-hoc
+   difficulty: none
    problem: infix to posfix
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -21,8 +21,8 @@
          "label": "compine and run",
          "group": "build",
          "type": "shell",
-         // "command": "python ${relativeFile} < t.in > t.out",
-         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o t && ./t < t.in > t.out",
+         // "command": "python ${relativeFile} < z.in > z.out",
+         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o z && ./z < z.in > z.out",
          "options": {
             "cwd": "${workspaceFolder}",
          },

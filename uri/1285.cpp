@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: different digits
+   date: none
    author: @brnpapa
 */
 #include <iostream>

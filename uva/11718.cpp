@@ -3,8 +3,8 @@
    difficulty: hard
    problem: fantasy of a summation
    date: 16/Feb/2020
+   solution: compute K * N^(K-1) * sumA using fast power mod
    author: @brnpapa
-   alt: fast power
 */
 #include <iostream>
 #define ll long long
@@ -25,7 +25,6 @@ int main() {
       ll sumA = 0, a;
       for (int n = 0; n < N; n++) cin >> a, sumA += a;
 
-      // K * N^(K-1) * sumA
       ll ans = (K * fastPowerMod(N, K-1, MOD)) % MOD;
       ans = (ans * sumA) % MOD;
       printf("Case %d: %lld\n", t, ans);

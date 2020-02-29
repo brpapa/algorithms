@@ -1,6 +1,8 @@
 /*
    greedy
+   difficulty: none
    problem: street parade
+   date: none
    author: @brnpapa
 */
 #include <iostream>

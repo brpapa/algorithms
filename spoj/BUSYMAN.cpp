@@ -1,6 +1,8 @@
 /*
    greedy
+   difficulty: none
    problem: i am very busy
+   date: none
    author: @brnpapa
 */
 #include <iostream>

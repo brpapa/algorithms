@@ -1,6 +1,8 @@
 /*
    graphs > traversal > depth-first search (DFS)
+   difficulty: none
    problem: coloring a tree
+   date: none
    author: @brnpapa
 */
 #include <iostream>

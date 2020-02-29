@@ -1,6 +1,8 @@
 /*
    graphs > binary search tree (BST)
+   difficulty: none
    problem: andy's first dictionary
+   date: none
    author: @brnpapa
 */
 #include <iostream>

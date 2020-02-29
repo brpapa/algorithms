@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: free ice cream
+   date: none
    author: @brnpapa
 */
 #include <iostream>

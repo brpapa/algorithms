@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > stack
+   ad-hoc
+   difficulty: none
    problem: rails again... tracing movements
+   date: none
    author: @brnpapa
 */
 #include <iostream>

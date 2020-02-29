@@ -3,8 +3,8 @@
    difficulty: easy
    problem: bars
    date: 11/Jan/2020
+   solution: bitmasks
    author: @brnpapa
-   alt: bitmasks
 */
 #include <iostream>
 #include <vector>

@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: getline two-fruits
+   date: none
    author: @brnpapa
 */
 #include <iostream>

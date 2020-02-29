@@ -1,6 +1,8 @@
 /*
    computational geometry
+   difficulty: none
    problem: trace
+   date: none
    author: @brnpapa
 */
 #include <iostream>

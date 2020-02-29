@@ -1,6 +1,8 @@
 /*
    math > number theory > greatest common divisor (GCD)
+   difficulty: none
    problem: collectable cards
+   date: none
    author: @brnpapa
 */
 #include <iostream>

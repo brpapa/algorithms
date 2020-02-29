@@ -1,6 +1,8 @@
 /*
    greedy
+   difficulty: none
    problem: palindrome lover
+   date: none
    author: @brnpapa
 */
 #include <iostream>

@@ -1,6 +1,8 @@
 /*
    brute force > recursive backtracking
+   difficulty: none
    problem: a problem of backtracking
+   date: none
    author: @brnpapa
 */
 #include <iostream>

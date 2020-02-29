@@ -1,6 +1,8 @@
 /*
    math > number theory > all divisors
+   difficulty: none
    problem: divine numbers
+   date: none
    author: @brnpapa
 */
 #include <iostream>

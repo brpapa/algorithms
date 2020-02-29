@@ -1,6 +1,8 @@
 /*
    math > number theory
+   difficulty: none
    problem: save luke
+   date: none
    author: @brnpapa
 */
 #include <iostream>

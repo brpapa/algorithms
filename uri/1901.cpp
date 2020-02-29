@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > set
+   ad-hoc
+   difficulty: none
    problem: butterflies
+   date: none
    author: @brnpapa
 */
 #include <iostream>

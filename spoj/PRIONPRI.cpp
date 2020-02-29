@@ -1,6 +1,8 @@
 /*
    math > number theory > prime numbers
+   difficulty: none
    problem: prime or not prime!
+   date: none
    author: @brnpapa
 */
 #include <iostream>

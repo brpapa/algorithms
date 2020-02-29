@@ -1,6 +1,8 @@
 /*
    string processing > knuth-morris-pratt (KMP)
+   difficulty: none
    problem: musical plagiarism
+   date: none
    author: @brnpapa
 */
 #include <iostream>

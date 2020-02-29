@@ -1,6 +1,8 @@
 /*
    dynamic programming > edit distance
+   difficulty: none
    problem: edit distante
+   date: none
    author: @brnpapa
 */
 #include <iostream>

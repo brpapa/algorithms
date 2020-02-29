@@ -1,6 +1,8 @@
 /*
    math > number theory
+   difficulty: none
    problem: feynman
+   date: none
    author: @brnpapa
 */
 #include <iostream>

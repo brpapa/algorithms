@@ -1,6 +1,8 @@
 /*
    math > number theory > prime numbers > factorization
+   difficulty: none
    problem: despojados
+   date: none
    author: @brnpapa
 */
 #include <iostream>

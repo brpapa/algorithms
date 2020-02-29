@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > queue
+   ad-hoc
+   difficulty: none
    problem: throwing cards away
+   date: none
    author: @brnpapa
 */
 #include <iostream>

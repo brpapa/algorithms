@@ -1,6 +1,8 @@
 /*
    dynamic programming > digits
+   difficulty: none
    problem: numbers game
+   date: none
    author: @brnpapa
 */
 #include <iostream>

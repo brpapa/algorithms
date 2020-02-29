@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: king escape
+   date: none
    author: @brnpapa
 */
 #include <iostream>

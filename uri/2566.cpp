@@ -1,6 +1,8 @@
 /*
    graphs > shortest path > dijkstra
+   difficulty: none
    problem: trip to bh
+   date: none
    author: @brnpapa
 */
 #include <iostream>

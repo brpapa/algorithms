@@ -1,7 +1,10 @@
 /*
-   ad-hoc > data structures > minimum priority queue
+   ad-hoc
+   difficulty: none
    problem: add all
-*/
+   date: none
+   author: @brnpapa
+/*
 #include <iostream>
 #include <queue>
 using namespace std;

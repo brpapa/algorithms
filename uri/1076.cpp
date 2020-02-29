@@ -1,5 +1,6 @@
 /*
    graphs
+   difficulty: none
    problem: design labirints
    date: 05/May/2019
    author: @brnpapa

@@ -49,25 +49,28 @@ void readFile(string ext, string folder, string file) {
 
    getline(in, line); // theme > topic1 > topic2
    vector<string> subjects = separateTopics(line);
-   string themes = subjects[0];
+   string theme = subjects[0];
    for (int i = 1; i < subjects.size(); i++)
-      themes += " > " + subjects[i];
+      theme += " > " + subjects[i];
    
    getline(in, line);
-   if (line.find("difficulty") != string::npos) {
-      string difficulty = line.substr(15);
-      
-      getline(in, line);
-      string name = line.substr(12);
-      
-      getline(in, line);
-      string date = line.substr(9);
+   string difficulty = line.substr(15);
+   
+   getline(in, line);
+   string name = line.substr(12);
 
-      string judge = folder;
-      string problem = file;
+   getline(in, line);
+   string date = line.substr(9);
 
-      out << "\"" << judge << "\",\"" << problem << "\",\"" << name << "\",\"" << difficulty << "\",\"" << themes << "\",\"" << date << "\",\"" << ext << "\"" << endl;
-   }
+   string solution = "none";
+   getline(in, line);
+   if (line.find("solution") != string::npos)
+      solution = line.substr(13);
+
+   string judge = folder;
+   string problem = file;
+
+   out << "\"" << judge << "\",\"" << problem << "\",\"" << name << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << solution << "\",\"" << date << "\",\"" << ext << "\"" << endl;
 
    in.close();
 }
@@ -96,7 +99,7 @@ void readAllFilesTrackedOnGit() {
 }
 
 int main() {
-   out << "judge,problem,name,difficulty,themes,date,ext" << endl;
+   out << "judge,problem,name,difficulty,theme,solution,date,ext" << endl;
    readAllFilesTrackedOnGit();
    out.close();
    return 0;

@@ -1,6 +1,8 @@
 /*
    ad-hoc
+   difficulty: none
    problem: unloading boxes
+   date: none
    author: @brnpapa
 */
 #include <iostream>

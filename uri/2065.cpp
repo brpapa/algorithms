@@ -1,6 +1,8 @@
 /*
-   ad-hoc > data structures > queue
+   ad-hoc
+   difficulty: none
    problem: supermarket line
+   date: none
    author: @brnpapa
 */
 #include <iostream>
