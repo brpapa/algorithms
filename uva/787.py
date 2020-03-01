@@ -1,8 +1,9 @@
 '''
-   dynamic programming > max 1D range sum > max 1D range product
+   dynamic programming > max 1D range sum
    difficulty: medium
    problem: maximum sub-sequence product
    date: 20/Feb/2020
+   solution: compute the max RPQ on sub-sequences without 0
    author: @brnpapa
 '''
 import math

@@ -3,7 +3,7 @@
    difficulty: medium
    problem: watering grass
    date: 15/Jan/2020
-   solution: reduce the problem using pythagoras
+   solution: reduce the problem using pythagoras to one line
    author: @brnpapa
 */
 #include <cmath>

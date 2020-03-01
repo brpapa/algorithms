@@ -1,43 +1,84 @@
 import csv
+import collections
 from string import Template
 
 # settings
 path_output_file = './README.md'
-key_root = (0, 'root')
 emojis = {
-   'easy': '📗',
-   'medium': '📙',
-   'hard': '📕',
-   'none': '📓'
+   'difficulty': {
+      'easy': '📗',
+      'medium': '📙',
+      'hard': '📕',
+      'none': '📓'
+   }
+}
+base_url = {
+   'local': 'file:///Users/papa/Google%20Drive/dev/competitive-programming',
+   'remote': 'https://github.com/brnpapa/competitive-programming/blob/master'
 }
 static_output_lines = [
    '# Hi, visitor!\n\n',
-   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms.\n\n',
-   'Feel free to follow my progress on my online judge profiles: [uHunt](https://uhunt.onlinejudge.org/id/1094350), [CodeForces](https://codeforces.com/profile/brnpapa), [URI](https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281) and [Spoj](https://www.spoj.com/users/brnpapa).\n\n',
-   '### My preferred study materials:\n\n',
-   '- HALIM, Steven. HALIM, Felix. Competitive Programming 3: "The new lower bound of programming contests". 2013.\n\n',
-   '<br/>\n\n'
+   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I use and recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
+   '<p align="center">Feel free to follow my progress on my online judge profiles:</p>\n\n'
 ]
+judges = {
+   'uva': {
+      'solved': 0,
+      'profile_url': 'https://uhunt.onlinejudge.org/id/1094350'
+   },
+   'codeforces': {
+      'solved': 0,
+      'profile_url': 'https://codeforces.com/profile/brnpapa'
+   },
+   'uri': {
+      'solved': 0,
+      'profile_url': 'https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281'
+   },
+   'spoj': {
+      'solved': 0,
+      'profile_url': 'https://www.spoj.com/users/brnpapa'
+   }
+}
 
-# graph representation (pair: set())
+# --------------------------------
+
+#! True e rode, antes de dar push
+remote = True
+
+# --------------------------------
+
+# graph representation
+key_root = (0, 'root')
 adjList = { key_root: set() }
-# list of exercices of each leaf vertex (pair: set())
-leaf = {}
+leaf = {} # list of exercices of each leaf vertex
 
-# build adjacency list of graph and define leaf
+# build adjacency list of graph, define leaf and judges
 def build(dataset):
    for data in dataset:
       theme = data['theme'].split(' > ')
+      judges[data['judge']]['solved'] += 1
+
+      if (not remote):
+         # filter
+         if (data['difficulty'] != 'hard' and data['difficulty'] != 'medium'):
+            continue
 
       for i in range(0, len(theme)):
          key = key_root if i == 0 else (i, theme[i-1])
          adjList[key].add((i+1, theme[i]))
          adjList.setdefault((i+1, theme[i]), set())
 
+      ex_desc = Template('$emoji [$judge/$problem]($base_url/$judge/$problem$ext): $name')
+      
       key_leaf = (len(theme), theme[-1])
       leaf.setdefault(key_leaf, set())
-      ex_desc = Template('$emoji [$judge/$problem](https://github.com/brnpapa/competitive-programming/blob/master/$judge/$problem$ext): $name')
-      leaf[key_leaf].add(ex_desc.substitute(data, emoji=emojis[data['difficulty']]))
+      
+      leaf[key_leaf].add(ex_desc.substitute(
+         data,
+         name=data['name'] if remote else ('' if data['solution'] == 'none' else data['solution']),
+         base_url=base_url['remote'],
+         emoji=emojis['difficulty'][data['difficulty']]
+      ))
 
 # graph traversal, executing process function for each vertex
 def dfs(v, process):
@@ -60,7 +101,7 @@ def vertex_process(v):
    level, theme = v
    with open(path_output_file, 'a') as file:
       if level == 1:
-         file.write('## '+theme+'\n')
+         file.write('\n## '+theme+'\n')
       else:
          file.write('\t'*(level-2)+'- **' + theme + ':**\n')
 
@@ -69,19 +110,26 @@ def vertex_process(v):
             file.write('\t'*(level-1)+'- ' + ex_desc + '\n')       
 
 # overwrite path_output_file
-def write_header():
+def start_writing():
    with open(path_output_file, 'w') as file:
       file.writelines(static_output_lines)
-      
+
+      shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square)"></a>\n')
+
+      file.write('<p align="center">\n')
+      for judge in judges.keys():
+         file.write(shields_io.substitute(url=judges[judge]['profile_url'], label=judge, message=judges[judge]['solved'], color="green"))
+      file.write('</p>\n')
+
+      file.write('<br/>\n\n')
       file.write('<h1 align="center">Solutions categorized into themes</h1>\n\n')
-      for v in adjList[key_root]:
-         theme = str(v[1])
-         link = theme.replace(' ', '-')
-         file.write(f'- **[{theme}](#{link})**\n')
+      for u in adjList[key_root]:
+         link = '#' + str(u[1]).replace(' ', '-')
+         file.write(f'- [{link}]({link})\n')
       file.write('\n')
 
 
 if __name__ == '__main__':
    build(csv.DictReader(open('problems.csv')))
-   write_header()
+   start_writing()
    dfs(key_root, vertex_process)

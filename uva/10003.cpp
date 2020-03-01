@@ -1,5 +1,5 @@
 /*
-   dynamic programming > non-classicals
+   dynamic programming
    difficulty: easy
    problem: cutting sticks
    date: 25/Jan/2020

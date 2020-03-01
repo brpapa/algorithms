@@ -3,6 +3,7 @@
    difficulty: medium
    problem: ray through glasses
    date: 19/Feb/2020
+   solution: compute (n+2)th fibonnaci number
    author: @brnpapa
 '''
 

@@ -1,5 +1,5 @@
 /*
-   greedy > longest increasing subsequence (LIS)
+   greedy > fast longest increasing subsequence (LIS)
    difficulty: medium
    problem: what goes up
    date: 22/Jan/2020

@@ -1,5 +1,5 @@
 /*
-   dynamic programming > non-classicals
+   dynamic programming
    difficulty: medium
    problem: pebble solitaire
    date: 08/Feb/2020

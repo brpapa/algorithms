@@ -8,7 +8,7 @@
 			"   difficulty: ${3|easy,medium,hard|}",
 			"   problem: ${4:name}",
 			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
-			"   description: ${5:what do you need to compute?}",
+			"   solution: ${5:what do you need to compute?}",
 			"   author: @brnpapa",
 			"*/"
 		]

@@ -3,7 +3,7 @@
    difficulty: hard
    problem: full tank?
    date: 25/Feb/2020
-   solution: dijkstra on space-state graph, where each vertex represent a city and a level of car fuel
+   solution: find the shortest path on space-state graph, where each vertex represent a city and a level of car fuel
    author: @brnpapa
 */
 #include <iostream>

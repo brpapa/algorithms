@@ -10,7 +10,7 @@
 using namespace std;
 
 struct Tcubo {
-   int cor[6]; //cor da face i
+   int cor[6]; // cor da face i
 
    bool operator==(Tcubo &c) {
       for (int i = 0; i < 6; i++)
@@ -38,7 +38,7 @@ struct Tcubo {
 
 
 bool saoIguais(Tcubo a, Tcubo b) {
-   Tcubo r[6]; //cubo A rotacionado com topo i
+   Tcubo r[6]; // cubo A rotacionado com topo i
    r[0].rotaciona(a.cor[3], a.cor[0], a.cor[2], a.cor[5], a.cor[4], a.cor[1]);
    r[1].rotaciona(a.cor[0], a.cor[1], a.cor[2], a.cor[3], a.cor[4], a.cor[5]);
    r[2].rotaciona(a.cor[0], a.cor[2], a.cor[3], a.cor[4], a.cor[1], a.cor[5]);
@@ -48,9 +48,8 @@ bool saoIguais(Tcubo a, Tcubo b) {
 
    for (int i = 0; i < 6; i++)
       for (int j = 0; j < 4; j++) {
-         if (r[i] == b)
-            return true;
-         r[i].giraSentidoHorario(); //4 possibilidades para cada topo i
+         if (r[i] == b) return true;
+         r[i].giraSentidoHorario(); // 4 possibilidades para cada topo i
       }
    return false;
 }
@@ -60,14 +59,11 @@ int main() {
    Tcubo tmp;
 
    while (true) {
-      cin >> n;
-      if (n == 0)
-         break;
+      cin >> n; if (n == 0) break;
 
       vector<Tcubo> cubos;
       for (int i = 0; i < n; i++) {
-         for (int j = 0; j < 6; j++)
-            cin >> tmp.cor[j];
+         for (int j = 0; j < 6; j++) cin >> tmp.cor[j];
          cubos.push_back(tmp);
       }
 

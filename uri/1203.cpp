@@ -3,6 +3,7 @@
    difficulty: easy
    problem: st. petersburg bridges
    date: 07/Feb/2020
+   solution: check if any subset of A has a sum equal to K
    author: @brnpapa
 */
 #include <iostream>
@@ -15,7 +16,6 @@ vector<int> A;
 
 int memo[101][5000];
 
-// algum subconjunto de A tem soma igual igual à K?
 bool dp(int n, int k) {
    // n-ésimo número de A, soma acumulada k
 

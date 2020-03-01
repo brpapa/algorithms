@@ -3,6 +3,7 @@
    difficulty: hard
    problem: less coin tosses
    date: 02/Jan/2020
+   solution: calculate how many odd combinations of k heads between N coins are there, that is, the sum of C(N, k)%2 for k in [0 .. N]
    author: @brnpapa
 */
 #include <cmath>
@@ -13,8 +14,6 @@ using namespace std;
 int main() {
    ll N;
    cin >> N;
-
-   // somatório de C(N, k)%2, para 0 <= k <= N, pois só sobra quando há ímpar combinações de k caras, dentre N moedas
    cout << (ll)pow(2, __builtin_popcountll(N)) << endl;
    return 0;
 }

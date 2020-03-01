@@ -1,5 +1,5 @@
 /*
-   dynamic programming > non-classicals
+   dynamic programming
    difficulty: medium
    problem: tetrahedron
    date: 02/Feb/2020

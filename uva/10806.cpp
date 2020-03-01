@@ -3,6 +3,7 @@
    difficulty: medium
    problem: dijkstra, dijkstra
    date: 23/Feb/2020
+   solution: find the global shortest path from 0 to V-1, round trip, without repeting edges
    author: @brnpapa
 */
 #include <iostream>

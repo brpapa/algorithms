@@ -3,6 +3,7 @@
    difficulty: hard
    problem: ancient messages
    date: 01/Feb/2020
+   solution: consider each pixel as a vertex of an implicit graph, then identify each hieroglyph counting the number of white CCs within it
    author: @brnpapa
 */
 #include <iostream>

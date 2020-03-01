@@ -1,5 +1,5 @@
 /*
-   dynamic programming > non-classicals
+   dynamic programming
    difficulty: easy
    problem: flight planner
    date: 29/Jan/2020
