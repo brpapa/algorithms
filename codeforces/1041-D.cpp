@@ -1,5 +1,5 @@
 /*
-   searching > two pointers
+   techniques > two pointers
    difficulty: hard
    problem: glinder
    date: 09/Jan/2020

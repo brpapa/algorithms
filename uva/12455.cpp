@@ -3,7 +3,7 @@
    difficulty: easy
    problem: bars
    date: 11/Jan/2020
-   solution: bitmasks
+   solution: use bitmasks
    author: @brnpapa
 */
 #include <iostream>

@@ -19,7 +19,7 @@ base_url = {
 static_output_lines = [
    '# Hi, visitor!\n\n',
    'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I use and recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
-   '<p align="center">Feel free to follow my progress on my online judge profiles:</p>\n\n'
+   '<p align="center">Feel free to follow my progress on my online judge profiles:</p>\n\n',
 ]
 judges = {
    'uva': {
@@ -40,13 +40,6 @@ judges = {
    }
 }
 
-# --------------------------------
-
-#! True e rode, antes de dar push
-remote = True
-
-# --------------------------------
-
 # graph representation
 key_root = (0, 'root')
 adjList = { key_root: set() }
@@ -55,27 +48,29 @@ leaf = {} # list of exercices of each leaf vertex
 # build adjacency list of graph, define leaf and judges
 def build(dataset):
    for data in dataset:
+      if (data['judge'] not in judges or data['difficulty'] not in emojis['difficulty']):
+         continue
+
       theme = data['theme'].split(' > ')
       judges[data['judge']]['solved'] += 1
 
-      if (not remote):
-         # filter
-         if (data['difficulty'] != 'hard' and data['difficulty'] != 'medium'):
-            continue
+      #! filter
+      if (data['difficulty'] == 'none'):
+         continue
 
       for i in range(0, len(theme)):
          key = key_root if i == 0 else (i, theme[i-1])
          adjList[key].add((i+1, theme[i]))
          adjList.setdefault((i+1, theme[i]), set())
 
-      ex_desc = Template('$emoji [$judge/$problem]($base_url/$judge/$problem$ext): $name')
-      
+      ex_desc = Template('$emoji [$judge/$problem]($base_url/$judge/$problem$ext): $name $solution')
+
       key_leaf = (len(theme), theme[-1])
       leaf.setdefault(key_leaf, set())
-      
+
       leaf[key_leaf].add(ex_desc.substitute(
          data,
-         name=data['name'] if remote else ('' if data['solution'] == 'none' else data['solution']),
+         solution=('' if data['solution'] == 'none' else f' → `{data["solution"]}`'),
          base_url=base_url['remote'],
          emoji=emojis['difficulty'][data['difficulty']]
       ))
@@ -103,18 +98,18 @@ def vertex_process(v):
       if level == 1:
          file.write('\n## '+theme+'\n')
       else:
-         file.write('\t'*(level-2)+'- **' + theme + ':**\n')
+         file.write('\t'*(level-2)+'- **' + theme + '**\n')
 
       if v in leaf:
          for ex_desc in leaf[v]:
-            file.write('\t'*(level-1)+'- ' + ex_desc + '\n')       
+            file.write('\t'*(level-1)+'- ' + ex_desc + '\n')
 
 # overwrite path_output_file
 def start_writing():
    with open(path_output_file, 'w') as file:
       file.writelines(static_output_lines)
 
-      shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square)"></a>\n')
+      shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square"></a>\n')
 
       file.write('<p align="center">\n')
       for judge in judges.keys():

@@ -3,7 +3,7 @@
    difficulty: medium
    problem: another n-queen problem
    date: 12/Jan/2020
-   solution: bitmasks
+   solution: use bitmasks
    author: @brnpapa
 */
 #include <bitset>

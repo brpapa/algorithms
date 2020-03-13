@@ -3,7 +3,7 @@
    difficulty: medium
    problem: pebble solitaire
    date: 08/Feb/2020
-   solution: bitmasks
+   solution: use bitmasks
    author: @brnpapa
 */
 #include <iostream>

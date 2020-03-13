@@ -1,0 +1,27 @@
+/*
+   greedy
+   difficulty: medium
+   problem: great vova wall (version 1)
+   date: 09/Mar/2020
+   solution: remove adjacent ones whose absolute difference is even (using a stack), and check if the final length is less than or equal to 1
+   author: @brnpapa
+*/
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+   int N; cin >> N;
+   stack<int> s;
+
+   for (int n = 0; n < N; n++) {
+      int a; cin >> a;
+      if (!s.empty() && abs(a-s.top())%2 == 0) s.pop();
+      else s.push(a);
+   }
+
+   if (s.size() <= 1) cout << "YES" << endl;
+   else cout << "NO" << endl;
+   
+   return 0;
+}

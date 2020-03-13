@@ -85,10 +85,14 @@ void readAllFilesTrackedOnGit() {
       string ext = "";
       if (line.find(".cpp") != string::npos) ext = ".cpp";
       if (line.find(".py") != string::npos) ext = ".py";
-      if (ext == "" || line.find("_scripts") != string::npos)
-         continue; // line não é exercicio
 
       int b = line.find("/"), p = line.find(".");
+      string folder = line.substr(0, b);
+      string file = line.substr(b+1, p-b-1);
+
+      if (ext == "" || (folder != "codeforces" && folder != "spoj" && folder != "uri" && folder != "uva" && folder != "code-jam"))
+         continue; // line não é exercicio
+
       readFile(
          ext,
          line.substr(0, b),      // folder

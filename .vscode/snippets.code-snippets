@@ -4,11 +4,11 @@
 		"description": "Solved? Insert metadata before to push",
 		"body": [
 			"/*",
-			"   ${1:theme} > ${2:topic}",
+			"   ${4:theme} > ${5:topic}",
 			"   difficulty: ${3|easy,medium,hard|}",
-			"   problem: ${4:name}",
+			"   problem: ${1:name}",
 			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
-			"   solution: ${5:what do you need to compute?}",
+			"   solution: ${2:what do you need to compute?}",
 			"   author: @brnpapa",
 			"*/"
 		]

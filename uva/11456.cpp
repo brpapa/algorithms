@@ -3,7 +3,7 @@
    difficulty: medium
    problem: trainsorting
    date: 01/Mar/2020
-   solution: find the max(lis[i]+lds[i]-1) for every i in [0 .. N-1]
+   solution: find the max(lis[i]+lds[i]-1) for every i (where the subsequence starts) in [0 .. N-1]
    author: @brnpapa
 */
 #include <iostream>

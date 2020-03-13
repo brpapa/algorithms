@@ -1,5 +1,5 @@
 /*
-   searching > two pointers
+   techniques > two pointers
    difficulty: medium
    problem: books
    date: 29/Dec/2019

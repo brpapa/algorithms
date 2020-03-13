@@ -1,6 +1,6 @@
 /*
-   searching > segment tree (ST)
-   difficulty: medium
+   searching > segment tree
+   difficulty: easy
    problem: xenia and bit operations
    date: 07/Dec/2019
    author: @brnpapa
@@ -11,57 +11,55 @@
 #define MAX_N 132000 // pow(2, 17)
 using namespace std;
 
-int arr[MAX_N];
+int A[MAX_N];
 int N;
 
-vector<int> bt;
-int l(int v) { return 2 * v + 1; };
-int r(int v) { return 2 * v + 2; };
+vector<int> tree;
+int le(int v) { return 2 * v + 1; };
+int ri(int v) { return 2 * v + 2; };
 
-void buildBT(int v, int start, int end, bool isExcl) {
-   if (start == end) {
-      bt[v] = arr[start];
+void build(int v, int l, int r, bool isExcl) {
+   if (l == r) {
+      tree[v] = A[l];
       return;
    }
-   int mid = (start + end) / 2;
-   buildBT(l(v), start, mid, !isExcl);
-   buildBT(r(v), mid + 1, end, !isExcl);
+   int mid = (l + r) / 2;
+   build(le(v), l, mid, !isExcl);
+   build(ri(v), mid + 1, r, !isExcl);
 
-   bt[v] = isExcl ? (bt[l(v)] ^ bt[r(v)]) : (bt[l(v)] | bt[r(v)]);
+   tree[v] = isExcl ? (tree[le(v)] ^ tree[ri(v)]) : (tree[le(v)] | tree[ri(v)]);
 }
 
-void updateBT(int v, int start, int end, bool isExcl, int idx, int value) {
-   if (start == end) {
-      bt[v] = value;
+void pointUpdate(int v, int l, int r, bool isExcl, int i, int value) {
+   if (i > r || i < l) return;
+   
+   if (l == r) {
+      tree[v] = value;
       return;
    }
-   int mid = (start + end) / 2;
-   if (idx <= mid)
-      updateBT(l(v), start, mid, !isExcl, idx, value);
-   else
-      updateBT(r(v), mid + 1, end, !isExcl, idx, value);
+   int mid = (l + r) / 2;
+   pointUpdate(le(v), l, mid, !isExcl, i, value);
+   pointUpdate(ri(v), mid + 1, r, !isExcl, i, value);
 
-   bt[v] = isExcl ? (bt[l(v)] ^ bt[r(v)]) : (bt[l(v)] | bt[r(v)]);
+   tree[v] = isExcl ? (tree[le(v)] ^ tree[ri(v)]) : (tree[le(v)] | tree[ri(v)]);
 }
 
 int main() {
-   int M;
-   cin >> N >> M;
+   int M; cin >> N >> M;
 
    bool opRootIsExclusive = N % 2 == 0;
    N = pow(2, N);
 
-   for (int i = 0; i < N; i++)
-      cin >> arr[i];
+   for (int i = 0; i < N; i++) cin >> A[i];
 
-   bt.assign(2 * N, 0);
-   buildBT(0, 0, N - 1, opRootIsExclusive);
+   tree.assign(2 * N, 0);
+   build(0, 0, N - 1, opRootIsExclusive);
 
    int p, b;
    while (M--) {
       cin >> p >> b;
-      updateBT(0, 0, N - 1, opRootIsExclusive, p - 1, b);
-      cout << bt[0] << endl;
+      pointUpdate(0, 0, N-1, opRootIsExclusive, p-1, b);
+      cout << tree[0] << endl;
    }
 
    return 0;
