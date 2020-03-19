@@ -1,9 +1,9 @@
 /*
    graphs > traversal > topological sorting
    difficulty: easy
-   problem: beverages
    date: 31/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <map>

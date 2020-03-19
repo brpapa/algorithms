@@ -1,9 +1,9 @@
 /*
    ad-hoc > simulation
    difficulty: medium
-   problem: jar of water game
    date: 19/Sep/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

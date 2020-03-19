@@ -1,10 +1,9 @@
 /*
    graphs > shortest path > dijkstra
    difficulty: medium
-   problem: dijkstra, dijkstra
    date: 23/Feb/2020
-   solution: find the global shortest path from 0 to V-1 (round trip), without repeting edges
-   author: @brnpapa
+   problem: find the global shortest path from 0 to V-1 (round trip), without repeting edges
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

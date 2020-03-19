@@ -1,9 +1,9 @@
 /*
    math > number theory > prime numbers > factorization
    difficulty: easy
-   problem: smith numbers
    date: 13/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

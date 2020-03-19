@@ -1,9 +1,9 @@
 /*
    math > number theory
    difficulty: none
-   problem: feynman
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

@@ -1,9 +1,9 @@
 /*
    graphs > traversal > bipartite checking
    difficulty: easy
-   problem: bicoloring
    date: 31/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

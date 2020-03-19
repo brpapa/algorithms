@@ -1,9 +1,9 @@
 /*
    brute force > iterative > all permutations
    difficulty: easy
-   problem: 8 queens chess problem
    date: 12/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cstdio>
 #include <vector>

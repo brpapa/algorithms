@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: easy
-   problem: collecting beats is fun
    date: 27/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

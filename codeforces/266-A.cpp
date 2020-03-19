@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: easy
-   problem: stones on the table
    date: 03/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

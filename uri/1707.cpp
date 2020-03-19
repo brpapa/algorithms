@@ -1,9 +1,9 @@
 /*
    dynamic programming > digits
    difficulty: none
-   problem: numbers game
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

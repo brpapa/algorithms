@@ -21,8 +21,10 @@
          "label": "compine and run",
          "group": "build",
          "type": "shell",
-         // "command": "python ${relativeFile} < z.in > z.out",
-         "command": "g++ ${relativeFile} -std=gnu++14 -O2 -lm -o z && ./z < z.in > z.out",
+         "command": "./_scripts/compile-and-run.sh",
+         "args": [
+            "${relativeFile}"
+         ],
          "options": {
             "cwd": "${workspaceFolder}",
          },
@@ -83,7 +85,7 @@
       },
       {
          "id": "problem-id",
-         "description": "Insert the judge id",
+         "description": "Insert the problem id",
          "type": "promptString",
       }
    ]

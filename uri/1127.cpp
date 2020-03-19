@@ -1,9 +1,9 @@
 /*
    string processing > knuth-morris-pratt (KMP)
    difficulty: none
-   problem: musical plagiarism
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

@@ -1,9 +1,9 @@
 /*
    graphs > minimum spanning tree (MST)
    difficulty: easy
-   problem: freckles
    date: 10/Nov/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <algorithm>

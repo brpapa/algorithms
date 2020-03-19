@@ -1,9 +1,9 @@
 /*
    math > number theory > prime numbers > sieve of eratosthenes
    difficulty: none
-   problem: noldbach problem
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cstring>
 #include <iostream>

@@ -1,9 +1,9 @@
 /*
    greedy > loading balance
    difficulty: medium
-   problem: elegant permuted sum
    date: 24/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <deque>

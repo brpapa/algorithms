@@ -1,9 +1,9 @@
 /*
    brute force > iterative
    difficulty: easy
-   problem: rat attack
    date: 13/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

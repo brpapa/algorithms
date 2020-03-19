@@ -1,9 +1,9 @@
 /*
    greedy > maximum subsequence
    difficulty: none
-   problem: ilya and queries
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

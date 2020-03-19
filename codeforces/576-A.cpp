@@ -1,9 +1,9 @@
 /*
    math > number theory > prime numbers > sieve of eratosthenes
    difficulty: medium
-   problem: vasya and petya's game
    date: 26/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <bitset>
 #include <iostream>

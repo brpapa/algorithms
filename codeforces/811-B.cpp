@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: easy
-   problem: vladik and complicated book
    date: 26/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: towers
    date: 02/Mar/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <set>

@@ -1,9 +1,9 @@
 /*
    math > combinatorics > binomial coefficient
    difficulty: none
-   problem: lottery
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

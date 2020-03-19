@@ -1,10 +1,10 @@
 /*
    graphs > traversal
    difficulty: medium
-   problem: knight in a war grid
    date: 28/Feb/2020
+   problem: none
    solution: consider grid as an implicit graph and walk through it avoiding redundant positions (nr, nc)
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

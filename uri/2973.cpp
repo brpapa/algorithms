@@ -1,9 +1,9 @@
 /*
    searching > binary search > on answer
    difficulty: medium
-   problem: maratona brasileira de popcorn
    date: 03/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <iostream>

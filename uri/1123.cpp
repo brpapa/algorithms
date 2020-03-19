@@ -1,9 +1,9 @@
 /*
    graphs > shortest path > dijkstra
    difficulty: medium
-   problem: route change
    date: 22/May/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <queue>

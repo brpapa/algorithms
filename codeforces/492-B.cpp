@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: easy
-   problem: vanya and lanterns
    date: 29/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

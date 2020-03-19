@@ -1,9 +1,9 @@
 /*
    graphs > traversal > flood fill
    difficulty: easy
-   problem: continents
    date: 31/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

@@ -1,9 +1,9 @@
 /*
    searching > binary search > on answer
    difficulty: medium
-   problem: pie
    date: 29/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <iostream>

@@ -1,9 +1,9 @@
 /*
    techniques > two pointers
    difficulty: medium
-   problem: books
    date: 29/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

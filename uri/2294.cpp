@@ -1,9 +1,9 @@
 /*
    graphs > traversal > breadth-first search (BFS)
    difficulty: none
-   problem: lost elf
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

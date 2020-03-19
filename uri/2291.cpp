@@ -1,9 +1,9 @@
 /*
-   math > number theory > all divisors
-   difficulty: none
-   problem: divine numbers
-   date: none
-   author: @brnpapa
+   math > number theory
+   difficulty: medium
+   date: 28/May/2019
+   problem: print n-th divine number, the one that is equal to the sum of the sum of each divisor from 1 to n
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>
@@ -12,27 +12,17 @@ using namespace std;
 
 long long somaTodosDiv[MAX];
 
-//semelhante ao crivo de erastótenes, mas sem fatores primos
-void preprocess() {
+int main() {
    memset(somaTodosDiv, 0, sizeof(somaTodosDiv));
 
    for (int i = 1; i < MAX; i++) {
-      for (int j = i; j < MAX; j += i) //para cada j múltiplo de i
-         somaTodosDiv[j] += i; //pois todos j são também divisores de i
+      for (int j = i; j < MAX; j += i) // para cada j múltiplo de i
+         somaTodosDiv[j] += i;
 
-      somaTodosDiv[i] += somaTodosDiv[i-1]; //número divino
+      somaTodosDiv[i] += somaTodosDiv[i-1]; // número divino
    }
-}
 
-int main() {
    int n;
-   preprocess();
-
-   while(true) {
-      scanf("%d", &n);
-      if (n == 0)
-         break;
-      printf("%lld\n", somaTodosDiv[n]);
-   }
+   while (cin >> n && n) printf("%lld\n", somaTodosDiv[n]);
    return 0;
 }

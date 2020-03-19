@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: soft drinking
    date: 03/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

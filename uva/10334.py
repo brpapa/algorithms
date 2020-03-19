@@ -1,10 +1,10 @@
 '''
    math > combinatorics > fibonacci numbers
    difficulty: medium
-   problem: ray through glasses
    date: 19/Feb/2020
+   problem: none
    solution: compute (n+2)-th fibonnaci number
-   author: @brnpapa
+   by @brnpapa
 '''
 
 fib = [0]*1010

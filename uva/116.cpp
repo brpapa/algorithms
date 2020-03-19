@@ -1,9 +1,9 @@
 /*
    dynamic programming > traveling salesman problem (TSP)
    difficulty: medium
-   problem: unidirectional tsp
    date: 14/Nov/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <queue>

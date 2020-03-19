@@ -1,9 +1,9 @@
 /*
    math > number theory > prime numbers
-   difficulty: none
-   problem: prime or not prime!
-   date: none
-   author: @brnpapa
+   difficulty: easy
+   date: 14/Nov/2019
+   problem: prime checking
+   by @brnpapa
 */
 #include <iostream>
 #include <math.h>

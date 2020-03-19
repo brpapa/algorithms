@@ -48,30 +48,30 @@ leaf = {} # list of exercices of each leaf vertex
 # build adjacency list of graph, define leaf and judges
 def build(dataset):
    for data in dataset:
-      if (data['judge'] not in judges or data['difficulty'] not in emojis['difficulty']):
-         continue
+      if (data['judge'] not in judges or data['difficulty'] not in emojis['difficulty']): continue
 
       theme = data['theme'].split(' > ')
       judges[data['judge']]['solved'] += 1
 
       #! filter
-      if (data['difficulty'] == 'none'):
-         continue
+      # if (data['difficulty'] == 'none'): continue
 
       for i in range(0, len(theme)):
          key = key_root if i == 0 else (i, theme[i-1])
          adjList[key].add((i+1, theme[i]))
          adjList.setdefault((i+1, theme[i]), set())
 
-      ex_desc = Template('$emoji [$judge/$problem]($base_url/$judge/$problem$ext): $name $solution')
+      ex_desc = Template('$emoji [$judge/$problem]($base_url/$relative_path)$problem_desc $solution_desc')
 
       key_leaf = (len(theme), theme[-1])
       leaf.setdefault(key_leaf, set())
 
       leaf[key_leaf].add(ex_desc.substitute(
          data,
-         solution=('' if data['solution'] == 'none' else f' → `{data["solution"]}`'),
+         problem_desc=('' if data['name'] == 'none' else f': `{data["name"]}`'),
+         solution_desc=('' if data['solution'] == 'none' else f' → {data["solution"]}'),
          base_url=base_url['remote'],
+         relative_path=f'{data["judge"]}/{data["problem"]}{data["ext"]}',
          emoji=emojis['difficulty'][data['difficulty']]
       ))
 

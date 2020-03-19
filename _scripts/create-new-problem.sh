@@ -4,6 +4,6 @@ if [[ -e "$1/$2.cpp" ]]
 then
    open $1/$2.cpp
 else
-   echo "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n   \n   return 0;\n}" > $1/$2.cpp
+   echo "#include <iostream>\nusing namespace std;\n\nint main() {\n   \n   return 0;\n}" > $1/$2.cpp
    open $1/$2.cpp
 fi

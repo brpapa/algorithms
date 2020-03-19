@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: i can guess the data structure!
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <stack>

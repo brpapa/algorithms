@@ -1,10 +1,10 @@
 /*
    searching > segment tree > lazy propagation
    difficulty: medium
-   problem: acordes intergalaticos
    date: 13/Mar/2020
+   problem: none
    solution: build a segment tree for RSQ, but store an array of size 9 in tree[v], where tree[v][n] indicates the frequency that each note n appears in that interval
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>
@@ -45,6 +45,7 @@ void propagateLazy(int v, int l, int r) {
 
 vector<int> ansQuery;
 void rangeQuery(int v, int l, int r, int ql, int qr) {
+   if (v == 0) ansQuery.assign(9, 0);
    propagateLazy(v, l, r);
 
    if (l > qr || r < ql)   return;
@@ -83,7 +84,6 @@ int main() {
 
    while (Q--) {
       int ql, qr; cin >> ql >> qr;
-      ansQuery.assign(9, 0);
       rangeQuery(0, 0, N-1, ql, qr);
 
       // procura pela nota n mais frequente em ansQuery
@@ -97,7 +97,6 @@ int main() {
       rangeUpdate(0, 0, N-1, ql, qr, nMax);
    }
    for (int i = 0; i < N; i++) {
-      ansQuery.assign(9, 0);
       rangeQuery(0, 0, N-1, i, i);
       for (int n = 0; n < 9; n++)
          if (ansQuery[n]) {

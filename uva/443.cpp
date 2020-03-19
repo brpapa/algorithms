@@ -1,9 +1,9 @@
 /*
    math > ad-hoc > sequences
    difficulty: medium
-   problem: humble numbers
    date: 18/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

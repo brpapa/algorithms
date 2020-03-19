@@ -1,9 +1,9 @@
 /*
    graphs > traversal > depth-first search (DFS)
    difficulty: none
-   problem: kids' wishes
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

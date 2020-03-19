@@ -1,10 +1,10 @@
 /*
    searching > segment tree > lazy propagation
    difficulty: medium
-   problem: ahoy, pirates!
    date: 12/Mar/2020
-   solution: build a segment tree for RSQ, but keep in lazy[v] the type of pending operation to be performed in that interval of A; when updating lazy[le(v)] and lazy[ri(v)], pay attention to their previous values
-   author: @brnpapa
+   problem: none
+   solution: build a segment tree for RSQ, but keep in lazy[v] the type of pending operation to be performed in that interval of A
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>
@@ -46,6 +46,7 @@ void propagate(int v, int l, int r) {
 
    if (l != r) {
       if (lazy[v] == TOGGLE) {
+         // é preciso se atentar aos seus valores anteriores
          lazy[le(v)] = inverse(lazy[le(v)]);
          lazy[ri(v)] = inverse(lazy[ri(v)]);
       }

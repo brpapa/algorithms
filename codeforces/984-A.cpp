@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: easy
-   problem: game
    date: 02/Mar/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

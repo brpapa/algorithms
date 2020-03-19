@@ -1,9 +1,9 @@
 /*
    brute force > recursive backtracking
    difficulty: none
-   problem: spiky mazes
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

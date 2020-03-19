@@ -1,9 +1,9 @@
 /*
    dynamic programming
    difficulty: medium
-   problem: bar codes
    date: 29/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: add all
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 /*
 #include <iostream>
 #include <queue>

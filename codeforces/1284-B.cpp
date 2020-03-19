@@ -1,9 +1,9 @@
 /*
    searching > binary search
    difficulty: medium
-   problem: new year and ascent sequence
    date: 05/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

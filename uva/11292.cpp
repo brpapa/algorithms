@@ -1,9 +1,9 @@
 /*
    greedy > bipartite matching
    difficulty: easy
-   problem: dragon of loowater
    date: 15/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

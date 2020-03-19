@@ -1,9 +1,9 @@
 /*
    techniques > two pointers
    difficulty: hard
-   problem: glinder
    date: 09/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

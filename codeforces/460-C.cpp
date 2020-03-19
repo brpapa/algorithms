@@ -1,9 +1,9 @@
 /*
    searching > binary search > on answer
    difficulty: hard
-   problem: present
    date: 06/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

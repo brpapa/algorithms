@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: caesar cipher
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <string>

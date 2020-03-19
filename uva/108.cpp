@@ -1,19 +1,17 @@
 /*
    dynamic programming > max 2D range sum
    difficulty: easy
-   problem: maximum sum
    date: 17/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
-#define INF (int)0x3f3f3f3f
+#define INF (1 << 30)
 using namespace std;
 
 int sumAcc[110][110];
 
 int main() {
-   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-
    int N; cin >> N;
    for (int i = 0; i < N; i++)
       for (int j = 0; j < N; j++) {

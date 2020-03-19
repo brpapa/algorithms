@@ -1,10 +1,9 @@
 /*
    dynamic programming > 0-1 knapsack > subset sum
    difficulty: easy
-   problem: st. petersburg bridges
    date: 07/Feb/2020
-   solution: check if any subset of A has a sum equal to K
-   author: @brnpapa
+   problem: check if any subset of A has a sum equal to K
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

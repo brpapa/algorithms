@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: google is feeling lucky
    date: 17/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

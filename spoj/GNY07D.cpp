@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: easy
-   problem: decoding
    date: 21/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: none
-   problem: palindrome lover
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <string>

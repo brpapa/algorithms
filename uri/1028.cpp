@@ -1,9 +1,9 @@
 /*
    math > number theory > greatest common divisor (GCD)
    difficulty: none
-   problem: collectable cards
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

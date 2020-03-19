@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: huaauhahhuahau
    date: 16/Mar/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <string>

@@ -1,9 +1,9 @@
 /*
    greedy > coin change (CC)
    difficulty: easy
-   problem: changing volume
    date: 25/Nov/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

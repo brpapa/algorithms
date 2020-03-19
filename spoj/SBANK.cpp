@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: sorting bank accounts
    date: 02/Mar/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <map>

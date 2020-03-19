@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: easy
-   problem: k-multiple free set
    date: 05/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

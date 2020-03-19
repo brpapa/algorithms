@@ -1,9 +1,9 @@
 /*
    brute force > recursive backtracking
    difficulty: none
-   problem: stack game
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

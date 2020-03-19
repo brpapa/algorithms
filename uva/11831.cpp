@@ -1,10 +1,10 @@
 /*
    graphs > traversal
    difficulty: easy
-   problem: sticker collector robot
    date: 27/Feb/2020
+   problem: none
    solution: consider grid as an implicit graph and walk through it, or just rotate the robot, for each received instruction
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

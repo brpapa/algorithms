@@ -1,9 +1,9 @@
 /*
    searching > segment tree
    difficulty: easy
-   problem: xenia and bit operations
    date: 07/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <iostream>

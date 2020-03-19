@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: mezo playing zoma
    date: 10/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

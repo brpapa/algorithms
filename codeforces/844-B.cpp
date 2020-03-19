@@ -1,9 +1,9 @@
 /*
    math > combinatorics > binomial coefficient
    difficulty: easy
-   problem: rectangles
    date: 27/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <iostream>

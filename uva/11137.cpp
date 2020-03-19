@@ -1,9 +1,9 @@
 /*
    dynamic programming > coin change (CC) > counting ways
    difficulty: easy
-   problem: ingenuous cubrency
    date: 21/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

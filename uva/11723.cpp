@@ -1,9 +1,9 @@
 /*
    math > ad-hoc
    difficulty: easy
-   problem: numbering roads!
    date: 14/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cmath>

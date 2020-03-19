@@ -1,9 +1,9 @@
 /*
    graphs > traversal > bridges and articulation points
    difficulty: easy
-   problem: critical links
    date: 04/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

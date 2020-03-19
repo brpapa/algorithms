@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: mountain ranges
    date: 09/Nov/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

@@ -1,9 +1,9 @@
 /*
    graphs > binary search tree (BST)
    difficulty: none
-   problem: binary search tree
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

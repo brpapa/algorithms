@@ -1,10 +1,10 @@
 /*
    dynamic programming > longest increasing subsequence (LIS)
    difficulty: medium
-   problem: is bigger smarter?
    date: 25/Jan/2020
+   problem: none
    solution: sort elephants based on increasing kg, then apply LDS on iq
-   author: @brnpapa
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

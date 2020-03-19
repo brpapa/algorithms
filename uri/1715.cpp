@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: handball
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

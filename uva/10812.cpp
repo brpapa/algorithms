@@ -1,9 +1,9 @@
 /*
    math > ad-hoc
    difficulty: easy
-   problem: beat the spread!
    date: 17/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

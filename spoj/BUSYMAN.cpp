@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: none
-   problem: i am very busy
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

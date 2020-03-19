@@ -1,9 +1,9 @@
 /*
    string processing
    difficulty: none
-   problem: finding the tesserect
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <string>

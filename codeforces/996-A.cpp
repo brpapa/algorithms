@@ -1,9 +1,9 @@
 /*
    greedy > coin change (CC)
    difficulty: none
-   problem: hit the lottery
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

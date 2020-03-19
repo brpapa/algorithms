@@ -1,9 +1,9 @@
 /*
    math > number theory > greatest common divisor (GCD)
    difficulty: easy
-   problem: i'm bored with life
    date: 07/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

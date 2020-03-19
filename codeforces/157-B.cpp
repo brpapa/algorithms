@@ -1,9 +1,9 @@
 /*
    computational geometry
    difficulty: none
-   problem: trace
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cmath>

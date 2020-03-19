@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: unraveling monty hall
    date: 23/Feb/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

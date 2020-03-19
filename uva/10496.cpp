@@ -1,9 +1,9 @@
 /*
    dynamic programming > traveling salesman problem (TSP)
    difficulty: easy
-   problem: collecting beepers
    date: 24/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <cmath>
 #include <cstring>

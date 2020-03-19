@@ -1,9 +1,9 @@
 /*
    dynamic programming > longest increasing subsequence (LIS)
    difficulty: medium
-   problem: apples
    date: 23/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cmath>

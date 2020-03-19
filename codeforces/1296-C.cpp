@@ -1,10 +1,10 @@
 /*
    ad-hoc > implementation
    difficulty: medium
-   problem: yet another walking robot
    date: 02/Mar/2020
+   problem: none
    solution: maps each position of the robot with the string index, and check if a new position has already been mapped before
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <map>

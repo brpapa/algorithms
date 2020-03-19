@@ -1,10 +1,10 @@
 /*
    brute force > iterative > all subsets
    difficulty: easy
-   problem: bars
    date: 11/Jan/2020
+   problem: none
    solution: use bitmasks
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

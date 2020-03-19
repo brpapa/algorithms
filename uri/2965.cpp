@@ -1,9 +1,9 @@
 /*
    graphs > traversal > depth-first search (DFS)
    difficulty: medium
-   problem: denouncing mafia
    date: 28/Oct/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

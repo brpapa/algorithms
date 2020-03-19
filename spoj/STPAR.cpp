@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: none
-   problem: street parade
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <stack>

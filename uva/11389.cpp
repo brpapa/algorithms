@@ -1,9 +1,9 @@
 /*
    greedy > loading balance
    difficulty: easy
-   problem: the bus driver problem
    date: 16/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

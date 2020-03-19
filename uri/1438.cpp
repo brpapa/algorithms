@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: unloading boxes
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #define MAX 1000

@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: enigma
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <string>

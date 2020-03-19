@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: interrupter
    date: 28/Feb/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

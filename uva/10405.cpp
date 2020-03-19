@@ -1,9 +1,9 @@
 /*
    dynamic programming > longest common subsequence (LCS)
    difficulty: none
-   problem: longest common subsequence
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

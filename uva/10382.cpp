@@ -1,10 +1,10 @@
 /*
    greedy > interval covering
    difficulty: medium
-   problem: watering grass
    date: 15/Jan/2020
+   problem: none
    solution: reduce the problem using pythagoras to one line
-   author: @brnpapa
+   by @brnpapa
 */
 #include <cmath>
 #include <vector>

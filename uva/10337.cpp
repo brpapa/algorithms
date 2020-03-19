@@ -1,9 +1,9 @@
 /*
    dynamic programming
    difficulty: easy
-   problem: flight planner
    date: 29/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

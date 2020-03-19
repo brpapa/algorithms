@@ -1,9 +1,9 @@
 /*
    math > number theory
    difficulty: none
-   problem: rectangles
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <queue>

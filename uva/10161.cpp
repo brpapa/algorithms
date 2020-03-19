@@ -1,9 +1,9 @@
 /*
    math > ad-hoc > finding pattern
    difficulty: medium
-   problem: ant on a chessboard
    date: 15/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cmath>

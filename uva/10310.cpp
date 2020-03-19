@@ -1,9 +1,9 @@
 /*
    computational geometry
    difficulty: none
-   problem: dog and gopher
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

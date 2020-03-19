@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: easy
-   problem: horror dash
    date: 17/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #define INF (int)0x7f7f7f7f

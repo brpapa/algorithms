@@ -1,25 +1,25 @@
 /*
    math > number theory > prime numbers > sieve of eratosthenes
-   difficulty: none
-   problem: distinct primes
-   date: none
-   author: @brnpapa
+   difficulty: easy
+   date: 14/Nov/2019
+   problem: print the n-th number that has at least 3 distinct prime factors
+   by @brnpapa
 */
-#include <cstring>
 #include <iostream>
-#define MAX 2700 //max lucky number
+#include <cstring>
+#define MAX 2700 // max lucky number
 using namespace std;
 
-int factors[MAX]; //quantidade de fatores primos distintos de i
+int factors[MAX]; // quantidade de fatores primos distintos de i
 
-//crivo de erastótenes adaptado
+// crivo de erastótenes adaptado
 void sieve() {
    memset(factors, 0, sizeof(factors));
 
    for (int i = 2; i < MAX; i++) {
       if (factors[i] == 0)
          for (int j = i; j < MAX; j += i)
-            factors[j]++; //cada j (múltiplo de i) tem i como um de seus fatores
+            factors[j]++; // cada j (múltiplo de i) tem i como um de seus fatores
    }
 }
 
@@ -35,7 +35,7 @@ int main() {
    scanf("%d", &t);
    while (t--) {
       scanf("%d", &n);
-      cout << luckyNumbers[n - 1] << endl;
+      cout << luckyNumbers[n-1] << endl;
    }
    return 0;
 }

@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: diamonds and sand
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <stack>

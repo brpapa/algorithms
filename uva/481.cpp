@@ -1,9 +1,9 @@
 /*
    greedy > fast longest increasing subsequence (LIS)
    difficulty: medium
-   problem: what goes up
    date: 22/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

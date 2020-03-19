@@ -1,9 +1,9 @@
 /*
    graphs
    difficulty: none
-   problem: design labirints
    date: 05/May/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,9 +1,9 @@
 /*
    computational geometry
    difficulty: easy
-   problem: bicycle race
    date: 23/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

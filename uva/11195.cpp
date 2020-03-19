@@ -1,10 +1,10 @@
 /*
    brute force > recursive backtracking > n-queens
    difficulty: medium
-   problem: another n-queen problem
    date: 12/Jan/2020
+   problem: none
    solution: use bitmasks
-   author: @brnpapa
+   by @brnpapa
 */
 #include <bitset>
 #include <iostream>

@@ -57,10 +57,10 @@ void readFile(string ext, string folder, string file) {
    string difficulty = line.substr(15);
    
    getline(in, line);
-   string name = line.substr(12);
+   string date = line.substr(9);
 
    getline(in, line);
-   string date = line.substr(9);
+   string name = line.substr(12);
 
    string solution = "none";
    getline(in, line);

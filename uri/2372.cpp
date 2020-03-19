@@ -1,9 +1,9 @@
 /*
    graphs > shortest path > floyd-warshall
    difficulty: easy
-   problem: meeting
    date: 25/Oct/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

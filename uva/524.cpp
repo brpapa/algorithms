@@ -1,9 +1,9 @@
 /*
    brute force > recursive backtracking > pruned permutations
    difficulty: medium
-   problem: prime ring problem
    date: 13/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <bitset>
 #include <iostream>

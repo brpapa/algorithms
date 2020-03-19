@@ -1,9 +1,9 @@
 '''
    ad-hoc
    difficulty: easy
-   problem: foregone solution
    date: 10/Mar/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 '''
 
 T = int(input())

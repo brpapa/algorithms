@@ -1,9 +1,9 @@
 /*
    dynamic programming > edit distance
    difficulty: none
-   problem: edit distante
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

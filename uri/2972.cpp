@@ -1,10 +1,10 @@
 /*
    math > combinatorics > binomial coefficient
    difficulty: hard
-   problem: less coin tosses
    date: 02/Jan/2020
-   solution: calculate how many odd combinations of k heads between N coins are there, that is, the sum of C(N, k)%2 for k in [0 .. N]
-   author: @brnpapa
+   problem: calculate the sum of C(N, k)%2 for all k in [0 .. n], i.e., how many odd combinations of k heads between n coins there are
+   solution: 2^qtyBitsOn(n)
+   by @brnpapa
 */
 #include <cmath>
 #include <iostream>
@@ -12,8 +12,7 @@
 using namespace std;
 
 int main() {
-   ll N;
-   cin >> N;
-   cout << (ll)pow(2, __builtin_popcountll(N)) << endl;
+   ll n; cin >> n;
+   cout << (ll)pow(2, __builtin_popcountll(n)) << endl;
    return 0;
 }

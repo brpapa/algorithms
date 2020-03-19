@@ -1,9 +1,9 @@
 /*
    dynamic programming > 0-1 knapsack
    difficulty: easy
-   problem: the knapsack problem
    date: 22/Oct/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

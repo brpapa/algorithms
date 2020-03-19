@@ -1,9 +1,9 @@
 /*
    math > ad-hoc > finding pattern
    difficulty: easy
-   problem: triple fat ladies
    date: 21/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #define ll long long

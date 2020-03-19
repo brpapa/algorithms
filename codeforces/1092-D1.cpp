@@ -1,10 +1,10 @@
 /*
-   greedy
+   math > ad-hoc > finding pattern
    difficulty: medium
-   problem: great vova wall (version 1)
    date: 09/Mar/2020
-   solution: remove adjacent ones whose absolute difference is even (using a stack), and check if the final length is less than or equal to 1
-   author: @brnpapa
+   problem: none
+   solution: remove adjacent ones whose absolute difference is even (using a stack)
+   by @brnpapa
 */
 #include <iostream>
 #include <stack>

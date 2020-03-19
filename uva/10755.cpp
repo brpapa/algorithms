@@ -1,10 +1,10 @@
 /*
    dynamic programming > max 2D range sum
    difficulty: hard
-   problem: garbage heap
    date: 18/Jan/2020
+   problem: max 3D range sum
    solution: use max 2D range sum in two of the three dimensions and max 1D range sum (kadane) on the third dimension
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #define ll long long

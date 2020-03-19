@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: medium
-   problem: feeding chicken
    date: 25/Nov/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

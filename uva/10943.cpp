@@ -1,9 +1,9 @@
 /*
    dynamic programming
    difficulty: easy
-   problem: how do you add?
    date: 25/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

@@ -1,9 +1,9 @@
 /*
    techniques > two pointers
    difficulty: easy
-   problem: alice, bob and chocolate
    date: 09/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

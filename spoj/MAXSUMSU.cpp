@@ -1,9 +1,9 @@
 /*
    dynamic programming > max 1D range sum > kadane
    difficulty: easy
-   problem: maximum subset sum
    date: 10/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -1,9 +1,9 @@
 /*
    ad-hoc > implementation
    difficulty: medium
-   problem: a and b and team training
    date: 24/Dec/2019
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

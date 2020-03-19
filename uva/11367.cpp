@@ -1,10 +1,10 @@
 /*
    graphs > shortest path > dijkstra
    difficulty: hard
-   problem: full tank?
    date: 25/Feb/2020
+   problem: none
    solution: find the shortest path on space-state graph, where each vertex represent a city and a level of car fuel
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

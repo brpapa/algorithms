@@ -6,10 +6,10 @@
 			"/*",
 			"   ${4:theme} > ${5:topic}",
 			"   difficulty: ${3|easy,medium,hard|}",
-			"   problem: ${1:name}",
 			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
-			"   solution: ${2:what do you need to compute?}",
-			"   author: @brnpapa",
+			"   problem: ${1|what to do? if it has a general purpose,none|}",
+			"   solution: ${2:how to do?}",
+			"   by @brnpapa",
 			"*/"
 		]
 	},
@@ -17,7 +17,6 @@
 		"prefix": "init",
 		"body": [
 			"#include <iostream>",
-			"#include <vector>",
 			"using namespace std;",
 			"",
 			"int main() {",

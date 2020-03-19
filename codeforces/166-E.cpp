@@ -1,9 +1,9 @@
 /*
    dynamic programming
    difficulty: medium
-   problem: tetrahedron
    date: 02/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

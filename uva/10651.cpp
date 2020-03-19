@@ -1,10 +1,10 @@
 /*
    dynamic programming
    difficulty: medium
-   problem: pebble solitaire
    date: 08/Feb/2020
+   problem: none
    solution: use bitmasks
-   author: @brnpapa
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

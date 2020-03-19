@@ -1,9 +1,9 @@
 /*
    dynamic programming > coin change (CC) > counting ways
    difficulty: easy
-   problem: coin change
    date: 23/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

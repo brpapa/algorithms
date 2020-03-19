@@ -1,9 +1,9 @@
 /*
    greedy
    difficulty: none
-   problem: the club ballroom
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <algorithm>
 #include <iostream>

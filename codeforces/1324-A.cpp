@@ -1,9 +1,9 @@
 /*
-   ad-hoc
+   math > ad-hoc > finding pattern
    difficulty: easy
-   problem: yet another tetris problem
    date: 12/Mar/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

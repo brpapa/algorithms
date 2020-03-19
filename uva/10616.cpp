@@ -1,9 +1,9 @@
 /*
    dynamic programming > 0-1 knapsack > subset sum
    difficulty: medium
-   problem: divisible group sums
    date: 24/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <cstring>

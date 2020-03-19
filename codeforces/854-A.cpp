@@ -1,9 +1,9 @@
 /*
    math > number theory > greatest common divisor (GCD)
    difficulty: easy
-   problem: fraction
    date: 26/Dec/2019
-   author: @brnpapa
+   problem: given n, determine maximum possible proper (a < b) and irreducible fraction a/b such that a+b == n
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;
@@ -13,17 +13,14 @@ int gcd(int a, int b) {
 }
 
 int main() {
-   int N;
-   cin >> N;
+   int n; cin >> n;
 
    int a, b; // numerador, denominador
-   b = N / 2 + 1;
-   a = N - b;
+   b = n / 2 + 1;
+   a = n - b;
 
-   while (gcd(a, b) > 1) {
-      a--;
-      b++;
-   }
+   while (gcd(a, b) > 1) a--, b++;
+
    cout << a << " " << b << endl;
    return 0;
 }

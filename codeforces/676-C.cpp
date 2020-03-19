@@ -1,9 +1,9 @@
 /*
    techniques > two pointers
    difficulty: medium
-   problem: vasya and strings
    date: 07/Jan/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

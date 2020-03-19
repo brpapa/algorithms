@@ -1,9 +1,9 @@
 /*
    math > ad-hoc > finding pattern
    difficulty: medium
-   problem: count on cantor
    date: 18/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>

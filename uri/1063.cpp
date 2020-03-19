@@ -1,9 +1,9 @@
 /*
    ad-hoc
    difficulty: none
-   problem: rails again... tracing movements
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <stack>

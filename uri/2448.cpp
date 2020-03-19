@@ -1,9 +1,9 @@
 /*
    searching > binary search
    difficulty: none
-   problem: postman
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <queue>

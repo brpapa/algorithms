@@ -1,9 +1,9 @@
 /*
    math > ad-hoc
    difficulty: easy
-   problem: peter's smokes
    date: 14/Feb/2020
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 using namespace std;

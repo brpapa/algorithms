@@ -1,9 +1,9 @@
 /*
    graphs > traversal > depth-first search (DFS)
    difficulty: none
-   problem: coloring a tree
    date: none
-   author: @brnpapa
+   problem: none
+   by @brnpapa
 */
 #include <iostream>
 #include <vector>
