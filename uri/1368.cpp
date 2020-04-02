@@ -1,8 +1,7 @@
 /*
    ad-hoc
    difficulty: hard
-   date: 22/Jun/2019
-   problem: none
+   date: 22/Jun/2019 
    by @brnpapa
 */
 #include <iostream>

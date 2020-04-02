@@ -1,8 +1,7 @@
 /*
    graphs > traversal > depth-first search (DFS)
    difficulty: medium
-   date: 28/Oct/2019
-   problem: none
+   date: 28/Oct/2019 
    by @brnpapa
 */
 #include <iostream>

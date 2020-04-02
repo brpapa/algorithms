@@ -1,8 +1,7 @@
 /*
    dynamic programming > longest common subsequence (LCS)
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

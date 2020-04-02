@@ -3,7 +3,7 @@
    difficulty: medium
    date: 18/Mar/2020
    problem: compute the quantity of non-prime numbers in [lo .. hi] which are divisible by only a single prime number, 0 < lo <= hi < 10^12
-   solution: generate all powers of the primes
+   solution: generate all powers of each prime number
    by @brnpapa
 */
 #include <iostream>
@@ -14,7 +14,7 @@
 using namespace std;
 
 vector<ll> primes;
-bitset<UB+1> is; 
+bitset<UB+1> is;
 
 void sieve() {
    primes.clear();
@@ -33,10 +33,10 @@ int main() {
    int T; cin >> T;
    while (T--) {
       ll lo, hi; cin >> lo >> hi;
-      
+
       ll ans = 0;
 
-      // para cada primo p em [0 .. sqrt(n)]
+      // para cada primo p em [0 .. sqrt(hi)]
       for (ll p : primes) {
          if (p*p > hi) break;
 

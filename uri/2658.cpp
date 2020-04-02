@@ -1,8 +1,7 @@
 /*
    searching > segment tree > lazy propagation
    difficulty: medium
-   date: 13/Mar/2020
-   problem: none
+   date: 13/Mar/2020 
    solution: build a segment tree for RSQ, but store an array of size 9 in tree[v], where tree[v][n] indicates the frequency that each note n appears in that interval
    by @brnpapa
 */

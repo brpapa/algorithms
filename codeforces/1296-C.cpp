@@ -1,8 +1,7 @@
 /*
    ad-hoc > implementation
    difficulty: medium
-   date: 02/Mar/2020
-   problem: none
+   date: 02/Mar/2020 
    solution: maps each position of the robot with the string index, and check if a new position has already been mapped before
    by @brnpapa
 */

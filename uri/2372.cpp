@@ -1,8 +1,7 @@
 /*
    graphs > shortest path > floyd-warshall
    difficulty: easy
-   date: 25/Oct/2019
-   problem: none
+   date: 25/Oct/2019 
    by @brnpapa
 */
 #include <iostream>

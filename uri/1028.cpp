@@ -1,8 +1,7 @@
 /*
    math > number theory > greatest common divisor (GCD)
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

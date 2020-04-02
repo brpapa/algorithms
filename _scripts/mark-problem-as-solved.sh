@@ -1,10 +1,11 @@
 # exec: ./mark-problem-as-solved.sh JUDGE-NAME PROBLEM-NAME-WITH-EXTENSION
 
-file_csv="_scripts/auto-csv.cpp"
-file_md="_scripts/auto-md.py"
+file_csv="./_scripts/auto-csv.cpp"
+file_md="./_scripts/auto-md.py"
+file_cache="./_scripts/files-tracked-on-git.txt"
 
 git add $1/$2
-git ls-files > files-tracked-on-git.txt
+git ls-files > ${file_cache}
 
 if [[ ! -e "${file_csv%.cpp}" ]]
 then

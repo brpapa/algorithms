@@ -1,8 +1,7 @@
 /*
    techniques > two pointers
    difficulty: medium
-   date: 29/Dec/2019
-   problem: none
+   date: 29/Dec/2019 
    by @brnpapa
 */
 #include <iostream>

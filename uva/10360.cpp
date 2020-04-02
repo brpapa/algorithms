@@ -1,8 +1,7 @@
 /*
    brute force > iterative
    difficulty: easy
-   date: 13/Jan/2020
-   problem: none
+   date: 13/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

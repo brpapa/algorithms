@@ -1,8 +1,7 @@
 /*
    graphs > traversal > bipartite checking
    difficulty: easy
-   date: 31/Jan/2020
-   problem: none
+   date: 31/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

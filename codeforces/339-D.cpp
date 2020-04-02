@@ -1,8 +1,7 @@
 /*
    searching > segment tree
    difficulty: easy
-   date: 07/Dec/2019
-   problem: none
+   date: 07/Dec/2019 
    by @brnpapa
 */
 #include <cmath>

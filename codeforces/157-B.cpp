@@ -1,8 +1,7 @@
 /*
    computational geometry
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

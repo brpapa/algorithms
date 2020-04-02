@@ -1,5 +1,5 @@
 /*
-   math > number theory > prime numbers > factorization
+   math > number theory > prime numbers > prime factorization
    difficulty: hard
    date: 14/Sep/2019
    problem: compute the number of divisors of n that can be written as the product of two or more distinct prime numbers (without repetition), 1 <= n <= 10^12

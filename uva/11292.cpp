@@ -1,8 +1,7 @@
 /*
    greedy > bipartite matching
    difficulty: easy
-   date: 15/Jan/2020
-   problem: none
+   date: 15/Jan/2020 
    by @brnpapa
 */
 #include <algorithm>

@@ -3,23 +3,24 @@
    difficulty: easy
    date: 14/Nov/2019
    problem: print the n-th number that has at least 3 distinct prime factors
+   solution: use modified sieve
    by @brnpapa
 */
 #include <iostream>
+#include <vector>
 #include <cstring>
 #define MAX 2700 // max lucky number
 using namespace std;
 
-int factors[MAX]; // quantidade de fatores primos distintos de i
+int numDiffPFs[MAX];
 
-// crivo de erastótenes adaptado
 void sieve() {
-   memset(factors, 0, sizeof(factors));
+   memset(numDiffPFs, 0, sizeof(numDiffPFs));
 
    for (int i = 2; i < MAX; i++) {
-      if (factors[i] == 0)
+      if (numDiffPFs[i] == 0)
          for (int j = i; j < MAX; j += i)
-            factors[j]++; // cada j (múltiplo de i) tem i como um de seus fatores
+            numDiffPFs[j]++; // cada j (múltiplo de i) tem i como um de seus fatores
    }
 }
 
@@ -27,10 +28,10 @@ int main() {
    int t, n;
    sieve();
 
-   int luckyNumbers[1000], j = 0;
-   for (int i = 0; j < 1000; i++)
-      if (factors[i] >= 3)
-         luckyNumbers[j++] = i;
+   vector<int> luckyNumbers;
+   for (int i = 0; luckyNumbers.size() < 1010; i++)
+      if (numDiffPFs[i] >= 3)
+         luckyNumbers.push_back(i);
 
    scanf("%d", &t);
    while (t--) {

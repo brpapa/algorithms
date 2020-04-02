@@ -1,8 +1,7 @@
 /*
    searching > binary search > on answer
    difficulty: medium
-   date: 03/Jan/2020
-   problem: none
+   date: 03/Jan/2020 
    by @brnpapa
 */
 #include <cmath>

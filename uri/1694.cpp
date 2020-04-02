@@ -1,8 +1,7 @@
 /*
    math > combinatorics > binomial coefficient
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>
@@ -10,22 +9,22 @@
 using namespace std;
 
 // C[i][j] = qte de possibilidades de escolher j elementos de um conjunto de i elementos (ordem não importa e j <= i)
-long long int C[64][16]; 
+long long C[64][16]; 
 bool ehPrimo[2501];
 
 int qteNaoPrimosLinha[50], qteNaoPrimosColuna[50];
 
-//gera todos coeficientes binomiais (comb. simples)
+// gera todos coeficientes binomiais (comb. simples)
 void trianguloPascal(int n) {
    for (int i = 0; i <= n; i++)
-      for (int j = 0; j <= min(i, 10); j++) { //pois 1 <= k <= 10
+      for (int j = 0; j <= min(i, 10); j++) { // pois 1 <= k <= 10
          if (j == 0 || j == i)
             C[i][j] = 1;
          else
-            C[i][j] = C[i - 1][j - 1] + C[i - 1][j];
+            C[i][j] = C[i-1][j-1] + C[i - 1][j];
       }
 }
-//gera todos primos
+// gera todos primos
 void sieve(int lim) {
    memset(ehPrimo, true, sizeof(ehPrimo));
    ehPrimo[0] = ehPrimo[1] = false;
@@ -33,7 +32,7 @@ void sieve(int lim) {
    for (int i = 2; i * i <= lim; i++)
       if (ehPrimo[i])
          for (int j = i * i; j <= lim; j += i)
-            ehPrimo[j] = false; //todos j são divisíveis por i, logo já não é primo
+            ehPrimo[j] = false; // todos j são divisíveis por i, logo já não é primo
 }
 
 int main() {
@@ -53,10 +52,10 @@ int main() {
          for (int j = 0; j < qteCol; j++)
             if (!ehPrimo[i * qteCol + j]) {
                qteNaoPrimosLinha[i] += 1;
-               qteNaoPrimosColuna[j] += (k != 1) ? 1 : 0; //evita aposta repetida
+               qteNaoPrimosColuna[j] += (k != 1) ? 1 : 0; // evita aposta repetida
             }
 
-      long long int qteApostas = 0, qte;
+      long long qteApostas = 0, qte;
       for (int i = 0; i < qteLin; i++)
          if ((qte = qteNaoPrimosLinha[i]) >= k)
             qteApostas += C[qte][k];

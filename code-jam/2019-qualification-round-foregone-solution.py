@@ -1,8 +1,7 @@
 '''
    ad-hoc
    difficulty: easy
-   date: 10/Mar/2020
-   problem: none
+   date: 10/Mar/2020 
    by @brnpapa
 '''
 

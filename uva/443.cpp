@@ -1,8 +1,7 @@
 /*
    math > ad-hoc > sequences
    difficulty: medium
-   date: 18/Feb/2020
-   problem: none
+   date: 18/Feb/2020 
    by @brnpapa
 */
 #include <iostream>

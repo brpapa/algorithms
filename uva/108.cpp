@@ -1,8 +1,7 @@
 /*
    dynamic programming > max 2D range sum
    difficulty: easy
-   date: 17/Jan/2020
-   problem: none
+   date: 17/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

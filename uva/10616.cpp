@@ -1,8 +1,9 @@
 /*
    dynamic programming > 0-1 knapsack > subset sum
    difficulty: medium
-   date: 24/Jan/2020
-   problem: none
+   date: 24/Jan/2020 
+   problem: given an array of size N, count how many subsets of size M have their sum divisible by D
+   solution: use module arithmetic
    by @brnpapa
 */
 #include <iostream>

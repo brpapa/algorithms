@@ -1,8 +1,7 @@
 /*
    ad-hoc > simulation
    difficulty: medium
-   date: 19/Sep/2019
-   problem: none
+   date: 19/Sep/2019 
    by @brnpapa
 */
 #include <iostream>

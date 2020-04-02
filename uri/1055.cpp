@@ -1,8 +1,7 @@
 /*
    greedy > loading balance
    difficulty: medium
-   date: 24/Jan/2020
-   problem: none
+   date: 24/Jan/2020 
    by @brnpapa
 */
 #include <cmath>

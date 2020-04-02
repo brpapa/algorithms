@@ -1,8 +1,7 @@
 /*
-   math > number theory > prime numbers > factorization
+   math > number theory > prime numbers > prime factorization
    difficulty: easy
-   date: 13/Feb/2020
-   problem: none
+   date: 13/Feb/2020 
    by @brnpapa
 */
 #include <iostream>

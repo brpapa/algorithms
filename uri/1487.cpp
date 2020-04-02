@@ -1,8 +1,7 @@
 /*
    dynamic programming > 0-1 knapsack
    difficulty: medium
-   date: 25/Aug/2019
-   problem: none
+   date: 25/Aug/2019 
    by @brnpapa
 */
 #include <iostream>

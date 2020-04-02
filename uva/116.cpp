@@ -1,8 +1,7 @@
 /*
    dynamic programming > traveling salesman problem (TSP)
    difficulty: medium
-   date: 14/Nov/2019
-   problem: none
+   date: 14/Nov/2019 
    by @brnpapa
 */
 #include <iostream>

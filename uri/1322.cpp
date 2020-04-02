@@ -1,8 +1,7 @@
 /*
    graphs > traversal > depth-first search (DFS)
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

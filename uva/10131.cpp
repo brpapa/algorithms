@@ -1,8 +1,7 @@
 /*
    dynamic programming > longest increasing subsequence (LIS)
    difficulty: medium
-   date: 25/Jan/2020
-   problem: none
+   date: 25/Jan/2020 
    solution: sort elephants based on increasing kg, then apply LDS on iq
    by @brnpapa
 */

@@ -1,8 +1,7 @@
 /*
    searching > binary search > on answer
    difficulty: hard
-   date: 06/Jan/2020
-   problem: none
+   date: 06/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

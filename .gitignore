@@ -1,11 +1,17 @@
 # cache files
 **/.DS_Store
-files-tracked-on-git.txt
+
+# tmp
+_scripts/files-tracked-on-git.txt
+_scripts/problems.csv
+e
+input
+output
 
 # files/folders
-z*
+index.cpp
 _diagrams/
-_material/
+_materials/
 _tests/
 _scripts/auto-csv
 _scripts/auto-md

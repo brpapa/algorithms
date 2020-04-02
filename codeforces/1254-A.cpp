@@ -1,8 +1,7 @@
 /*
    ad-hoc > implementation
    difficulty: medium
-   date: 25/Nov/2019
-   problem: none
+   date: 25/Nov/2019 
    by @brnpapa
 */
 #include <iostream>

@@ -7,7 +7,7 @@
 			"   ${4:theme} > ${5:topic}",
 			"   difficulty: ${3|easy,medium,hard|}",
 			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
-			"   problem: ${1|what to do? if it has a general purpose,none|}",
+			"   problem: ${1:abridge problem, if it has a general purpose}",
 			"   solution: ${2:how to do?}",
 			"   by @brnpapa",
 			"*/"

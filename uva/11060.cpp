@@ -1,8 +1,7 @@
 /*
    graphs > traversal > topological sorting
    difficulty: easy
-   date: 31/Jan/2020
-   problem: none
+   date: 31/Jan/2020 
    by @brnpapa
 */
 #include <iostream>
@@ -19,10 +18,8 @@ int main() {
       vector<int> adjList[110];
       vector<int> inDegree(V, 0);
 
-      for (int v = 0; v < V; v++) {
-         cin >> str[v];
-         id[str[v]] = v;
-      }
+      for (int v = 0; v < V; v++)
+         cin >> str[v], id[str[v]] = v;
 
       int E; cin >> E;
       while (E--) {

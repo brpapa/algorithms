@@ -1,8 +1,7 @@
 /*
    math > ad-hoc > finding pattern
    difficulty: medium
-   date: 15/Feb/2020
-   problem: none
+   date: 15/Feb/2020 
    by @brnpapa
 */
 #include <iostream>

@@ -1,8 +1,7 @@
 /*
    dynamic programming > digits
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

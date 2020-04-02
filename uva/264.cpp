@@ -1,8 +1,8 @@
 /*
-   math > ad-hoc > finding pattern
+   math > ad-hoc > sequences
    difficulty: medium
    date: 18/Feb/2020
-   problem: none
+   solution: use binary search on preprocessed f(x)=f(x-1)+x-1
    by @brnpapa
 */
 #include <iostream>
@@ -12,7 +12,7 @@ using namespace std;
 
 /*
 1  2  3  4   5   6  ...  x
-1  2  4  7  11  16  ...  n
+1  2  4  7  11  16  ...  f(x)
 
 f(x) = f(x-1)+x-1
 

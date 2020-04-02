@@ -1,8 +1,7 @@
 /*
    greedy > maximum subsequence
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

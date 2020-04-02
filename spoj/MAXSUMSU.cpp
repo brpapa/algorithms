@@ -1,8 +1,7 @@
 /*
    dynamic programming > max 1D range sum > kadane
    difficulty: easy
-   date: 10/Jan/2020
-   problem: none
+   date: 10/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

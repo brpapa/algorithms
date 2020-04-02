@@ -3,6 +3,7 @@ import collections
 from string import Template
 
 # settings
+path_input_file = './_scripts/problems.csv'
 path_output_file = './README.md'
 emojis = {
    'difficulty': {
@@ -53,8 +54,9 @@ def build(dataset):
       theme = data['theme'].split(' > ')
       judges[data['judge']]['solved'] += 1
 
-      #! filter
-      # if (data['difficulty'] == 'none'): continue
+      # filter
+      if (data['difficulty'] == 'none'):
+         continue
 
       for i in range(0, len(theme)):
          key = key_root if i == 0 else (i, theme[i-1])
@@ -71,7 +73,7 @@ def build(dataset):
          problem_desc=('' if data['name'] == 'none' else f': `{data["name"]}`'),
          solution_desc=('' if data['solution'] == 'none' else f' → {data["solution"]}'),
          base_url=base_url['remote'],
-         relative_path=f'{data["judge"]}/{data["problem"]}{data["ext"]}',
+         relative_path=f'{data["judge"]}/{data["problem"]}.{data["ext"]}',
          emoji=emojis['difficulty'][data['difficulty']]
       ))
 
@@ -125,6 +127,6 @@ def start_writing():
 
 
 if __name__ == '__main__':
-   build(csv.DictReader(open('problems.csv')))
+   build(csv.DictReader(open(path_input_file)))
    start_writing()
    dfs(key_root, vertex_process)

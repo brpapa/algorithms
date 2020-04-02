@@ -1,8 +1,7 @@
 /*
    dynamic programming > longest increasing subsequence (LIS)
    difficulty: medium
-   date: 23/Jan/2020
-   problem: none
+   date: 23/Jan/2020 
    by @brnpapa
 */
 #include <iostream>

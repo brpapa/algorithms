@@ -1,8 +1,7 @@
 /*
    graphs > shortest path > dijkstra
    difficulty: medium
-   date: 22/May/2019
-   problem: none
+   date: 22/May/2019 
    by @brnpapa
 */
 #include <iostream>

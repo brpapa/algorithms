@@ -1,8 +1,7 @@
 /*
    dynamic programming > traveling salesman problem (TSP)
    difficulty: easy
-   date: 24/Jan/2020
-   problem: none
+   date: 24/Jan/2020 
    by @brnpapa
 */
 #include <cmath>

@@ -3,7 +3,7 @@
    difficulty: hard
    date: 02/Jan/2020
    problem: calculate the sum of C(N, k)%2 for all k in [0 .. n], i.e., how many odd combinations of k heads between n coins there are
-   solution: 2^qtyBitsOn(n)
+   solution: just compute 2^qtyBitsOn(n)
    by @brnpapa
 */
 #include <cmath>

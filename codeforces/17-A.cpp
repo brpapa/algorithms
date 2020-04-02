@@ -1,8 +1,7 @@
 /*
    math > number theory > prime numbers > sieve of eratosthenes
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <cstring>

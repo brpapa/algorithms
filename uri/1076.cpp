@@ -1,8 +1,7 @@
 /*
    graphs
    difficulty: none
-   date: 05/May/2019
-   problem: none
+   date: 05/May/2019 
    by @brnpapa
 */
 #include <iostream>

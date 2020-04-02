@@ -35,15 +35,13 @@ vector<string> separateTopics(string line) {
 
 /* ----------- */
 
-const string CACHE_PATH = "files-tracked-on-git.txt";
-const string WRITE_PATH = "problems.csv";
-
-
+const string CACHE_PATH = "./_scripts/files-tracked-on-git.txt";
+const string WRITE_PATH = "./_scripts/problems.csv";
 ofstream out(WRITE_PATH);
 
 void readFile(string ext, string folder, string file) {
    string line;
-   ifstream in(folder + "/" + file + ext);
+   ifstream in(folder + "/" + file + "." + ext);
 
    getline(in, line); // /*
 
@@ -59,18 +57,19 @@ void readFile(string ext, string folder, string file) {
    getline(in, line);
    string date = line.substr(9);
 
+   string problemDesc = "none", solutionDesc = "none";
    getline(in, line);
-   string name = line.substr(12);
-
-   string solution = "none";
-   getline(in, line);
+   if (line.find("problem") != string::npos) {
+      problemDesc = line.substr(12);
+      getline(in, line);
+   }
    if (line.find("solution") != string::npos)
-      solution = line.substr(13);
+      solutionDesc = line.substr(13);
 
    string judge = folder;
    string problem = file;
 
-   out << "\"" << judge << "\",\"" << problem << "\",\"" << name << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << solution << "\",\"" << date << "\",\"" << ext << "\"" << endl;
+   out << "\"" << judge << "\",\"" << problem << "\",\"" << problemDesc << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << solutionDesc << "\",\"" << date << "\",\"" << ext << "\"" << endl;
 
    in.close();
 }
@@ -83,8 +82,8 @@ void readAllFilesTrackedOnGit() {
       getline(in, line);
       
       string ext = "";
-      if (line.find(".cpp") != string::npos) ext = ".cpp";
-      if (line.find(".py") != string::npos) ext = ".py";
+      if (line.find(".cpp") != string::npos) ext = "cpp";
+      if (line.find(".py") != string::npos)  ext = "py";
 
       int b = line.find("/"), p = line.find(".");
       string folder = line.substr(0, b);

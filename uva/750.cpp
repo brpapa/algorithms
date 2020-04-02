@@ -1,8 +1,7 @@
 /*
    brute force > iterative > all permutations
    difficulty: easy
-   date: 12/Jan/2020
-   problem: none
+   date: 12/Jan/2020 
    by @brnpapa
 */
 #include <cstdio>

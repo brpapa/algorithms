@@ -1,8 +1,7 @@
 /*
    greedy > loading balance
    difficulty: easy
-   date: 16/Jan/2020
-   problem: none
+   date: 16/Jan/2020 
    by @brnpapa
 */
 #include <algorithm>

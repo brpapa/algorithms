@@ -1,8 +1,7 @@
 /*
    math > ad-hoc > finding pattern
    difficulty: easy
-   date: 12/Mar/2020
-   problem: none
+   date: 12/Mar/2020 
    by @brnpapa
 */
 #include <iostream>

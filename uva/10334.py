@@ -1,8 +1,7 @@
 '''
    math > combinatorics > fibonacci numbers
    difficulty: medium
-   date: 19/Feb/2020
-   problem: none
+   date: 19/Feb/2020 
    solution: compute (n+2)-th fibonnaci number
    by @brnpapa
 '''

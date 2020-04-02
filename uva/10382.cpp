@@ -1,8 +1,7 @@
 /*
    greedy > interval covering
    difficulty: medium
-   date: 15/Jan/2020
-   problem: none
+   date: 15/Jan/2020 
    solution: reduce the problem using pythagoras to one line
    by @brnpapa
 */

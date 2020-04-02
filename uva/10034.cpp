@@ -1,8 +1,7 @@
 /*
    graphs > minimum spanning tree (MST)
    difficulty: easy
-   date: 10/Nov/2019
-   problem: none
+   date: 10/Nov/2019 
    by @brnpapa
 */
 #include <iostream>

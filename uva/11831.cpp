@@ -1,8 +1,7 @@
 /*
    graphs > traversal
    difficulty: easy
-   date: 27/Feb/2020
-   problem: none
+   date: 27/Feb/2020 
    solution: consider grid as an implicit graph and walk through it, or just rotate the robot, for each received instruction
    by @brnpapa
 */

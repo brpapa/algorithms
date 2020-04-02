@@ -1,8 +1,7 @@
 /*
    graphs > traversal > breadth-first search (BFS)
    difficulty: none
-   date: none
-   problem: none
+   date: none 
    by @brnpapa
 */
 #include <iostream>

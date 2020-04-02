@@ -1,8 +1,7 @@
 /*
    greedy
    difficulty: easy
-   date: 21/Feb/2020
-   problem: none
+   date: 21/Feb/2020 
    by @brnpapa
 */
 #include <iostream>

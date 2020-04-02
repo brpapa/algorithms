@@ -1,8 +1,7 @@
 /*
    brute force > recursive backtracking > pruned permutations
    difficulty: medium
-   date: 13/Jan/2020
-   problem: none
+   date: 13/Jan/2020 
    by @brnpapa
 */
 #include <bitset>
