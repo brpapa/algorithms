@@ -1,7 +1,7 @@
-# compile o .cpp antes
+# usage: ./run-tests.sh TESTS_FOLDER (from _tests/)
+# example: ./run-tests.sh regional-2019/M
 
-# exec: ./run-tests.sh TESTS_FOLDER (from _tests/)
-# e.g.: ./run-tests.sh regional-2019/M
+# compile o .cpp antes
 
 cd _tests
 mkdir $1/my-output

@@ -1,4 +1,4 @@
-# exec: ./open-problem-statement.sh JUDGE-NAME PROBLEM-ID-WITHOUT-CPP
+# usage: ./open-problem-statement.sh JUDGE-NAME PROBLEM-ID-WITHOUT-CPP
 
 JUDGE=$1
 FILE=$2

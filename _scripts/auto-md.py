@@ -3,8 +3,8 @@ import collections
 from string import Template
 
 # settings
-path_input_file = './_scripts/problems.csv'
-path_output_file = './README.md'
+input_file = './_scripts/problems.csv'
+output_file = './README.md'
 emojis = {
    'difficulty': {
       'easy': '📗',
@@ -18,7 +18,6 @@ base_url = {
    'remote': 'https://github.com/brnpapa/competitive-programming/blob/master'
 }
 static_output_lines = [
-   '# Hi, visitor!\n\n',
    'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I use and recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
    '<p align="center">Feel free to follow my progress on my online judge profiles:</p>\n\n',
 ]
@@ -49,13 +48,16 @@ leaf = {} # list of exercices of each leaf vertex
 # build adjacency list of graph, define leaf and judges
 def build(dataset):
    for data in dataset:
-      if (data['judge'] not in judges or data['difficulty'] not in emojis['difficulty']): continue
+      if (data['difficulty'] not in emojis['difficulty']):
+         continue
+
+      if (data['judge'] in judges):
+         judges[data['judge']]['solved'] += 1
 
       theme = data['theme'].split(' > ')
-      judges[data['judge']]['solved'] += 1
 
       # filter
-      if (data['difficulty'] == 'none'):
+      if (data['solution'] == 'none'):
          continue
 
       for i in range(0, len(theme)):
@@ -91,12 +93,12 @@ def dfs(v, process):
             visiteds.add(u)
             stack.append(u)
 
-# append to path_output_file
+# append to output_file
 def vertex_process(v):
    if (v == key_root):
       return
    level, theme = v
-   with open(path_output_file, 'a') as file:
+   with open(output_file, 'a') as file:
       if level == 1:
          file.write('\n## '+theme+'\n')
       else:
@@ -106,16 +108,16 @@ def vertex_process(v):
          for ex_desc in leaf[v]:
             file.write('\t'*(level-1)+'- ' + ex_desc + '\n')
 
-# overwrite path_output_file
+# overwrite output_file
 def start_writing():
-   with open(path_output_file, 'w') as file:
+   with open(output_file, 'w') as file:
       file.writelines(static_output_lines)
 
       shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square"></a>\n')
 
       file.write('<p align="center">\n')
       for judge in judges.keys():
-         file.write(shields_io.substitute(url=judges[judge]['profile_url'], label=judge, message=judges[judge]['solved'], color="green"))
+         file.write(shields_io.substitute(url=judges[judge]['profile_url'], label=judge, message=judges[judge]['solved'], color='red'))
       file.write('</p>\n')
 
       file.write('<br/>\n\n')
@@ -127,6 +129,6 @@ def start_writing():
 
 
 if __name__ == '__main__':
-   build(csv.DictReader(open(path_input_file)))
+   build(csv.DictReader(open(input_file)))
    start_writing()
    dfs(key_root, vertex_process)

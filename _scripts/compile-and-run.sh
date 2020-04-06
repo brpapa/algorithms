@@ -1,4 +1,4 @@
-# exec: ./compile-and-run.sh PATH
+# usage: ./compile-and-run.sh PATH
 
 PATH=$1
 EXT=${PATH##*.}

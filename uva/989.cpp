@@ -26,12 +26,13 @@ void markUsedAs(bool used, int r, int c, int num) {
    usedOnBox[b][num] = used;
 }
 
-void bt(int r, int c) {
+void bt(int i) {
+   int r = i/(n*n), c = i%(n*n);
    // define board[r][c] com algum num possível
 
    if (hasSolution) return;
 
-   if (r == n*n) {
+   if (i == (n*n)*(n*n)) {
       hasSolution = true;
       for (int r = 0; r < n*n; r++) {
          for (int c = 0; c < n*n-1; c++)
@@ -43,14 +44,14 @@ void bt(int r, int c) {
 
    int b = n*(r/n) + c/n; // (r,c) está na box b
 
-   if (!changeable[r][c]) c < n*n-1? bt(r, c+1) : bt(r+1, 0);
+   if (!changeable[r][c]) bt(i+1);
    else {
       for (int num = 1; num <= n*n; num++) 
          if (!usedOnRow[r][num] && !usedOnCol[c][num] && !usedOnBox[b][num]) {
             board[r][c] = num;
 
             markUsedAs(1, r, c, num);
-            c < n*n-1? bt(r, c+1) : bt(r+1, 0);
+            bt(i+1);
             markUsedAs(0, r, c, num);
          }
    }
@@ -72,7 +73,7 @@ int main() {
          }
 
       if (t++ > 0) cout << endl;
-      bt(0, 0);
+      bt(0);
       if (!hasSolution) cout << "NO SOLUTION" << endl;
    }
    return 0;

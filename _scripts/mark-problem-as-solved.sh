@@ -1,4 +1,4 @@
-# exec: ./mark-problem-as-solved.sh JUDGE-NAME PROBLEM-NAME-WITH-EXTENSION
+# usage: ./mark-problem-as-solved.sh JUDGE-NAME PROBLEM-NAME-WITH-EXTENSION
 
 file_csv="./_scripts/auto-csv.cpp"
 file_md="./_scripts/auto-md.py"
