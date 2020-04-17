@@ -2,7 +2,7 @@
    graphs > shortest path > floyd-warshall
    difficulty: easy
    date: 25/Oct/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

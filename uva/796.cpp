@@ -2,7 +2,7 @@
    graphs > traversal > bridges and articulation points
    difficulty: easy
    date: 04/Feb/2020
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -2,7 +2,7 @@
    searching > binary search > on answer
    difficulty: hard
    date: 06/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

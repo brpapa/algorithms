@@ -4,7 +4,7 @@
    date: 26/Mar/2020
    problem: check if the given undirected graph can be represented as a set of three or more rooted trees, whose roots are connected by a simple cycle
    solution: check if the graph is connective and has only one cycle
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

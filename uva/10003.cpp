@@ -2,7 +2,7 @@
    dynamic programming
    difficulty: easy
    date: 25/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 //! essa solução está horrível (mas passou), seria melhor considerar como estado os indices (0 à N-1) dos gravetos atuais. Ao considerar o segmento como estado a matriz memo não é completamente usada e há um scan O(N) desnecessário em cada estado
 #include <cstring>

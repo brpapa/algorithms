@@ -2,7 +2,7 @@
    math > ad-hoc > finding pattern
    difficulty: medium
    date: 15/Feb/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cmath>

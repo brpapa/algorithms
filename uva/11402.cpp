@@ -3,7 +3,7 @@
    difficulty: medium
    date: 12/Mar/2020 
    solution: build a segment tree for RSQ, but keep in lazy[v] the type of pending operation to be performed in that interval of A
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

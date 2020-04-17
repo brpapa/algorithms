@@ -2,7 +2,7 @@
    math > ad-hoc > finding pattern
    difficulty: easy
    date: 30/Mar/2020
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cmath>

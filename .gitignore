@@ -10,8 +10,7 @@ output
 
 # files/folders
 index.cpp
-_diagrams/
-_materials/
-_tests/
-_scripts/auto-csv
-_scripts/auto-md
+_diagrams
+_learning
+_test-cases
+_scripts/auto-problems-csv

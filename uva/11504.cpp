@@ -3,7 +3,7 @@
    difficulty: medium
    date: 07/Feb/2020
    problem: count the number of SCCs without incoming edge from a vertex of another SCC
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

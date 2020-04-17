@@ -2,7 +2,7 @@
    greedy
    difficulty: easy
    date: 16/Mar/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

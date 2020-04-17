@@ -3,7 +3,7 @@
    difficulty: easy
    date: 07/Feb/2020
    problem: check if any subset of A has a sum equal to K
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

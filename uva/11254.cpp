@@ -2,7 +2,7 @@
    math > ad-hoc > arithmetic progression
    difficulty: medium
    date: 14/Feb/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cmath>

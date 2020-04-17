@@ -2,7 +2,7 @@
    math > number theory > greatest common divisor (GCD)
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 using namespace std;

@@ -2,7 +2,7 @@
    math > number theory > prime numbers > sieve of eratosthenes
    difficulty: medium
    date: 26/Dec/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <bitset>
 #include <iostream>

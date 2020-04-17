@@ -3,7 +3,7 @@
    difficulty: medium
    date: 19/Mar/2020
    problem: solve the sudoku puzzle
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

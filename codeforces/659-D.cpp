@@ -2,7 +2,7 @@
    computational geometry
    difficulty: easy
    date: 23/Dec/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -3,7 +3,7 @@
    difficulty: medium
    date: 01/Mar/2020 
    solution: find the max(lis[i]+lds[i]-1) for all i in [0 .. N-1], being i where the subsequence starts
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

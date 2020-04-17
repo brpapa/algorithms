@@ -2,7 +2,7 @@
    brute force > recursive backtracking > pruned permutations
    difficulty: medium
    date: 13/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <bitset>
 #include <iostream>

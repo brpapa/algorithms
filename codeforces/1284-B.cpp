@@ -2,7 +2,7 @@
    searching > binary search
    difficulty: medium
    date: 05/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <algorithm>
 #include <iostream>

@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: easy
    date: 28/Feb/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

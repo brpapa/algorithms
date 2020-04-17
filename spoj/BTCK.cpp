@@ -1,60 +1,62 @@
 /*
-   brute force > recursive backtracking
-   difficulty: none
-   date: none 
-   by @brnpapa
+   brute force > recursive backtracking > pruned permutations
+   difficulty: easy
+   date: 14/Apr/2020
+   by: @brnpapa
 */
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-#define MAX 10
 
-int a[MAX], solucao[MAX], perm[MAX], k;
-bool usado[MAX], temSolucao;
+bitset<10> used; // used[v]: v já foi usado na permutação atual
+int p[10];       // permutação atual
 
-void permuta(int perm[], int n) {
-   //verifica se perm é uma solucao promissora
-   int soma = 0;
-   for (int i = 0; i < n; i++) {
-      soma += perm[i] * a[i];
-      if (soma > k)
-         return; //descarta perm
+int A[10], K;
+bool hasSolution;
+
+// p[0:i-1] é válido?
+bool check(int i, int v) {
+   int sum = 0;
+   for (int k = 0; k < i; k++) {
+      sum += p[k]*A[k];
+      if (sum > K) return false;
    }
+   return sum + (v*A[i]) <= K;
+}
 
-   if (n == MAX) { //solução válida
-      for (int i = 0; i < MAX; i++)
-         solucao[i] = perm[i];
-      temSolucao = true;
+// constroi p[i]
+void bt(int i) {
+   if (hasSolution) return;
+
+   if (i == 10) {
+      hasSolution = true;
+      for (int i = 0; i < 9; i++)
+         cout << p[i] << " ";
+      cout << p[9] << endl;
       return;
    }
-   for (int i = 0; i < MAX && !temSolucao; i++)
-      if (!usado[i]) {
-         usado[i] = true;
-         perm[n] = i;
-         permuta(perm, n + 1);
-         usado[i] = false; //backtracking
+
+   for (int v = 0; v < 10; v++) {
+      if (!used[v] && check(i, v)) {
+         p[i] = v;
+
+         used[v] = 1;
+         bt(i+1);
+         used[v] = 0;
       }
+   }
 }
 
 int main() {
-   int t;
-   cin >> t;
-   while (t--) {
-      for (int i = 0; i < MAX; i++) {
-         cin >> a[i];
-         //inicializa
-         usado[i] = false;
-      }
-      cin >> k;
+   int T; cin >> T;
+   while (T--) {
+      for (int i = 0; i < 10; i++) cin >> A[i];
+      cin >> K;
 
-      temSolucao = false;
-      permuta(perm, 0);
-      if (!temSolucao)
-         cout << -1 << endl;
-      else {
-         for (int i = 0; i < MAX - 1; i++)
-            cout << solucao[i] << " ";
-         cout << solucao[MAX - 1] << endl;
-      }
+      hasSolution = false;
+      used.reset();
+
+      bt(0);
+      if (!hasSolution) cout << -1 << endl;
    }
    return 0;
 }

@@ -2,7 +2,7 @@
    dynamic programming
    difficulty: easy
    date: 25/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

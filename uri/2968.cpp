@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: easy
    date: 14/Sep/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <cmath>
 #include <iostream>

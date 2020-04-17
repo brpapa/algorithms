@@ -2,7 +2,7 @@
    math > number theory
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <queue>

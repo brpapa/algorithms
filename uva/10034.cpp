@@ -2,7 +2,7 @@
    graphs > minimum spanning tree (MST)
    difficulty: easy
    date: 10/Nov/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <algorithm>

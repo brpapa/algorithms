@@ -2,7 +2,7 @@
    math > ad-hoc > finding pattern
    difficulty: easy
    date: 21/Feb/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #define ll long long

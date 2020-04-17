@@ -3,7 +3,7 @@
    difficulty: easy
    date: 24/Mar/2020
    problem: find a subset of A with the max sum k <= K, and recovery it for printing
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

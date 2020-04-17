@@ -3,7 +3,7 @@
    difficulty: medium
    date: 02/Apr/2020
    problem: given the two-sided values of N cards, what is the minimum number of turns in the cards so that at least half of them are the same front?; they are initially facing upwards
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <set>

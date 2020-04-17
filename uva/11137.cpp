@@ -2,7 +2,7 @@
    dynamic programming > coin change (CC) > counting ways
    difficulty: easy
    date: 21/Feb/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

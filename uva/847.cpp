@@ -1,15 +1,14 @@
 /*
    math > game theory > minimax > optimized
-   difficulty: medium
+   difficulty: hard
    date: 28/Mar/2020
    problem: multiplication game
    solution: note that if Stan always multiply by 9 and Ollie by 2, it's still an optimal solution
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
-#define STAN 0
-#define OLLIE 1
 using namespace std;
+const int STAN = 0, OLLIE = 1;
 
 int N;
 int f(int p, int n) {

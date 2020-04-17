@@ -2,7 +2,7 @@
    brute force > recursive backtracking
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 using namespace std;

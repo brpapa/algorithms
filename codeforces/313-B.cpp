@@ -2,7 +2,7 @@
    greedy > maximum subsequence
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 using namespace std;

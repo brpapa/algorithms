@@ -2,7 +2,7 @@
    math > number theory > prime numbers > sieve of eratosthenes
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <cstring>
 #include <iostream>

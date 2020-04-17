@@ -4,7 +4,7 @@
    date: 14/Nov/2019
    problem: print the n-th number that has at least 3 distinct prime factors
    solution: use modified sieve
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

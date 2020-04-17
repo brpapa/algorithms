@@ -4,7 +4,7 @@
    date: 15/Mar/2020
    problem: given the A and B arrays, count the quantity of pairs i < j such that A[i]+A[j] > B[i]+B[j]
    solution: diff being the A-B array, count, for all i in [0 .. N-2], how many times -diff[i] < diff[j], for all j in [i+1 .. N-1]
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

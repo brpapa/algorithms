@@ -4,18 +4,19 @@
    date: 28/Mar/2020
    problem: alberto and wanderley take one of two cards at the edges of the cards sequence, alberto want maximize it
    solution: fill memo table in row-major order
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
-#define ll long long
-#define ALB 0
-#define WAN 1
 using namespace std;
+
+typedef long long ll;
+const int pALB = 0;
+const int pWAN = 1;
 
 int A[10010];
 
 ll memo[10010][10010];
-ll dp(bool p, int l, int r) {
+ll minimax(bool p, int l, int r) {
    // cartas atuais A[l:r], jogador atual p
 
    if (l > r) return 0ll;
@@ -23,17 +24,17 @@ ll dp(bool p, int l, int r) {
    ll &ans = memo[r][l]; // r >= l
    if (ans != -1) return ans;
 
-   if (p == ALB) {
+   if (p == pALB) {
       return ans = max(
-         (ll)A[l] + dp(!p, l+1, r),
-         (ll)A[r] + dp(!p, l, r-1)
+         (ll)A[l] + minimax(!p, l+1, r),
+         (ll)A[r] + minimax(!p, l, r-1)
       );
    }
    else {
-      // WAN escolhe estado em que ALB recebe menos
+      // pWAN escolhe estado em que pALB recebe menos
       return ans = min(
-         dp(!p, l+1, r),
-         dp(!p, l, r-1)
+         minimax(!p, l+1, r),
+         minimax(!p, l, r-1)
       );
    }
 }
@@ -45,7 +46,7 @@ int main() {
          cin >> A[i];
          for (int j = 0; j <= i; j++) memo[i][j] = -1;
       }
-      cout << dp(ALB, 0, N-1) << endl;
+      cout << minimax(pALB, 0, N-1) << endl;
    }
    return 0;
 }

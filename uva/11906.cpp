@@ -3,7 +3,7 @@
    difficulty: medium
    date: 28/Feb/2020 
    solution: consider grid as an implicit graph and walk through it avoiding redundant positions (nr, nc)
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

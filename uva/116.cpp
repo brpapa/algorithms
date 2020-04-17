@@ -2,7 +2,7 @@
    dynamic programming > traveling salesman problem (TSP)
    difficulty: medium
    date: 14/Nov/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <queue>

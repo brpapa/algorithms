@@ -4,7 +4,7 @@
    date: 14/Sep/2019
    problem: compute the number of divisors of n that can be written as the product of two or more distinct prime numbers (without repetition), 1 <= n <= 10^12
    solution: note that the product of any combination of prime factors of a number will always be a divisor of that number
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cmath>

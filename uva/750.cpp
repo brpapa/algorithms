@@ -2,7 +2,7 @@
    brute force > iterative > all permutations
    difficulty: easy
    date: 12/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <cstdio>
 #include <vector>

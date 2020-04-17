@@ -4,7 +4,7 @@
    date: 19/Mar/2020
    problem: counting ways to represent S cents
    solution: subset sum with possible repetition
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -3,7 +3,7 @@
    difficulty: medium
    date: 28/May/2019
    problem: print n-th divine number, the one that is equal to the sum of the sum of each divisor from 1 to n
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

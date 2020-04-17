@@ -2,7 +2,7 @@
    graphs
    difficulty: none
    date: 05/May/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

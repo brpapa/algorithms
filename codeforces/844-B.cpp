@@ -2,7 +2,7 @@
    math > combinatorics > binomial coefficient
    difficulty: easy
    date: 27/Dec/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <cmath>
 #include <iostream>

@@ -2,7 +2,7 @@
    graphs > traversal > depth-first search (DFS)
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

@@ -2,7 +2,7 @@
    string processing > knuth-morris-pratt (KMP)
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 using namespace std;

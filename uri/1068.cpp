@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: none
    date: none 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <stack>

@@ -2,7 +2,7 @@
    graphs > traversal > bipartite checking
    difficulty: easy
    date: 31/Jan/2020 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

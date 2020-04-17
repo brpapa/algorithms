@@ -2,7 +2,7 @@
    ad-hoc > simulation
    difficulty: medium
    date: 19/Sep/2019 
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

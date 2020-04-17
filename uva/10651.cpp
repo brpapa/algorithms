@@ -3,7 +3,7 @@
    difficulty: medium
    date: 08/Feb/2020 
    solution: use bitmasks
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <cstring>

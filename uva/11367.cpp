@@ -3,7 +3,7 @@
    difficulty: hard
    date: 25/Feb/2020 
    solution: find the shortest path on space-state graph, where each vertex represent a city and a level of car fuel
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <vector>

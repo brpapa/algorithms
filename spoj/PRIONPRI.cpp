@@ -3,7 +3,7 @@
    difficulty: easy
    date: 14/Nov/2019
    problem: prime checking
-   by @brnpapa
+   by: @brnpapa
 */
 #include <iostream>
 #include <math.h>
