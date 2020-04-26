@@ -1,8 +1,9 @@
 /*
-   graph > traversal > depth-first search (DFS)
+   brute force > recursive backtracking
    difficulty: easy
    date: 14/Apr/2020
-   problem: given an unweighted implicit graph, count the longest path
+   problem: given an unweighted implicit graph, count the longest possible path
+   solution: graph traversal + backtracking
    by: @brnpapa
 */
 #include <bits/stdc++.h>
@@ -17,7 +18,7 @@ const int VISITED = 1;
 int board[MAX_N][MAX_N];
 int maxQtyVisited;
 
-void dfs(int r, int c, int qtyVisited) {
+void bfs(int r, int c, int qtyVisited) {
    maxQtyVisited = max(maxQtyVisited, qtyVisited);
    board[r][c] = VISITED;
 
@@ -29,9 +30,9 @@ void dfs(int r, int c, int qtyVisited) {
       int nc = c + dc[d];
 
       if (nr >= 0 && nc >= 0 && board[nr][nc] == UNVISITED)
-         dfs(nr, nc, qtyVisited+1);
+         bfs(nr, nc, qtyVisited+1);
    }
-   board[r][c] = UNVISITED;
+   board[r][c] = UNVISITED; // backtracking
 }
 
 int main() {
@@ -47,7 +48,7 @@ int main() {
             board[n][c] = UNVISITED, ans++;
       }
 
-      dfs(0, 0, 1);
+      bfs(0, 0, 1);
       ans -= maxQtyVisited;
       printf("Case %d, %d %s can not be reached.\n", t++, ans, ans != 1? "squares":"square");
    }

@@ -1,37 +1,29 @@
 /*
-   ad-hoc
-   difficulty: none
-   date: none 
+   greedy
+   difficulty: easy
+   date: 23/Apr/2020
+   problem: add all
    by: @brnpapa
-/*
-#include <iostream>
-#include <queue>
+*/
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 
 int main() {
-   int n, aux;
-   while (true) {
-      cin >> n;
-      if (n == 0)
-         return 0;
+   int N;
+   while (cin >> N && N) {
+      priority_queue<int> q;
+      while (N--) { int a; cin >> a; q.push(-a); };
 
-      priority_queue<int> heap;
-      for (int i = 0; i < n; i++) {
-         cin >> aux;
-         heap.push(-aux);
-      }
+      ll cost = 0, sum;
+      while (q.size() > 1) {
+         sum = -q.top(); q.pop();
+         sum += -q.top(); q.pop();
+         q.push(-sum);
 
-      int custo = 0;
-      while (!heap.empty()) {
-         int tmp1 = -heap.top();
-         heap.pop();
-         if (heap.empty())
-            break;
-         int tmp2 = -heap.top();
-         heap.pop();
-         custo += tmp1 + tmp2;
-         heap.push(-tmp1 - tmp2);
+         cost += sum;
       }
-      cout << custo << endl;
+      cout << cost << endl;
    }
+   return 0;
 }

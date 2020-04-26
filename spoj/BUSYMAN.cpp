@@ -1,40 +1,35 @@
 /*
    greedy
-   difficulty: none
-   date: none 
+   difficulty: easy
+   date: 23/Apr/2020
+   problem: compute the maximum number of activities (each with start and end times) that you can do without overlapping them (one at a time)
+   solution: sort the activites by increasing end time
    by: @brnpapa
 */
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#define inicial second
-#define final first
+#include <bits/stdc++.h>
 using namespace std;
 
+typedef pair<int, int> ii; // start, end
+
+// p1 < p2
+bool cmp(const ii p1, const ii p2) {
+   return p1.second < p2.second;
+}
+
 int main() {
-   int t, n, numAtv;
-   pair<int, int> tempoAux;
-   vector<pair<int, int>> tempo;
+   int T; cin >> T;
+   while (T--) {
+      int N; cin >> N;
+      vector<ii> time(N); for (ii &t : time) cin >> t.first >> t.second;
 
-   scanf("%d", &t);
-   while (t--) {
-      scanf("%d", &n);
-      tempo.clear();
-      for (int i = 0; i < n; i++) {
-         scanf("%d %d", &tempoAux.inicial, &tempoAux.final);
-         tempo.push_back(tempoAux);
-      }
-      //ordena por tempo final de forma crescente (compara o .first, no caso .final)
-      sort(tempo.begin(), tempo.end());
+      sort(time.begin(), time.end(), cmp);
 
-      int numAtv = 1;
-      tempoAux = tempo[0];
-      for (int i = 1; i < n; i++)
-         if (tempo[i].inicial >= tempoAux.final) {
-            numAtv++;
-            tempoAux = tempo[i];
-         }
-      printf("%d\n", numAtv);
+      int ans = 1; ii curr = time[0];
+      for (int i = 1; i < N; i++)
+         if (time[i].first >= curr.second)
+            ans++, curr = time[i];
+
+      cout << ans << endl;
    }
    return 0;
 }

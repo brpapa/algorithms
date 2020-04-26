@@ -1,8 +1,9 @@
 /*
-   graphs > traversal > depth-first search (DFS)
+   brute force > recursive backtracking
    difficulty: medium
    date: 14/Apr/2020
    problem: given domino pieces, check if it is possible to arrive at a target piece from an initial piece using N intermediate pieces (possibly rotating them)
+   solution: graph traversal + backtracking
    by: @brnpapa
 */
 #include <bits/stdc++.h>
@@ -39,7 +40,7 @@ void dfs(pii u, int lvl, bool rotate) {
       }
    }
 
-   state[u] = UNVISITED;
+   state[u] = UNVISITED; // backtracking
 }
 
 int main() {
