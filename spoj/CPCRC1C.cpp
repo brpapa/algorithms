@@ -1,5 +1,5 @@
 /*
-   dynamic programing > digit
+   dynamic programming > digit
    difficulty: easy
    date: 01/May/2020
    by: @brnpapa
