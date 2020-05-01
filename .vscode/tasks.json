@@ -77,8 +77,8 @@
          "description": "Select the judge name",
          "type": "pickString",
          "options": [
-            "uva",
             "codeforces",
+            "uva",
             "uri",
             "spoj",
             "codejam"

@@ -1,7 +1,7 @@
 /*
-   ad-hoc > simulation
+   ad-hoc > implementation
    difficulty: medium
-   date: 19/Sep/2019 
+   date: 19/Sep/2019
    by: @brnpapa
 */
 #include <iostream>
@@ -11,7 +11,7 @@
 #include <map>
 #define next(p) ((p%n)+1)
 using namespace std;
-   
+
 map<char, int> cardId;
 int n, k; // k = quem começa
 
@@ -21,7 +21,7 @@ int winningPlayer;
 
 struct Tcard {
    int id, pos, rep;
-   
+
    Tcard(int v, int p, int r) {
       this->id = v;
       this->pos = p; // posicao no vector original
@@ -103,7 +103,7 @@ int main() {
          cin >> cc;
          cardsFromPlayer[p].push_back(cardId[cc]);
       }
-      
+
       // já existe alguém que não seja o primeiro a jogar com mão vencedora
       if (isWinningCards(cardsFromPlayer[p]) && winningPlayer == -1 && p != k)
          winningPlayer = p;
