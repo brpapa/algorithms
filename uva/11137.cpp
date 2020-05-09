@@ -1,5 +1,5 @@
 /*
-   dynamic programming > coin change (CC) > counting ways
+   dynamic programming > 0-1 knapsack > subset sum > with repetition
    difficulty: easy
    date: 21/Feb/2020 
    by: @brnpapa

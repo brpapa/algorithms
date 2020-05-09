@@ -18,10 +18,10 @@ base_url = {
    'remote': 'https://github.com/brnpapa/competitive-programming/blob/master'
 }
 static_output_lines = [
-   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I use and recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
-   '<p align="center">Feel free to follow my progress on my online judge profiles:</p>\n\n',
+   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
+   '<p align="center">Feel free to follow my progress on my main online judge profiles:</p>\n\n',
 ]
-judges = {
+main_judges = {
    'uva': {
       'solved': 0,
       'profile_url': 'https://uhunt.onlinejudge.org/id/1094350'
@@ -45,14 +45,16 @@ key_root = (0, 'root')
 adjList = { key_root: set() }
 leaf = {} # list of exercices of each leaf vertex
 
-# build adjacency list of graph, define leaf and judges
+# build adjacency list of graph, define leaf and main_judges
 def build(dataset):
    for data in dataset:
       if (data['difficulty'] not in emojis['difficulty']):
          continue
 
-      if (data['judge'] in judges):
-         judges[data['judge']]['solved'] += 1
+      if (data['judge'] in main_judges):
+         main_judges[data['judge']]['solved'] += 1
+      elif (data['judge'] == 'icpc'):
+         main_judges['uri']['solved'] += 1
 
       theme = data['theme'].split(' > ')
 
@@ -116,8 +118,8 @@ def start_writing():
       shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square"></a>\n')
 
       file.write('<p align="center">\n')
-      for judge in judges.keys():
-         file.write(shields_io.substitute(url=judges[judge]['profile_url'], label=judge, message=judges[judge]['solved'], color='red'))
+      for judge in main_judges.keys():
+         file.write(shields_io.substitute(url=main_judges[judge]['profile_url'], label=judge, message=main_judges[judge]['solved'], color='yellow'))
       file.write('</p>\n')
 
       file.write('<br/>\n\n')

@@ -1,9 +1,7 @@
 /*
-   dynamic programming > 0-1 knapsack > subset sum
+   dynamic programming > 0-1 knapsack > subset sum > with repetition
    difficulty: easy
    date: 19/Mar/2020
-   problem: counting ways to represent S cents
-   solution: subset sum with possible repetition
    by: @brnpapa
 */
 #include <iostream>

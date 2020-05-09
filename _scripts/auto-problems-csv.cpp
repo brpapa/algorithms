@@ -9,6 +9,7 @@ using namespace std;
 
 const string INPUT_FILE = "./_scripts/files-tracked-on-git.txt";
 const string OUTPUT_FILE = "./_scripts/problems.csv";
+const string folders[] = { "codeforces", "spoj", "uri", "uva", "code-jam", "icpc" };
 
 ofstream out(OUTPUT_FILE);
 
@@ -48,10 +49,10 @@ void readFile(string ext, string folder, string file) {
    string theme = subjects[0];
    for (int i = 1; i < subjects.size(); i++)
       theme += " > " + subjects[i];
-   
+
    getline(in, line);
    string difficulty = line.substr(15);
-   
+
    getline(in, line);
    string date = line.substr(9);
 
@@ -78,22 +79,27 @@ void readAllFilesTrackedOnGit() {
    string line;
    while (!in.eof()) {
       getline(in, line);
-      
+
       string ext = "";
-      if (line.find(".cpp") != string::npos) ext = "cpp";
-      if (line.find(".py") != string::npos)  ext = "py";
+      if (line.find(".cpp") != string::npos)
+         ext = "cpp";
+      if (line.find(".py") != string::npos)
+         ext = "py";
 
       int b = line.find("/"), p = line.find(".");
       string folder = line.substr(0, b);
-      string file = line.substr(b+1, p-b-1);
+      string file = line.substr(b + 1, p - b - 1);
 
-      if (ext == "" || (folder != "codeforces" && folder != "spoj" && folder != "uri" && folder != "uva" && folder != "codejam"))
+      bool check = false;
+      for (string f : folders) if (f == folder) check = true;
+
+      if (ext == "" || !check) 
          continue; // line não é exercicio
 
       readFile(
-         ext,
-         line.substr(0, b),      // folder
-         line.substr(b+1, p-b-1) // file without ext
+          ext,
+          line.substr(0, b),            // folder
+          line.substr(b + 1, p - b - 1) // file without ext
       );
    }
    in.close();

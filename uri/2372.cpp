@@ -1,5 +1,5 @@
 /*
-   graphs > shortest path > floyd-warshall
+   graphs > shortest path > all-pairs
    difficulty: easy
    date: 25/Oct/2019 
    by: @brnpapa

@@ -8,4 +8,3 @@ if [[ ${EXT} == "cpp" ]]; then
 elif [[ ${EXT} == "py" ]]; then
    /usr/local/bin/python ${PATH} < input > output
 fi
-

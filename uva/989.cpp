@@ -1,8 +1,7 @@
 /*
-   brute force > recursive backtracking
-   difficulty: medium
+   brute force > recursive backtracking > sudoku
+   difficulty: easy
    date: 19/Mar/2020
-   problem: solve the sudoku puzzle
    by: @brnpapa
 */
 #include <iostream>

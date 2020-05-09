@@ -1,5 +1,5 @@
 /*
-   graphs > shortest path > dijkstra
+   graphs > shortest path > single-source > weighted graph
    difficulty: medium
    date: 23/Feb/2020
    problem: find the global shortest path from 0 to V-1 (round trip), without repeting edges

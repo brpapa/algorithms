@@ -24,8 +24,6 @@ void setDigits(ll n) {
 // retorna a soma dos dígitos de 1 ao inteiro representado por digits
 ll dp(int i, int sum, bool limited) {
    // dígito atual digits[i] com soma acumulada sum
-   // limited = true  -> dígito atual varia de 0 à digits[i]
-   // limited = false -> dígito atual varia de 0 à 9
 
    if (i == -1) return sum;
 
@@ -36,11 +34,7 @@ ll dp(int i, int sum, bool limited) {
    for (int d = 0; d <= (limited? digits[i] : 9); d++) {
       if (i == 0 && d % 2 == 0) continue; // última casa decimal par
 
-      tmp += dp(
-         i - 1,                             // próximo dígito menos significativo
-         sum + d,                           // soma anterior + dígito gerado
-         d == digits[i]? limited : false   // se d gerado é igual ao dígito do indice atual, o próximo estado é restrito desde que o atual já seja 
-      );
+      tmp += dp(i-1, sum+d, d == digits[i]? limited : false);
    }
    return limited? tmp : (ans = tmp);
 }

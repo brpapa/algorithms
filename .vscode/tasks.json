@@ -74,19 +74,20 @@
    "inputs": [
       {
          "id": "judge-name",
-         "description": "Select the judge name",
+         "description": "Select the folder",
          "type": "pickString",
          "options": [
             "codeforces",
             "uva",
             "uri",
             "spoj",
-            "codejam"
+            "code-jam",
+            "icpc"
          ],
       },
       {
          "id": "problem-id",
-         "description": "Insert the problem id",
+         "description": "Insert the file name",
          "type": "promptString",
       }
    ]
