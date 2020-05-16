@@ -3,7 +3,7 @@
    difficulty: easy
    date: 14/Mar/2020
    problem: given a sequence of integers, is there a subsequence palindrome of size 3?
-   solution: check if there are two equal non-adjacent numbers using brute force
+   hint: check if there are two equal non-adjacent numbers using brute force
    by: @brnpapa
 */
 #include <iostream>

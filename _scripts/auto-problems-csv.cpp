@@ -1,10 +1,4 @@
-#include <fstream>
-#include <iostream>
-#include <map>
-#include <set>
-#include <stack>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 const string INPUT_FILE = "./_scripts/files-tracked-on-git.txt";
@@ -56,19 +50,17 @@ void readFile(string ext, string folder, string file) {
    getline(in, line);
    string date = line.substr(9);
 
-   string problemDesc = "none", solutionDesc = "none";
+   // opcionais
+   string problemDesc = "none", hintDesc = "none";
    getline(in, line);
    if (line.find("problem") != string::npos) {
       problemDesc = line.substr(12);
       getline(in, line);
    }
-   if (line.find("solution") != string::npos)
-      solutionDesc = line.substr(13);
+   if (line.find("hint") != string::npos)
+      hintDesc = line.substr(9);
 
-   string judge = folder;
-   string problem = file;
-
-   out << "\"" << judge << "\",\"" << problem << "\",\"" << problemDesc << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << solutionDesc << "\",\"" << date << "\",\"" << ext << "\"" << endl;
+   out << "\"" << folder << "\",\"" << file << "\",\"" << ext << "\",\"" << problemDesc << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << hintDesc << "\",\"" << date << "\"" << endl;
 
    in.close();
 }
@@ -106,7 +98,7 @@ void readAllFilesTrackedOnGit() {
 }
 
 int main() {
-   out << "judge,problem,name,difficulty,theme,solution,date,ext" << endl;
+   out << "folder,file,ext,problem,difficulty,theme,hint,date" << endl;
    readAllFilesTrackedOnGit();
    out.close();
    return 0;

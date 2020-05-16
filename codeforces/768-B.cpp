@@ -2,7 +2,7 @@
    divide & conquer
    difficulty: medium
    date: 16/Apr/2020
-   solution: knowing the size of the final array with a little math, use the same idea to query a range in a segment tree
+   hint: knowing the size of the final array with a little math, use the same idea to query a range in a segment tree
    by: @brnpapa
 */
 #include <bits/stdc++.h>

@@ -2,7 +2,7 @@
    dynamic programming
    difficulty: medium
    date: 08/Feb/2020 
-   solution: use bitmasks
+   hint: use bitmasks
    by: @brnpapa
 */
 #include <iostream>

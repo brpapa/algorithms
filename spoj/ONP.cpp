@@ -3,7 +3,7 @@
    difficulty: easy
    date: 04/Mar/2020
    problem: transform the algebraic expression with brackets into reverse polish notation (RPN) 
-   solution: consider the given expression as the in-order traversal in a binary tree, then print post-order traversal recursively without building the tree
+   hint: consider the given expression as the in-order traversal in a binary tree, then print post-order traversal recursively without building the tree
    by: @brnpapa
 */
 #include <iostream>

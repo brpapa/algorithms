@@ -3,7 +3,7 @@
    difficulty: easy
    date: 23/Apr/2020
    problem: compute the maximum number of activities (each with start and end times) that you can do without overlapping them (one at a time)
-   solution: sort the activites by increasing end time
+   hint: sort the activites by increasing end time
    by: @brnpapa
 */
 #include <bits/stdc++.h>

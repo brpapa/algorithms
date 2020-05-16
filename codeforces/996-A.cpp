@@ -1,5 +1,5 @@
 /*
-   greedy > coin change (CC)
+   greedy > coin change
    difficulty: none
    date: none 
    by: @brnpapa

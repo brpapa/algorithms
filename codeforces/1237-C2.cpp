@@ -2,7 +2,7 @@
    greedy
    difficulty: medium
    date: 17/Apr/2020
-   solution: sort the points, remove pairs with equal x and y first, then pairs with equal x and finally the rest
+   hint: sort the points, remove pairs with equal x and y first, then pairs with equal x and finally the rest
    by: @brnpapa
 */
 #include <bits/stdc++.h>

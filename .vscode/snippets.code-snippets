@@ -8,21 +8,9 @@
 			"   difficulty: ${3|easy,medium,hard|}",
 			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
 			"   problem: ${1:abridge problem}",
-			"   solution: ${2:how to do?}",
+			"   hint: ${2:how to do?}",
 			"   by: @brnpapa",
 			"*/"
-		]
-	},
-	"init": {
-		"prefix": "init",
-		"body": [
-			"#include <bits/stdc++.h>",
-			"using namespace std;",
-			"",
-			"int main() {",
-			"   $0",
-			"   return 0;",
-			"}"
 		]
 	},
    // fast debugging

@@ -2,7 +2,7 @@
    brute force > iterative > all subsets
    difficulty: easy
    date: 11/Jan/2020 
-   solution: use bitmasks
+   hint: use bitmasks
    by: @brnpapa
 */
 #include <iostream>

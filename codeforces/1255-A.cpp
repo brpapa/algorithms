@@ -1,5 +1,5 @@
 /*
-   greedy > coin change (CC)
+   greedy > restrict coin change
    difficulty: easy
    date: 25/Nov/2019 
    by: @brnpapa

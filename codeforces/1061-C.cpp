@@ -2,7 +2,7 @@
    dynamic programming
    difficulty: medium
    date: 30/Apr/2020
-   solution: use space saving + all divisors in O(sqrt(n)) to optimize
+   hint: use space saving + all divisors in O(sqrt(n)) to optimize
    by: @brnpapa
 */
 #include <bits/stdc++.h>

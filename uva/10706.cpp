@@ -2,7 +2,7 @@
    math > ad-hoc > sequences
    difficulty: hard
    date: 31/Mar/2020
-   solution: pre-process the number sequence and f(k), so use binary search on f
+   hint: pre-process the number sequence and f(k), so use binary search on f
    by: @brnpapa
 */
 #include <iostream>

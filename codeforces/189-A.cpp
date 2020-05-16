@@ -1,5 +1,5 @@
 /*
-   dynamic programming > coin change (CC)
+   dynamic programming > coin change
    difficulty: easy
    date: 29/Apr/2020
    by: @brnpapa

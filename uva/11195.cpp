@@ -2,7 +2,7 @@
    brute force > recursive backtracking > n-queens
    difficulty: medium
    date: 12/Jan/2020 
-   solution: use bitmasks
+   hint: use bitmasks
    by: @brnpapa
 */
 #include <bitset>

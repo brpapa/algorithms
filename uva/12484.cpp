@@ -3,7 +3,7 @@
    difficulty: medium
    date: 28/Mar/2020
    problem: alberto and wanderley take one of two cards at the edges of the cards sequence, alberto want maximize it
-   solution: fill memo table in row-major order
+   hint: fill memo table in row-major order
    by: @brnpapa
 */
 #include <iostream>

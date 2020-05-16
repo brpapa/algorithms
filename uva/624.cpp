@@ -2,7 +2,7 @@
    dynamic programming > 0-1 knapsack > subset sum
    difficulty: easy
    date: 24/Mar/2020
-   problem: find a subset of A with the max sum k <= K, and recovery it for printing
+   problem: print the subset of A with the max sum k, k <= K
    by: @brnpapa
 */
 #include <iostream>

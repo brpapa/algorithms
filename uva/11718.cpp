@@ -2,7 +2,7 @@
    math > ad-hoc > finding pattern
    difficulty: hard
    date: 16/Feb/2020 
-   solution: compute K * N^(K-1) * sumA using fast power mod
+   hint: compute K * N^(K-1) * sumA using fast power mod
    by: @brnpapa
 */
 #include <iostream>

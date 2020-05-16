@@ -3,7 +3,7 @@
    difficulty: hard
    date: 28/Mar/2020
    problem: multiplication game
-   solution: note that if Stan always multiply by 9 and Ollie by 2, it's still an optimal solution
+   hint: note that if Stan always multiply by 9 and Ollie by 2, it's still an optimal solution
    by: @brnpapa
 */
 #include <iostream>

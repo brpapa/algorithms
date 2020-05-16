@@ -51,9 +51,9 @@ def build(dataset):
       if (data['difficulty'] not in emojis['difficulty']):
          continue
 
-      if (data['judge'] in main_judges):
-         main_judges[data['judge']]['solved'] += 1
-      elif (data['judge'] == 'icpc'):
+      if (data['folder'] in main_judges):
+         main_judges[data['folder']]['solved'] += 1
+      elif (data['folder'] == 'icpc'):
          main_judges['uri']['solved'] += 1
 
       theme = data['theme'].split(' > ')
@@ -67,17 +67,18 @@ def build(dataset):
          adjList[key].add((i+1, theme[i]))
          adjList.setdefault((i+1, theme[i]), set())
 
-      ex_desc = Template('$emoji [$judge/$problem]($base_url/$relative_path)$problem_desc $solution_desc')
+      ex_desc = Template('$emoji [$folder/$file]($base_url/$relative_path)$problem_desc $hint_desc')
 
       key_leaf = (len(theme), theme[-1])
       leaf.setdefault(key_leaf, set())
 
       leaf[key_leaf].add(ex_desc.substitute(
          data,
-         problem_desc=('' if data['name'] == 'none' else f': `{data["name"]}`'),
-         solution_desc=('' if data['solution'] == 'none' else f' → {data["solution"]}'),
+         problem_desc=('' if data['problem'] == 'none' else f': `{data["problem"]}`'),
+         # hint_desc=('' if data['hint'] == 'none' else f' → {data["hint"]}'),
+         hint_desc=(''),
          base_url=base_url['remote'],
-         relative_path=f'{data["judge"]}/{data["problem"]}.{data["ext"]}',
+         relative_path=f'{data["folder"]}/{data["file"]}.{data["ext"]}',
          emoji=emojis['difficulty'][data['difficulty']]
       ))
 

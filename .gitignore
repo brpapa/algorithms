@@ -4,13 +4,12 @@
 # tmp
 _scripts/files-tracked-on-git.txt
 _scripts/problems.csv
+_scripts/auto-problems-csv
 e
 input
 output
+main.cpp
 
 # files/folders
-index.cpp
-_diagrams
-_learning
-_test-cases
-_scripts/auto-problems-csv
+_*
+!_scripts

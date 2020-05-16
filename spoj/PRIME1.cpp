@@ -3,7 +3,7 @@
    difficulty: medium
    date: 17/Mar/2020
    problem: print all primes p in [m .. n], 0 <= m <= n <= 10^9, n-m <= 10^5
-   solution: sieve + prime checking
+   hint: sieve + prime checking
    by: @brnpapa
 */
 #include <iostream>

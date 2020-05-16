@@ -3,7 +3,7 @@
    difficulty: medium
    date: 24/Jan/2020 
    problem: given an array of size N, count how many subsets of size M have their sum divisible by D
-   solution: use module arithmetic
+   hint: use module arithmetic
    by: @brnpapa
 */
 #include <iostream>

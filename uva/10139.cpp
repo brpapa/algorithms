@@ -3,7 +3,7 @@
    difficulty: medium
    date: 21/Mar/2020
    problem: do n! is divisible by m?
-   solution: check if the prime factors of m are contained in the prime factors of n!
+   hint: check if the prime factors of m are contained in the prime factors of n!
    by: @brnpapa
 */
 #include <iostream>

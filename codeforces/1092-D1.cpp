@@ -2,7 +2,7 @@
    math > ad-hoc > finding pattern
    difficulty: medium
    date: 09/Mar/2020 
-   solution: remove adjacent ones whose absolute difference is even (using a stack)
+   hint: remove adjacent ones whose absolute difference is even (using a stack)
    by: @brnpapa
 */
 #include <iostream>

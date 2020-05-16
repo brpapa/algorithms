@@ -3,7 +3,7 @@
    difficulty: medium
    date: 12/Apr/2020
    problem: given a state of a tic tac toe board, check if X will win independent of the O movement
-   solution: minimax + memo + backtracking
+   hint: minimax + memo + backtracking
    by: @brnpapa
 */
 #include <bits/stdc++.h>

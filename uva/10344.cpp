@@ -3,7 +3,7 @@
    difficulty: easy
    date: 19/Mar/2020
    problem: check if some arithmetic expression of 5 given numbers will result in 23
-   solution: check all combination of operators for each permutation of the given numbers
+   hint: check all combination of operators for each permutation of the given numbers
    by: @brnpapa
 */
 #include <iostream>

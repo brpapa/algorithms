@@ -3,7 +3,7 @@
    difficulty: medium
    date: 31/Mar/2020
    problem: given the array a, compute the array d, where d[i] = j-(i+1) for the max j such that a[j] < a[i]
-   solution: apply binary search on preprocessed array mn, filled from right to left
+   hint: apply binary search on preprocessed array mn, filled from right to left
    by: @brnpapa
 */
 #include <iostream>
