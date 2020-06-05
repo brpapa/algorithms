@@ -1,9 +1,9 @@
 /*
-   dynamic programming > 0-1 knapsack > subset sum
+   dynamic programming > subset sum
    difficulty: medium
    date: 15/May/2020
    problem: find the smallest sum s of a subset of A, s >= S
-   hint: scan as "%d.%d"
+   hint: scan as %d.%d
    by: @brnpapa
 */
 #include <bits/stdc++.h>

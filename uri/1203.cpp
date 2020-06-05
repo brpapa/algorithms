@@ -1,5 +1,5 @@
 /*
-   dynamic programming > 0-1 knapsack > subset sum
+   dynamic programming > subset sum
    difficulty: easy
    date: 07/Feb/2020
    problem: check if any subset of A has a sum equal to K

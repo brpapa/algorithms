@@ -1,5 +1,5 @@
 /*
-   graphs > traversal > bridges and articulation points
+   graphs > traversal > bridges or articulation points
    difficulty: easy
    date: 04/Feb/2020
    by: @brnpapa

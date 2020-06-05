@@ -1,5 +1,5 @@
 /*
-   dynamic programming > 0-1 knapsack > subset sum > with repetition
+   dynamic programming > subset sum > with repetition
    difficulty: easy
    date: 19/Mar/2020
    by: @brnpapa

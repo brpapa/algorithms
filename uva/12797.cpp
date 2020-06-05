@@ -2,7 +2,7 @@
    graphs > shortest path > single-source > unweighted graph
    difficulty: medium
    date: 08/May/2020
-   solution: apply a BFS for each subset of letters possible (only 2^10) using bitmask
+   hint: apply a BFS for each subset of letters possible (only 2^10) using bitmask
    by: @brnpapa
 */
 #include <bits/stdc++.h>

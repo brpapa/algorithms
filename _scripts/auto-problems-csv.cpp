@@ -3,7 +3,14 @@ using namespace std;
 
 const string INPUT_FILE = "./_scripts/files-tracked-on-git.txt";
 const string OUTPUT_FILE = "./_scripts/problems.csv";
-const string folders[] = { "codeforces", "spoj", "uri", "uva", "code-jam", "icpc" };
+const string folders[] = { 
+   "codeforces",
+   "spoj",
+   "uri",
+   "uva",
+   "code-jam",
+   "live-archive"
+};
 
 ofstream out(OUTPUT_FILE);
 
@@ -35,6 +42,10 @@ vector<string> separateTopics(string line) {
 void readFile(string ext, string folder, string file) {
    string line;
    ifstream in(folder + "/" + file + "." + ext);
+   if (in.fail()) {
+      cout << (folder + "/" + file + "." + ext + " don't exists.") << endl;;
+      return;
+   }
 
    getline(in, line); // /*
 
@@ -51,16 +62,16 @@ void readFile(string ext, string folder, string file) {
    string date = line.substr(9);
 
    // opcionais
-   string problemDesc = "none", hintDesc = "none";
+   string problem = "none", hint = "none";
    getline(in, line);
    if (line.find("problem") != string::npos) {
-      problemDesc = line.substr(12);
+      problem = line.substr(12);
       getline(in, line);
    }
    if (line.find("hint") != string::npos)
-      hintDesc = line.substr(9);
+      hint = line.substr(9);
 
-   out << "\"" << folder << "\",\"" << file << "\",\"" << ext << "\",\"" << problemDesc << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << hintDesc << "\",\"" << date << "\"" << endl;
+   out << "\"" << folder << "\",\"" << file << "\",\"" << ext << "\",\"" << problem << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << hint << "\",\"" << date << "\"" << endl;
 
    in.close();
 }
@@ -89,9 +100,9 @@ void readAllFilesTrackedOnGit() {
          continue; // line não é exercicio
 
       readFile(
-          ext,
-          line.substr(0, b),            // folder
-          line.substr(b + 1, p - b - 1) // file without ext
+         ext,
+         line.substr(0, b),            // folder
+         line.substr(b + 1, p - b - 1) // file without ext
       );
    }
    in.close();

@@ -1,5 +1,5 @@
 /*
-   techniques > two pointers
+   miscellaneous > two pointers
    difficulty: hard
    date: 09/Jan/2020 
    by: @brnpapa

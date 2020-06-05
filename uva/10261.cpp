@@ -3,7 +3,6 @@
    difficulty: medium
    date: 15/May/2020
    problem: as if there were 2 knapsacks to fill at the same time; with recovering
-   hint: https://excalidraw.com/#json=4923784607825920,CETOj5452qT0nDSxglv2SQ
    by: @brnpapa
 */
 #include <bits/stdc++.h>

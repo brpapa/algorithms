@@ -1,5 +1,5 @@
 /*
-   graphs > traversal > depth-first search (DFS)
+   graphs > traversal > edge classification
    difficulty: easy
    date: 26/Mar/2020
    problem: check if the given undirected graph can be represented as a set of three or more rooted trees, whose roots are connected by a simple cycle

@@ -2,7 +2,7 @@
    graphs > traversal > strongly connected components (SCC)
    difficulty: medium
    date: 07/Feb/2020
-   problem: count the number of SCCs without incoming edge from a vertex of another SCC
+   hint: count the number of SCCs without incoming edge from a vertex of another SCC
    by: @brnpapa
 */
 #include <iostream>

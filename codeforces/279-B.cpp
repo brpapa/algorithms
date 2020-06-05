@@ -1,5 +1,5 @@
 /*
-   techniques > two pointers
+   miscellaneous > two pointers
    difficulty: medium
    date: 29/Dec/2019 
    by: @brnpapa

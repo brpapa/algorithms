@@ -1,5 +1,5 @@
 /*
-   graphs > traversal
+   graphs > specials
    difficulty: medium
    date: 29/Feb/2020
    problem: given a graph with all vertices with out-degree 1, find the vertice that reaches the most vertices

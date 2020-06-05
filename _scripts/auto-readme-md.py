@@ -7,10 +7,22 @@ INPUT_FILE = './_scripts/problems.csv'
 OUTPUT_FILE = './README.md'
 emojis = {
    'difficulty': {
-      'easy': '📗',
-      'medium': '📙',
-      'hard': '📕',
-      'none': '📓'
+      'easy': '🟢',
+      'medium': '🟡',
+      'hard': '🔴',
+      'none': '⚪️',
+      # 'easy': '🟩',
+      # 'medium': '🟨',
+      # 'hard': '🟥',
+      # 'none': '⬜️',
+      # 'easy': '📗',
+      # 'medium': '📙',
+      # 'hard': '📕',
+      # 'none': '📓',
+      # 'easy': '🥦',
+      # 'medium': '🧀',
+      # 'hard': '🌶',
+      # 'none': '🥚',
    }
 }
 base_url = {
@@ -53,8 +65,6 @@ def build(dataset):
 
       if (data['folder'] in main_judges):
          main_judges[data['folder']]['solved'] += 1
-      elif (data['folder'] == 'icpc'):
-         main_judges['uri']['solved'] += 1
 
       theme = data['theme'].split(' > ')
 
@@ -75,8 +85,7 @@ def build(dataset):
       leaf[key_leaf].add(ex_desc.substitute(
          data,
          problem_desc=('' if data['problem'] == 'none' else f': `{data["problem"]}`'),
-         # hint_desc=('' if data['hint'] == 'none' else f' → {data["hint"]}'),
-         hint_desc=(''),
+         hint_desc=('' if data['hint'] == 'none' else f' → {data["hint"]}'),
          base_url=base_url['remote'],
          relative_path=f'{data["folder"]}/{data["file"]}.{data["ext"]}',
          emoji=emojis['difficulty'][data['difficulty']]
@@ -120,15 +129,15 @@ def start_writing():
 
       file.write('<p align="center">\n')
       for judge in main_judges.keys():
-         file.write(shields_io.substitute(url=main_judges[judge]['profile_url'], label=judge, message=main_judges[judge]['solved'], color='yellow'))
+         file.write(shields_io.substitute(url=main_judges[judge]['profile_url'], label=judge, message=main_judges[judge]['solved'], color='green'))
       file.write('</p>\n')
 
       file.write('<br/>\n\n')
       file.write('<h1 align="center">Solutions categorized into themes</h1>\n\n')
       for u in adjList[key_root]:
          link = '#' + str(u[1]).replace(' ', '-')
-         file.write(f'- [{link}]({link})\n')
-      file.write('\n')
+         file.write(f'· [{link}]({link}) ')
+      file.write('·\n')
 
 
 if __name__ == '__main__':

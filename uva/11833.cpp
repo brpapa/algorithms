@@ -2,14 +2,15 @@
    graphs > shortest path > single-source > weighted graph
    difficulty: medium
    date: 22/May/2019 
+   hint: build the graph already with the given constraints
    by: @brnpapa
 */
 #include <iostream>
 #include <queue>
 #include <vector>
-#define MAX_V 250
-#define INF 2147483647
 using namespace std;
+#define MAX_V 250
+#define INF (1 << 30)
 
 struct Tadj {
    int id, w;
@@ -31,17 +32,17 @@ int R; // cidades da rota: 0 a R-1
 void insertEdge(int a, int b, int w) {
    Tadj v(a, w), u(b, w);
 
-   //a é da rota
+   // a é da rota
    if (a < R) {
-      if (b == a + 1 && b < R) //b é o seguinte imediato e da rota
+      if (b == a + 1 && b < R)       // b é o seguinte imediato e da rota
          adjList[a].push_back(u);
-      else if (b == a - 1 || b >= R) //b é o anterior imediato da rota ou não é da rota
+      else if (b == a - 1 || b >= R) // b é o anterior imediato da rota ou não é da rota
          adjList[b].push_back(v);
    }
-   //a não é da rota e b é da rota
+   // a não é da rota e b é da rota
    else if (a >= R && b < R)
       adjList[a].push_back(u);
-   //ambos não pertencem à rota
+   // ambos não pertencem à rota
    else if (a >= R && b >= R) {
       adjList[a].push_back(u);
       adjList[b].push_back(v);
@@ -75,8 +76,7 @@ int main() {
 
    while (true) {
       scanf("%d %d %d %d", &V, &E, &R, &x);
-      if (V == 0 && E == 0 && R == 0 && x == 0)
-         break;
+      if (V == 0 && E == 0 && R == 0 && x == 0) break;
 
       // init
       for (int v = 0; v < MAX_V; v++) {
@@ -87,10 +87,10 @@ int main() {
       int v1, v2, w;
       while (E--) {
          scanf("%d %d %d", &v1, &v2, &w);
-         insertEdge(v1, v2, w); //grafo orientado
+         insertEdge(v1, v2, w);
       }
       dijkstra(x);
-      printf("%d\n", c[R - 1]);
+      printf("%d\n", c[R-1]);
    }
    return 0;
 }

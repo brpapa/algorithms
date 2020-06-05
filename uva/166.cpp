@@ -22,7 +22,7 @@ int greedy(int v) {
 }
 
 int solve(int c, int v, int qty) {
-   // moeda atual coins[c], soma acumulada v e qty delas já foram usadas
+   // moeda atual coins[c], soma acumulada v, uma quantidade qty de todas as moedas anteriores já foram usadas
    
    if (c == C)
       return (v < V)? INF : (qty + greedy(v-V)); // + troco do vendedor

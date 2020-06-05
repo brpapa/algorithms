@@ -1,5 +1,5 @@
 /*
-   techniques > two pointers
+   miscellaneous > two pointers
    difficulty: medium
    date: 30/Mar/2020
    problem: pope

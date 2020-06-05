@@ -1,5 +1,5 @@
 /*
-   dynamic programming > 0-1 knapsack > subset sum
+   dynamic programming > subset sum
    difficulty: easy
    date: 24/Mar/2020
    problem: print the subset of A with the max sum k, k <= K

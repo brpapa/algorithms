@@ -1,9 +1,9 @@
 /*
-   graphs > specials > tree traversal
-   difficulty: easy
+   graphs > specials > tree
+   difficulty: medium
    date: 04/Mar/2020
-   problem: transform the algebraic expression with brackets into reverse polish notation (RPN) 
-   hint: consider the given expression as the in-order traversal in a binary tree, then print post-order traversal recursively without building the tree
+   problem: infix to postfix conversion
+   hint: see that the given expression is the in-order traversal in a binary tree, then print post-order traversal recursively without building the tree
    by: @brnpapa
 */
 #include <iostream>

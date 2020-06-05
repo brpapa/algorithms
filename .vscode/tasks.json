@@ -55,6 +55,24 @@
          "problemMatcher": [],
       },
       {
+         "label": "quick submit",
+         "type": "shell",
+         "command": "./_scripts/quick-submit.sh",
+         "args": [
+            "${relativeFileDirname}"
+         ],
+         "group": "build",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
          "label": "create new problem",
          "type": "shell",
          "command": "./_scripts/create-new-problem.sh",
@@ -82,7 +100,7 @@
             "uri",
             "spoj",
             "code-jam",
-            "icpc"
+            "live-archive"
          ],
       },
       {

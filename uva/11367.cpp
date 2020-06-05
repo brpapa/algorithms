@@ -2,7 +2,7 @@
    graphs > shortest path > single-source > weighted graph
    difficulty: hard
    date: 25/Feb/2020 
-   hint: find the shortest path on space-state graph, where each vertex represent a city and a level of car fuel
+   hint: find the shortest path on state-space graph, where each vertex represent a city and a level of car fuel
    by: @brnpapa
 */
 #include <iostream>
@@ -22,9 +22,7 @@ int V;
 vector<int> fp; // fuel prices
 
 int dijk(int s, int e, int C) {
-   // s: source vertex
-   // e: goal vertex
-   // C: car fuel capacity
+   // source vertex s, goal vertex e, car fuel capacity C
 
    // sd[v][c]: menor distância do vértice (s, 0) até (v, c)
    vector<vector<int>> sd(V, vector<int>(C+1, INF));

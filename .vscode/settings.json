@@ -1,6 +1,12 @@
 {
-   "editor.tabSize": 3,
    "files.autoSave": "afterDelay",
    "editor.formatOnPaste": false,
    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+   "files.associations": {
+      "iostream": "cpp",
+      "vector": "cpp",
+      "iosfwd": "cpp",
+      "iterator": "cpp"
+   },
+   "python.pythonPath": "/usr/local/bin/python",
 }
