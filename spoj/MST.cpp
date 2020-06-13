@@ -1,5 +1,5 @@
 /*
-   graphs > minimum spanning tree (MST) > kruskal
+   graphs > minimum spanning tree (MST)
    difficulty: easy
    date: 03/Jun/2020
    by: @brnpapa

@@ -1,8 +1,8 @@
 /*
-   graphs > minimum spanning tree (MST) > kruskal
+   graphs > minimum spanning tree (MST) > minimum spanning subgraph
    difficulty: medium
    date: 03/Jun/2020
-   problem: given an implicit complete graph, compute the cost of the minimum spanning subgraph possible, since some given edges are already in it
+   problem: given an implicit complete graph and some edges, compute the cost of the minimum spanning subgraph
    by: @brnpapa
 */
 #include <bits/stdc++.h>

@@ -6,7 +6,8 @@
       "iostream": "cpp",
       "vector": "cpp",
       "iosfwd": "cpp",
-      "iterator": "cpp"
+      "iterator": "cpp",
+      "numeric": "cpp"
    },
    "python.pythonPath": "/usr/local/bin/python",
 }
