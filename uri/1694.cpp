@@ -1,5 +1,5 @@
 /*
-   math > combinatorics > binomial coefficient
+   math > combinatorics > combinations > binomial coefficient
    difficulty: none
    date: none 
    by: @brnpapa

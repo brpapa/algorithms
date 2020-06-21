@@ -1,6 +1,16 @@
 {
    "tasks": [
       {
+         "label": "view local readme",
+         "type": "shell",
+         "command": "open ./README.md -a Microsoft\\ Edge",
+         "group": "build",
+         "presentation": {
+            "reveal": "never",
+         },
+         "problemMatcher": []
+      },
+      {
          "label": "open problem statement",
          "type": "shell",
          "options": {

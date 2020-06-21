@@ -1,5 +1,5 @@
 /*
-   math > combinatorics > binomial coefficient
+   math > combinatorics > combinations > binomial coefficient
    difficulty: easy
    date: 27/Dec/2019 
    by: @brnpapa
