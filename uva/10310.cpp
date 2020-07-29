@@ -1,5 +1,5 @@
 /*
-   computational geometry
+   geometry
    difficulty: none
    date: none 
    by: @brnpapa

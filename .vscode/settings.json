@@ -1,6 +1,8 @@
 {
    "files.autoSave": "afterDelay",
+   "files.autoSaveDelay": 500,
    "editor.formatOnPaste": false,
+   "workbench.colorTheme": "GitHub Dark",
    "C_Cpp.intelliSenseEngineFallback": "Enabled",
    "files.associations": {
       "iostream": "cpp",
@@ -8,7 +10,8 @@
       "iosfwd": "cpp",
       "iterator": "cpp",
       "numeric": "cpp",
-      "tuple": "cpp"
+      "tuple": "cpp",
+      "ostream": "cpp"
    },
    "python.pythonPath": "/usr/local/bin/python",
 }

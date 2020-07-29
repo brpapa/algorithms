@@ -64,11 +64,11 @@ void readFile(string ext, string folder, string file) {
    // opcionais
    string problem = "none", hint = "none";
    getline(in, line);
-   if (line.find("problem") != string::npos) {
+   if (line.find("problem: ") != string::npos) {
       problem = line.substr(12);
       getline(in, line);
    }
-   if (line.find("hint") != string::npos)
+   if (line.find("hint: ") != string::npos)
       hint = line.substr(9);
 
    out << "\"" << folder << "\",\"" << file << "\",\"" << ext << "\",\"" << problem << "\",\"" << difficulty << "\",\"" << theme << "\",\"" << hint << "\",\"" << date << "\"" << endl;

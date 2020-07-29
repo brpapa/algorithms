@@ -1,7 +1,7 @@
 /*
    greedy > interval covering
    difficulty: medium
-   date: 15/Jan/2020 
+   date: 15/Jan/2020
    hint: reduce the problem using pythagoras to one line
    by: @brnpapa
 */
@@ -37,7 +37,6 @@ int intervalCovering(double start, double end) {
 }
 
 int main() {
-   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
    int N, L, W;
    while (cin >> N >> L >> W) {
       intervals.clear();

@@ -90,6 +90,9 @@
             "${input:judge-name}",
             "${input:problem-id}",
          ],
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
          "group": "build",
          "presentation": {
             "reveal": "silent",

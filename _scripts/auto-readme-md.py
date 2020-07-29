@@ -1,16 +1,18 @@
+#! /usr/local/bin/python
+
 import csv
 import collections
 from string import Template
 
 # settings
-INPUT_FILE = './_scripts/problems.csv'
-OUTPUT_FILE = './README.md'
+input_path = './_scripts/problems.csv'
+output_path = './README.md'
 emojis = {
    'difficulty': {
-      'easy': '🟢',
-      'medium': '🟡',
-      'hard': '🔴',
-      'none': '⚪️',
+      # 'easy': '🟢',
+      # 'medium': '🟡',
+      # 'hard': '🔴',
+      # 'none': '⚪️',
       # 'easy': '🟩',
       # 'medium': '🟨',
       # 'hard': '🟥',
@@ -19,10 +21,14 @@ emojis = {
       # 'medium': '📙',
       # 'hard': '📕',
       # 'none': '📓',
-      # 'easy': '🥦',
-      # 'medium': '🧀',
-      # 'hard': '🌶',
-      # 'none': '🥚',
+      'easy': '🥦',
+      'medium': '🧀',
+      'hard': '🌶',
+      'none': '🥚',
+      # 'easy': '🙂',
+      # 'medium': '😳',
+      # 'hard': '🥵',
+      # 'none': '😶'
    }
 }
 base_url = {
@@ -30,8 +36,8 @@ base_url = {
    'remote': 'https://github.com/brnpapa/competitive-programming/blob/master'
 }
 static_output_lines = [
-   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. The book I recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim.\n\n'
-   '<p align="center">Feel free to follow my progress on my main online judge profiles:</p>\n\n',
+   'Access my public [**notebook**](https://www.notion.so/brnpapa/icpc-notebook-0355e05508e9470fb065801e277f0c6c), a Notion workspace where I do my notes while studying and coding general-purpose algorithms. And feel free to follow my progress on my main online judge profiles:\n\n',
+   '<!-- The book I recommend for studying is "Competitive Programming 3: The new lower bound of programming contests" by Steven Halim. --> \n\n'
 ]
 main_judges = {
    'uva': {
@@ -105,12 +111,12 @@ def dfs(v, process):
             visiteds.add(u)
             stack.append(u)
 
-# append to OUTPUT_FILE
+# append to output_path
 def vertex_process(v):
    if (v == key_root):
       return
    level, theme = v
-   with open(OUTPUT_FILE, 'a') as file:
+   with open(output_path, 'a') as file:
       if level == 1:
          file.write('\n## '+theme+'\n')
       else:
@@ -120,9 +126,9 @@ def vertex_process(v):
          for ex_desc in leaf[v]:
             file.write('\t'*(level-1)+'- ' + ex_desc + '\n')
 
-# overwrite OUTPUT_FILE
+# overwrite output_path
 def start_writing():
-   with open(OUTPUT_FILE, 'w') as file:
+   with open(output_path, 'w') as file:
       file.writelines(static_output_lines)
 
       shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square"></a>\n')
@@ -141,6 +147,6 @@ def start_writing():
 
 
 if __name__ == '__main__':
-   build(csv.DictReader(open(INPUT_FILE)))
+   build(csv.DictReader(open(input_path)))
    start_writing()
    dfs(key_root, vertex_process)

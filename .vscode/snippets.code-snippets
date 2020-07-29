@@ -1,41 +1,95 @@
 {
-	"metadata": {
-		"prefix": "md",
-		"description": "Solved? Insert metadata before to push",
-		"body": [
-			"/*",
-			"   ${4:theme} > ${5:topic}",
-			"   difficulty: ${3|easy,medium,hard|}",
-			"   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
-			"   problem: ${1:abridge problem}",
-			"   hint: ${2:how to do?}",
-			"   by: @brnpapa",
-			"*/"
-		]
-	},
-   // fast debugging
-	"debug1": {
-		"prefix": "d1",
-		"body": "printf(\"%2d\\n\", $1);",
-	},
-	"debug2": {
-		"prefix": "d2",
-		"body": "printf(\"%2d %2d\\n\", $1, $2);",
-	},
-	"debug3": {
-		"prefix": "d3",
-		"body": "printf(\"%2d %2d %2d\\n\", $1, $2, $3);",
-	},
-	"debug-1D-array": {
-		"prefix": "da",
-		"body": "for (int i = 0; i < $1; i++) cout << $2[i] << \" \"; cout << endl;"
-	},
-	"debug-2D-array": {
-		"prefix": "daa",
-		"body": "for (int i = 0; i < $1; i++) {\n   for (int j = 0; j < $2; j++) printf(\"%2d \", $3[i][j]); printf(\"\\n\");\n}"
-	},
-	"debug-1D-vector": {
-		"prefix": "dv",
-		"body": "for (auto v : $1) cout << v << \" \"; cout << endl;"
-	},
+   "metadata": {
+      "prefix": "md",
+      "description": "If a problem was solved, insert this metadata before to push",
+      "body": [
+         "/*",
+         "   ${1:theme} > ${2:topic}",
+         "   difficulty: ${3|easy,medium,hard|}",
+         "   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
+         "   problem: ${4:abridge problem}",
+         "   hint: ${5:how to do?}",
+         "   by: @brnpapa",
+         "*/"
+      ]
+   },
+   "ufds": {
+      "prefix": "ufds",
+      "body": [
+         "struct UFDS {",
+         "   vector<int> p;",
+         "",
+         "   UFDS(int N) {",
+         "      p.resize(N);",
+         "      for (int i = 0; i < N; i++) p[i] = i; ",
+         "   }",
+         "",
+         "   int findSet(int i) {",
+         "      if (p[i] == i) return i;",
+         "      return p[i] = findSet(p[i]);",
+         "   }",
+         "",
+         "   bool isSameSet(int i, int j) {",
+         "      return findSet(i) == findSet(j);",
+         "   }",
+         "",
+         "   void unionSet(int i, int j) {",
+         "      int setI = findSet(i);",
+         "      int setJ = findSet(j);",
+         "      if (!isSameSet(setI, setJ)) p[setI] = setJ;",
+         "   }",
+         "};",
+      ]
+   },
+   "adjList": {
+      "prefix": "adjList",
+      "body": [
+         "struct Tadj {",
+         "   int id, w;",
+         "   Tadj() {}",
+         "   Tadj(int id, int w) : id(id), w(w) {}",
+         "};",
+         "vector<Tadj> adjList[V];",
+      ]
+   },
+   "fast-debug-1": {
+      "prefix": "d1",
+      "body": [
+         "printf(\"%2d\\n\", $1);"
+      ],
+   },
+   "fast-debug-2": {
+      "prefix": "d2",
+      "body": [
+         "printf(\"%2d %2d\\n\", $1, $2);"
+      ],
+   },
+   "fast-debug-3": {
+      "prefix": "d3",
+      "body": [
+         "printf(\"%2d %2d %2d\\n\", $1, $2, $3);"
+      ],
+   },
+   "fast-debug-1D-array": {
+      "prefix": "da",
+      "body": [
+         "for (int i = 0; i < $1; i++) cout << $2[i] << \" \"; cout << endl;"
+      ]
+   },
+   "fast-debug-2D-array": {
+      "prefix": "daa",
+      "body": [
+         "for (int i = 0; i < $1; i++) {",
+         "   for (int j = 0; j < $2; j++)",
+         "      printf(\"%2d \", $3[i][j]);",
+         "   cout << endl;",
+         "}",
+      ]
+   },
+   "fast-debug-1D-vector": {
+      "prefix": "dv",
+      "body": [
+         "for (auto v : $1) cout << v << \" \"; cout << endl;"
+      ]
+   },
 }

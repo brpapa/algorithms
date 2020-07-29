@@ -11,5 +11,7 @@ output
 main.cpp
 
 # files/folders
+.vscode/settings.json
 _*
 !_scripts
+!_notebook
