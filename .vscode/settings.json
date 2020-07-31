@@ -12,6 +12,5 @@
       "numeric": "cpp",
       "tuple": "cpp",
       "ostream": "cpp"
-   },
-   "python.pythonPath": "/usr/local/bin/python",
+   }
 }

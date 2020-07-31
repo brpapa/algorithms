@@ -16,7 +16,7 @@
          "options": {
             "cwd": "${workspaceFolder}",
          },
-         "command": "./_scripts/open-problem-statement.sh",
+         "command": "./scripts/open-problem-statement.sh",
          "args": [
             "${relativeFileDirname}",
             "${fileBasenameNoExtension}"
@@ -31,7 +31,7 @@
          "label": "compine and run",
          "group": "build",
          "type": "shell",
-         "command": "./_scripts/compile-and-run.sh",
+         "command": "./scripts/compile-and-run.sh",
          "args": [
             "${relativeFile}"
          ],
@@ -48,7 +48,7 @@
       {
          "label": "mark as solved",
          "type": "shell",
-         "command": "./_scripts/mark-problem-as-solved.sh",
+         "command": "./scripts/mark-problem-as-solved.sh",
          "args": [
             "${relativeFileDirname}",
             "${fileBasename}"
@@ -67,7 +67,7 @@
       {
          "label": "quick submit",
          "type": "shell",
-         "command": "./_scripts/quick-submit.sh",
+         "command": "./scripts/quick-submit.sh",
          "args": [
             "${relativeFileDirname}"
          ],
@@ -85,7 +85,7 @@
       {
          "label": "create new problem",
          "type": "shell",
-         "command": "./_scripts/create-new-problem.sh",
+         "command": "./scripts/create-new-problem.sh",
          "args": [
             "${input:judge-name}",
             "${input:problem-id}",
