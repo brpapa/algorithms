@@ -1,5 +1,3 @@
-# TODO: depreceate problems.csv
-import csv
 import collections
 import subprocess
 from string import Template
