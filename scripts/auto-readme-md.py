@@ -1,8 +1,9 @@
+# TODO: depreceate problems.csv
 import csv
 import collections
 import subprocess
 from string import Template
-from typing import Tuple, Dict, Set, cast
+from typing import Tuple, Dict, Set, List, cast
 
 from settings import config
 
@@ -10,40 +11,38 @@ Vertex = Tuple[int, str] # level, label
 
 # graph representation, where Tuple[int, str] identify a unique vertex
 root: Vertex = (0, 'root')
-adjList: Dict[Vertex, Set[Vertex]] = { root: set() }
+adj_list: Dict[Vertex, Set[Vertex]] = { root: set() }
 leaf: Dict = {} # list of exercices of each leaf vertex
 
-# build adjList, leaf and define main_judges
+# build adj_list, leaf and define main_judges
 def build(dataset):
    for data in dataset:
       if (data['difficulty'] not in config['emojis']['difficulty']):
          continue
 
-      if (data['folder'] in config['main_judges']):
-         config['main_judges'][data['folder']]['solved'] += 1
-
-      theme = data['theme'].split(' > ')
+      if (data['judge_id'] in config['main_judges']):
+         config['main_judges'][data['judge_id']]['solved'] += 1
 
       # filter
       if (data['difficulty'] == 'none'):
          continue
 
-      for i in range(0, len(theme)):
-         key = root if i == 0 else (i, theme[i-1])
-         adjList[key].add((i+1, theme[i]))
-         adjList.setdefault((i+1, theme[i]), set())
+      for i in range(0, len(data['theme'])):
+         key = root if i == 0 else (i, data['theme'][i-1])
+         adj_list[key].add((i+1, data['theme'][i]))
+         adj_list.setdefault((i+1, data['theme'][i]), set())
 
-      ex_desc = Template('$emoji [$folder/$file]($base_url/$relative_path)$problem_desc $hint_desc')
+      ex_desc = Template('$emoji [$judge_id/$problem_id]($base_url/$relative_path)$problem_desc $hint_desc')
 
-      key_leaf = (len(theme), theme[-1])
+      key_leaf = (len(data['theme']), data['theme'][-1])
       leaf.setdefault(key_leaf, set())
 
       leaf[key_leaf].add(ex_desc.substitute(
          data,
-         problem_desc=('' if data['problem'] == 'none' else f': `{data["problem"]}`'),
-         hint_desc=('' if data['hint'] == 'none' else f' → {data["hint"]}'),
+         problem_desc=('' if data['problem_desc'] == 'none' else f': `{data["problem_desc"]}`'),
+         hint_desc=('' if data['hint_desc'] == 'none' else f' → {data["hint_desc"]}'),
          base_url=config['base_url']['remote'],
-         relative_path=f'{data["folder"]}/{data["file"]}.{data["ext"]}',
+         relative_path=f'{data["judge_id"]}/{data["problem_id"]}.{data["ext"]}',
          emoji=config['emojis']['difficulty'][data['difficulty']]
       ))
 
@@ -56,7 +55,7 @@ def dfs(u, fn):
       u = stack.pop()
       fn(u)
 
-      for v in adjList[u]:
+      for v in adj_list[u]:
          if not v in visiteds:
             visiteds.add(v)
             stack.append(v)
@@ -84,26 +83,64 @@ def overwrite_file(path):
       shields_io = Template('<a href="$url"><img src="https://img.shields.io/static/v1?label=$label&message=$message&color=$color&style=flat-square"></a>\n')
 
       file.write('<p align="center">\n')
-      for judge in config['main_judges'].keys():
-         file.write(shields_io.substitute(url=config['main_judges'][judge]['profile_url'], label=judge, message=config['main_judges'][judge]['solved'], color='green'))
+      for judge_id in config['main_judges'].keys():
+         file.write(shields_io.substitute(url=config['main_judges'][judge_id]['profile_url'], label=judge_id, message=config['main_judges'][judge_id]['solved'], color='green'))
       file.write('</p>\n')
 
       file.write('<br/>\n\n')
       file.write('<h1 align="center">Solutions categorized into themes</h1>\n\n')
-      for u in adjList[root]:
+      for u in adj_list[root]:
          link = '#' + str(u[1]).replace(' ', '-')
          file.write(f'· [{link}]({link}) ')
       file.write('·\n')
 
+# return all metadata of all problems
+def get_dataset(paths):
+   dataset: List[Dict] = []
+
+   for path in paths:
+      with open(path, 'r') as problem_file:
+         problem_file.readline()
+         
+         theme = problem_file.readline().strip().split(' > ')
+         difficulty = problem_file.readline().strip().replace('difficulty: ', '', 1)
+         date = problem_file.readline().strip().replace('date: ', '', 1)
+
+         opt_any = problem_file.readline().strip()
+         if (opt_any.startswith('problem: ')):
+            problem_desc = opt_any.replace('problem: ', '', 1)
+            opt_any = problem_file.readline().strip()
+         else:
+            problem_desc = 'none'
+
+         if (opt_any.startswith('hint: ')):
+            hint_desc = opt_any.replace('hint: ', '', 1)
+         else:
+            hint_desc = 'none'
+         
+         dataset.append({
+            'judge_id': path.split('/')[1],
+            'problem_id': path.split('/')[2].split('.')[0],
+            'ext': path.split('/')[2].split('.')[1],
+            'theme': theme,
+            'difficulty': difficulty,
+            'date': date,
+            'problem_desc': problem_desc,
+            'hint_desc': hint_desc
+         })
+
+   return dataset
+
+# entry
 if __name__ == '__main__':
-   input_path = cast(str, config['input_path'])
+   # get files tracked on git
+   response = subprocess.run(['git', 'ls-files'], text=True, stdout=subprocess.PIPE)
+
+   problems_paths = response.stdout.split('\n')
+   problems_paths = [path for path in problems_paths if 'solutions/' in path]
+
+   build(get_dataset(problems_paths))
+
    output_path = cast(str, config['output_path'])
-
-   # TODO: depreceate problems.csv
-   # response = subprocess.run(['git', 'ls-files'], text=True, stdout=subprocess.PIPE)
-   # response.stdout
-
-   build(csv.DictReader(open(input_path)))
-
    overwrite_file(output_path)
    dfs(root, lambda u: append_to_file(u, output_path))

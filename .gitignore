@@ -2,9 +2,6 @@
 **/.DS_Store
 
 # tmp
-_scripts/files-tracked-on-git.txt
-_scripts/problems.csv
-_scripts/auto-problems-csv
 e
 input
 output
