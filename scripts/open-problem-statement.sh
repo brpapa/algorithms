@@ -4,16 +4,15 @@ JUDGE=$1
 JUDGE=${JUDGE:10}
 FILE=$2
 
-# no support
-if [[ $JUDGE == "code-jam" ]]
-then
-   return
-fi
-
-# warning
 if [[ $JUDGE == "live-archive" ]]
 then
    JUDGE="live_archive"
+fi
+
+# no support
+if [[ $JUDGE != "uva" ]] && [[ $JUDGE != "live_archive" ]] && [[ $JUDGE != "codeforces" ]] && [[ $JUDGE != "uri" ]] && [[ $JUDGE != "spoj" ]]
+then
+   return
 fi
 
 FILE_uva=${FILE::${#FILE}-2}"/${FILE}.pdf"

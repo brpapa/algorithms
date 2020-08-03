@@ -13,60 +13,6 @@
          "*/"
       ]
    },
-   "ds-union-find": {
-      "prefix": "ufds",
-      "body": [
-         "class UFDS {",
-         " private:",
-         "   vector<int> p;",
-         "   vector<int> size;",
-         "   int qtyDisjointSets;",
-         " public:",
-         "   UFDS() {}",
-         "   UFDS(int N) {",
-         "      p.resize(N);",
-         "      size.assign(N, 1);",
-         "      qtyDisjointSets = N;",
-         "      for (int n = 0; n < N; n++) p[n] = n;",
-         "   }",
-         "   int findSet(int n) {",
-         "      if (p[n] == n) return n;",
-         "      return p[n] = findSet(p[n]); ",
-         "   }",
-         "   bool isSameSet(int n, int m) {",
-         "      return findSet(n) == findSet(m);",
-         "   }",
-         "   void unionSets(int n, int m) {",
-         "      int nId = findSet(n);",
-         "      int mId = findSet(m);",
-         "      if (!isSameSet(nId, mId)) {",
-         "         if (size[nId] > size[mId])",
-         "            swap(nId, mId);",
-         "         p[nId] = mId;",
-         "         size[mId] += size[nId];",
-         "         qtyDisjointSets--;",
-         "      }",
-         "   }",
-         "   int sizeOfSet(int n) {",
-         "      return size[findSet(n)];",
-         "   }",
-         "   int count() {",
-         "      return qtyDisjointSets;",
-         "   }",
-         "};"
-      ]
-   },
-   "adj-list": {
-      "prefix": "adjList",
-      "body": [
-         "struct Tadj {",
-         "   int id, w;",
-         "   Tadj() {}",
-         "   Tadj(int id, int w) : id(id), w(w) {}",
-         "};",
-         "vector<Tadj> adjList[V];",
-      ]
-   },
    "fast-debug-1": {
       "prefix": "d1",
       "body": [

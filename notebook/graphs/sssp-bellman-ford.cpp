@@ -44,27 +44,13 @@ bool belmman_ford(int s) {
 
 /* e.g */
 int main() {
-   int E, s; cin >> V >> E >> s;
+   V = 3;
    adj_list.assign(V, vector<Tadj>());
-   while (E--) {
-      int u, v, w; cin >> u >> v >> w;
-      adj_list[u].push_back({v, w});
-   }
-   cout << belmman_ford(s);
+
+   adj_list[0].push_back({1, 10});
+   adj_list[1].push_back({2, 15});
+   adj_list[2].push_back({2, -40});
+
+   cout << belmman_ford(0);
+   return 0;
 }
-
-/*
-Graph with negative weight, but no negative cycle
-5 5 0
-0 1 1
-0 2 10
-1 3 2
-2 3 -10
-3 4 3
-
-Graph with negative cycle
-3 3 0
-0 1 1000
-1 2 15
-2 1 -42
-*/
