@@ -4,11 +4,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* inputs */
+/* input */
 vector<vector<int>> adj_list;
 int V;
 
-/* outputs */
+/* output */
 vector<bool> is_art;             // is_art[u]: vértice u é um art point?
 vector<pair<int, int>> bridges;  // u -> v que são bridge edges
 

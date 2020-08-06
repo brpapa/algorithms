@@ -3,7 +3,7 @@ import subprocess
 from string import Template
 from typing import Tuple, Dict, Set, List, cast
 
-from settings import config
+from data import config
 
 Vertex = Tuple[int, str] # level, label
 

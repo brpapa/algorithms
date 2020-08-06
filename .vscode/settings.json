@@ -11,6 +11,7 @@
       "iterator": "cpp",
       "numeric": "cpp",
       "tuple": "cpp",
-      "ostream": "cpp"
+      "ostream": "cpp",
+      "utility": "cpp"
    }
 }

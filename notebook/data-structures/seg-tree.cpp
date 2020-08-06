@@ -20,7 +20,7 @@ class seg_tree {
       return min(a, b);
    }
 
-   /* O(N*log(N)) - constroi bin_tree */
+   /* O(N*log(N)) */
    void build(int v, int l, int r) {
       // bin_tree[v]: resultado da consulta em A[l .. r]
 

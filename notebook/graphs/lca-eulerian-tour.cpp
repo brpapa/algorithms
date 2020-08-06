@@ -98,7 +98,7 @@ class lca {
       seen.assign(V, false);
 
       dfs(root);
-      st = sparse_table(vector<int>(tour_depth.begin(), tour_depth.end()));
+      st = sparse_table(tour_depth);
    }
 
  public:
