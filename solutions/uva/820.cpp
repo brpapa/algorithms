@@ -1,5 +1,5 @@
 /*
-   graphs > network flow > max flow
+   graphs > maximum flow
    difficulty: easy
    date: 06/Aug/2020
    by: @brnpapa
