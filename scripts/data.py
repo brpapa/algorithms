@@ -26,7 +26,7 @@ config = {
    },
    'base_url': {
       'local': 'file:///Users/papa/Google%20Drive/dev/competitive-programming/solutions',
-      'remote': 'https://github.com/brnpapa/competitive-programming/blob/master/solutions'
+      'remote': 'https://github.com/brpapa/competitive-programming/blob/master/solutions'
    },
    'static_output_lines': [
       'The `notebook` folder contains general-purpose algorithms, and the `solutions` folder contains the solved problems. Feel free to follow my progress on my main online judge profiles:\n\n'

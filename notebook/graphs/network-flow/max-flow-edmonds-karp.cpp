@@ -1,12 +1,13 @@
 /*
    Maximum flow
 
-   Motivação: dado um flow graph G(V, E), quanto de "fluxo", no máximo, pode estar passando from the source s to the sink t, ao fornecer uma fonte infinita desse "fluxo" em s.
-   (imagine uma água fluindo em uma rede de canos)
+   Statement: given a connected, weighted and directed graph where every edge has a capacity and two vertices source ‘s’ and sink ‘t’, find the maximum possible flow from s to t with following constraints:
+      - flow on an edge doesn’t exceed the given capacity of the edge.
+      - incoming flow is equal to outgoing flow for every vertex, except s and t.
 
-   A flow graph is a connected, weighted and directed graph where each edge (arc) has a certain capacity and can receive a less or equal amount of flow.
+   ---
 
-   The remaining capacity of an edge is equals to capacity minus current flow
+   The remaining capacity of an edge is equals to capacity minus current flow.
 
    Forward edges: (given by the original graph, it has a flow and a capacity)
       - increasing the flow by the min_c of the augmenting path
@@ -17,15 +18,15 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
 
 /* input */
 vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, capacity}, ...}
 int V;
 
 /* */
+typedef long long ll;
 vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent;            // parent[v]: {u, índice de remaining[u]}
+vector<pair<int,int>> parent; // parent[v]: {u, índice de new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V+E) - find the shortest augmenting path (in terms of edges) and returns your bottleneck, or 0, if there is no more an augmenting path */

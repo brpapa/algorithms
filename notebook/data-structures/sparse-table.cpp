@@ -1,11 +1,12 @@
 /*
+   Sparse table
    For efficient range queries on a static array A of size N.
 */
 #include <bits/stdc++.h>
 using namespace std;
 #define pow2(i) (1 << (i)) // 2^i
 
-template <typename T = int>
+template <class T = int>
 class sparse_table {
  private:
    vector<T> A; int N;
@@ -59,4 +60,4 @@ int main() {
 // f is associative function, if: f(a, f(b,c)) = f(f(a,b), c) for all a,b,c
 // f is "overlap friendly" function, if: f(f(a,b), f(c,d)) = f(a, f(b,c)) for all a,b,c,d
 
-// se range_combination não for "overlap friendly", mas associativa (como sum), range_query deve ser reimplementado para uma versão O(log2(N)), continuar vendo em https://youtu.be/uUatD9AudXo?t=877
+// se range_combination não for "overlap friendly", mas associativa (como sum), range_query pode ser reimplementado para uma versão O(log2(N)), continuar vendo em https://youtu.be/uUatD9AudXo?t=877

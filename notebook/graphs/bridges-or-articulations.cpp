@@ -12,7 +12,7 @@ int V;
 vector<bool> is_art;             // is_art[u]: vértice u é um art point?
 vector<pair<int, int>> bridges;  // u -> v que são bridge edges
 
-
+/**/
 const int UNVISITED = -1;
 
 vector<int> order;  // order[v]: ordem de visitação do vértice v pela DFS

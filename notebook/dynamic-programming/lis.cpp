@@ -1,5 +1,6 @@
 /*
    Longest Increasing Subsequence (LIS)
+   
    Motivação: encontre o tamanho da LIS em um array A de tamanho N.
 */
 #include <bits/stdc++.h>
@@ -59,6 +60,5 @@ int lis2() {
 /* e.g */
 int main() {
    N = 7; A = {-7, 10, 5, 2, 3, 8, 1};
-
    cout << lis() << endl;
 }

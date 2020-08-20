@@ -40,7 +40,7 @@ int belmman_ford(int s, int t) {
          }
    }
 
-   // tem ciclo negativo em qualquer lugar do grafo ou t não é alcançável a partir de s
+   // tem ciclo negativo alcançável a partir de s, ou t não é alcançável a partir de s
    if (was_relaxed || sd[t] == INT_MAX) return -1;
 
    return sd[t];

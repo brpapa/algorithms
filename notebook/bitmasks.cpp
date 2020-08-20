@@ -1,4 +1,4 @@
-/* let S be an 64-bit or 32-bit integer, considering 0-based indexing in increasing bit significance */
+/* let S be an 64-bit or 32-bit integer (mask), and considering 0-based indexing in increasing bit significance */
 
 #define pow2(i) (1 << (i)) // = 2^i
 #define mul_by_pow2(S, i) (S << i) // = S*(2^i)

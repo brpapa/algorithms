@@ -32,7 +32,7 @@ void dijkstra(int s) {
       for (auto adj : adj_list[u]) {
          int v = adj.first, w = adj.second;
 
-         int &od = sd[v];       // old distance de s até v
+         int &od = sd[v];    // old distance de s até v
          int nd = sd[u] + w; // new distance de s até v
 
          // tenta relaxar sd[v]

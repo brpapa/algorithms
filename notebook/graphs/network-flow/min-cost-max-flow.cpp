@@ -1,5 +1,7 @@
 /*
-   Motivação: encontrar o fluxo máximo (<= K) com o menor custo. Cada aresta dada possui, além da capacidade máxima, um peso que se refere ao custo por unidade de fluxo.
+   Minimum Cost Maximum Flow (fluxo máximo de menor custo)
+
+   Motivação: encontrar o fluxo máximo (<= K) com o menor custo possível. Cada aresta dada possui, além da capacidade máxima, um peso, que se refere ao custo por unidade de fluxo.
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,7 +29,7 @@ ll belmman_ford(int s, int t) {
    for (int _ = 0; was_relaxed && _ < V; _++) {
       was_relaxed = false;
 
-      // para cada aresta u --(w,c)--> v
+      // para cada aresta u --(w,c)--> v, com c > 0
       for (int u = 0; u < V; u++)
          for (int i = 0; i < new_adj_list[u].size(); i++) {
             int v; long long w,c,__; tie(v,w,c,__) = new_adj_list[u][i];
@@ -56,8 +58,8 @@ ll belmman_ford(int s, int t) {
    return min_c;
 }
 
-/* O((V^2) * (E^2)) - returns {max flow, min cost}, where the max flow is bounded by K */
-pair<ll,ll> max_flow_min_cost(int s, int t, ll K) {
+/* O((V^2) * (E^2)) - returns {min_cost, max_flow}, where the max flow is bounded by K */
+pair<ll,ll> mcmf(int s, int t, ll K) {
    new_adj_list.assign(V, vector<tuple<int,ll,ll,ll>>());
    rev_idx.assign(V, vector<int>());
 
@@ -97,7 +99,7 @@ pair<ll,ll> max_flow_min_cost(int s, int t, ll K) {
          acc_cost += get<1>(new_adj_list[u][i]) * f;
       }
    }
-   return {acc_flow, acc_cost};
+   return {acc_cost, acc_flow};
 }
 
 /* e.g */
@@ -111,7 +113,7 @@ int main() {
    adj_list[3].push_back({2, 7, 10});
    adj_list[0].push_back({3, 2, 10});
 
-   ll max_flow, min_cost; tie(max_flow, min_cost) = max_flow_min_cost(0, 2, 20);
-   cout << max_flow << " " << min_cost << endl;
+   ll min_cost, max_flow; tie(min_cost, max_flow) = mcmf(0, 2, 20);
+   cout << min_cost << " " << max_flow << endl;
    return 0;
 }

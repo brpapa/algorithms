@@ -10,7 +10,6 @@ using namespace std;
 vector<vector<int>> adj_list; int V;
 
 /* */
-
 vector<bool> seen;
 
 /* O(V+E) */
