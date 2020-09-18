@@ -2,7 +2,7 @@
    searching > binary search > on answer
    difficulty: medium
    date: 29/Dec/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <cmath>
 #include <iostream>

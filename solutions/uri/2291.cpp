@@ -4,7 +4,7 @@
    date: 28/May/2019
    problem: print n-th divine number, the one that is equal to the sum of the sum of each divisor from 1 to n
    hint: think like sieve
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

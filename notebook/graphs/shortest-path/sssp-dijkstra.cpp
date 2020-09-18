@@ -1,51 +1,53 @@
 /*
+   Single Source Shortest Path (SSSP) - Dijkstra
+   
    Motivação: dado um non-negative weighted graph G(V, E), encontre a shortest distance entre um vértice origem s e qualquer outro vértice.
 */
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 const int INF = 1 << 30;
 
 /* input */
-vector<vector<pair<int,int>>> adj_list; // adj_list[u]: {{v, w}, ...}
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, w}, ...}
 int V;
 
 /* output */
-vector<int> sd; // sd[v]: shortest distance de s à v
-vector<int> p;  // p[v]: parent de v na shortest path tree
+vector<ll> sd; // sd[v]: shortest distance from s to v
+vector<int> p; // p[v]: parent de v na shortest path tree
 
-/* O((V+E)*log(V)) */
-void dijkstra(int s) {
+/* O((V+E)*log(V)) - returns the distance from s to t */
+ll dijkstra(int s, int t) {
    sd.assign(V, INF); p.assign(V, -1);
 
-   priority_queue<pair<int, int>> pq; // {distância negativa atual de s, u}
-   pq.push(make_pair(-0, s));
+   priority_queue<pair<ll, int>> pq; // { distância negativa de s até v, v }
+   pq.push({-0, s});
    sd[s] = 0;
 
    while (!pq.empty()) {
-      int dist = -pq.top().first, u = pq.top().second;
-      pq.pop(); // "fecha" o vértice de menor distance
+      ll dist = -pq.top().first; int u = pq.top().second; pq.pop();
+      if (dist > sd[u]) continue; // vértice já fechado/visitado (lazy deletion)
 
-      if (dist > sd[u])
-         continue; // vértice já fechado/visitado (lazy deletion)
+      if (u == t) return dist;
 
       // para cada aresta u --w--> v
       for (auto adj : adj_list[u]) {
-         int v = adj.first, w = adj.second;
+         int v; ll w; tie(v,w) = adj;
 
-         int &od = sd[v];    // old distance de s até v
-         int nd = sd[u] + w; // new distance de s até v
+         ll &od = sd[v];    // old distance de v: s -> ... -> v
+         ll nd = sd[u] + w; // new distance de v: s -> ... -> u -> v
 
          // tenta relaxar sd[v]
          if (nd < od) {
             od = nd; 
-            pq.push(make_pair(-nd, v));
+            pq.push({-nd, v});
             p[v] = u;
          }
       }
    }
 }
 
+/* e.g. */
 int main() {
-   dijkstra(0);
    return 0;
 }

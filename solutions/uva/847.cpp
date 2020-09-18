@@ -4,7 +4,7 @@
    date: 28/Mar/2020
    problem: multiplication game
    hint: note that if Stan always multiply by 9 and Ollie by 2, it's still an optimal solution
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

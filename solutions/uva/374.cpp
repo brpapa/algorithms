@@ -4,7 +4,7 @@
    date: 15/Jun/2020
    problem: compute (a^n) % m, where a <= 2^31 and n <= 2^31
    hint: use fast power with mod
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

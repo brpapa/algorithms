@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: easy
    date: 16/Mar/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <string>

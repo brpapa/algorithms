@@ -3,7 +3,7 @@
    difficulty: medium
    date: 12/Jan/2020 
    hint: use bitmasks
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bitset>
 #include <iostream>

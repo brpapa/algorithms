@@ -3,7 +3,7 @@
    difficulty: medium
    date: 03/Apr/2020
    problem: given an array A of size N (2 <= N <= 10^5), print the largest minimum distance between any two of C (C <= N) elements choosen any
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

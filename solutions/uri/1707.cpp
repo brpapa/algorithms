@@ -3,7 +3,7 @@
    difficulty: medium
    date: 08/Sep/2019 
    problem: given two numbers x and y, compute the sum of the decimal digits of the odd numbers in the range [min(x,y) .. max(x,y)]
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

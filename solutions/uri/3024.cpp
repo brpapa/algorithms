@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: easy
    date: 09/Nov/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

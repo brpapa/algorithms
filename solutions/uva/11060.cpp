@@ -2,7 +2,7 @@
    graphs > traversal > topological sorting
    difficulty: easy
    date: 31/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <map>

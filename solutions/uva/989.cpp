@@ -2,7 +2,7 @@
    brute force > recursive backtracking > sudoku
    difficulty: easy
    date: 19/Mar/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

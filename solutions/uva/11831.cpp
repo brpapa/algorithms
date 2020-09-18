@@ -3,7 +3,7 @@
    difficulty: easy
    date: 27/Feb/2020 
    hint: consider grid as an implicit graph and walk through it, or just rotate the robot, for each received instruction
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

@@ -4,7 +4,7 @@
    date: 14/Apr/2020
    problem: given an unweighted implicit graph, count the longest possible path
    hint: DFS + backtracking
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

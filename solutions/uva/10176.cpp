@@ -3,7 +3,7 @@
    difficulty: easy
    date: 20/Mar/2020
    problem: is a given binary number of 100 digits divisible by 131071?
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

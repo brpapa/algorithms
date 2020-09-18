@@ -3,7 +3,7 @@
    difficulty: medium
    date: 15/May/2020
    problem: as if there were 2 knapsacks to fill at the same time; with recovering
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

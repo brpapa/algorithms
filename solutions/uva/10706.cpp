@@ -3,7 +3,7 @@
    difficulty: hard
    date: 31/Mar/2020
    hint: pre-process the number sequence and f(k), so use binary search on f
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

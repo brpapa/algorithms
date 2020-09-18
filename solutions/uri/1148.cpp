@@ -2,7 +2,7 @@
    graphs > shortest path > dijkstra
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

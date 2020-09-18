@@ -3,7 +3,7 @@
    difficulty: medium
    date: 19/Feb/2020 
    hint: compute (n+2)-th fibonnaci number
-   by: @brnpapa
+   by: @brpapa
 '''
 
 fib = [0]*1010

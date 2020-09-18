@@ -3,7 +3,7 @@
    difficulty: easy
    date: 14/May/2020
    hint: consider the coins as the perfect squares
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

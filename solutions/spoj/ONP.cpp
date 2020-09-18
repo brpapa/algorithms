@@ -4,7 +4,7 @@
    date: 04/Mar/2020
    problem: infix to postfix conversion
    hint: see that the given expression is the in-order traversal in a binary tree, then print post-order traversal recursively without building the tree
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

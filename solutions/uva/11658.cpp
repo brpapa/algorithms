@@ -4,7 +4,7 @@
    date: 15/May/2020
    problem: find the smallest sum s of a subset of A, s >= S
    hint: scan as %d.%d
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

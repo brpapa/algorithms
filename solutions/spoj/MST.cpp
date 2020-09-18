@@ -2,7 +2,7 @@
    graphs > minimum spanning tree (MST)
    difficulty: easy
    date: 03/Jun/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

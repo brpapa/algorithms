@@ -4,7 +4,7 @@
    date: 21/Mar/2020
    problem: do n! is divisible by m?
    hint: check if the prime factors of m are contained in the prime factors of n!
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

@@ -4,7 +4,7 @@
    date: 09/Jun/2020
    problem: check if the number of divisors of n is odd
    hint: check if n is a perfect square
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

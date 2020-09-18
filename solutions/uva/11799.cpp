@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: easy
    date: 17/Feb/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #define INF (int)0x7f7f7f7f

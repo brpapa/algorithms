@@ -2,7 +2,7 @@
    ad-hoc
    difficulty: hard
    date: 22/Jun/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

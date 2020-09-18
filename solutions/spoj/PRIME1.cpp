@@ -4,7 +4,7 @@
    date: 17/Mar/2020
    problem: print all primes p in [m .. n], 0 <= m <= n <= 10^9, n-m <= 10^5
    hint: sieve + prime checking
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

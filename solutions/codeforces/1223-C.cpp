@@ -2,7 +2,7 @@
    searching > binary search > on answer
    difficulty: medium
    date: 26/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

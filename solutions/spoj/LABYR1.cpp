@@ -3,7 +3,7 @@
    difficulty: easy
    date: 27/May/2020
    problem: compute the diameter of a given implicit tree
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 #define UNVISITED 0

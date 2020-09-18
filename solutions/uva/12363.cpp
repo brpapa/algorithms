@@ -4,7 +4,7 @@
    date: 27/May/2020
    problem: given an undirected graph, check if there is a unique path between 2 query vertices
    hint: there is a unique path between s and t if the path between them is formed only by bridge edges; for optimize, keep sets for the vertices that are on the same connected component in the pruned graph (with only bridge edges)
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

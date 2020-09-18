@@ -2,7 +2,7 @@
    math > number theory > greatest common divisor (GCD)
    difficulty: easy
    date: 07/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

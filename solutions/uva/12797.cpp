@@ -3,7 +3,7 @@
    difficulty: medium
    date: 08/May/2020
    hint: apply a BFS for each subset of letters possible (only 2^10) using bitmask
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 #define INF (1 << 30)

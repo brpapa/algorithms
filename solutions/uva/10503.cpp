@@ -4,7 +4,7 @@
    date: 14/Apr/2020
    problem: given domino pieces, check if it is possible to arrive at a target piece from an initial piece using N intermediate pieces (possibly rotating them)
    hint: DFS + backtracking
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

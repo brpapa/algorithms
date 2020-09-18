@@ -3,7 +3,7 @@
    difficulty: medium
    date: 25/Jan/2020 
    hint: sort elephants based on increasing kg, then apply LDS on iq
-   by: @brnpapa
+   by: @brpapa
 */
 #include <algorithm>
 #include <iostream>

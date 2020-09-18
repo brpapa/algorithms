@@ -4,7 +4,7 @@
    date: 18/Jan/2020
    problem: max 3D range sum
    hint: use max 2D range sum in two of the three dimensions and max 1D range sum (kadane) on the third dimension
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #define ll long long

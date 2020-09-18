@@ -2,7 +2,7 @@
    dynamic programming > max 1D range sum > kadane
    difficulty: easy
    date: 17/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

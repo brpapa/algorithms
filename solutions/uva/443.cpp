@@ -2,7 +2,7 @@
    math > ad-hoc > sequences
    difficulty: medium
    date: 18/Feb/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

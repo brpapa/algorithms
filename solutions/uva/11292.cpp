@@ -2,7 +2,7 @@
    greedy > bipartite matching
    difficulty: easy
    date: 15/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

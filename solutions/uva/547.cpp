@@ -4,7 +4,7 @@
    date: 15/Jun/2020
    problem: find the longest DDF sequence
    hint: pre-process a array f, where f[i] is the sum of digits of all positive factors of i; think like sieve
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

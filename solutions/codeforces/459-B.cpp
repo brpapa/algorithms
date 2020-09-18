@@ -3,7 +3,7 @@
    difficulty: easy
    date: 17/Jun/2020
    problem: find the max difference between numbers of a given array and the number of ways to get it
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

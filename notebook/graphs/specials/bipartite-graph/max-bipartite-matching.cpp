@@ -1,7 +1,7 @@
 /*
    Maximum Cardinality Bipartite Matching (MCBM) - emparelhamento máximo
 
-   Motivação: dado um unweighted, directed and bipartite graph G(V,E), encontre o maior número de matchings, ou seja, o maior número de arestas l -> r, sendo que l faz parte do conjunto LV e r de RV, e nenhum vértice tenha grau maior que 1.
+   Motivação: dado um unweighted, directed and bipartite graph G(V,E), encontre o maior número de matchings possíveis, ou seja, o maior número de arestas l -> r, sendo que l faz parte do conjunto LV e r de RV, e nenhum vértice tenha grau maior que 1.
 
    Perfect matching: todos os vértices do grafo fazem parte de um match.
 
@@ -13,7 +13,7 @@
 using namespace std;
 
 /* input */
-vector<vector<int>> adj_list; int V, LV; // apenas com arestas direcionadas l -> r, onde 0 <= l < LV e LV <= r < V
+vector<vector<int>> adj_list; int V, LV; // apenas com arestas l -> r, onde 0 <= l < LV e LV <= r < V
 
 /* */
 vector<int> match; // match[r]: vértice l já combinado com r

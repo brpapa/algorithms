@@ -3,7 +3,7 @@
    difficulty: easy
    date: 19/May/2020
    problem: given a forest, find the length of the longest path
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 #define UNVISITED 0

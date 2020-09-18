@@ -2,7 +2,7 @@
    miscellaneous > two pointers
    difficulty: hard
    date: 09/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

@@ -9,7 +9,7 @@
          "   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
          "   problem: ${4:abridge problem}",
          "   hint: ${5:how to do?}",
-         "   by: @brnpapa",
+         "   by: @brpapa",
          "*/"
       ]
    },

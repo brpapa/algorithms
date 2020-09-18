@@ -4,7 +4,7 @@
    date: 08/May/2020
    problem: simulation
    hint: note that if you 'watch' a unique card, the full deck will become sorted as soon as this card reaches its original position
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

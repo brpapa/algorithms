@@ -2,7 +2,7 @@
    graphs > traversal
    difficulty: medium
    date: 11/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

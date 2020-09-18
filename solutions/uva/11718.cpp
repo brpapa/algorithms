@@ -3,7 +3,7 @@
    difficulty: hard
    date: 16/Feb/2020 
    hint: compute K * N^(K-1) * sumA using fast power mod
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #define ll long long

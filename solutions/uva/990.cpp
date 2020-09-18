@@ -3,7 +3,7 @@
    difficulty: easy
    date: 14/May/2020
    problem: with recovering
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -2,7 +2,7 @@
    graphs > shortest path > all-pairs
    difficulty: easy
    date: 25/Oct/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

@@ -2,7 +2,7 @@
    string processing > palindrome
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <string>

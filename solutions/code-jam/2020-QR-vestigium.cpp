@@ -2,7 +2,7 @@
    ad-hoc > implementation
    difficulty: easy
    date: 03/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <set>

@@ -4,7 +4,7 @@
    date: 02/Mar/2020
    problem: given the A array, count the quantity of pairs i < j such that A[i]-A[j] == K
    hint: search on the sorted array A by the A[n]+K, for all n in [0 .. N-1]
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

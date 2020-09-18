@@ -4,7 +4,7 @@
    date: 08/Jun/2020
    problem: check if a large n has exactily three distinct positive divisors
    hint: check if sqrt(n) is prime
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

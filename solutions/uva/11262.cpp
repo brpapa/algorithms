@@ -3,7 +3,7 @@
    difficulty: medium
    date: 19/Aug/2020
    hint: binary search on answer + MCBM
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

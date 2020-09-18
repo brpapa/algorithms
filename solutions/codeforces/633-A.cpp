@@ -3,7 +3,7 @@
    difficulty: easy
    date: 17/Jun/2020
    problem: check if a diophantine equation has positive solution
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

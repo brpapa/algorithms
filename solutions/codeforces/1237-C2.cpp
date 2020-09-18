@@ -3,7 +3,7 @@
    difficulty: medium
    date: 17/Apr/2020
    hint: sort the points, remove pairs with equal x and y first, then pairs with equal x and finally the rest
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

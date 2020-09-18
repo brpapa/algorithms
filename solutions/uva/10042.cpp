@@ -2,7 +2,7 @@
    math > number theory > prime numbers > prime factorization
    difficulty: easy
    date: 13/Feb/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

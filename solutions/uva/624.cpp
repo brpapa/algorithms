@@ -3,7 +3,7 @@
    difficulty: easy
    date: 24/Mar/2020
    problem: print the subset of A with the max sum k, k <= K
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

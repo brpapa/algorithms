@@ -3,7 +3,7 @@
    difficulty: medium
    date: 31/Jul/2020
    problem: longest distance from 0 to V-1, checking for positive cycle that are part of that path (0 to V-1)
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

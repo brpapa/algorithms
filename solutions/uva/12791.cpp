@@ -2,7 +2,7 @@
    math > ad-hoc
    difficulty: easy
    date: 07/May/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

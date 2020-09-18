@@ -2,7 +2,7 @@
    math > combinatorics
    difficulty: easy
    date: 17/Jun/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

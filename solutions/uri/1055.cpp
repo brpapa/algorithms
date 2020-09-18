@@ -2,7 +2,7 @@
    greedy > loading balance
    difficulty: medium
    date: 24/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <cmath>
 #include <deque>

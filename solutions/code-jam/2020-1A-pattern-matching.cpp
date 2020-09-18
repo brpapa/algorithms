@@ -3,7 +3,7 @@
    difficulty: medium
    date: 11/Apr/2020
    solution: note that only the prefix and suffix constraints matter
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

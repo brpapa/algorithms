@@ -3,7 +3,7 @@
    difficulty: easy
    date: 15/Mar/2020 
    hint: note that it's unnecessary jump to the left, so to minimize d, just jump between the nearest 'R' cells
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

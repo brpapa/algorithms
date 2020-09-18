@@ -2,7 +2,7 @@
    math > combinatorics > combinations > binomial coefficient
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

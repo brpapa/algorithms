@@ -3,7 +3,7 @@
    difficulty: easy
    date: 26/Dec/2019
    problem: given n, determine maximum possible proper (a < b) and irreducible fraction a/b such that a+b == n
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

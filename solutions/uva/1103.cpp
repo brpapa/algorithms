@@ -3,7 +3,7 @@
    difficulty: hard
    date: 01/Feb/2020 
    hint: consider each pixel as a vertex of an implicit graph, then identify each hieroglyph counting the number of white CCs within it
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

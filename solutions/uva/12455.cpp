@@ -3,7 +3,7 @@
    difficulty: easy
    date: 11/Jan/2020 
    hint: use bitmasks
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

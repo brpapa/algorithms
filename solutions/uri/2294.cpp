@@ -2,7 +2,7 @@
    graphs > traversal > breadth-first search (BFS)
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

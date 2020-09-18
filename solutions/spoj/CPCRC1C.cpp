@@ -2,7 +2,7 @@
    dynamic programming > digit
    difficulty: easy
    date: 01/May/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

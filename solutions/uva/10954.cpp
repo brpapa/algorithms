@@ -3,7 +3,7 @@
    difficulty: easy
    date: 23/Apr/2020
    problem: add all
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

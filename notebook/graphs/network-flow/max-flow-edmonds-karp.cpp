@@ -1,7 +1,7 @@
 /*
    Maximum flow
 
-   Statement: given a connected, weighted and directed graph where every edge has a capacity and two vertices source ‘s’ and sink ‘t’, find the maximum possible flow from s to t with following constraints:
+   Statement: given a connected, weighted and (un)directed graph where every edge has a capacity, and two vertices source ‘s’ and sink ‘t’, find the maximum possible flow from s to t with following constraints:
       - flow on an edge doesn’t exceed the given capacity of the edge.
       - incoming flow is equal to outgoing flow for every vertex, except s and t.
 
@@ -18,15 +18,15 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 
 /* input */
 vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, capacity}, ...}
 int V;
 
 /* */
-typedef long long ll;
 vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent; // parent[v]: {u, índice de new_adj_list[u]}
+vector<pair<int,int>> parent; // parent[v]: {u, índice em new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V+E) - find the shortest augmenting path (in terms of edges) and returns your bottleneck, or 0, if there is no more an augmenting path */
@@ -59,14 +59,13 @@ ll bfs(int s, int t) {
    // procura pela menor capacidade restante (gargalo), iterando cada aresta u -> v do caminho aumentativo encontrado
    ll min_c = INT_MAX;
    for (int v = t, u; parent[v].first != -1; v = u) {
-      u = parent[v].first;
-      int i = parent[v].second;
+      int i; tie(u, i) = parent[v];
       min_c = min(min_c, get<1>(new_adj_list[u][i]));
    }
    return min_c;
 }
 
-/* O(V*E*E) - returns the max flow */
+/* O(V*E*E) - returns the max flow from s to t */
 ll edmonds_karp(int s, int t) {
    new_adj_list.assign(V, vector<tuple<int,ll,ll>>());
    rev_idx.assign(V, vector<int>());

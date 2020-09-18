@@ -2,7 +2,7 @@
    dynamic programming
    difficulty: medium
    date: 02/Feb/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

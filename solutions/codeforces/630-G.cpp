@@ -3,7 +3,7 @@
    difficulty: medium
    date: 19/Jun/2020
    hint: C(n+5-1,5) * C(n+3-1,3)
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

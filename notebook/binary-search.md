@@ -25,15 +25,15 @@ Vai otimizando a resposta, aplicando busca binária no intervalo de todas as res
 Dado uma resposta possível `mid`, deve ser permitido invalidar metade do intervalo de respostas.
 
 ```cpp
-int low = 0, high = 10000;
-int ans = -1; // ans em [low .. high]
+int lo = 0, hi = 10000;
+int ans = -1; // ans em [lo .. hi]
 
-while (low <= high) {
-	int mid = (low + high)/2;
+while (lo <= hi) {
+	int mid = (lo + hi)/2;
 
    // se mid é uma resposta possível
-	if (can(mid)) ans = mid, high = mid-1; // na próxima, mid é menor
-	else          low = mid+1;             // na próxima, mid é maior
+	if (can(mid)) ans = mid, hi = mid-1; // na próxima, mid é menor
+	else          lo = mid+1;            // na próxima, mid é maior
 }
 
 // se ans == -1, não há solução

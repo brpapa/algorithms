@@ -2,7 +2,7 @@
    searching > binary search
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <queue>

@@ -2,7 +2,7 @@
    dynamic programming > longest increasing subsequence (LIS)
    difficulty: medium
    date: 23/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cmath>

@@ -3,7 +3,7 @@
    difficulty: medium
    date: 15/Jan/2020
    hint: reduce the problem using pythagoras to one line
-   by: @brnpapa
+   by: @brpapa
 */
 #include <cmath>
 #include <vector>

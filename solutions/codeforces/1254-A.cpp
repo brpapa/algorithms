@@ -2,7 +2,7 @@
    ad-hoc > implementation
    difficulty: medium
    date: 25/Nov/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 using namespace std;

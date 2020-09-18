@@ -3,7 +3,7 @@
    difficulty: easy
    date: 22/Apr/2020
    problem: given an integer n, find the smallest positive integer m > 0 such that the product of digits of m equals n
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -3,7 +3,7 @@
    difficulty: hard
    date: 18/May/2020
    problem: dijkstra on a given implicit graph as a 2D grid
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

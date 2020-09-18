@@ -2,7 +2,7 @@
    ad-hoc > implementation
    difficulty: medium
    date: 19/Sep/2019
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

@@ -3,7 +3,7 @@
    difficulty: medium
    date: 15/May/2020
    problem: coin change with limited amount of coins + greedy coin change with unlimited amount of coins; I don't know why, but it works without memo
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

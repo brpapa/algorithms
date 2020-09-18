@@ -4,7 +4,7 @@
    date: 20/Feb/2020
    problem: max 1D range product query
    hint: compute for each sub-range without 0
-   by: @brnpapa
+   by: @brpapa
 '''
 import math
 

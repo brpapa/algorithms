@@ -2,7 +2,7 @@
    greedy > restrict coin change
    difficulty: easy
    date: 25/Nov/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

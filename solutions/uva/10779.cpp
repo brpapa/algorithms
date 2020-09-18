@@ -3,7 +3,7 @@
    difficulty: medium
    date: 10/Aug/2020
    hint: each friend receives 1 flow unit of a sticker and offers a flow of other sticker; Bob also offers, but he receives 1 flow unit of each sticker; maximized it
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

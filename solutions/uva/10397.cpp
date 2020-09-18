@@ -3,7 +3,7 @@
    difficulty: medium
    date: 03/Jun/2020
    problem: given an implicit complete graph and some edges, compute the cost of the minimum spanning subgraph
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

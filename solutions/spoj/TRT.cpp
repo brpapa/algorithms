@@ -3,7 +3,7 @@
    difficulty: easy
    date: 29/Apr/2020
    hint: don't memoize the current day
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

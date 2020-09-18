@@ -4,7 +4,7 @@
    date: 12/Jun/2020
    problem: find the gcd(a, b) that is in a query range [lo .. hi]
    hint: note that all divisors of gcd(a, b) are also divisors of a and b
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

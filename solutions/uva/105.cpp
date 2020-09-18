@@ -3,7 +3,7 @@
    difficulty: easy
    date: 26/Jun/2020
    problem: skyline
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

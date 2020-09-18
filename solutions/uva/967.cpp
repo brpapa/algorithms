@@ -3,7 +3,7 @@
    difficulty: medium
    date: 30/Mar/2020
    problem: pope
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

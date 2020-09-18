@@ -2,14 +2,12 @@
    dynamic programming
    difficulty: easy
    date: 25/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 //! essa solução está horrível (mas passou), seria melhor considerar como estado os indices (0 à N-1) dos gravetos atuais. Ao considerar o segmento como estado a matriz memo não é completamente usada e há um scan O(N) desnecessário em cada estado
-#include <cstring>
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 #define ll long long
-#define INF (ll)0x7f7f7f7f7f7f7f7f
+#define INF (ll)(1 << 30)
 using namespace std;
 
 vector<int> cuts;
@@ -31,8 +29,6 @@ ll dp(int l, int r) {
 }
 
 int main() {
-   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-
    while (true) {
       int len; cin >> len;
       if (len == 0) return 0;

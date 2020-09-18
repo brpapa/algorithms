@@ -3,7 +3,7 @@
    difficulty: easy
    date: 12/Aug/2020
    hint: count how many lines the 2 points cross
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

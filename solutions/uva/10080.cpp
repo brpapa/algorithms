@@ -4,7 +4,7 @@
    date: 17/Aug/2020
    problem: max number of preys that can hide safely from an predator attack
    hint: consider a bipartite graph with edges that connect a gopher (prey) to an reachable hole
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

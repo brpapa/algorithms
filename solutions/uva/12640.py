@@ -3,7 +3,7 @@
    difficulty: easy
    date: 24/Mar/2020
    problem: find the max range sum considering the possibility of a sub-range of length 0
-   by: @brnpapa
+   by: @brpapa
 '''
 
 while (1):

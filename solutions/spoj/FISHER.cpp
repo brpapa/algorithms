@@ -3,7 +3,7 @@
    difficulty: medium
    date: 29/May/2020
    problem: get the (min) total value and total weight of the optimal knapsack
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -2,7 +2,7 @@
    dynamic programming > longest common subsequence (LCS)
    difficulty: none
    date: none 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

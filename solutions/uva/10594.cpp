@@ -2,7 +2,7 @@
    graphs > maximum flow > minimum cost
    difficulty: easy
    date: 06/Aug/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

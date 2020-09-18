@@ -2,7 +2,7 @@
    dynamic programming > 0-1 knapsack
    difficulty: medium
    date: 25/Aug/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

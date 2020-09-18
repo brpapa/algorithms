@@ -2,7 +2,7 @@
    geometry
    difficulty: easy
    date: 25/Jun/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

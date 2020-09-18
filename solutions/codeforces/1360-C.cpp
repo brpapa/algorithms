@@ -2,7 +2,7 @@
    greedy
    difficulty: easy
    date: 19/Aug/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

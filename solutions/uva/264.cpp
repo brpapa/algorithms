@@ -3,7 +3,7 @@
    difficulty: medium
    date: 18/Feb/2020
    hint: use binary search on preprocessed f(x)=f(x-1)+x-1
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

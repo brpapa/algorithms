@@ -3,7 +3,7 @@
    difficulty: easy
    date: 22/May/2020
    problem: chess with a single horse against up to 8 pawns; print the length of the minimum sequence of horse moves if it wins
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

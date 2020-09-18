@@ -1,4 +1,6 @@
 /*
+   Single Source Shortest Path (SSSP) - Bellman Ford
+   
    Motivação: dado um possibly-negative weighted and possibly-cycle graph G(V, E), encontre a shortest distance entre um vértice origem s e qualquer outro vértice.
 
    Edge case: se o grafo tiver um ciclo negativo, algum sd[u] tenderá à -INF
@@ -10,8 +12,6 @@ using namespace std;
 vector<vector<pair<int,int>>> adj_list; // adj_list[u]: {{v, w}, ...}
 int V;
 
-/* output */
-
 /* O(V*E) - retorna a menor distândia de s à t, ou -1, se há um ciclo negativo ou t não é alcançavel */
 int belmman_ford(int s, int t) {
    vector<int> sd(V, INT_MAX); // sd[u]: shortest distance de s à u
@@ -19,8 +19,8 @@ int belmman_ford(int s, int t) {
    vector<int> parent(V, -1);
    bool was_relaxed = true;
 
-   // se não há ciclos negativos no grafo, deveria levar no máximo V-1 iterações para sd ser ótimo
-   // se for possível relaxar ainda mais, então há ciclos negativos
+   // assume-se que, se não há ciclos negativos no grafo, deveria levar no máximo V-1 iterações para sd ser ótimo
+   // logo, se for possível relaxar pelo menos mais uma vez, então há ciclos negativos
    for (int _ = 0; was_relaxed && _ < V; _++) {
       was_relaxed = false;
 

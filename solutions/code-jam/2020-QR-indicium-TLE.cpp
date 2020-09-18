@@ -3,7 +3,7 @@
    difficulty: easy
    date: 04/Apr/2020
    problem: generate M, where M[i][j] is any value in [1 .. N] (2 <= N <= 5), but without repeting a value in same line or column, and with the sum of the main diagonal equal to K
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #define ll long long

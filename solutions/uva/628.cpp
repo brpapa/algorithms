@@ -2,7 +2,7 @@
    brute force > iterative
    difficulty: easy
    date: 14/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

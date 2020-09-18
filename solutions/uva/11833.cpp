@@ -3,7 +3,7 @@
    difficulty: medium
    date: 22/May/2019 
    hint: build the graph already with the given constraints
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <queue>

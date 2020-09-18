@@ -2,7 +2,7 @@
    dynamic programming > max 2D range sum
    difficulty: easy
    date: 17/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #define INF (1 << 30)

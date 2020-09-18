@@ -2,7 +2,7 @@
    miscellaneous > union-find disjoint sets (UFDS)
    difficulty: easy
    date: 20/Jul/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

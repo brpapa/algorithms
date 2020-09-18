@@ -3,7 +3,7 @@
    difficulty: medium
    date: 23/Feb/2020
    problem: find the global shortest path from 0 to V-1 (round trip), without repeting edges
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

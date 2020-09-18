@@ -3,7 +3,7 @@
    difficulty: easy
    date: 29/May/2020
    problem: counting paths from 0 to V-1
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

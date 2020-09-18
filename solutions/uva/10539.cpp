@@ -4,7 +4,7 @@
    date: 18/Mar/2020
    problem: compute the quantity of non-prime numbers in [lo .. hi] which are divisible by only a single prime number, 0 < lo <= hi < 10^12
    hint: generate all powers of each prime number
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

@@ -2,7 +2,7 @@
    ad-hoc > implementation
    difficulty: easy
    date: 06/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

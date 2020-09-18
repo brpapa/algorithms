@@ -2,7 +2,7 @@
    brute force > iterative
    difficulty: easy
    date: 11/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <cstdio>
 #define setBit(S, i) (S |= (1 << i))

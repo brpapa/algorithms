@@ -3,7 +3,7 @@
    difficulty: easy
    date: 09/Jun/2020
    problem: how many bishops can be placed on a n x n chessboard without threatening each other?
-   by: @brnpapa
+   by: @brpapa
 '''
 
 while (1):

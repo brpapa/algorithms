@@ -2,7 +2,7 @@
    brute force > iterative
    difficulty: easy
    date: 13/Jan/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <cstring>

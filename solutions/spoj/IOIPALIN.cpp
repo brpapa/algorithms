@@ -4,7 +4,7 @@
    date: 26/Mar/2020
    problem: given a string, determine the minimal quantity of characters to be inserted into it in order to obtain a palindrome
    hint: compute length of string minus lcs between string and reversed string
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <algorithm>

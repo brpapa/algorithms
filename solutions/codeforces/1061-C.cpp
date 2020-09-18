@@ -3,7 +3,7 @@
    difficulty: medium
    date: 30/Apr/2020
    hint: use space saving + all divisors in O(sqrt(n)) to optimize
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

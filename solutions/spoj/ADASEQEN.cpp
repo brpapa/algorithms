@@ -2,7 +2,7 @@
    dynamic programming > longest common subsequence (LCS)
    difficulty: easy
    date: 29/Apr/2020
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 using namespace std;

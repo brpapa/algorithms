@@ -9,7 +9,7 @@ using namespace std;
 /* input */
 vector<vector<int>> adj_list;
 
-// answer for the index of the minimum value in any range of A
+// answer for the index of the minimum value in a range of A
 class sparse_table {
  private:
    vector<int> A; int N;

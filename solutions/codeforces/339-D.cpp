@@ -2,7 +2,7 @@
    searching > segment tree
    difficulty: easy
    date: 07/Dec/2019 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <cmath>
 #include <iostream>

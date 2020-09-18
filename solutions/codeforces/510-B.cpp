@@ -3,7 +3,7 @@
    difficulty: easy
    date: 18/May/2020
    problem: check if a given implicit undirected graph has a cycle of length >= 4
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 #define UNVISITED 0

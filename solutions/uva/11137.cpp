@@ -2,7 +2,7 @@
    dynamic programming > subset sum > with repetition
    difficulty: easy
    date: 21/Feb/2020 
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <vector>

@@ -4,7 +4,7 @@
    date: 02/Aug/2020
    problem: given an undirected graph, count how many bridge edges exists between 2 query vertices
    hint: group the vertices connected by non-bridge edge during dfs; generate a tree considering each group as a vertice, and using only the bridge edges; find the distance between 2 query vertices of that tree with LCA in O(1)
-   by: @brnpapa
+   by: @brpapa
 */
 #include <bits/stdc++.h>
 #define pow2(i) (1 << (i)) // = 2^i

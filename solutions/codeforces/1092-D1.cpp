@@ -3,7 +3,7 @@
    difficulty: medium
    date: 09/Mar/2020 
    hint: remove adjacent ones whose absolute difference is even (using a stack)
-   by: @brnpapa
+   by: @brpapa
 */
 #include <iostream>
 #include <stack>
