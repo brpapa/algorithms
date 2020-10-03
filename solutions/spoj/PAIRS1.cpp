@@ -1,5 +1,5 @@
 /*
-   searching > binary search
+   data structures > binary search
    difficulty: easy
    date: 02/Mar/2020
    problem: given the A array, count the quantity of pairs i < j such that A[i]-A[j] == K

@@ -1,5 +1,5 @@
 /*
-   searching > binary search
+   data structures > binary search
    difficulty: medium
    date: 05/Jan/2020 
    by: @brpapa

@@ -5,15 +5,16 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
+const int INF = 1 << 30;
 
 /* input */
 vector<int> A; int N;
 
 /* O(N * log(N)) */
 int lis() {
-   vector<int> size(N);          // size[j]: tamanho da LIS que termina com A[j]
-   vector<int> last(N+1, 1<<30); // last[s]: último elemento da LIS de tamanho s
-   last[0] = -(1<<30);
+   vector<int> size(N);        // size[j]: tamanho da LIS que termina com A[j]
+   vector<int> last(N+1, INF); // last[s]: último elemento da LIS de tamanho s
+   last[0] = -INF;
 
    int biggest_s = 0;
 

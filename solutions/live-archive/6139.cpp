@@ -1,5 +1,5 @@
 /*
-   searching > segment tree
+   data structures > segment tree
    difficulty: easy
    date: 18/Sep/2020
    problem: range product query
@@ -14,7 +14,7 @@ class seg_tree {
    vector<ll> A; int N;
    vector<ll> bin_tree; 
 
-   int le(int v) { return (v << 1) + 1; } 
+   int le(int v) { return (v << 1) + 1; }
    int ri(int v) { return (v << 1) + 2; } 
 
    ll range_combination(ll a, ll b) {

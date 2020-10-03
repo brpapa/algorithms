@@ -1,5 +1,5 @@
 /*
-   searching > segment tree > lazy propagation
+   data structures > segment tree > lazy propagation
    difficulty: medium
    date: 13/Mar/2020 
    hint: build a segment tree for RSQ, but store an array of size 9 in tree[v], where tree[v][n] indicates the frequency that the note n appears in that interval

@@ -1,5 +1,5 @@
 /*
-   searching > segment tree > lazy propagation
+   data structures > segment tree > lazy propagation
    difficulty: medium
    date: 12/Mar/2020 
    hint: build a segment tree for RSQ, but keep in lazy[v] the type of pending operation to be performed in that interval of A

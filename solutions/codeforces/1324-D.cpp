@@ -1,5 +1,5 @@
 /*
-   searching > binary search
+   data structures > binary search
    difficulty: medium
    date: 15/Mar/2020
    problem: given the A and B arrays, count the quantity of pairs i < j such that A[i]+A[j] > B[i]+B[j]

@@ -1,5 +1,5 @@
 /*
-   searching > segment tree
+   data structures > segment tree
    difficulty: easy
    date: 07/Dec/2019 
    by: @brpapa

@@ -1,5 +1,5 @@
 /*
-   searching > binary search
+   data structures > binary search
    difficulty: none
    date: none 
    by: @brpapa

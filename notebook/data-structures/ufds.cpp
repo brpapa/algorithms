@@ -1,14 +1,12 @@
 /*
-   MST variants - Minimax path
+   Union Find Disjoint Sets (UFDS)
    
-   Motivation: given a connected, undirected and weighted graph G(V, E), find the maximum weight of the minimum path from s to t.
+   Cada conjunto é representado por uma árvore, onde o elemento raiz é o identificador único de todo o conjunto.
+
+   Um elemento n é a raiz de sua árvore se parent[n] == n
 */
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-
-int V;
-vector<tuple<ll,int,int>> edge_list; // {{w, u, v}, ...}, arestas u -w-> v
 
 class ufds {
  private:
@@ -66,40 +64,12 @@ class ufds {
    }
 };
 
-/* O(E*log(V)) - returns the max_w of the minimum path from s to t, or -1 if not exists path from s to t */
-ll kruskal(int s, int t) {
-	ufds sets(V);
-	sort(edge_list.begin(), edge_list.end());
-
-   // para cada aresta u -w-> v, priorizando as de menor w
-	for (auto edge: edge_list) {
-      int u, v; ll w; tie(w,u,v) = edge;
-
-      // evita ciclos
-		if (!sets.is_same_set(u, v)) { 
-         sets.union_sets(u, v);
-         // se s e t já se conectaram, as próximas arestas da MST não farão parte do caminho s -> t
-         if (sets.is_same_set(s, t))
-            return w;
-		}
-   }
-   return -1;
-}
-
-
-/* e.g. */
+/* e.g */
 int main() {
-   V = 7;
-   edge_list.push_back({50,0,1});
-   edge_list.push_back({90,1,4});
-   edge_list.push_back({120,1,3});
-   edge_list.push_back({40,4,6});
-   edge_list.push_back({70,3,6});
-   edge_list.push_back({80,3,5});
-   edge_list.push_back({140,5,6});
-   edge_list.push_back({50,2,5});
-   edge_list.push_back({60,0,2});
+   ufds sets(5);
+   sets.union_sets(0, 1);
+   sets.union_sets(3, 4);
+   sets.union_sets(0, 4);
 
-   cout << kruskal(0, 6) << endl; // 80, da aresta 3-5
-   return 0;
+   cout << sets.is_same_set(0, 4) << endl;
 }

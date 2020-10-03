@@ -2,6 +2,17 @@
    Sparse Table
    
    For efficient range queries on a static array A of size N.
+   Common range queries: min, max
+
+   ---
+
+   A função range_combination precisa ser "overlap friendly" (idempotent) pra conseguir implementar range_query em O(1). Mas se ela não for e for associativa (como sum), range_query pode ser implementado ainda em O(log2(N)), continuar vendo em https://youtu.be/uUatD9AudXo?t=877
+
+   f is associative function, if:
+      f(a, f(b,c)) = f(f(a,b), c) for all a,b,c
+
+   f is "overlap friendly" function (or idempotent, f(a,a) = a), if:
+      f(f(a,b), f(c,d)) = f(a, f(b,c)) for all a,b,c,d
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -57,8 +68,3 @@ int main() {
    cout << st.range_query(2,7) << endl;
    return 0;
 }
-
-// f is associative function, if: f(a, f(b,c)) = f(f(a,b), c) for all a,b,c
-// f is "overlap friendly" function, if: f(f(a,b), f(c,d)) = f(a, f(b,c)) for all a,b,c,d
-
-// se range_combination não for "overlap friendly", mas associativa (como sum), range_query pode ser reimplementado para uma versão O(log2(N)), continuar vendo em https://youtu.be/uUatD9AudXo?t=877
