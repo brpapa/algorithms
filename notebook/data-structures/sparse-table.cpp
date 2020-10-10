@@ -1,6 +1,6 @@
 /*
    Sparse Table
-   
+
    For efficient range queries on a static array A of size N.
    Common range queries: min, max
 
@@ -13,6 +13,11 @@
 
    f is "overlap friendly" function (or idempotent, f(a,a) = a), if:
       f(f(a,b), f(c,d)) = f(a, f(b,c)) for all a,b,c,d
+
+   ---
+
+   https://www.youtube.com/watch?v=uUatD9AudXo&ab_channel=WilliamFiset
+   https://www.youtube.com/watch?v=inAZoc5K9jo&ab_channel=Programa%C3%A7%C3%A3oCompetitivaUNESP
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -35,7 +40,7 @@ class sparse_table {
       table.assign(P+1, vector<ll>(N));
 
       for (int n = 0; n < N; n++) table[0][n] = A[n];
-      
+
       for (int p = 1; p <= P; p++)
          for (int n = 0; n+pow2(p) <= N; n++) {
             // the answer for a range is the union of the answers for 2 sub-ranges (already computed)
