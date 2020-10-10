@@ -86,7 +86,7 @@ def overwrite_file(path):
       file.write('</p>\n')
 
       file.write('<br/>\n\n')
-      file.write('<h1 align="center">Solutions categorized into themes</h1>\n\n')
+      file.write('<h1 align="center">Solutions index</h1>\n\n')
       for u in adj_list[root]:
          link = '#' + str(u[1]).replace(' ', '-')
          file.write(f'· [{link}]({link}) ')

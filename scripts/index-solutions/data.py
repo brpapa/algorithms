@@ -1,5 +1,5 @@
 config = {
-   'output_path': './README.md',
+   'output_path': './solutions/README.md',
    'emojis': {
       'difficulty': {
          # 'easy': '🟢',
@@ -29,8 +29,7 @@ config = {
       'remote': 'https://github.com/brpapa/competitive-programming/blob/master/solutions'
    },
    'static_output_lines': [
-      'Welcome! The `notebook` folder contains general-purpose algorithms, and the `solutions` folder contains the solved problems. Feel free to follow my progress on my main online judge profiles:\n\n'
-      # 'The book I recommend for studying is \'Competitive Programming 3: The new lower bound of programming contests\' by Steven Halim.\n\n'
+      'Feel free to follow my progress on my main online judge profiles:\n\n'
    ],
    'main_judges': {
       'uva': {
