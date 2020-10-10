@@ -30,7 +30,7 @@ def build(dataset):
          adj_list[key].add((i+1, data['theme'][i]))
          adj_list.setdefault((i+1, data['theme'][i]), set())
 
-      ex_desc = Template('$emoji [$judge_id/$problem_id]($base_url/$relative_path)$problem_desc $hint_desc')
+      ex_desc = Template('$emoji [$judge_id/$problem_id](./$relative_path)$problem_desc $hint_desc')
 
       key_leaf = (len(data['theme']), data['theme'][-1])
       leaf.setdefault(key_leaf, set())
@@ -39,7 +39,6 @@ def build(dataset):
          data,
          problem_desc=('' if data['problem_desc'] == 'none' else f': `{data["problem_desc"]}`'),
          hint_desc=('' if data['hint_desc'] == 'none' else f' → {data["hint_desc"]}'),
-         base_url=config['base_url']['remote'],
          relative_path=f'{data["judge_id"]}/{data["problem_id"]}.{data["ext"]}',
          emoji=config['emojis']['difficulty'][data['difficulty']]
       ))
@@ -115,7 +114,7 @@ def get_dataset(paths):
             hint_desc = opt_any.replace('hint: ', '', 1)
          else:
             hint_desc = 'none'
-         
+
          dataset.append({
             'judge_id': path.split('/')[1],
             'problem_id': path.split('/')[2].split('.')[0],
@@ -133,9 +132,8 @@ def get_dataset(paths):
 if __name__ == '__main__':
    # get files tracked on git
    response = subprocess.run(['git', 'ls-files'], text=True, stdout=subprocess.PIPE)
-
    problems_paths = response.stdout.split('\n')
-   problems_paths = [path for path in problems_paths if 'solutions/' in path]
+   problems_paths = [path for path in problems_paths if 'solutions/' in path and '.cpp' in path]
 
    build(get_dataset(problems_paths))
 

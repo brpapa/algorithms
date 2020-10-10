@@ -24,10 +24,6 @@ config = {
          'none': '😶'
       }
    },
-   'base_url': {
-      'local': 'file:///Users/papa/Google%20Drive/dev/competitive-programming/solutions',
-      'remote': 'https://github.com/brpapa/competitive-programming/blob/master/solutions'
-   },
    'static_output_lines': [
       'Feel free to follow my progress on my main online judge profiles:\n\n'
    ],
