@@ -1,5 +1,5 @@
 /*
-   miscellaneous > union-find disjoint sets (UFDS)
+   data structures > union-find disjoint sets (UFDS)
    difficulty: medium
    date: 20/Jul/2020
    by: @brpapa

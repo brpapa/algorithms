@@ -1,5 +1,5 @@
 /*
-   data structures > binary search > on answer
+   miscellaneous > binary search > on answer
    difficulty: hard
    date: 06/Jan/2020 
    by: @brpapa

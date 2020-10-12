@@ -1,18 +1,22 @@
 /*
    Lowest Common Ancestor (LCA) with the eulerian tour method
 
-   Motivação: dado uma rooted tree T(V, E), o LCA entre u e v é o vértice de maior nível que tem u e v como seus descendentes.
+   Motivação: dado uma weighted rooted tree G(V, V-1), o LCA entre u e v é o vértice de maior nível que tem u e v como seus descendentes.
+
+   ---
+   https://youtu.be/sD1IoalFomA?list=PLDV1Zeh2NRsDfGc8rbQ0_58oEZQVtvoIc
 */
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 
 /* input */
-vector<vector<int>> adj_list;
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, w}, ...}
 
 // answer for the index of the minimum value in a range of A
 class sparse_table {
  private:
-   vector<int> A; int N;
+   vector<ll> A; int N;
    vector<vector<int>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
 
    /* O(1) */
@@ -38,7 +42,7 @@ class sparse_table {
 
  public:
    sparse_table() {}
-   sparse_table(vector<int> const &A) {
+   sparse_table(vector<ll> const &A) {
       this->A = A;
       N = (int)A.size();
       build();
@@ -54,36 +58,38 @@ class sparse_table {
 
 class lca {
  private:
-   vector<vector<int>> adj_list; int V;
+   vector<vector<pair<int,ll>>> adj_list; int V;
 
    int e;                   // eulerian tour timer
-   vector<int> tour_depth;  // tour_depth[e]: nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
+   vector<ll> tour_depth;   // tour_depth[e]: nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
    vector<int> tour_vertex; // tour_vertex[e]: e-ésimo vértice visitado pelo eulerian tour
 
-   vector<int> depth;  // depth[u]: nível de u em relação à root
+   vector<ll> depth;   // depth[u]: nível de u em relação à root
    vector<int> last_e; // last_e[u]: último e do vértice u (inverse map of tour_vertex)
    vector<bool> seen;
 
    sparse_table st;
 
    /* O(1) */
-   void process(int u, int u_depth) {
+   void process(int u, ll u_depth) {
       tour_vertex[e] = u;
       tour_depth[e] = u_depth;
       last_e[u] = e++;
    }
 
    /* O(V) - eulerian tour */
-   void dfs(int u, int u_depth = 0) {
+   void dfs(int u, ll u_depth = 0) {
       seen[u] = true;
       depth[u] = u_depth;
       process(u, u_depth);
 
-      for (int v : this->adj_list[u])
+      for (auto adj : this->adj_list[u]) {
+         int v; ll w; tie(v, w) = adj;
          if (!seen[v]) {
-            dfs(v, u_depth+1);
+            dfs(v, u_depth+w);
             process(u, u_depth);
          }
+      }
    }
 
    /* O(V * log(V)) */
@@ -96,14 +102,14 @@ class lca {
       tour_vertex.resize(2*V-1);
 
       seen.assign(V, false);
-
       dfs(root);
+
       st = sparse_table(tour_depth);
    }
 
  public:
    lca() {}
-   lca(vector<vector<int>> const &adj_list, int root = 0) {
+   lca(vector<vector<pair<int,ll>>> const &adj_list, int root = 0) {
       this->adj_list = adj_list;
       V = adj_list.size();
       build(root);
@@ -118,20 +124,20 @@ class lca {
    }
 
    /* O(1) */
-   int query_dist(int u, int v) {
+   ll query_dist(int u, int v) {
       return depth[u] + depth[v] - 2 * depth[query_lca(u,v)];
    }
 };
 
 /* e.g */
 int main() {
-   adj_list.assign(7, vector<int>());
-   adj_list[0].push_back(1);
-   adj_list[1].push_back(3);
-   adj_list[0].push_back(2);
-   adj_list[2].push_back(4);
-   adj_list[4].push_back(6);
-   adj_list[2].push_back(5);
+   adj_list.assign(7, vector<pair<int,ll>>());
+   adj_list[0].push_back({1,1});
+   adj_list[1].push_back({3,1});
+   adj_list[0].push_back({2,1});
+   adj_list[2].push_back({4,1});
+   adj_list[4].push_back({6,1});
+   adj_list[2].push_back({5,1});
 
    lca inst(adj_list);
    cout << inst.query_lca(3, 2) << endl;
@@ -142,5 +148,3 @@ int main() {
    cout << inst.query_dist(5, 6) << endl;
    return 0;
 }
-
-// https://youtu.be/sD1IoalFomA?list=PLDV1Zeh2NRsDfGc8rbQ0_58oEZQVtvoIc

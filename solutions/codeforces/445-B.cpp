@@ -1,5 +1,5 @@
 /*
-   miscellaneous > union-find disjoint sets (UFDS)
+   data structures > union-find disjoint sets (UFDS)
    difficulty: easy
    date: 31/Aug/2020
    hint: 2 ^ (sum of (size of set - 1), for each disjoint set)

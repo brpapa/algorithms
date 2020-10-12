@@ -3,6 +3,7 @@
 
    Motivação: dado um connected, undirected and weighted graph G(V, E), encontre uma árvore T(V, V-1) contida em G, tal que a soma dos pesos das arestas seja a menor possível e conecte todos os vértices de G.
 
+   ---
    Kruskal busca pelas arestas mais leves gulosamente. É mais intuitivo para recuperar as arestas da MST.
 */
 #include <bits/stdc++.h>

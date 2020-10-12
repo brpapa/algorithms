@@ -1,5 +1,5 @@
 /*
-   MST variants - Minimax path
+   Minimax path
    
    Motivation: given a connected, undirected and weighted graph G(V, E), find the maximum weight of the minimum path from s to t.
 */

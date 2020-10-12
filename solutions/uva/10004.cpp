@@ -1,5 +1,5 @@
 /*
-   graphs > traversal > bipartite checking
+   graphs > specials > bipartite > bipartite checking
    difficulty: easy
    date: 31/Jan/2020 
    by: @brpapa

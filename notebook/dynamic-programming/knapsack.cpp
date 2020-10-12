@@ -1,7 +1,7 @@
 /* 
-   0-1 knapsack
+   0-1 Knapsack
 
-   Motivação: dado os valores v e pesos w de N items, determine o valor máximo que a mochila pode carregar selecionando um subconjunto desses itens, de modo que a soma de seus pesos não exceda a capacidade máxima S.
+   Motivação: dado os valores v e pesos w de N itens, determine o valor total máximo que a mochila pode carregar selecionando um subconjunto desses itens, de modo que a soma de seus pesos não exceda a capacidade máxima S.
 */
 #include <bits/stdc++.h>
 using namespace std;
