@@ -1,7 +1,7 @@
 /*
    Longest Increasing Subsequence (LIS)
    
-   Motivação: encontre o tamanho da LIS em um array A de tamanho N.
+   Motivação: encontre o tamanho da maior subsequência crescente em um array A de tamanho N.
 */
 #include <bits/stdc++.h>
 using namespace std;

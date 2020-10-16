@@ -1,8 +1,9 @@
 /*
-   Matrix Exponentiation/Power - DP optimization
+   DP optimization - Matrix Exponentiation/Power
 
    Motivação: calcule f(n), sendo n < 10^18 e f uma função linear de recorrência.
    
+   ---
    https://www.quora.com/q/threadsiiithyderabad/Solving-Dynamic-Programming-with-Matrix-Exponentiation
 */
 #include <bits/stdc++.h>

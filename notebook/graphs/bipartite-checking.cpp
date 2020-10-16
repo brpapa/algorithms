@@ -1,11 +1,7 @@
 /*
    Bipartite checking
 
-   Motivação: dado um connected and undirected graph G(V, E), determine se ele é bipartido, ou seja, se pode ser "pintado" em apenas duas cores sem que vértices adjacentes tenham a mesma cor.
-
-   Bipartite graph: the set of vertices V can be partitioned into two disjoint sets LV and RV, and, for all edges (l,r) of E, l is in LV (left vertices) and r is in RV (right vertices).
-
-   Obs: the graph is 2-colourable (bipartite) if there is no cycle with an odd length.
+   Motivação: dado um connected and undirected graph G(V, E), determine se ele é bipartido.
 */
 #include <bits/stdc++.h>
 using namespace std;

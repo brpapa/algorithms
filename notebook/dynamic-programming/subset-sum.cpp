@@ -38,3 +38,15 @@ int main() {
    memset(memo, -1, sizeof memo); // resetar apenas se o array A mudar, e não S
    cout << dp(0, S) << endl;
 }
+
+/* O(S) em memória */
+/*
+vector<vector<int>> dp(N+1, vector<bool>(S+1, 0));
+for (int n = N; n >= 0; n--) dp[n%2][0] = 1;
+
+for (int n = N-1; n >= 0; n--)
+   for (int s = 1; s <= S; s++)
+      dp[n%2][s] = dp[(n+1)%2][s] + ((s-A[n] >= 0)? dp[(n+1)%2][s-A[n]]: 0);
+
+cout << dp[0%2][S] << endl;
+*/

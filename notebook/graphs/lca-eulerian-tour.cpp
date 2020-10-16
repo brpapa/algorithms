@@ -74,7 +74,8 @@ class lca {
    void process(int u, ll u_depth) {
       tour_vertex[e] = u;
       tour_depth[e] = u_depth;
-      last_e[u] = e++;
+      last_e[u] = e;
+      e++;
    }
 
    /* O(V) - eulerian tour */
@@ -139,12 +140,12 @@ int main() {
    adj_list[4].push_back({6,1});
    adj_list[2].push_back({5,1});
 
-   lca inst(adj_list);
-   cout << inst.query_lca(3, 2) << endl;
-   cout << inst.query_lca(4, 2) << endl;
-   cout << inst.query_lca(6, 6) << endl;
+   lca l(adj_list);
+   cout << l.query_lca(3, 2) << endl;
+   cout << l.query_lca(4, 2) << endl;
+   cout << l.query_lca(6, 6) << endl;
 
-   cout << inst.query_dist(3, 6) << endl;
-   cout << inst.query_dist(5, 6) << endl;
+   cout << l.query_dist(3, 6) << endl;
+   cout << l.query_dist(5, 6) << endl;
    return 0;
 }
