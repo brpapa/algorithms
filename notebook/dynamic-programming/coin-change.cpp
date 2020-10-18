@@ -8,8 +8,8 @@ using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-int N, V;
-vector<int> coins;
+int N = 4, V = 7;
+vector<int> coins = {1, 3, 4, 5};
 
 /* */
 vector<int> memo;
@@ -33,11 +33,7 @@ int dp(int v) {
 
 /* e.g. */
 int main() {
-   N = 4; V = 7;
-   coins = {1, 3, 4, 5};
-   
    memo.assign(V+1, -1);  // resetar apenas se moedas mudarem, e não V
    cout << dp(V) << endl;
-
    return 0;
 }

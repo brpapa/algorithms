@@ -1,5 +1,5 @@
 /*
-   graphs > specials > tree > LCA
+   graphs > specials > tree > lowest common ancestor (LCA)
    difficulty: medium
    date: 10/Oct/2020
    problem: given a weighted tree, find the distance between 2 query vertices

@@ -8,12 +8,11 @@ using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-int N, S;
-vector<int> v; // v[i]: valor do item i
-vector<int> w; // w[i]: peso do item i
+int N = 4, S = 12;
+vector<int> v = { 100, 70, 50, 10 };
+vector<int> w = { 10, 4, 6, 12 };
 
-/* */
-vector<vector<int>> memo; // N x (S+1)
+vector<vector<int>> memo;
 
 /* O(N*S) */
 int dp(int i, int s) {
@@ -33,13 +32,8 @@ int dp(int i, int s) {
 
 /* e.g. */
 int main() {
-   N = 4, S = 12;
-   v = { 100, 70, 50, 10 };
-   w = { 10, 4, 6, 12 };
-
    memo.assign(N, vector<int>(S+1, -1));
-   cout << dp(0, S) << endl; // 120
-
+   cout << dp(0, S) << endl;
    return 0;
 }
 

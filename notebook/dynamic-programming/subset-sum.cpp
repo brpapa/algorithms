@@ -20,8 +20,9 @@ const int N = 6;
 const int S = 7;
 int A[N] = {1, 3, 4, 5, 2, 10};
 
+/* O(N*S) */
 int memo[N][S+1];
-int dp(int n, int s) {
+int dp0(int n, int s) {
    // n-ésimo número em A, soma S-s do subconjunto atual
 
    if (s == 0)          return 1;
@@ -30,23 +31,24 @@ int dp(int n, int s) {
    int &ans = memo[n][s];
    if (ans != -1) return ans;
 
-   return ans = dp(n+1, s) + dp(n+1, s-A[n]);
+   return ans = dp0(n+1, s) + dp0(n+1, s-A[n]);
+}
+
+/* O(S) space */
+int dp1() {
+   vector<vector<int>> tab(2, vector<int>(S+1, 0));
+   for (int n = N; n >= 0; n--) tab[n%2][0] = 1;
+
+   for (int n = N-1; n >= 0; n--)
+      for (int s = 1; s <= S; s++)
+         tab[n%2][s] = tab[(n+1)%2][s] + ((s-A[n] >= 0)? tab[(n+1)%2][s-A[n]]: 0);
+
+   return tab[0%2][S];
 }
 
 /* e.g. */
 int main() {
    memset(memo, -1, sizeof memo); // resetar apenas se o array A mudar, e não S
-   cout << dp(0, S) << endl;
+   cout << dp0(0, S) << endl;
+   // cout << dp1() << endl;
 }
-
-/* O(S) em memória */
-/*
-vector<vector<int>> dp(N+1, vector<bool>(S+1, 0));
-for (int n = N; n >= 0; n--) dp[n%2][0] = 1;
-
-for (int n = N-1; n >= 0; n--)
-   for (int s = 1; s <= S; s++)
-      dp[n%2][s] = dp[(n+1)%2][s] + ((s-A[n] >= 0)? dp[(n+1)%2][s-A[n]]: 0);
-
-cout << dp[0%2][S] << endl;
-*/

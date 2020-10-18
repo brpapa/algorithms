@@ -9,31 +9,33 @@ The folders structure is following:
 
 <h1 align="center">Notebook index</h1>
 
-## data structures
+## 🧱 data structures
 
 - [segment tree](./notebook/data-structures/seg-tree.cpp)
 - [lazy segment tree](./notebook/data-structures/seg-tree-lazy.cpp)
 - [sparse table](./notebook/data-structures/sparse-table.cpp)
-- [union-find disjoint sets](./notebook/data-structures/ufds.cpp)
+- [union-find disjoint sets (UFDS)](./notebook/data-structures/ufds.cpp)
 
-## dynamic programming
+## 🔞 dynamic programming
 
 - [coin change](./notebook/dynamic-programming/coin-change.cpp)
 - [subset sum](./notebook/dynamic-programming/subset-sum.cpp)
-- [0-1 knapsack](./notebook/dynamic-programming/knapsack.cpp)
-- [longest increasing subsequence](./notebook/dynamic-programming/lis.cpp)
-- [traveling salesman problem](./notebook/dynamic-programming/tsp.cpp)
+- [0-1 knapsack](./notebook/dynamic-programming/0-1-knapsack.cpp)
+- [longest increasing subsequence (LIS)](./notebook/dynamic-programming/lis.cpp)
+- [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
+- [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
+- [traveling salesman problem (TSP)](./notebook/dynamic-programming/tsp.cpp)
 
-## graphs
+## 🌍 graphs
 
 - **traversal**
-   - [breadth-first search](./notebook/graphs/bfs.cpp)
-   - [depth-first search](./notebook/graphs/dfs.cpp)
+   - [depth-first search (DFS)](./notebook/graphs/dfs.cpp)
+   - [breadth-first search (BFS)](./notebook/graphs/bfs.cpp)
    - [bridges or articulations points](./notebook/graphs/bridges-or-articulations.cpp)
    - **topological sorting**
       - [kahn](./notebook/graphs/topo-sort-kahn.cpp)
       - [naive](./notebook/graphs/topo-sort.cpp)
-- **minimum spanning tree**
+- **minimum spanning tree (MST)**
    - [kruskal](./notebook/graphs/mst-kruskal.cpp)
    - **variants**
       - [minimax path](./notebook/graphs/mst-minimax-path.cpp)
@@ -50,13 +52,13 @@ The folders structure is following:
 - **specials**
    - [**bipartite graph**](./notebook/graphs/bipartite.md)
       - [bipartite checking](./notebook/graphs/bipartite-checking.cpp)
-      - [maximum cardinality bipartite matching](./notebook/graphs/mcbm.cpp)
+      - [maximum cardinality bipartite matching (MCBM)](./notebook/graphs/mcbm.cpp)
    - [**directed acyclic graph**](./notebook/graphs/dag.md)
       <!-- - [] -->
    - [**tree**](./notebook/graphs/tree.md)
-      - [lowest common ancestor](./notebook/graphs/lca-eulerian-tour.cpp)
+      - [lowest common ancestor (LCA)](./notebook/graphs/lca-eulerian-tour.cpp)
 
-## math
+## ✏️ math
 
 - **number theory**
    - [fast exponentiation](./notebook/math/fast-exponentiation.cpp)
@@ -64,10 +66,10 @@ The folders structure is following:
 
 <!-- ## strings -->
 
-## miscellaneous
+## 💭 miscellaneous
 
-- [binary search](./notebook/misc/binary-search.md)
-- [bitmasks](./notebook/misc/bitmasks.cpp)
+- [binary search](./notebook/miscellaneous/binary-search.md)
+- [bitmasks](./notebook/miscellaneous/bitmasks.cpp)
 
 # Acknowledgements
 

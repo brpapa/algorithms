@@ -7,6 +7,7 @@
 using namespace std;
 typedef long long ll;
 
+/* input */
 int V;
 vector<tuple<ll,int,int>> edge_list; // {{w, u, v}, ...}, arestas u -w-> v
 

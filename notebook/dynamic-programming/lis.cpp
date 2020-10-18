@@ -1,15 +1,33 @@
 /*
    Longest Increasing Subsequence (LIS)
    
-   Motivação: encontre o tamanho da maior subsequência crescente em um array A de tamanho N.
+   Motivação: encontre o tamanho da maior subsequência estritamente crescente em A[0..N-1]
+
+   ---
+   This problem can be modeled as a DAG and finding the LIS is equivalent to finding the Longest Paths in the implicit DAG.
 */
 #include <bits/stdc++.h>
 using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-vector<int> A; int N;
+vector<int> A = {-7, 10, 5, 2, 3, 8, 8, 1, 2, 3, 4}; int N = 11; 
 
+/*
+   Para cada elemento de A:
+
+   -7: last = {-7}
+   10: last = {-7, 10}
+      5: last = {-7, 5}, pois é uma LIS de tamanho 2 melhor
+      2: last = {-7, 2}
+      3: last = {-7, 2, 3}
+      8: last = {-7, 2, 3, 8}
+      8: last = {-7, 2, 3, 8}
+      1: last = {-7, 1, 3, 8}, pois no futuro a LIS de tamanho 2 {-7, 1} pode ser extendida, mas a melhor LIS atual (não é L) termina em A[6]=8, ou seja, {-7, 2, 3, 8}
+      2: last = {-7, 1, 2, 8}
+      3: last = {-7, 1, 2, 3}, melhor LIS atual é {-7, 1, 2, 3}
+      4: last = {-7, 1, 3, 3, 4}
+*/
 /* O(N * log(N)) */
 int lis0() {
    vector<int> size(N);        // size[j]: tamanho da LIS que termina com A[j]
@@ -60,6 +78,6 @@ int lis1() {
 
 /* e.g */
 int main() {
-   N = 7; A = {-7, 10, 5, 2, 3, 8, 1};
    cout << lis0() << endl;
+   // cout << lis1() << endl;
 }

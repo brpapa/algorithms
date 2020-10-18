@@ -9,6 +9,6 @@ then
    g++ -std=gnu++14 ${file_csv} -o ${file_csv%.cpp}
 fi
 
-python ${file_md}
+python3 ${file_md}
 
 git add --update
