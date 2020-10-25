@@ -32,8 +32,8 @@ while (lo <= hi) {
 	int mid = (lo + hi)/2;
 
    // se mid é uma resposta possível
-	if (can(mid)) ans = mid, hi = mid-1; // na próxima, mid é menor
-	else          lo = mid+1;            // na próxima, mid é maior
+	if (can(mid)) ans = mid, hi = mid-1; // diminui mid na próxima
+	else          lo = mid+1;            // aumenta mid na próxima
 }
 
 // se ans == -1, não há solução

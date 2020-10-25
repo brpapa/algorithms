@@ -2,7 +2,7 @@
    brute force > recursive backtracking > n-queens
    difficulty: medium
    date: 12/Jan/2020 
-   hint: use bitmasks
+   hint: use bitmask
    by: @brpapa
 */
 #include <bitset>
@@ -12,7 +12,7 @@
 #define bitIsOn(S, i) (S & (1 << (i)))
 using namespace std;
 
-int ur = 0, uld = 0, urd = 0; // bitmasksk
+int ur = 0, uld = 0, urd = 0; // bitmaskk
 
 char board[15][15];
 int ans, N;

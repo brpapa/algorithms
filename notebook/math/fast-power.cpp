@@ -14,7 +14,7 @@ ll power(ll a, ll n) {
 }
 
 /* O(log(n)) - returns a^n */
-ll power(ll a, ll n) {
+ll power_it(ll a, ll n) {
    ll ans = 1;
 
    while (n > 0) {

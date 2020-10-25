@@ -19,7 +19,7 @@ matrix identity(int N) {
    return I;
 }
 
-/* O(N^3) - returns A*B which is LxC, where A is LxN and B is NxC */
+/* O(L*C*N) - returns A*B which is LxC, where A is LxN and B is NxC */
 matrix mult(const matrix& A, const matrix& B) {
    int L = A.size(), C = B[0].size(), N = B.size();
    matrix R(L, vector<ll>(C, 0));

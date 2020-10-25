@@ -1,7 +1,7 @@
 /*
    Lowest Common Ancestor (LCA) with the eulerian tour method
 
-   Motivação: dado uma weighted rooted tree G(V, V-1), o LCA entre u e v é o vértice de maior nível que tem u e v como seus descendentes.
+   Motivação: dado uma positive-weighted rooted tree G(V, V-1), o LCA entre u e v é o vértice de maior nível que tem u e v como seus descendentes.
 
    ---
    https://youtu.be/sD1IoalFomA?list=PLDV1Zeh2NRsDfGc8rbQ0_58oEZQVtvoIc

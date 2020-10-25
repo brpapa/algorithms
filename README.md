@@ -1,6 +1,6 @@
-This is a publish-only repository, so all pull requests will be ignored.
+Note: this is a publish-only repository, so all pull requests will be ignored.
 
-The folders structure is following:
+The **folders structure** is following:
 
 - [`notebook`](./notebook): well-explained implementation of general-purpose algorithms.
 - [`scripts`](./scripts): small scripts for automatizing some repetitive tasks.
@@ -16,6 +16,8 @@ The folders structure is following:
 - [sparse table](./notebook/data-structures/sparse-table.cpp)
 - [union-find disjoint sets (UFDS)](./notebook/data-structures/ufds.cpp)
 
+<!-- ## 🥊 brute force -->
+
 ## 🔞 dynamic programming
 
 - [coin change](./notebook/dynamic-programming/coin-change.cpp)
@@ -25,13 +27,14 @@ The folders structure is following:
 - [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
 - [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
 - [traveling salesman problem (TSP)](./notebook/dynamic-programming/tsp.cpp)
+- [matrix chain multiplication (MCM)](./notebook/dynamic-programming/mcm.cpp)
 
 ## 🌍 graphs
 
 - **traversal**
    - [depth-first search (DFS)](./notebook/graphs/dfs.cpp)
    - [breadth-first search (BFS)](./notebook/graphs/bfs.cpp)
-   - [bridges or articulations points](./notebook/graphs/bridges-or-articulations.cpp)
+   - [bridges and articulations points](./notebook/graphs/bridges-or-articulations.cpp)
    - **topological sorting**
       - [kahn](./notebook/graphs/topo-sort-kahn.cpp)
       - [naive](./notebook/graphs/topo-sort.cpp)
@@ -61,8 +64,8 @@ The folders structure is following:
 ## ✏️ math
 
 - **number theory**
-   - [fast exponentiation](./notebook/math/fast-exponentiation.cpp)
-- [matrix exponentiation](./notebook/math/matrix-exponentiation.cpp)
+   - [fast power](./notebook/math/fast-power.cpp)
+- [matrix power](./notebook/math/matrix-power.cpp)
 
 <!-- ## strings -->
 
@@ -70,6 +73,7 @@ The folders structure is following:
 
 - [binary search](./notebook/miscellaneous/binary-search.md)
 - [bitmasks](./notebook/miscellaneous/bitmasks.cpp)
+- [two pointers](./notebook/miscellaneous/two-pointers.md)
 
 # Acknowledgements
 

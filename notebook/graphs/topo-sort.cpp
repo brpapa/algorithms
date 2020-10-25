@@ -9,12 +9,21 @@
 using namespace std;
 
 /* input */
-vector<vector<int>> adj_list; int V;
+int V = 8;
+vector<vector<int>> adj_list = {
+   {},
+   {5, 2},
+   {2, 4},
+   {6, 5},
+   {5},
+   {2},
+   {7},
+   {5}
+};
 
 /* output */
 vector<int> ts; // vértices em ordem topológica
 
-/**/
 enum { UNVISITED, VISITING, VISITED };
 vector<int> state;
 stack<int> s;
