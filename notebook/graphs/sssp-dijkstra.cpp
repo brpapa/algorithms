@@ -25,7 +25,7 @@ ll dijkstra(int s, int t) {
    sd[s] = 0;
 
    while (!pq.empty()) {
-      ll dist = -pq.top().first; int u = pq.top().second; pq.pop();
+      ll dist; int u; tie(dist, u) = pq.top(); dist *= -1; pq.pop();
       if (dist > sd[u]) continue; // vértice já fechado/visitado (lazy deletion)
 
       if (u == t) return dist;

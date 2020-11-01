@@ -14,13 +14,13 @@ ll power(ll a, ll n) {
 }
 
 /* O(log(n)) - returns a^n */
-ll power_it(ll a, ll n) {
+ll power1(ll a, ll n) {
    ll ans = 1;
 
    while (n > 0) {
-      if (n & 1ll) ans *= a; // if n is odd (only on first (possibly) and last iteration)
+      if (n & 1ll) ans *= a; // only on first (possibly) and last iteration
 
-      n >>= 1ll; // n /= 2
+      n >>= 1ll;
       a *= a;
    }
 

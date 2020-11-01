@@ -1,7 +1,7 @@
 {
    "tasks": [
       {
-         "label": "show local readme",
+         "label": "show local readme rendered",
          "type": "shell",
          "command": "open ./README.md -a Microsoft\\ Edge",
          "group": "build",

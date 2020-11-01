@@ -1,5 +1,5 @@
 /*
-   DP optimization - Matrix Exponentiation/Power
+   Matrix Exponentiation/Power - DP optimization
 
    Motivação: calcule f(n), sendo n < 10^18 e f uma função linear de recorrência.
    
@@ -37,8 +37,7 @@ matrix power(matrix A, ll k) {
    matrix R = identity(A.size());
 
    while (k > 0) {
-      if (k & 1ll) R = mult(R, A); // if k is odd
-
+      if (k & 1ll) R = mult(R, A);
       k >>= 1ll;
       A = mult(A, A);
    }
