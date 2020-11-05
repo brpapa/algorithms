@@ -24,8 +24,13 @@ class sparse_table {
       return A[i] < A[j]? i : j;
    }
 
+ public:
+   sparse_table() {}
+
    /* O(N * log(N)) */
-   void build() {
+   sparse_table(vector<ll> const &A) {
+      this->A = A; N = (int)A.size();
+
       int P = (int)floor(log2(N));
       table.assign(P+1, vector<int>(N));
 
@@ -38,14 +43,6 @@ class sparse_table {
                table[p-1][n + (1<<(p-1))]
             );
          }
-   }
-
- public:
-   sparse_table() {}
-   sparse_table(vector<ll> const &A) {
-      this->A = A;
-      N = (int)A.size();
-      build();
    }
 
    /* O(1) - answer for range query [l, r] in A */
@@ -93,8 +90,12 @@ class lca {
       }
    }
 
+ public:
+   lca() {}
    /* O(V * log(V)) */
-   void build(int root) {
+   lca(vector<vector<pair<int,ll>>> const &adj_list, int root = 0) {
+      this->adj_list = adj_list; V = adj_list.size();
+
       last_e.resize(V);
       depth.resize(V);
 
@@ -106,14 +107,6 @@ class lca {
       dfs(root);
 
       st = sparse_table(tour_depth);
-   }
-
- public:
-   lca() {}
-   lca(vector<vector<pair<int,ll>>> const &adj_list, int root = 0) {
-      this->adj_list = adj_list;
-      V = adj_list.size();
-      build(root);
    }
 
    /* O(1) */

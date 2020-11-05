@@ -21,7 +21,6 @@ vector<vector<int>> adj_list = {
    {}
 }; // apenas com arestas l -> r, onde 0 <= l < LV e LV <= r < V, é suficiente
 
-/* */
 vector<int> match; // match[r]: vértice l já combinado com r
 vector<bool> seen;
 

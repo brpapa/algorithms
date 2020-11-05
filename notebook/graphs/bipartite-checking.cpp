@@ -9,15 +9,14 @@ using namespace std;
 /* input */
 vector<vector<int>> adj_list; int V;
 
-/* O(V+E) - return true if the connected component is bipartite */
+/* O(V+E) - returns true if the connected component is bipartite */
 bool bfs(int s) {
    enum { WHITE, BLACK, WITHOUT_COLOR };
 
    vector<int> state(V, WITHOUT_COLOR); state[s] = WHITE;
 	queue<int> q; q.push(s);
-	bool isBipartite = true;
 
-	while (!q.empty() && isBipartite) {
+	while (!q.empty()) {
 		int u = q.front(); q.pop();
 
 		for (int v : adj_list[u]) {
@@ -25,12 +24,11 @@ bool bfs(int s) {
 				state[v] = (state[u]+1) % 2;   // BLACK ou WHITE
 				q.push(v);
 			}
-			else if (state[v] == state[u]) {  // conflito de cor
-				isBipartite = false;
-			}
+			else if (state[v] == state[u])    // conflito de cor
+				return false;
 		}
 	}
-	return isBipartite;
+	return true;
 }
 
 /* e.g */

@@ -1,6 +1,4 @@
 /* 
-   Coin change
-
    Motivação: dado os valores de N moedas, quantas moedas, no mínimo, representam V centavos? Assume-se que há suprimento ilimitado de qualquer moeda.
 */
 #include <bits/stdc++.h>
@@ -11,7 +9,6 @@ const int INF = 1 << 30;
 int N = 4, V = 7;
 vector<int> coins = {1, 3, 4, 5};
 
-/* */
 vector<int> memo;
 
 /* O(N*V) - retorna a quantidade mínima de moedas que representa v centavos */

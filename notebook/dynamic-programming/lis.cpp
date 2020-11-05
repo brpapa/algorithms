@@ -1,6 +1,4 @@
 /*
-   Longest Increasing Subsequence (LIS)
-   
    Motivação: encontre o tamanho da maior subsequência estritamente crescente em A[0..N-1]
 
    ---

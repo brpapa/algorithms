@@ -6,7 +6,6 @@
       - incoming flow is equal to outgoing flow for every vertex, except s and t.
 
    ---
-
    The remaining capacity of an edge is equals to capacity minus current flow.
 
    Forward edges: (given by the original graph, it has a flow and a capacity)
@@ -15,6 +14,9 @@
       - decreasing the flow by the min_c of the augmenting path
 
    Augmenting path: path of forward or backward edges e, from s to t, with remaining capacity > 0, where that minimum remaining capacity is the min_c
+
+   ---
+   https://youtu.be/RppuJYwlcI8?list=PLDV1Zeh2NRsDj3NzHbbFIC58etjZhiGcG
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -24,7 +26,6 @@ typedef long long ll;
 vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, capacity}, ...}
 int V;
 
-/* */
 vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, remaining_capacity, flow}, ...}
 vector<pair<int,int>> parent; // parent[v]: {u, índice em new_adj_list[u]}
 vector<vector<int>> rev_idx;
@@ -120,5 +121,3 @@ int main() {
    cout << edmonds_karp(0, 3) << endl;
    return 0;
 }
-
-// https://youtu.be/RppuJYwlcI8?list=PLDV1Zeh2NRsDj3NzHbbFIC58etjZhiGcG

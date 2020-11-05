@@ -1,7 +1,7 @@
 /*
    Sparse Table
 
-   For efficient range queries on a static array A of size N.
+   Efficient range queries on a static array A of size N.
    Common range queries: min, max
 
    ---
@@ -24,20 +24,26 @@ using namespace std;
 #define pow2(i) (1 << (i)) // 2^i
 typedef long long ll;
 
+template<typename T>
 class sparse_table {
  private:
-   vector<ll> A; int N;
-   vector<vector<ll>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
+   vector<T> A; int N;
+   vector<vector<T>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
 
    /* O(1) - change here to an "overlap friendly" function */
-   ll range_combination(ll a, ll b) {
+   T range_combination(T a, T b) {
       return min(a, b);
    }
 
+ public:
+   sparse_table() {}
+
    /* O(N * log(N)) - fill table with the answers for all ranges in A of size 2^p, for each non-negative integer p such that 2^p <= N */
-   void build() {
+   sparse_table(vector<T> const &A) {
+      this->A = A; N = (int)A.size();
+
       int P = (int)floor(log2(N)); // maior P, tal que 2^P <= N
-      table.assign(P+1, vector<ll>(N));
+      table.assign(P+1, vector<T>(N));
 
       for (int n = 0; n < N; n++) table[0][n] = A[n];
 
@@ -51,14 +57,6 @@ class sparse_table {
          }
    }
 
- public:
-   sparse_table() {}
-   sparse_table(vector<ll> const &A) {
-      this->A = A;
-      N = (int)A.size();
-      build();
-   }
-
    /* O(1) - answer for range query [l, r] in A */
    int range_query(int l, int r) {
       int size = r-l+1;
@@ -69,7 +67,7 @@ class sparse_table {
 
 /* e.g */
 int main() {
-   sparse_table st({4,2,3,7,1,5,3,3,9,6,7,-1,4});
+   sparse_table<ll> st({4,2,3,7,1,5,3,3,9,6,7,-1,4});
    cout << st.range_query(2,7) << endl;
    return 0;
 }

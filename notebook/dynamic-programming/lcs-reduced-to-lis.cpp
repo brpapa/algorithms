@@ -1,6 +1,4 @@
 /*
-   LCS reduced to LIS in O(N * log(N))
-   
    Motivation: given two permutations A and B of numbers from 1 to N, find their LCS.
 */
 #include <bits/stdc++.h>

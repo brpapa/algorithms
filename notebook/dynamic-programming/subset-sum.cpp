@@ -1,9 +1,7 @@
 /*
-   Subset sum
-
    Motivação: dado um conjunto de números não-negativos, quantos subconjuntos com soma igual à S existem?
 
-
+   ---
    Obs: Subset sum with repetition
 
       Motivação: dado N moedas com seus respectivos valores, quantos conjuntos distintos representam V centavos? Assume-se que há suprimento ilimitado de qualquer moeda.

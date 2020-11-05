@@ -1,6 +1,4 @@
 /*
-   Matrix Chain Multiplication (MCM)
-
    Motivation: given the dimensions of N matrices, output a complete parenthesized product that minimizes the number of scalar multiplications needed.
 
    For multiply a PxQ matrix A by a QxR matrix B we need PxQxR scalar multiplications.

@@ -1,6 +1,4 @@
 /*
-   Rod cutting
-
    Motivation: given a rod of length N and the prices of all pieces of size smaller than N, determine the maximum value obtainable by cutting up the rod and selling the pieces. 
 */
 #include <bits/stdc++.h>
@@ -8,8 +6,8 @@ using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-int N = 4;
 vector<int> prices = {1, 5, 8, 9}; // prices[i]: price of rod of length i+1
+int N = prices.size();
 
 vector<int> memo;
 

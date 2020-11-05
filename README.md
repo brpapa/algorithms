@@ -8,6 +8,8 @@ The **folders structure** is following:
 - [`solutions/README.md`](./solutions/README.md): solutions index by themes, containing difficulty, name, description and hint of the problem.
 
 <h1 align="center">Notebook index</h1>
+<!-- https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/ -->
+<!-- https://cp-algorithms.com/ -->
 
 ## 🧱 data structures
 
@@ -27,10 +29,10 @@ The **folders structure** is following:
 - [longest increasing subsequence (LIS)](./notebook/dynamic-programming/lis.cpp)
 - [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
 - [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
-<!--TODO https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/ - [longest palindromic subsequence](./notebook/dynamic-programming/lps.cpp) -->
 - [traveling salesman problem (TSP)](./notebook/dynamic-programming/tsp.cpp)
 - [matrix chain multiplication (MCM)](./notebook/dynamic-programming/mcm.cpp)
 - [rod cutting](./notebook/dynamic-programming/rod-cutting.cpp)
+- [longest palindromic subsequence (LPS)](./notebook/dynamic-programming/lps.cpp)
 
 ## 🌍 graphs
 
@@ -49,7 +51,7 @@ The **folders structure** is following:
 - **network flow**
    - **max flow**
       - [edmonds karp](./notebook/graphs/edmonds-karp.cpp)
-   - [min cost max flow](./notebook/graphs/min-cost-max-flow.cpp)
+   - [min cost max flow](./notebook/graphs/mcmf.cpp)
 - **shortest path**
    - **single-source**
       - [bellman ford](./notebook/graphs/sssp-bellman-ford.cpp)
@@ -58,20 +60,19 @@ The **folders structure** is following:
 - **specials**
    - [**bipartite graph**](./notebook/graphs/bipartite.md)
       - [bipartite checking](./notebook/graphs/bipartite-checking.cpp)
-      - [maximum cardinality bipartite matching (MCBM)](./notebook/graphs/mcbm.cpp)
+      - [maximum cardinality bipartite matching](./notebook/graphs/mcbm.cpp)
    - [**directed acyclic graph**](./notebook/graphs/dag.md)
-      <!-- - [] -->
    - [**tree**](./notebook/graphs/tree.md)
       - [lowest common ancestor (LCA)](./notebook/graphs/lca-eulerian-tour.cpp)
+      - [heavy-light decomposition (HLD)](./notebook/graphs/hld.cpp)
 
 ## ✏️ math
 
 - **number theory**
    - [fast power](./notebook/math/fast-power.cpp)
-
 <!-- - [**game theory**](./notebook/math/game-theory.md) -->
    <!-- - [minimax](./notebook/math/minimax.md) -->
-   <!-- - [nim]() -->
+   <!-- - [nim](./notebook/math/nim.md) -->
    <!-- - [grundy numbers]() -->
    <!-- - [sprague-grundy theorem]() -->
 - [matrix power](./notebook/math/matrix-power.cpp)

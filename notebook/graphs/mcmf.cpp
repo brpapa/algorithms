@@ -1,5 +1,5 @@
 /*
-   Minimum Cost Maximum Flow (fluxo máximo de menor custo)
+   Minimum Cost Maximum Flow (MCMF) - fluxo máximo de menor custo
 
    Motivação: encontrar o fluxo máximo (<= K) com o menor custo possível. Cada aresta dada possui, além da capacidade máxima, um peso, que se refere ao custo por unidade de fluxo.
 */
@@ -11,7 +11,6 @@ typedef long long ll;
 vector<vector<tuple<int,ll,ll>>> adj_list; // adj_list[u]: {{v, weight, capacity}, ...}
 int V;
 
-/* */
 vector<vector<tuple<int,ll,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, weight, remaining_capacity, flow}, ...}
 vector<pair<int,int>> parent;        // parent[v]: {u, índice de new_adj_list[u]}
 vector<vector<int>> rev_idx;

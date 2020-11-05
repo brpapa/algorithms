@@ -1,3 +1,9 @@
+/*
+   Lazy Segment Tree
+
+   ---
+   A operação range_update é preguiçosa, pois só atualiza de fato o bin_tree[v] com [l .. r] mais abrangente possível dentro de [ul .. ur], e apenas marca lazy[le(v)] e lazy[ri(v)] com o valor que eles devem ser atualizados quando forem consultados.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -5,8 +11,6 @@ typedef long long ll;
 class lazy_seg_tree {
  private:
    vector<ll> A; int N;
-
-   // a operação range_update é preguiçosa, pois só atualiza de fato o bin_tree[v] com [l .. r] mais abrangente possível dentro de [ul .. ur], e apenas marca lazy[le(v)] e lazy[ri(v)] com o valor que eles devem ser atualizados quando forem consultados
 
    vector<ll> bin_tree; // bin_tree[v]: resultado da consulta no intervalo (de A) associado
    vector<ll> lazy;     // lazy[v]: valor de uma atualização pendente que precisa ser adicionado na sub-árvore enraizada por bin_tree[v] antes de qualquer consulta/atualização de v

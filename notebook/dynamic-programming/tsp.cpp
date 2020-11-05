@@ -1,6 +1,4 @@
 /*
-   Traveling Salesman Problem (TSP) - (caixeiro viajante)
-
    Motivação: dado V cidades e suas distâncias entre si (grafo completo), encontre o custo mínimo de um caminho que passe por todas as cidades apenas uma vez, começando e terminando em uma cidade s.
 */
 #include <bits/stdc++.h>
