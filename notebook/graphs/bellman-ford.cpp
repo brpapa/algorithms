@@ -46,7 +46,6 @@ int belmman_ford(int s, int t) {
    return sd[t];
 }
 
-/* e.g */
 int main() {
    V = 3;
    adj_list.assign(V, vector<pair<int,int>>());

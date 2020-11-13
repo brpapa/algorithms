@@ -18,6 +18,7 @@ The **folders structure** is following:
 - [sparse table](./notebook/data-structures/sparse-table.cpp)
 - [union-find disjoint sets (UFDS)](./notebook/data-structures/ufds.cpp)
 <!-- - SQRT decomposition https://www.spoj.com/problems/RACETIME/en/ -->
+<!-- - Wavelet tree https://github.com/andrefakhoury/competitive-programming/blob/master/lib/DataStructures/WaveletTree.hpp -->
 
 <!-- ## 🥊 brute force -->
 
@@ -26,20 +27,24 @@ The **folders structure** is following:
 - [coin change](./notebook/dynamic-programming/coin-change.cpp)
 - [subset sum](./notebook/dynamic-programming/subset-sum.cpp)
 - [0-1 knapsack](./notebook/dynamic-programming/0-1-knapsack.cpp)
-- [longest increasing subsequence (LIS)](./notebook/dynamic-programming/lis.cpp)
+- [edit distance](./notebook/dynamic-programming/edit-distance.cpp)
 - [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
+- [longest palindromic subsequence (LPS)](./notebook/dynamic-programming/lps.cpp)
+- [longest increasing subsequence (LIS)](./notebook/dynamic-programming/lis.cpp)
 - [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
 - [traveling salesman problem (TSP)](./notebook/dynamic-programming/tsp.cpp)
 - [matrix chain multiplication (MCM)](./notebook/dynamic-programming/mcm.cpp)
 - [rod cutting](./notebook/dynamic-programming/rod-cutting.cpp)
-- [longest palindromic subsequence (LPS)](./notebook/dynamic-programming/lps.cpp)
 
 ## 🌍 graphs
 
 - **traversal**
    - [depth-first search (DFS)](./notebook/graphs/dfs.cpp)
    - [breadth-first search (BFS)](./notebook/graphs/bfs.cpp)
-   - [bridges and articulations points](./notebook/graphs/bridges-or-articulations.cpp)
+   - [flood fill](./notebook/graphs/flood-fill.cpp)
+   - [edge classification](./notebook/graphs/edge-classification.cpp)
+   - [bridges and articulations points](./notebook/graphs/bridges-and-articulations.cpp)
+   - [strongly connected components (SCC)](./notebook/graphs/scc.cpp)
    - **topological sorting**
       - [kahn](./notebook/graphs/topo-sort-kahn.cpp)
       - [naive](./notebook/graphs/topo-sort.cpp)
@@ -47,15 +52,15 @@ The **folders structure** is following:
    - [kruskal](./notebook/graphs/mst-kruskal.cpp)
    - **variants**
       - [minimax path](./notebook/graphs/mst-minimax-path.cpp)
-      <!--TODO - [2nd best mst](./notebook/graphs/mst-2nd-best.cpp) -->
+      <!--TODO - [2nd best MST](./notebook/graphs/mst-2nd-best.cpp) -->
 - **network flow**
    - **max flow**
       - [edmonds karp](./notebook/graphs/edmonds-karp.cpp)
    - [min cost max flow](./notebook/graphs/mcmf.cpp)
 - **shortest path**
    - **single-source**
-      - [bellman ford](./notebook/graphs/sssp-bellman-ford.cpp)
-      - [dijkstra](./notebook/graphs/sssp-dijkstra.cpp)
+      - [bellman ford](./notebook/graphs/bellman-ford.cpp)
+      - [dijkstra](./notebook/graphs/dijkstra.cpp)
       <!-- - **all-pairs** -->
 - **specials**
    - [**bipartite graph**](./notebook/graphs/bipartite.md)
@@ -68,14 +73,23 @@ The **folders structure** is following:
 
 ## ✏️ math
 
+- [matrix power](./notebook/math/matrix-power.cpp)
 - **number theory**
    - [fast power](./notebook/math/fast-power.cpp)
+   - **prime numbers**
+      - [prime checking](./notebook/math/prime-checking.cpp)
+      - [sieve of eratosthenes](./notebook/math/sieve.cpp)
+      - [modified sieve](./notebook/math/modified-sieve.cpp)
+      - [optimized prime checking](./notebook/math/optimized-prime-checking.cpp)
+      - [prime factors of n](./notebook/math/prime-factors.cpp)
+      - [prime factors of n!](./notebook/math/factorial-prime-factors.cpp)
+      - [number of divisors of n](./notebook/math/num-div.cpp)
+      - [sum of divisors of n](./notebook/math/sum-div.cpp)
 <!-- - [**game theory**](./notebook/math/game-theory.md) -->
    <!-- - [minimax](./notebook/math/minimax.md) -->
    <!-- - [nim](./notebook/math/nim.md) -->
    <!-- - [grundy numbers]() -->
    <!-- - [sprague-grundy theorem]() -->
-- [matrix power](./notebook/math/matrix-power.cpp)
 
 <!-- ## strings -->
 

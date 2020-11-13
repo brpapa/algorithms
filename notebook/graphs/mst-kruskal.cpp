@@ -95,7 +95,7 @@ ll kruskal() {
 	return mst_cost;
 }
 
-/* e.g. */
+
 int main() {
    V = 5;
    edge_list.push_back({1, 0, 1});

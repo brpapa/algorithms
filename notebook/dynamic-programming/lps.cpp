@@ -1,11 +1,11 @@
 /*
-   Motivation: given a sequence, find the length of the LPS in it.
+   Motivation: given a sequence, find the length of the longest palindromic subsequence in it.
 */
 #include <bits/stdc++.h>
 using namespace std;
 
 /* input */
-string A = "GEEKSFORGEEKS"; int N = A.size();
+string A = "RACEF1CARFAST"; int N = A.size();
 
 vector<vector<int>> memo;
 

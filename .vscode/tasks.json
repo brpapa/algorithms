@@ -28,13 +28,25 @@
          "problemMatcher": [],
       },
       {
-         "label": "compine and run",
+         "label": "compile and run cpp",
          "group": "build",
          "type": "shell",
-         "command": "./scripts/compile-and-run.sh",
-         "args": [
-            "${relativeFile}"
-         ],
+         "command": "/usr/bin/g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < input > output",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "run py",
+         "group": "build",
+         "type": "shell",
+         "command": "/usr/local/bin/python3 ${relativeFile} < input > output",
          "options": {
             "cwd": "${workspaceFolder}",
          },

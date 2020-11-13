@@ -225,7 +225,7 @@ class hld {
    }
 };
 
-/* e.g. */
+
 int main() {
    vector<vector<pair<int,ll>>> adj_list = {
       {},

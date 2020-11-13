@@ -74,7 +74,6 @@ int lis1() {
    return best_lis_size;
 }
 
-/* e.g */
 int main() {
    cout << lis0() << endl;
    // cout << lis1() << endl;

@@ -3,23 +3,18 @@
 
    Motivação: dado um unweighted, directed and bipartite graph G(V,E), encontre o maior número de matchings possíveis, ou seja, o maior número de arestas l -> r, sendo que l faz parte do conjunto LV e r de RV, e nenhum vértice tenha grau maior que 1.
 
+   ---
    Perfect matching: todos os vértices do grafo fazem parte de um match.
 
-   Max Independent Set: max(|RV|, |LV|) = |V| - MCBM
-
+   ---
    Obs: o problema também pode ser reduzido ao problema de max flow, ao montar o flow graph da seguinte forma: s -1-> l, l -1-> r, l -1-> t.
 */
 #include <bits/stdc++.h>
 using namespace std;
 
 /* input */
-int V = 4, LV = 2; 
-vector<vector<int>> adj_list = { 
-   {2, 3},
-   {2},
-   {},
-   {}
-}; // apenas com arestas l -> r, onde 0 <= l < LV e LV <= r < V, é suficiente
+int V, LV; 
+vector<vector<int>> adj_list; // apenas com arestas l -> r, onde 0 <= l < LV e LV <= r < V, é suficiente
 
 vector<int> match; // match[r]: vértice l já combinado com r
 vector<bool> seen;
@@ -49,7 +44,12 @@ int mcbm() {
   return ans;
 }
 
-/* e.g */
 int main() {
-  cout << mcbm() << endl;
+   V = 4; LV = 2;
+   adj_list.assign(V, vector<int>());
+   adj_list[0].push_back(2);
+   adj_list[0].push_back(3);
+   adj_list[1].push_back(2);
+
+   cout << mcbm() << endl;
 }

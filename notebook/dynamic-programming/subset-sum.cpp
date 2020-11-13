@@ -44,7 +44,7 @@ int dp1() {
    return tab[0%2][S];
 }
 
-/* e.g. */
+
 int main() {
    memset(memo, -1, sizeof memo); // resetar apenas se o array A mudar, e não S
    cout << dp0(0, S) << endl;

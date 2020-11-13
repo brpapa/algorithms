@@ -1,16 +1,18 @@
 /*
-   Motivação: dado um undirected graph G(V, E), encontre as bridges (or cut edges) e os articulation points (or cut vertices), ou seja, as arestas e vértices cuja remoção aumenta o número de componentes conectados de G (desconecta G).
+   Motivação: dado um undirected graph G(V, E), encontre as bridges (or cut edges) e os articulation points (or cut vertices), ou seja, as arestas e os vértices cuja remoção aumenta o número de componentes conectados de G (ou seja, desconecta G).
+
+   ---
+   https://youtu.be/aZXi1unBdJA
 */
 #include <bits/stdc++.h>
 using namespace std;
 
 /* input */
-vector<vector<int>> adj_list;
-int V;
+vector<vector<int>> adj_list; int V;
 
 /* output */
 vector<bool> is_art;             // is_art[u]: vértice u é um art point?
-vector<pair<int, int>> bridges;  // u -> v que são bridge edges
+vector<pair<int, int>> bridges;  // arestas u -> v que são bridge edges
 
 /**/
 const int UNVISITED = -1;
@@ -59,7 +61,6 @@ void tarjan() {
       }
 }
 
-/* e.g */
 int main() {
    V = 9;
    adj_list.assign(V, vector<int>());
@@ -79,5 +80,3 @@ int main() {
    for (auto v : low) cout << v << " "; cout << endl;
    return 0;
 }
-
-// https://youtu.be/aZXi1unBdJA

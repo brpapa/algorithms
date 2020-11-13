@@ -3,7 +3,7 @@
 
    For multiply a PxQ matrix A by a QxR matrix B we need PxQxR scalar multiplications.
 
-   For example: 
+   Example: 
       Given D = {10, 100, 5, 50}, which implies that the matrix:
          A1 is 10x100
          A2 is 100x5
@@ -25,7 +25,7 @@ using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-vector<int> D = {10, 100, 5, 50};
+vector<int> D = {10, 100, 5, 50}; int N = D.size();
 
 vector<vector<int>> memo;
 
@@ -46,7 +46,7 @@ int dp(int i, int j) {
 }
 
 int main() {
-   memo.assign(D.size()+1, vector<int>(D.size()+1, -1));
-   cout << dp(1, D.size()-1) << endl;
+   memo.assign(N+1, vector<int>(N+1, -1));
+   cout << dp(1, N-1) << endl;
    return 0;
 }

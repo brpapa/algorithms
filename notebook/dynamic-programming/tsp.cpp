@@ -34,7 +34,7 @@ int dp(int u, int mask) {
    return ans;
 }
 
-/* e.g. */
+
 int main() {
    memo.assign(V, vector<int>(1 << V, -1));
    cout << dp(s, 1 << s) << endl; // 97, pois é o custo do caminho 0 -> 1 -> 2 -> 3 -> 0

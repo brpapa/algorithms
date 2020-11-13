@@ -64,7 +64,6 @@ class ufds {
    }
 };
 
-/* e.g */
 int main() {
    ufds sets(5);
    sets.union_sets(0, 1);

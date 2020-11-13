@@ -32,7 +32,7 @@ void bfs(int s) {
 	}
 }
 
-/* e.g. */
+
 int main() {
    adj_list.assign(V, vector<int>());
 

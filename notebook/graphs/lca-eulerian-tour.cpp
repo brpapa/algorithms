@@ -123,7 +123,6 @@ class lca {
    }
 };
 
-/* e.g */
 int main() {
    adj_list.assign(7, vector<pair<int,ll>>());
    adj_list[0].push_back({1,1});

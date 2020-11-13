@@ -50,8 +50,8 @@ class seg_tree {
    }
 
    /* O(log2(N)) - consulta A[ql..qr] */
-   T range_query(int ql, int qr) { return rq(0, 0, N-1, ql, qr); }
-   T rq(int v, int l, int r, int ql, int qr) {
+   T range_query(int ql, int qr) { return range_query(0, 0, N-1, ql, qr); }
+   T range_query(int v, int l, int r, int ql, int qr) {
       // bin_tree[v]: resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ql..qr]
@@ -62,14 +62,14 @@ class seg_tree {
       // [l..r] está parcialmente dentro e parcialmente fora de [ql..qr]
       int m = (l + r) / 2;
       return range_combination(
-         rq(le(v), l, m+0, ql, qr),
-         rq(ri(v), m+1, r, ql, qr)
+         range_query(le(v), l, m+0, ql, qr),
+         range_query(ri(v), m+1, r, ql, qr)
       );
    }
 
    /* O(log2(N)) - incrementa A[i] com x */
-   void point_update(int i, T x) { pu(0, 0, N-1, i, x); }
-   void pu(int v, int l, int r, int i, T x) {
+   void point_update(int i, T x) { point_update(0, 0, N-1, i, x); }
+   void point_update(int v, int l, int r, int i, T x) {
       // bin_tree[v]: resultado da consulta em A[l..r]
 
       // [l..r] não contém i
@@ -80,16 +80,16 @@ class seg_tree {
 
       // v não é nó folha
       int m = (l + r) / 2;
-      pu(le(v), l, m+0, i, x);
-      pu(ri(v), m+1, r, i, x);
+      point_update(le(v), l, m+0, i, x);
+      point_update(ri(v), m+1, r, i, x);
 
       // na volta, após já ter atualizado os filhos do vértice v
       bin_tree[v] = range_combination(bin_tree[le(v)], bin_tree[ri(v)]);
    }
 
    /* O(log2(N)) - incrementa A[ul..ur] com x */
-   void range_update(int ul, int ur, T x) { ru(0, 0, N-1, ul, ur, x); }
-   void ru(int v, int l, int r, int ul, int ur, T x) {
+   void range_update(int ul, int ur, T x) { range_update(0, 0, N-1, ul, ur, x); }
+   void range_update(int v, int l, int r, int ul, int ur, T x) {
       // bin_tree[v]: resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ul..ur]
@@ -100,15 +100,14 @@ class seg_tree {
 
       // v não é nó folha
       int m = (l + r) / 2;
-      ru(le(v), l, m+0, ul, ur, x);
-      ru(ri(v), m+1, r, ul, ur, x);
+      range_update(le(v), l, m+0, ul, ur, x);
+      range_update(ri(v), m+1, r, ul, ur, x);
 
       // na volta, após já ter atualizado os filhos de v
       bin_tree[v] = range_combination(bin_tree[le(v)], bin_tree[ri(v)]);
    }
 };
 
-/* e.g */
 int main() {
    seg_tree<ll> st({ 1, 3, 5, 7, 9, 11 });
    cout << st.range_query(1, 3) << endl;

@@ -28,7 +28,7 @@ int dp(int i, int s) {
    );
 }
 
-/* e.g. */
+
 int main() {
    memo.assign(N, vector<int>(S+1, -1));
    cout << dp(0, S) << endl;

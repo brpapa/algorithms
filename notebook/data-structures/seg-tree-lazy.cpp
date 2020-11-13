@@ -50,7 +50,17 @@ class lazy_seg_tree {
       lazy[v] = 0;
    }
 
+ public:
+   lazy_seg_tree(vector<ll> _A) {
+      A = _A;
+      N = (int)A.size();
+      bin_tree.assign(4*N, 0);
+      lazy.assign(4*N, 0);
+      build(0, 0, N-1);
+   }
+
    /* consulta A[ql .. qr] */
+   ll range_query(int ql, int qr) { return range_query(0, 0, N-1, ql, qr); }
    ll range_query(int v, int l, int r, int ql, int qr) {
       // bin_tree[v]: resultado da consulta em A[l .. r]
 
@@ -71,6 +81,7 @@ class lazy_seg_tree {
    }
 
    /* incrementa A[ul .. ur] com diff */
+   void range_update(int ul, int ur, ll diff) { range_update(0, 0, N-1, ul, ur, diff); }
    void range_update(int v, int l, int r, int ul, int ur, ll diff) {
       // bin_tree[v]: resultado da consulta em A[l .. r]
 
@@ -90,26 +101,8 @@ class lazy_seg_tree {
       // na volta, após já ter atualizado os filhos do vértice v
       bin_tree[v] = range_combination(bin_tree[le(v)], bin_tree[ri(v)]);
    }
-
- public:
-   lazy_seg_tree(vector<ll> _A) {
-      A = _A;
-      N = (int)A.size();
-      bin_tree.assign(4*N, 0);
-      lazy.assign(4*N, 0);
-      build(0, 0, N-1);
-   }
-
-   ll range_query(int ql, int qr) {
-      return range_query(0, 0, N-1, ql, qr);
-   }
-
-   void range_update(int ul, int ur, ll diff) {
-      range_update(0, 0, N-1, ul, ur, diff);
-   }
 };
 
-/* e.g */
 int main() {
    lazy_seg_tree st({ 1, 3, 5, 7, 9, 11 });
    cout << st.range_query(1, 3) << endl;

@@ -27,22 +27,22 @@ int lcs0(int i, int j) {
 
 /* O(N*M) */
 int lcs1() {
-   vector<vector<int>> tab(N+1, vector<int>(M+1));
+   vector<vector<int>> dp(N+1, vector<int>(M+1));
 
-   for (int i = 0; i <= N; i++) tab[i][M] = 0;
-   for (int j = 0; j <= M; j++) tab[N][j] = 0;
+   for (int i = 0; i <= N; i++) dp[i][M] = 0;
+   for (int j = 0; j <= M; j++) dp[N][j] = 0;
 
    for (int i = N-1; i >= 0; i--)
       for (int j = M-1; j >= 0; j--) {
          if (A[i] == B[j])
-            tab[i][j] = 1 + tab[i+1][j+1];
-         else tab[i][j] = max(tab[i+1][j], tab[i][j+1]);
+            dp[i][j] = 1 + dp[i+1][j+1];
+         else dp[i][j] = max(dp[i+1][j], dp[i][j+1]);
       }
    
-   return tab[0][0];
+   return dp[0][0];
 }
 
-/* e.g. */
+
 int main() {
    memo.assign(N, vector<int>(M, -1));
    cout << lcs0(0, 0) << endl;

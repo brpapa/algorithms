@@ -8,11 +8,10 @@ using namespace std;
 typedef long long ll;
 
 /* input */
-vector<vector<tuple<int,ll,ll>>> adj_list; // adj_list[u]: {{v, weight, capacity}, ...}
-int V;
+vector<vector<tuple<int,ll,ll>>> adj_list; int V; // adj_list[u]: {{v, weight, capacity}, ...}
 
 vector<vector<tuple<int,ll,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, weight, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent;        // parent[v]: {u, índice de new_adj_list[u]}
+vector<pair<int,int>> parent; // parent[v]: {u, índice de new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V*E) - find the shortest augmenting path (in terms of weight) and returns your bottleneck, or 0, if there is no more an augmenting path */
@@ -101,11 +100,9 @@ pair<ll,ll> mcmf(int s, int t, ll K) {
    return {acc_cost, acc_flow};
 }
 
-/* e.g */
 int main() {
    V = 4;
    adj_list.assign(V, vector<tuple<int,ll,ll>>());
-
    adj_list[0].push_back({1, 3, 10});
    adj_list[1].push_back({2, 4, 10});
    adj_list[0].push_back({2, 1, 10});

@@ -16,7 +16,7 @@
    Augmenting path: path of forward or backward edges e, from s to t, with remaining capacity > 0, where that minimum remaining capacity is the min_c
 
    ---
-   https://youtu.be/RppuJYwlcI8?list=PLDV1Zeh2NRsDj3NzHbbFIC58etjZhiGcG
+   https://youtu.be/RppuJYwlcI8
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -105,7 +105,6 @@ ll edmonds_karp(int s, int t) {
    return acc_flow;
 }
 
-/* e.g */
 int main() {
    V = 6;
    adj_list.assign(V, vector<pair<int,ll>>());

@@ -34,7 +34,7 @@ ll power_mod(ll a, ll n) {
    return (a * power_mod((a*a)%MOD, (n-1)/2)) % MOD;
 }
 
-/* e.g. */
+
 int main() {
    cout << power(2,5) << endl;
    return 0;

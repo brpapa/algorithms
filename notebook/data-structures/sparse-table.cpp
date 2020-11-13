@@ -65,7 +65,6 @@ class sparse_table {
    }
 };
 
-/* e.g */
 int main() {
    sparse_table<ll> st({4,2,3,7,1,5,3,3,9,6,7,-1,4});
    cout << st.range_query(2,7) << endl;

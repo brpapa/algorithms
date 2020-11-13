@@ -31,7 +31,6 @@ bool bfs(int s) {
 	return true;
 }
 
-/* e.g */
 int main() {
    cout << bfs(0) << endl;
 }

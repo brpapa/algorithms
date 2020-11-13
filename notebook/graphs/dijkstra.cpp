@@ -9,8 +9,7 @@ typedef long long ll;
 const int INF = 1 << 30;
 
 /* input */
-vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, w}, ...}
-int V;
+vector<vector<pair<int,ll>>> adj_list; int V; // adj_list[u]: {{v, w}, ...}
 
 /* output */
 vector<ll> sd; // sd[v]: shortest distance from s to v
@@ -47,7 +46,7 @@ ll dijkstra(int s, int t) {
    }
 }
 
-/* e.g. */
+
 int main() {
    return 0;
 }

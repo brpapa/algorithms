@@ -1,6 +1,4 @@
 /*
-   Minimax path
-   
    Motivation: given a connected, undirected and weighted graph G(V, E), find the maximum weight of the minimum path from s to t.
 */
 #include <bits/stdc++.h>
@@ -87,8 +85,6 @@ ll kruskal(int s, int t) {
    return -1;
 }
 
-
-/* e.g. */
 int main() {
    V = 7;
    edge_list.push_back({50,0,1});

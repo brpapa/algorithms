@@ -28,7 +28,7 @@ int dp(int v) {
    return ans;
 }
 
-/* e.g. */
+
 int main() {
    memo.assign(V+1, -1);  // resetar apenas se moedas mudarem, e não V
    cout << dp(V) << endl;

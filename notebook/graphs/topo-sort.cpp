@@ -62,7 +62,6 @@ bool topo_sort() {
    return true;
 }
 
-/* e.g */
 int main() {
    if (topo_sort())
       // use ts here
