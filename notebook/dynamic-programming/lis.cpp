@@ -10,24 +10,23 @@ const int INF = 1 << 30;
 
 /* input */
 vector<int> A = {-7, 10, 5, 2, 3, 8, 8, 1, 2, 3, 4}; int N = 11; 
-
-/*
-   Para cada elemento de A:
-
-   -7: last = {-7}
-   10: last = {-7, 10}
-      5: last = {-7, 5}, pois é uma LIS de tamanho 2 melhor
-      2: last = {-7, 2}
-      3: last = {-7, 2, 3}
-      8: last = {-7, 2, 3, 8}
-      8: last = {-7, 2, 3, 8}
-      1: last = {-7, 1, 3, 8}, pois no futuro a LIS de tamanho 2 {-7, 1} pode ser extendida, mas a melhor LIS atual (não é L) termina em A[6]=8, ou seja, {-7, 2, 3, 8}
-      2: last = {-7, 1, 2, 8}
-      3: last = {-7, 1, 2, 3}, melhor LIS atual é {-7, 1, 2, 3}
-      4: last = {-7, 1, 3, 3, 4}
-*/
 /* O(N * log(N)) */
 int lis0() {
+   /*
+      Para cada elemento de A:
+
+      -7: last = {-7}
+      10: last = {-7, 10}
+         5: last = {-7, 5}, pois é uma LIS de tamanho 2 melhor
+         2: last = {-7, 2}
+         3: last = {-7, 2, 3}
+         8: last = {-7, 2, 3, 8}
+         8: last = {-7, 2, 3, 8}
+         1: last = {-7, 1, 3, 8}, pois no futuro a LIS de tamanho 2 {-7, 1} pode ser extendida, mas a melhor LIS atual (não é L) termina em A[6]=8, ou seja, {-7, 2, 3, 8}
+         2: last = {-7, 1, 2, 8}
+         3: last = {-7, 1, 2, 3}, melhor LIS atual é {-7, 1, 2, 3}
+         4: last = {-7, 1, 3, 3, 4}
+   */
    vector<int> size(N);        // size[j] = tamanho da LIS que termina com A[j]
    vector<int> last(N+1, INF); // last[s] = último elemento da LIS de tamanho s
    last[0] = -INF;

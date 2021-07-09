@@ -120,12 +120,15 @@
          "description": "Select the folder",
          "type": "pickString",
          "options": [
-            "codeforces",
-            "uva",
-            "uri",
-            "spoj",
+            "at-coder",
             "code-jam",
-            "live-archive"
+            "codeforces",
+            "kattis",
+            "live-archive",
+            "spoj",
+            "timus",
+            "uri",
+            "uva"
          ],
       },
       {
