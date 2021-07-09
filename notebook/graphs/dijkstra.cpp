@@ -1,7 +1,7 @@
 /*
    Single Source Shortest Path (SSSP) - Dijkstra
    
-   Motivação: dado um non-negative weighted graph G(V, E), encontre a shortest distance entre um vértice origem s e qualquer outro vértice.
+   Motivation: given a non-negative weighted graph G(V, E), find the shortest distance between a source vertice s and any other vertice.
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -9,11 +9,11 @@ typedef long long ll;
 const int INF = 1 << 30;
 
 /* input */
-vector<vector<pair<int,ll>>> adj_list; int V; // adj_list[u]: {{v, w}, ...}
+vector<vector<pair<int,ll>>> adj_list; int V; // adj_list[u] = {{v, w}, ...}
 
 /* output */
-vector<ll> sd; // sd[v]: shortest distance from s to v
-vector<int> p; // p[v]: parent de v na shortest path tree
+vector<ll> sd; // sd[v] = shortest distance from s to v
+vector<int> p; // p[v] = parent de v na shortest path tree
 
 /* O((V+E)*log(V)) - returns the distance from s to t */
 ll dijkstra(int s, int t) {
@@ -33,19 +33,18 @@ ll dijkstra(int s, int t) {
       for (auto adj : adj_list[u]) {
          int v; ll w; tie(v,w) = adj;
 
-         ll &od = sd[v];    // old distance de v: s -> ... -> v
-         ll nd = sd[u] + w; // new distance de v: s -> ... -> u -> v
+         ll &cd = sd[v];    // current distance de v: s -> ... -> v
+         ll nd = sd[u] + w; //     new distance de v: s -> ... -> u -> v
 
-         // tenta relaxar sd[v]
-         if (nd < od) {
-            od = nd; 
+         // tenta relaxar cd
+         if (nd < cd) {
+            cd = nd; 
             pq.push({-nd, v});
             p[v] = u;
          }
       }
    }
 }
-
 
 int main() {
    return 0;

@@ -39,7 +39,7 @@ int dp1() {
 
    for (int n = N-1; n >= 0; n--)
       for (int s = 1; s <= S; s++)
-         tab[n%2][s] = tab[(n+1)%2][s] + ((s-A[n] >= 0)? tab[(n+1)%2][s-A[n]]: 0);
+         tab[n%2][s] = tab[(n+1)%2][s] + ((s-A[n] >= 0)? tab[(n+1)%2][s-A[n]] : 0);
 
    return tab[0%2][S];
 }

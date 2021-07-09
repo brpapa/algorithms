@@ -23,8 +23,8 @@ vector<vector<int>> adj_list;  int V;
 // VISITED: vértice já teve todos seus adjacentes visitados e já faz parte de um SCC
 enum { UNVISITED, VISITING, VISITED };
 vector<int> state;
-vector<int> order;  // order[v]: indicador da ordem de visitação do vértice pela DFS
-vector<int> low;    // low[v]: menor order alcançável a partir de v (inclusive ele mesmo) na árvore gerada pela DFS
+vector<int> order;  // order[v] = indicador da ordem de visitação do vértice pela DFS
+vector<int> low;    // low[v] = menor order alcançável a partir de v (inclusive ele mesmo) na árvore gerada pela DFS
 stack<int> s;       // vértices atuais que estão sendo VISITING (na ordem de visitação)
 int count_order, count_scc;
 

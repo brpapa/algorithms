@@ -28,7 +28,7 @@ template<typename T>
 class sparse_table {
  private:
    vector<T> A; int N;
-   vector<vector<T>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
+   vector<vector<T>> table; // table[p][n] = answer for the range [n, n+2^p) (size 2^p) in A
 
    /* O(1) - change here to an "overlap friendly" function */
    T range_combination(T a, T b) {
@@ -36,8 +36,6 @@ class sparse_table {
    }
 
  public:
-   sparse_table() {}
-
    /* O(N * log(N)) - fill table with the answers for all ranges in A of size 2^p, for each non-negative integer p such that 2^p <= N */
    sparse_table(vector<T> const &A) {
       this->A = A; N = (int)A.size();

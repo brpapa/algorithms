@@ -12,7 +12,7 @@ vector<vector<int>> adj_list; int V, LV;
 vector<pair<int,int>> reds, blues;
 int K;
 
-vector<int> match; // match[r]: vértice l já combinado com r
+vector<int> match; // match[r] = vértice l já combinado com r
 vector<bool> seen;
 
 /* O(E) - returns 1 if an augmenting path is found */

@@ -15,7 +15,7 @@ struct T {
    int id, peso;
 };
 vector<T> adj[MAX_V]; //adj[i].size(): grau de i
-int c[MAX_V]; //c[i]: custo mínimo para ir até o vértice i
+int c[MAX_V]; //c[i] = custo mínimo para ir até o vértice i
 
 void initGrafo() {
    for (int i = 0; i < MAX_V; i++)

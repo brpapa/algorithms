@@ -12,8 +12,8 @@ class lazy_seg_tree {
  private:
    vector<ll> A; int N;
 
-   vector<ll> bin_tree; // bin_tree[v]: resultado da consulta no intervalo (de A) associado
-   vector<ll> lazy;     // lazy[v]: valor de uma atualização pendente que precisa ser adicionado na sub-árvore enraizada por bin_tree[v] antes de qualquer consulta/atualização de v
+   vector<ll> bin_tree; // bin_tree[v] = resultado da consulta no intervalo (de A) associado
+   vector<ll> lazy;     // lazy[v] = valor de uma atualização pendente que precisa ser adicionado na sub-árvore enraizada por bin_tree[v] antes de qualquer consulta/atualização de v
 
    /* O(1) - RSQ (change here) */
    ll range_combination(ll a, ll b) {
@@ -25,7 +25,7 @@ class lazy_seg_tree {
 
    /* O(N*log(N)) - constroi bin_tree */
    void build(int v, int l, int r) {
-      // bin_tree[v]: resultado da consulta em A[l .. r]
+      // bin_tree[v] = resultado da consulta em A[l .. r]
 
       if (l == r) { bin_tree[v] = A[l]; return; } // v é nó folha
 
@@ -62,7 +62,7 @@ class lazy_seg_tree {
    /* consulta A[ql .. qr] */
    ll range_query(int ql, int qr) { return range_query(0, 0, N-1, ql, qr); }
    ll range_query(int v, int l, int r, int ql, int qr) {
-      // bin_tree[v]: resultado da consulta em A[l .. r]
+      // bin_tree[v] = resultado da consulta em A[l .. r]
 
       propagate_lazy(v, l, r);
 
@@ -83,7 +83,7 @@ class lazy_seg_tree {
    /* incrementa A[ul .. ur] com diff */
    void range_update(int ul, int ur, ll diff) { range_update(0, 0, N-1, ul, ur, diff); }
    void range_update(int v, int l, int r, int ul, int ur, ll diff) {
-      // bin_tree[v]: resultado da consulta em A[l .. r]
+      // bin_tree[v] = resultado da consulta em A[l .. r]
 
       propagate_lazy(v, l, r);
 

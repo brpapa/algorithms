@@ -1,7 +1,7 @@
 # built-in methods
 
 ```cpp
-vector<int> A = {1, 1, 3, 3, 4, 5};
+vector<int> A = {1, 1, 3, 3, 4, 5}; // sorted array
 
 // primeiro l, tal que A[l] >= 3
 int l = lower_bound(A.begin(), A.end(), 3) - A.begin();

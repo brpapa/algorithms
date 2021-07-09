@@ -13,8 +13,8 @@ vector<tuple<ll,int,int>> edge_list; // {{w, u, v}, ...}, arestas u -w-> v
 
 class ufds {
  private:
-   vector<int> parent; // parent[n]: pai do elemento n
-   vector<int> size;   // size[n]: tamanho do conjunto identificado por n
+   vector<int> parent; // parent[n] = pai do elemento n
+   vector<int> size;   // size[n] = tamanho do conjunto identificado por n
    int qty_disjoint_sets;
 
  public:

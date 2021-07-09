@@ -15,7 +15,7 @@ template<typename T>
 class seg_tree {
  private:
    vector<T> A; int N;
-   vector<T> bin_tree; // bin_tree[v]: resultado da consulta no intervalo (de A) associado
+   vector<T> bin_tree; // bin_tree[v] = resultado da consulta no intervalo (de A) associado
 
    int le(int v) { return (v << 1) + 1; } // filho à esq de v em bin_tree
    int ri(int v) { return (v << 1) + 2; } // filho à dir de v em bin_tree
@@ -27,7 +27,7 @@ class seg_tree {
 
    /* O(N*log(N)) */
    void build(int v, int l, int r) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // v é nó folha
       if (l == r) { bin_tree[v] = A[l]; return; } 
@@ -40,8 +40,6 @@ class seg_tree {
    }
 
  public:
-   seg_tree() {}
-
    /* O(N*log(N)) */
    seg_tree(vector<T> const &A) {
       this->A = A; N = (int)A.size();
@@ -52,7 +50,7 @@ class seg_tree {
    /* O(log2(N)) - consulta A[ql..qr] */
    T range_query(int ql, int qr) { return range_query(0, 0, N-1, ql, qr); }
    T range_query(int v, int l, int r, int ql, int qr) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ql..qr]
       if (ql > r || qr < l) return 1 << 30;
@@ -70,7 +68,7 @@ class seg_tree {
    /* O(log2(N)) - incrementa A[i] com x */
    void point_update(int i, T x) { point_update(0, 0, N-1, i, x); }
    void point_update(int v, int l, int r, int i, T x) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] não contém i
       if (i > r || i < l) return;
@@ -90,7 +88,7 @@ class seg_tree {
    /* O(log2(N)) - incrementa A[ul..ur] com x */
    void range_update(int ul, int ur, T x) { range_update(0, 0, N-1, ul, ur, x); }
    void range_update(int v, int l, int r, int ul, int ur, T x) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ul..ur]
       if (ul > r || ur < l) return;

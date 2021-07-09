@@ -10,8 +10,8 @@ vector<vector<int>> adj_list; int V;
 /* O(V+E) */
 void bfs(int s) {
    vector<bool> seen(V, false);
-   vector<int> depth(V);      // depth[v]: nível do vértice v em relação à s
-   vector<int> parent(V, -1); // parent[v]: parent of v
+   vector<int> depth(V);      // depth[v] = nível do vértice v em relação à s
+   vector<int> parent(V, -1); // parent[v] = parent of v
 
 	queue<int> q; q.push(s);
 	depth[s] = 0;

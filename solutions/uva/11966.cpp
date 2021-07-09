@@ -9,8 +9,8 @@ using namespace std;
 
 class UFDS {
  private:
-   vector<int> p;    // p[n]: pai do elemento n
-   vector<int> size; // size[n]: tamanho do conjunto identificado por n
+   vector<int> p;    // p[n] = pai do elemento n
+   vector<int> size; // size[n] = tamanho do conjunto identificado por n
    int qtyDisjointSets;
 
  public:

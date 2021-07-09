@@ -17,9 +17,9 @@ int dr[4] = {-1, 0, 1, 0};
 int dc[4] = { 0, 1, 0,-1};
 
 int walk(int i, int rr, int rc, int ro) {
-   // instructions[i]: received instruction
-   // grid[rr][rc]: robot position
-   // orientations[ro]: robot orientation
+   // instructions[i] = received instruction
+   // grid[rr][rc] = robot position
+   // orientations[ro] = robot orientation
 
    if (i == I) return 0;
 

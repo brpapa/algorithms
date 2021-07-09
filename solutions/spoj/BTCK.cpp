@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bitset<10> used; // used[v]: v já foi usado na permutação atual
+bitset<10> used; // used[v] = v já foi usado na permutação atual
 int p[10];       // permutação atual
 
 int A[10], K;

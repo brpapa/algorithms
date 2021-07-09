@@ -10,7 +10,7 @@
 #define INF 0x3f3f3f3f
 using namespace std;
 
-vector<int> prices[22]; // prices[c]: preços dos modelos da vestimenta c
+vector<int> prices[22]; // prices[c] = preços dos modelos da vestimenta c
 int M, C;               // dinheiro disponível, vestimentas para comprar
 
 int memo[22][210];

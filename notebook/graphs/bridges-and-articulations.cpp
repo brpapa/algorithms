@@ -11,15 +11,14 @@ using namespace std;
 vector<vector<int>> adj_list; int V;
 
 /* output */
-vector<bool> is_art;             // is_art[u]: vértice u é um art point?
-vector<pair<int, int>> bridges;  // arestas u -> v que são bridge edges
+vector<bool> is_art;             // is_art[u] = vértice u é um art point?
+vector<pair<int, int>> bridges;  // bridges = {{u,v},...}, arestas u -> v que são bridge edges
 
 /**/
 const int UNVISITED = -1;
-
-vector<int> order;  // order[v]: ordem de visitação do vértice v pela DFS
-vector<int> low;    // low[v]: menor order alcançável a partir de v (inclusive ele mesmo) na árvore gerada pela DFS
-vector<int> parent; // parent[v]: pai de v na árvore gerada pela DFS
+vector<int> order;  // order[v] = ordem de visitação do vértice v pela DFS
+vector<int> low;    // low[v] = menor order alcançável a partir de v (inclusive ele mesmo) na árvore gerada pela DFS
+vector<int> parent; // parent[v] = pai de v na árvore gerada pela DFS
 
 int count_order;
 int root; 

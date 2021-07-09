@@ -33,7 +33,7 @@ int main() {
    int l, r = 0; // pointers
    ll maxLen = 0;
    for (l = 0; l < N + 1; l++) {
-      // sumDif em [l .. r]: sumDif[r] - sumDif[l]
+      // sumDif em [l .. r] = sumDif[r] - sumDif[l]
       while (sumDif[r] - sumDif[l] < H && r + 1 < N + 1)
          r++;
 

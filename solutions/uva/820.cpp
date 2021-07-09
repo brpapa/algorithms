@@ -7,12 +7,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<vector<pair<int,int>>> adj_list; // adj_list[u]: {{v, w}, ...}
+vector<vector<pair<int,int>>> adj_list; // adj_list[u] = {{v, w}, ...}
 int V;
 
-vector<vector<pair<int,int>>> remaining; // remaining[u]: {{v, current remaining capacity}, ...}
-vector<vector<pair<int,int>>> flow;      // flow[u]: {{v, current flow}, ...}
-vector<pair<int,int>> bfs_parent;        // bfs_parent[u]: {pai de u, índice em remaining[u]}
+vector<vector<pair<int,int>>> remaining; // remaining[u] = {{v, current remaining capacity}, ...}
+vector<vector<pair<int,int>>> flow;      // flow[u] = {{v, current flow}, ...}
+vector<pair<int,int>> bfs_parent;        // bfs_parent[u] = {pai de u, índice em remaining[u]}
 vector<vector<int>> rev;
 
 // O(V+E) - find an augmenting path and returns your bottleneck flow, or 0, if there is no more an augmenting path

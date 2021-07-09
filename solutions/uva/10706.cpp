@@ -41,7 +41,7 @@ int main() {
    vector<int> numSeq(1, 0);
    for (int n = 1; n < MAX_N; n++) for (int d : digs(n)) numSeq.push_back(d);
 
-   // f[k]: índice do número 1 no k-ésimo grupo (k >= 1)
+   // f[k] = índice do número 1 no k-ésimo grupo (k >= 1)
    vector<ll> f(MAX_K); f[1] = 1;
    for (int k = 2; k < MAX_K; k++) f[k] = f[k-1]+g(k-1);
 

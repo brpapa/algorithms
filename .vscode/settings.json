@@ -97,5 +97,25 @@
       "unordered_set": "cpp",
       "valarray": "cpp",
       "variant": "cpp"
-   }
+   },
+   "grammarly.overrides": [
+      {
+         "files": [
+            "**/README.md"
+         ],
+         "config": {
+            "audience": "general",
+            "dialect": "american",
+            "domain": "technical",
+            "emotions": [
+               "neutral",
+               "confident"
+            ],
+            "goals": [
+               "inform",
+               "describe"
+            ]
+         }
+      }
+   ]
 }

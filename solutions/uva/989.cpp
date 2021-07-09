@@ -14,9 +14,9 @@ int board[MAX][MAX];
 bool changeable[MAX][MAX];  // posição de board livre para alteração
 bool hasSolution;
 
-bool usedOnRow[MAX][MAX+1]; // usedOnRow[r][num]: num foi usado na linha r?
-bool usedOnCol[MAX][MAX+1]; // usedOnCol[c][num]: num foi usado na coluna c?
-bool usedOnBox[MAX][MAX+1]; // usedOnBox[b][num]: num foi usado no bloco b?
+bool usedOnRow[MAX][MAX+1]; // usedOnRow[r][num] = num foi usado na linha r?
+bool usedOnCol[MAX][MAX+1]; // usedOnCol[c][num] = num foi usado na coluna c?
+bool usedOnBox[MAX][MAX+1]; // usedOnBox[b][num] = num foi usado no bloco b?
 
 void markUsedAs(bool used, int r, int c, int num) {
    usedOnRow[r][num] = used;

@@ -19,7 +19,7 @@ int main() {
 
       for (int i = N-1; i >= 0; i--)
          for (int v = 1; v <= V; v++)
-            dp[i%2][v] = dp[(i+1)%2][v] || ((v-coins[i] >= 0)? dp[(i+1)%2][v-coins[i]]: false);
+            dp[i%2][v] = dp[(i+1)%2][v] || ((v-coins[i] >= 0)? dp[(i+1)%2][v-coins[i]] : false);
 
       cout << (dp[0%2][V]? "sim" : "nao") << endl;
    }

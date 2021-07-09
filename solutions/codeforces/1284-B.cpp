@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
    int N; cin >> N;
-   vector<int> mn(N), mx(N); // mn[i] e mx[i]: valores min e max da seq i
+   vector<int> mn(N), mx(N); // mn[i] e mx[i] = valores min e max da seq i
 
    for (int i = 0; i < N; i++) {
       mn[i] = MAX;

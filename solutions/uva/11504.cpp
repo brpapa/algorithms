@@ -23,7 +23,7 @@ vector<int> low;
 stack<int> s; // vértices atuais que estão sendo VISITING (na ordem de visitação)
 int countOrder, countSCC;
 
-vector<int> scc; // scc[v]: scc em que v faz parte
+vector<int> scc; // scc[v] = scc em que v faz parte
 
 
 void dfs(int v) {

@@ -8,17 +8,17 @@ using namespace std;
 typedef long long ll;
 
 /* input */
-vector<vector<tuple<int,ll,ll>>> adj_list; int V; // adj_list[u]: {{v, weight, capacity}, ...}
+vector<vector<tuple<int,ll,ll>>> adj_list; int V; // adj_list[u] = {{v, weight, capacity}, ...}
 
-vector<vector<tuple<int,ll,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, weight, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent; // parent[v]: {u, índice de new_adj_list[u]}
+vector<vector<tuple<int,ll,ll,ll>>> new_adj_list; // new_adj_list[u] = {{v, weight, remaining_capacity, flow}, ...}
+vector<pair<int,int>> parent; // parent[v] = {u, índice de new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V*E) - find the shortest augmenting path (in terms of weight) and returns your bottleneck, or 0, if there is no more an augmenting path */
 ll belmman_ford(int s, int t) {
    parent.assign(V, {-1, -1});
 
-   vector<ll> sd(V, INT_MAX); // sd[u]: shortest distance de s à u
+   vector<ll> sd(V, INT_MAX); // sd[u] = shortest distance de s à u
    sd[s] = 0;
    bool was_relaxed = true;
 

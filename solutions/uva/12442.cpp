@@ -10,7 +10,7 @@
 using namespace std;
 
 vector<vector<int>> adjList; // embora cada vértice só tenha 1 adjacente
-vector<int> reach;           // reach[v]: qtd de outros vértices que v alcança
+vector<int> reach;           // reach[v] = qtd de outros vértices que v alcança
 
 #define UNVISITED -1
 #define VISITING 0           // vértices do CC atual que estão sendo visitados

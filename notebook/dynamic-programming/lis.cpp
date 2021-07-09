@@ -28,8 +28,8 @@ vector<int> A = {-7, 10, 5, 2, 3, 8, 8, 1, 2, 3, 4}; int N = 11;
 */
 /* O(N * log(N)) */
 int lis0() {
-   vector<int> size(N);        // size[j]: tamanho da LIS que termina com A[j]
-   vector<int> last(N+1, INF); // last[s]: último elemento da LIS de tamanho s
+   vector<int> size(N);        // size[j] = tamanho da LIS que termina com A[j]
+   vector<int> last(N+1, INF); // last[s] = último elemento da LIS de tamanho s
    last[0] = -INF;
 
    int biggest_s = 0;
@@ -51,8 +51,8 @@ int lis0() {
 
 /* O(N^2) */
 int lis1() {
-   vector<int> dp(N, 1); // dp[j]: tamanho da LIS que termina com A[j]
-   vector<int> p(N, -1); // p[j]: índice i em A do antecessor de A[j] na LIS
+   vector<int> dp(N, 1); // dp[j] = tamanho da LIS que termina com A[j]
+   vector<int> p(N, -1); // p[j] = índice i em A do antecessor de A[j] na LIS
 
    int best_lis_size = 0;
    int best_j = 0;

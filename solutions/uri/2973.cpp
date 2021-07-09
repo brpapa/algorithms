@@ -10,7 +10,7 @@
 using namespace std;
 
 int N, C, T;
-vector<int> qtyPopcorns; // qtyPopcorns[i]: qte de pipocas do saco i
+vector<int> qtyPopcorns; // qtyPopcorns[i] = qte de pipocas do saco i
 
 // não mais que C competidores conseguem comer tudo em x segundos?
 bool can(int x) {

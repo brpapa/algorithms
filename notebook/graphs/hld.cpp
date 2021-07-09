@@ -23,7 +23,7 @@ template<typename T>
 class seg_tree {
  private:
    vector<T> A; int N;
-   vector<T> bin_tree; // bin_tree[v]: resultado da consulta no intervalo (de A) associado
+   vector<T> bin_tree; // bin_tree[v] = resultado da consulta no intervalo (de A) associado
 
    int le(int v) { return (v << 1) + 1; } // filho à esq de v em bin_tree
    int ri(int v) { return (v << 1) + 2; } // filho à dir de v em bin_tree
@@ -35,7 +35,7 @@ class seg_tree {
 
    /* O(N*log(N)) */
    void build(int v, int l, int r) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // v é nó folha
       if (l == r) { bin_tree[v] = A[l]; return; } 
@@ -60,7 +60,7 @@ class seg_tree {
    /* O(log2(N)) - consulta A[ql..qr] */
    T range_query(int ql, int qr) { return rq(0, 0, N-1, ql, qr); }
    T rq(int v, int l, int r, int ql, int qr) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ql..qr]
       if (ql > r || qr < l) return 0;
@@ -78,7 +78,7 @@ class seg_tree {
    /* O(log2(N)) - incrementa A[i] com x */
    void point_update(int i, T x) { pu(0, 0, N-1, i, x); }
    void pu(int v, int l, int r, int i, T x) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] não contém i
       if (i > r || i < l) return;
@@ -98,7 +98,7 @@ class seg_tree {
    /* O(log2(N)) - incrementa A[ul..ur] com x */
    void range_update(int ul, int ur, T x) { ru(0, 0, N-1, ul, ur, x); }
    void ru(int v, int l, int r, int ul, int ur, T x) {
-      // bin_tree[v]: resultado da consulta em A[l..r]
+      // bin_tree[v] = resultado da consulta em A[l..r]
 
       // [l..r] está completamente fora de [ul..ur]
       if (ul > r || ur < l) return;
@@ -118,17 +118,17 @@ class seg_tree {
 
 class hld {
  private:
-   vector<vector<pair<int,ll>>> adj_list; int V; // adj_list[u]: {{v, w}, ...}
+   vector<vector<pair<int,ll>>> adj_list; int V; // adj_list[u] = {{v, w}, ...}
 
-   vector<int> size; // size[u]: number of vertices of the u-rooted subtree 
-   vector<int> parent; // parent[v]: parent of vertex v
-   vector<int> head; // head[u]: head vertex of the chain which vertex u belongs to; if head[u] = u, u is the head of his chain.
+   vector<int> size; // size[u] = number of vertices of the u-rooted subtree 
+   vector<int> parent; // parent[v] = parent of vertex v
+   vector<int> head; // head[u] = head vertex of the chain which vertex u belongs to; if head[u] = u, u is the head of his chain.
 
-   vector<ll> wgt; // wgt[v]: weight of edge u -> v
+   vector<ll> wgt; // wgt[v] = weight of edge u -> v
 
    seg_tree<ll> st;
    vector<ll> arr; // base array of the segment tree, which is a convenient wgt[v] order, for every vertex v; onde vértices de mesmas chains são continuos, e os vértices de uma chain ancestral à outra chain sempre aparecem antes dos vértices dessa outra chain
-   vector<int> arr_rev; // arr_rev[u]: index of the wgt[u] in arr
+   vector<int> arr_rev; // arr_rev[u] = index of the wgt[u] in arr
 
    /* O(1) */
    ll range_combination(ll a, ll b) {
@@ -166,8 +166,6 @@ class hld {
    }
    
  public:
-   hld() {}
-
    /* O(V) */
    hld(vector<vector<pair<int,ll>>> const &adj_list, int root = 0) {
       this->adj_list = adj_list; V = adj_list.size();
@@ -180,7 +178,7 @@ class hld {
       st = seg_tree<ll>(arr);
    }
 
-   /* O(log^2(V)) - returns the min edge weight on path from u to v */
+   /* O(log^2(V)) - returns the sum of edges weight on path from u to v */
    ll query_path(int u, int v) {
       if (u == v) return 0;
       if (arr_rev[u] > arr_rev[v]) swap(u, v); // ensures that u is before v in arr, so the chain of u is ancentral of the chain of v

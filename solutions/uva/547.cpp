@@ -18,7 +18,7 @@ int sumDigits(int n) {
 	return sum;
 }
 
-int memo[MAX];  // memo[n]: tamanho da sequencia que inicia com n
+int memo[MAX];  // memo[n] = tamanho da sequencia que inicia com n
 int dp(int n) {
 	int &ans = memo[n];
 	if (ans != -1) return ans;

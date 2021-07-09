@@ -14,7 +14,7 @@ vector<int> hgt;
 bool can(int ans) {
    int m = 0;
 
-   vector<int> wt(N, 0); // wt[i]: qte de regadas que inicia na i-ésima flor
+   vector<int> wt(N, 0); // wt[i] = qte de regadas que inicia na i-ésima flor
    int curr = 0;         // incremento à hgt[i], considerando as regadas anteriores que ainda atinge a flor i
 
    for (int i = 0; i < N; i++) {

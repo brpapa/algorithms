@@ -30,19 +30,19 @@ config = {
    'main_judges': {
       'uva': {
          'solved': 0,
-         'profile_url': 'https: //uhunt.onlinejudge.org/id/1094350'
+         'profile_url': 'https://uhunt.onlinejudge.org/id/1094350'
       },
       'codeforces': {
          'solved': 0,
-         'profile_url': 'https: //codeforces.com/profile/brnpapa'
+         'profile_url': 'https://codeforces.com/profile/brnpapa'
       },
       'uri': {
          'solved': 0,
-         'profile_url': 'https: //www.urionlinejudge.com.br/judge/pt/users/statistics/310281'
+         'profile_url': 'https://www.urionlinejudge.com.br/judge/pt/users/statistics/310281'
       },
       'spoj': {
          'solved': 0,
-         'profile_url': 'https: //www.spoj.com/users/brnpapa'
+         'profile_url': 'https://www.spoj.com/users/brnpapa'
       }
    }
 }

@@ -11,7 +11,7 @@
 using namespace std;
 
 struct Taux {
-   int row[8]; // row[c]: linha da coluna c
+   int row[8]; // row[c] = linha da coluna c
 };
 vector<Taux> validArrangements;
 

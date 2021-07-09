@@ -31,7 +31,7 @@
          "label": "compile and run cpp",
          "group": "build",
          "type": "shell",
-         "command": "/usr/bin/g++ ${relativeFile} -std=gnu++14 -O2 -lm -o e && ./e < input > output",
+         "command": "/usr/bin/g++ ${relativeFile} -std=gnu++17 -O2 -lm -o e && ./e < input > output",
          "options": {
             "cwd": "${workspaceFolder}",
          },

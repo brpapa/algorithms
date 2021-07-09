@@ -1,5 +1,5 @@
 /* 
-   Motivação: dado os valores de N moedas, quantas moedas, no mínimo, representam V centavos? Assume-se que há suprimento ilimitado de qualquer moeda.
+   Motivação: dado os valores de N moedas, quantas moedas, no mínimo, representam exatamente V centavos? Assume-se que há suprimento ilimitado de qualquer moeda.
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,7 +27,6 @@ int dp(int v) {
 
    return ans;
 }
-
 
 int main() {
    memo.assign(V+1, -1);  // resetar apenas se moedas mudarem, e não V

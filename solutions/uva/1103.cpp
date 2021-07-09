@@ -59,7 +59,7 @@ int main() {
             if (grid[r][c] == BLACK)
                floodFill(r, c, BLACK, N++);
 
-      vector<int> internalCC(N, 0); // internalCC[n]: quantidade de componentes conectados dentro da figura n
+      vector<int> internalCC(N, 0); // internalCC[n] = quantidade de componentes conectados dentro da figura n
       for (int r = 0; r < R; r++)
          for (int c = 0; c < C; c++)
             if (grid[r][c] == WHITE) {

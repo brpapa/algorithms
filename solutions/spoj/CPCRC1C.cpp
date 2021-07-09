@@ -20,7 +20,7 @@ ll dp(int i, int sum, bool limited) {
    if (ans != -1) return ans;
 
    ans = 0;
-   for (int d = 0; d <= (limited? digs[i]: 9); d++)
+   for (int d = 0; d <= (limited? digs[i] : 9); d++)
       ans += dp(i+1, sum+d, d == digs[i]? limited: 0 );
 
    return ans;

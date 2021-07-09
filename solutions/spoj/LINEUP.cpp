@@ -10,7 +10,7 @@ using namespace std;
 typedef long long ll;
 const int INF = 1 << 30;
 const int N = 11;
-int s[N][1 << N]; // s[i][j]: strength of i-th player on j-th position
+int s[N][1 << N]; // s[i][j] = strength of i-th player on j-th position
 
 vector<vector<int>> memo;
 int dp(int i, int mask) {

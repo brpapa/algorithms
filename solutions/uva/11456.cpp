@@ -10,8 +10,8 @@
 using namespace std;
 #define MAX_N 2002
 
-vector<int> lis; // lis[i]: tamanho da maior lis começando em A[i]
-vector<int> lds; // lds[i]: tamanho da maior lds começando em A[i]
+vector<int> lis; // lis[i] = tamanho da maior lis começando em A[i]
+vector<int> lds; // lds[i] = tamanho da maior lds começando em A[i]
 
 int main() {
    int T; cin >> T;

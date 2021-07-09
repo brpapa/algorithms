@@ -1,5 +1,5 @@
 /*
-   Motivação: gere todos os fatores/divisores primos de n.
+   Motivação: gere todos os fatores/divisores primos de n < 9.10^13.
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,7 +42,7 @@ vector<int> prime_factors(ll n) {
 
 int main() {
    build_sieve();
-   vector<int> pfs = prime_factors(120);
+   vector<int> pfs = prime_factors(16);
    for (auto f : pfs) cout << f << " "; cout << endl;
    return 0;
 }

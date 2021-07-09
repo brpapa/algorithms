@@ -10,7 +10,7 @@ using namespace std;
 typedef long long ll;
 const int INF = 1 << 30;
 
-vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, w}, ...}
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u] = {{v, w}, ...}
 int V;
 
 vector<pair<int,int>> p;

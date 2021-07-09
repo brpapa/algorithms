@@ -5,7 +5,7 @@
 using namespace std;
 
 const int UB = 1e6;
-vector<int> num_diff_pfs; // num_diff_pfs[i]: qte de fatores primos dos números no intervalo [0..i]
+vector<int> num_diff_pfs; // num_diff_pfs[i] = qte de fatores primos dos números no intervalo [0..i]
 
 /* O(UB*log(log(UB))) */
 void build_sieve() {

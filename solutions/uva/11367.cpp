@@ -24,7 +24,7 @@ vector<int> fp; // fuel prices
 int dijk(int s, int e, int C) {
    // source vertex s, goal vertex e, car fuel capacity C
 
-   // sd[v][c]: menor distância do vértice (s, 0) até (v, c)
+   // sd[v][c] = menor distância do vértice (s, 0) até (v, c)
    vector<vector<int>> sd(V, vector<int>(C+1, INF));
    sd[s][0] = 0;
 

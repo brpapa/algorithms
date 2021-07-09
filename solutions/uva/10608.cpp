@@ -8,8 +8,8 @@
 using namespace std;
 
 struct UFDS {
-   vector<int> p;    // p[n]: pai do elemento n
-   vector<int> size; // size[n]: tamanho do conjunto identificado por n
+   vector<int> p;    // p[n] = pai do elemento n
+   vector<int> size; // size[n] = tamanho do conjunto identificado por n
    int count;        // quantidade de conjuntos
 
    UFDS(int N) {

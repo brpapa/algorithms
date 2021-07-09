@@ -17,10 +17,8 @@ ll power(ll a, ll n) {
 ll power1(ll a, ll n) {
    ll ans = 1;
 
-   while (n > 0) {
+   for (; n > 0; n /= 2) {
       if (n & 1ll) ans *= a; // only on first (possibly) and last iteration
-
-      n >>= 1ll;
       a *= a;
    }
 

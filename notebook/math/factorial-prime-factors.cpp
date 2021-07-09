@@ -15,7 +15,6 @@
    multiplicy(10,3) = 10/3 + 10/9 + 10/27        = 3+1+0
    multiplicy(10,5) = 10/5 + 10/25               = 2+0
    multiplicy(10,7) = 10/7 + 10/49               = 1+0
-
 */
 #include <bits/stdc++.h>
 using namespace std;

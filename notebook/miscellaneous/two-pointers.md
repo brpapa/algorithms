@@ -2,6 +2,8 @@
 
 Para responder perguntas do tipo **"em qual intervalo"**.
 
+## Exemplo 1
+
 **Motivação**: encontre o tamanho da **maior subsequência contígua** de um array com soma <= **K**.
 
 -  Dado:
@@ -17,24 +19,24 @@ Para responder perguntas do tipo **"em qual intervalo"**.
    int l, r = 0; // ponteiros de A
    int k = 0;    // referente ao segmento atual de A
 
-   int ans = 0;
+   int max_len = 0;
    for (l = 0; l < N; l++) {
    	if (l > 0) k -= A[l-1];
 
-   	// k: soma em A[l:r-1]
+   	// k: soma em A[l..r-1]
    	while (k+A[r] <= K && r < N)
    		k += A[r], r++;
 
-   	ans = max(ans, r-l);
+   	max_len = max(max_len, r-l);
    }
 
-   return maxLength;
+   return max_len;
    ```
 
 -  Algoritmo alternativo pré-processando a **soma de prefixos**: O(N+1 + 2\*(N+1)) = **O(N)**
 
    ```cpp
-   vector<int> sum(N+1); // sum[i]: soma em [0 .. i-1] de a
+   vector<int> sum(N+1); // sum[i]: soma em [0..i-1] de a
    sum[0] = 0;
    for (int i = 1; i < N+1; i++)
    	sum[i] = a[i-1] + sum[i-1];
@@ -44,19 +46,19 @@ Para responder perguntas do tipo **"em qual intervalo"**.
    // não preciso me preocupar com k
 
    int l, r = 0; // pointers de sum
-   int maxLength = 0;
+   int max_len = 0;
    for (l = 0; l < N+1; l++) {
-   	// sum[r]-sum[l]: soma em [l .. r-1] de a
+   	// sum[r]-sum[l]: soma em [l..r-1] de a
 
    	while (sum[r+1] - sum[l] <= K && r+1 < N+1)
    		r++;
 
-   	maxLength = max(maxLength, r-l);
+   	max_len = max(max_len, r-l);
    }
-   return maxLength;
+   return max_len;
    ```
 
----
+## Exemplo 2
 
 **Motivação**: em um array **ordenado**, verifique se `a[l] + a[r] == K`, para algum 0 <= l <> r < N.
 

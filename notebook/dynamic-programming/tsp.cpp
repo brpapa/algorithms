@@ -12,7 +12,7 @@ vector<vector<int>> adj_mat = {
    {20,  0, 30, 34},
    {42, 30,  0, 12},
    {35, 34, 12,  0}
-}; // adj_mat[u][v]: distancia entre as cidades u e v
+}; // adj_mat[u][v] = distancia entre as cidades u e v
 int s = 0; // qualquer s entre [0..V-1] sempre levará à mesma resposta
 
 vector<vector<int>> memo;

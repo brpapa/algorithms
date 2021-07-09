@@ -6,7 +6,7 @@ using namespace std;
 const int INF = 1 << 30;
 
 /* input */
-vector<int> prices = {1, 5, 8, 9}; // prices[i]: price of rod of length i+1
+vector<int> prices = {1, 5, 8, 9}; // prices[i] = price of rod of length i+1
 int N = prices.size();
 
 vector<int> memo;

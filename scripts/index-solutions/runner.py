@@ -10,7 +10,7 @@ Vertex = Tuple[int, str] # level, label
 # graph representation, where Tuple[int, str] identify a unique vertex
 root: Vertex = (0, 'root')
 adj_list: Dict[Vertex, Set[Vertex]] = { root: set() }
-leaf: Dict = {} # list of exercices of each leaf vertex
+leaf: Dict = {} # list of exercises of each leaf vertex
 
 # build adj_list, leaf and define main_judges
 def build(dataset):

@@ -11,11 +11,11 @@ typedef long long ll;
 
 class ufds {
  private:
-   vector<int> size;   // size[n]: tamanho do conjunto identificado por n
+   vector<int> size;   // size[n] = tamanho do conjunto identificado por n
    int qty_disjoint_sets;
 
  public:
-   vector<int> parent; // parent[n]: pai do elemento n
+   vector<int> parent; // parent[n] = pai do elemento n
 
    ufds() {}
    ufds(int N) {

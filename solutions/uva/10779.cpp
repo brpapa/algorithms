@@ -9,12 +9,12 @@
 using namespace std;
 typedef long long ll;
 
-vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, capacity}, ...}
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u] = {{v, capacity}, ...}
 int V;
 
 /* */
-vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent; // parent[v]: {u, índice de new_adj_list[u]}
+vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u] = {{v, remaining_capacity, flow}, ...}
+vector<pair<int,int>> parent; // parent[v] = {u, índice de new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V+E) - find the shortest augmenting path (in terms of edges) and returns your bottleneck, or 0, if there is no more an augmenting path */
@@ -101,9 +101,9 @@ int main() {
       adj_list.assign(V, vector<pair<int,ll>>());
 
       // vértice 0: oferta do Bob
-      // vértices [1..M]: stickers
+      // vértices [1..M] = stickers
       // vértice M+1: demanda do Bob
-      // vértices [M+2, V-1]: amigos de Bob
+      // vértices [M+2, V-1] = amigos de Bob
 
       vector<ll> qty(30, 0); int k; cin >> k; while (k--) { int m; cin >> m; qty[m]++; }
       for (int m = 1; m <= M; m++) {

@@ -10,12 +10,11 @@ using namespace std;
 
 class ufds {
  private:
-   vector<int> parent; // parent[n]: pai do elemento n
-   vector<int> size;   // size[n]: tamanho do conjunto identificado por n
+   vector<int> parent; // parent[n] = pai do elemento n
+   vector<int> size;   // size[n] = tamanho do conjunto identificado por n
    int qty_disjoint_sets;
 
  public:
-   ufds() {}
    ufds(int N) {
       parent.resize(N);
       size.assign(N, 1);
@@ -25,7 +24,7 @@ class ufds {
       for (int n = 0; n < N; n++) parent[n] = n;
    }
 
-   /* O(1) - retorna a raiz do conjunto de n */
+   /* O(1) - retorna o nó raiz do conjunto em que n está */
    int find_set(int n) {
       if (parent[n] == n) return n;
       return parent[n] = find_set(parent[n]); // path compression

@@ -16,8 +16,8 @@ using namespace std;
 int M[MAX_N][MAX_N]; 
 int N, K;
 
-ll usedOnRow[MAX_N]; // usedOnRow[r]: bitmask indicando se num já foi usado na linha r
-ll usedOnCol[MAX_N]; // usedOnRow[r]: bitmask indicando se num já foi usado na coluna c
+ll usedOnRow[MAX_N]; // usedOnRow[r] = bitmask indicando se num já foi usado na linha r
+ll usedOnCol[MAX_N]; // usedOnRow[r] = bitmask indicando se num já foi usado na coluna c
 int sumDiagonal;
 
 bool hasSolution;

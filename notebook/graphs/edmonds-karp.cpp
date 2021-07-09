@@ -23,11 +23,11 @@ using namespace std;
 typedef long long ll;
 
 /* input */
-vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, capacity}, ...}
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u] = {{v, capacity}, ...}
 int V;
 
-vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u]: {{v, remaining_capacity, flow}, ...}
-vector<pair<int,int>> parent; // parent[v]: {u, índice em new_adj_list[u]}
+vector<vector<tuple<int,ll,ll>>> new_adj_list; // new_adj_list[u] = {{v, remaining_capacity, flow}, ...}
+vector<pair<int,int>> parent; // parent[v] = {u, índice em new_adj_list[u]}
 vector<vector<int>> rev_idx;
 
 /* O(V+E) - find the shortest augmenting path (in terms of edges) and returns your bottleneck, or 0, if there is no more an augmenting path */

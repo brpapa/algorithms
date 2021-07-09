@@ -12,8 +12,8 @@ using namespace std;
 
 class ufds {
  private:
-   vector<int> parent; // parent[n]: pai do elemento n
-   vector<int> size;   // size[n]: tamanho do conjunto identificado por n
+   vector<int> parent; // parent[n] = pai do elemento n
+   vector<int> size;   // size[n] = tamanho do conjunto identificado por n
    int qty_disjoint_sets;
 
  public:
@@ -71,7 +71,7 @@ class ufds {
 class sparse_table {
  private:
    vector<int> A; int N;
-   vector<vector<int>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
+   vector<vector<int>> table; // table[p][n] = answer for the range [n, n+2^p) (size 2^p) in A
 
    /* O(1) */
    int range_combination(int i, int j) {
@@ -115,11 +115,11 @@ class lca {
    vector<vector<int>> adj_list; int V;
 
    int e;                   // eulerian tour timer
-   vector<int> tour_depth;  // tour_depth[e]: nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
-   vector<int> tour_vertex; // tour_vertex[e]: e-ésimo vértice visitado pelo eulerian tour
+   vector<int> tour_depth;  // tour_depth[e] = nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
+   vector<int> tour_vertex; // tour_vertex[e] = e-ésimo vértice visitado pelo eulerian tour
 
-   vector<int> depth;  // depth[u]: nível de u em relação à root
-   vector<int> last_e; // last_e[u]: último e do vértice u (inverse map of tour_vertex)
+   vector<int> depth;  // depth[u] = nível de u em relação à root
+   vector<int> last_e; // last_e[u] = último e do vértice u (inverse map of tour_vertex)
    vector<bool> seen;
 
    sparse_table st;

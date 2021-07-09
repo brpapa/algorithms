@@ -12,7 +12,7 @@
 using namespace std;
 
 ll cube[22][22][22];
-ll accSum[22][22][22]; // accSum[a][i][j]: soma acumulada da a-ésima sub-matriz 2D [(0,0) .. (i,j)]
+ll accSum[22][22][22]; // accSum[a][i][j] = soma acumulada da a-ésima sub-matriz 2D [(0,0) .. (i,j)]
 
 // soma da a-ésima sub-matriz 2D [(l, c) .. (i, j)] em O(1)
 ll rsq(int a, int l, int c, int i, int j) {

@@ -11,7 +11,7 @@ using namespace std;
 
 vector<vector<int>> adj_list; int V, LV;
 
-vector<int> match; // match[r]: vértice l já combinado com r
+vector<int> match; // match[r] = vértice l já combinado com r
 vector<bool> seen;
 
 /* O(E) - returns 1 if an augmenting path is found */
@@ -45,8 +45,8 @@ int main() {
    while (cin >> N >> M >> sec >> vel) {
       V = N+M; LV = N; adj_list.assign(V, vector<int>());
 
-      // [0, N-1]: gophers
-      // [N, N+M-1]: holes
+      // [0, N-1] = gophers
+      // [N, N+M-1] = holes
 
       vector<pair<double,double>> gophers(N);
       for (int n = 0; n < N; n++)

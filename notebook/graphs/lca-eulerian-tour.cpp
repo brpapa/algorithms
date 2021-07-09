@@ -1,6 +1,4 @@
 /*
-   Lowest Common Ancestor (LCA) with the eulerian tour method
-
    Motivação: dado uma positive-weighted rooted tree G(V, V-1), o LCA entre u e v é o vértice de maior nível que tem u e v como seus descendentes.
 
    ---
@@ -11,13 +9,13 @@ using namespace std;
 typedef long long ll;
 
 /* input */
-vector<vector<pair<int,ll>>> adj_list; // adj_list[u]: {{v, w}, ...}
+vector<vector<pair<int,ll>>> adj_list; // adj_list[u] = {{v, w}, ...}
 
 // answer for the index of the minimum value in a range of A
 class sparse_table {
  private:
    vector<ll> A; int N;
-   vector<vector<int>> table; // table[p][n]: answer for the range [n, n+2^p) (size 2^p) in A
+   vector<vector<int>> table; // table[p][n] = answer for the range [n, n+2^p) (size 2^p) in A
 
    /* O(1) */
    int range_combination(int i, int j) {
@@ -58,11 +56,11 @@ class lca {
    vector<vector<pair<int,ll>>> adj_list; int V;
 
    int e;                   // eulerian tour timer
-   vector<ll> tour_depth;   // tour_depth[e]: nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
-   vector<int> tour_vertex; // tour_vertex[e]: e-ésimo vértice visitado pelo eulerian tour
+   vector<ll> tour_depth;   // tour_depth[e] = nível em relação à root do e-ésimo vértice visitado pelo eulerian tour
+   vector<int> tour_vertex; // tour_vertex[e] = e-ésimo vértice visitado pelo eulerian tour
 
-   vector<ll> depth;   // depth[u]: nível de u em relação à root
-   vector<int> last_e; // last_e[u]: último e do vértice u (inverse map of tour_vertex)
+   vector<ll> depth;   // depth[u] = nível de u em relação à root
+   vector<int> last_e; // last_e[u] = último e do vértice u (inverse map of tour_vertex)
    vector<bool> seen;
 
    sparse_table st;
@@ -91,7 +89,6 @@ class lca {
    }
 
  public:
-   lca() {}
    /* O(V * log(V)) */
    lca(vector<vector<pair<int,ll>>> const &adj_list, int root = 0) {
       this->adj_list = adj_list; V = adj_list.size();
@@ -126,11 +123,11 @@ class lca {
 int main() {
    adj_list.assign(7, vector<pair<int,ll>>());
    adj_list[0].push_back({1,1});
-   adj_list[1].push_back({3,1});
    adj_list[0].push_back({2,1});
+   adj_list[1].push_back({3,1});
    adj_list[2].push_back({4,1});
-   adj_list[4].push_back({6,1});
    adj_list[2].push_back({5,1});
+   adj_list[4].push_back({6,1});
 
    lca l(adj_list);
    cout << l.query_lca(3, 2) << endl;

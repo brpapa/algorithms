@@ -1,15 +1,17 @@
-Note: this is a publish-only repository, so all pull requests will be ignored.
+<p align="center">"Think twice, code once"</p>
+
+# Overview
+
+I use this repository as a study playground for programming contests, which contains my personal notes and implementations. Note that this is a publish-only repository, so all pull requests will be ignored.
 
 The **folders structure** is following:
 
 - [`notebook`](./notebook): well-explained implementation of general-purpose algorithms.
 - [`scripts`](./scripts): small scripts for automatizing some repetitive tasks.
 - [`solutions`](./solutions): code of accepted problems, categorized by online judges.
-- [`solutions/README.md`](./solutions/README.md): solutions index by themes, containing difficulty, name, description and hint of the problem.
+   - [`README.md`](./solutions/README.md): solutions index by themes, containing difficulty, name, description and hint of the problem.
 
-<h1 align="center">Notebook index</h1>
-<!-- https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/ -->
-<!-- https://cp-algorithms.com/ -->
+# Notebook index
 
 ## 🧱 data structures
 
@@ -20,7 +22,9 @@ The **folders structure** is following:
 <!-- - SQRT decomposition https://www.spoj.com/problems/RACETIME/en/ -->
 <!-- - Wavelet tree https://github.com/andrefakhoury/competitive-programming/blob/master/lib/DataStructures/WaveletTree.hpp -->
 
-<!-- ## 🥊 brute force -->
+## 🥊 brute force
+
+- []()
 
 ## 🔞 dynamic programming
 
@@ -28,16 +32,17 @@ The **folders structure** is following:
 - [subset sum](./notebook/dynamic-programming/subset-sum.cpp)
 - [0-1 knapsack](./notebook/dynamic-programming/0-1-knapsack.cpp)
 - [edit distance](./notebook/dynamic-programming/edit-distance.cpp)
-- [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
-- [longest palindromic subsequence (LPS)](./notebook/dynamic-programming/lps.cpp)
 - [longest increasing subsequence (LIS)](./notebook/dynamic-programming/lis.cpp)
-- [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
+- [longest common subsequence (LCS)](./notebook/dynamic-programming/lcs.cpp)
+   - [LCS reduced to LIS](./notebook/dynamic-programming/lcs-reduced-to-lis.cpp)
+- [longest palindromic subsequence (LPS)](./notebook/dynamic-programming/lps.cpp)
 - [traveling salesman problem (TSP)](./notebook/dynamic-programming/tsp.cpp)
 - [matrix chain multiplication (MCM)](./notebook/dynamic-programming/mcm.cpp)
 - [rod cutting](./notebook/dynamic-programming/rod-cutting.cpp)
 
 ## 🌍 graphs
 
+- [data structures representation](./notebook/graphs/ds-representation.md)
 - **traversal**
    - [depth-first search (DFS)](./notebook/graphs/dfs.cpp)
    - [breadth-first search (BFS)](./notebook/graphs/bfs.cpp)
@@ -54,8 +59,7 @@ The **folders structure** is following:
       - [minimax path](./notebook/graphs/mst-minimax-path.cpp)
       <!--TODO - [2nd best MST](./notebook/graphs/mst-2nd-best.cpp) -->
 - **network flow**
-   - **max flow**
-      - [edmonds karp](./notebook/graphs/edmonds-karp.cpp)
+   - [max flow w/ edmonds karp](./notebook/graphs/edmonds-karp.cpp)
    - [min cost max flow](./notebook/graphs/mcmf.cpp)
 - **shortest path**
    - **single-source**
@@ -68,14 +72,15 @@ The **folders structure** is following:
       - [maximum cardinality bipartite matching](./notebook/graphs/mcbm.cpp)
    - [**directed acyclic graph**](./notebook/graphs/dag.md)
    - [**tree**](./notebook/graphs/tree.md)
-      - [lowest common ancestor (LCA)](./notebook/graphs/lca-eulerian-tour.cpp)
       - [heavy-light decomposition (HLD)](./notebook/graphs/hld.cpp)
+      - **lowest common ancestor (LCA)**
+         - [binary lifting](./notebook/graphs/lca-binary-lifting.cpp)
+         - [eulerian tour](./notebook/graphs/lca-eulerian-tour.cpp)
 
 ## ✏️ math
 
-- [matrix power](./notebook/math/matrix-power.cpp)
 - **number theory**
-   - [fast power](./notebook/math/fast-power.cpp)
+   - [fast exponentiation](./notebook/math/fast-power.cpp)
    - **prime numbers**
       - [prime checking](./notebook/math/prime-checking.cpp)
       - [sieve of eratosthenes](./notebook/math/sieve.cpp)
@@ -85,6 +90,10 @@ The **folders structure** is following:
       - [prime factors of n!](./notebook/math/factorial-prime-factors.cpp)
       - [number of divisors of n](./notebook/math/num-div.cpp)
       - [sum of divisors of n](./notebook/math/sum-div.cpp)
+- **matrix exponentiation**
+   - [linear recurrences](./notebook/math/linear-recurrence.cpp)
+      - [utility in graph](./notebook/math/linear-recurrence-graph.cpp)
+      - [utility in counting](./notebook/math/linear-recurrence-counting.cpp)
 <!-- - [**game theory**](./notebook/math/game-theory.md) -->
    <!-- - [minimax](./notebook/math/minimax.md) -->
    <!-- - [nim](./notebook/math/nim.md) -->

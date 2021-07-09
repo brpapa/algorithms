@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 struct UFDS {
-   vector<int> p; // p[i]: pai do item i
+   vector<int> p; // p[i] = pai do item i
 
    UFDS(int N) {
       p.resize(N);
